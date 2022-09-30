@@ -1,37 +1,48 @@
 <template>
-    <div>
-        <v-row align="center">
-            <v-col cols="12" sm="12" md="12" lg="6">
-                <h1 class="color-blue-dark pt-15 mb-6 display-1 font-weight-bold">
-                    En todo momento, <br> Estamos a tu lado.
-                </h1>
-                <p class="mb-8 secondary--text">
-                    En los Olivos contamos con un amplio portafolio de servicios para tu protección <br> y la de tu familia. 
-                </p>
-                <div class="mb-15">
-                    <v-btn
-                        rounded                        
-                        color="teal darken-1"
-                        dark
-                        class="shadow-principal btn-hover"                        
-                    > Ver Salas </v-btn>
-                </div>
-            </v-col>
-            <v-col cols="12" sm="12" md="12" lg="6" class="d-none d-lg-flex">
-                <v-img
-                    src="https://res.cloudinary.com/dbepipmro/image/upload/v1632348454/planUnidos10Individual_tstgsd.png"
-                ></v-img>
+    <div class="BannerHomenajes">
+        <v-row justify="center" align="center">
+            <v-col justify="center" align="center" class="mt-15" cols="12" sm="12" md="12" lg="11">
+                <v-btn class="btnPisition" style="background: linear-gradient(to right, rgba(185, 70, 106), rgba(120, 15, 46)); color: #FCF0A5;">
+                    Velación virtual
+                </v-btn>
             </v-col>
         </v-row>
-        <!-- <v-row align="center">
-            <v-col cols="12" sm="12" md="12" lg="8">
-                <h1 class="color-blue-dark display-1 font-weight-bold mb-2">
-                    En todo momento, Estamos a tu lado. 
-                </h1>
-                <p class="secondary--text">
-                    En los Olivos contamos con un amplio portafolio de servicios para tu protección y la de tu familia. 
-                </p>
-            </v-col>
-        </v-row> -->
     </div>
 </template>
+<style lang="scss" >
+    @media only screen and (min-width: 1600px) {
+        .btnPisition{
+            position: relative;
+            top: 30em;
+        }
+        .BannerHomenajes{
+            background-image: url('../../static/banners/bannerHomenajesPc.jpg');
+            height: 600px;
+            width: 100%;
+        }
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .btnPisition{
+            position: flex;
+            top: 13em;
+        }
+        .BannerHomenajes{
+            background-image: url('../../static/banners/bannerHomenajesLaptop.jpg');
+            height: 320px;
+            width: 100%;
+        }
+    }
+    @media only screen and (min-width: 413px) and (max-width: 765px) {
+        .btnPisition{
+            position: flex;
+            top: 26em;
+        }
+        .BannerHomenajes{
+            background-image: url('../../static/banners/bannerHomenajesCel.jpg');
+            height: 500px;
+            width: 100%;
+        }
+    }
+
+
+</style>

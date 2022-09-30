@@ -8,7 +8,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s',
-    title: 'Olivos Villavicencio',
+    title: 'Los Olivos Neiva',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -16,16 +16,27 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      // { rel: 'stylesheet', type: 'text/css', href: 'https://unpkg.com/vue-croppa/dist/vue-croppa.min.css' },
+    ],
+    script: [
+      // {
+      //   src: "https://unpkg.com/vue-croppa/dist/vue-croppa.min.js",
+      // },
     ]
+
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    'assets/fonts.css',
+    'assets/style.css',
+
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    // 'plugins/croppa.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -82,5 +93,8 @@ export default {
     extend (config, ctx) {
       config.performance.maxAssetSize = 700 * 1024
     }
+  },
+  node: {
+    fs: 'empty'
   }
 }

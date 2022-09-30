@@ -1,0 +1,323 @@
+.contenedor{
+    background: linear-gradient(to right, #347D7D, #1D424A);
+    width: 11em;
+    height: 11em;
+    border-radius: 50% 50% 50% 50%;
+}
+
+
+@media only screen and (min-width: 1600px) {
+    .pc{
+        display: block;
+    }
+    .laptop{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .cel{
+        display: none;
+    }
+    
+    .tituloPrincipal{
+        font-size: 30px;
+    }
+    .contObituario{
+        background-image: url('https://res.cloudinary.com/olivos-villavicencio/image/upload/c_scale,h_674,w_1075/v1654527957/ndyrjaejzkcqc2fymqfx.gif');
+        height: 100%;
+        width: 100%;
+    }
+    .fondoSlider{
+        background-image: url('https://res.cloudinary.com/olivos-villavicencio/image/upload/c_scale,h_340/v1654527957/ndyrjaejzkcqc2fymqfx.gif');
+        height: 350px;
+        /* width: 100%; */
+    }
+    .fotohomenaje{
+        width: 155px;
+        height: 155px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        top: 7px;
+        overflow:hidden; 
+        position: relative;
+    }
+    .fotohomenajegrande{
+        width: 370px;
+         height: 370px;
+         -moz-border-radius: 50%;
+         -webkit-border-radius: 50%;
+         border-radius: 50%;
+         top: 10px;
+         overflow:hidden; 
+         position: relative;
+    }
+    .circulogrande{
+        height: 390px;
+        width: 390px;;
+        background-image: linear-gradient(85deg, #A3591B 0%, #FADC79 16.1099%,#986221 47.2791%, #F7D066 75.5545%, #FFF18F 100%); 
+        -moz-border-radius:50px;
+        -webkit-border-radius:50px;
+        border: 10px;
+        border-radius:50%;
+    }
+    .titulos{
+        color: #FCF0A5;
+        font-size: 15px;
+    }
+    .description{
+        font-size: 15px;
+        color: black;
+    }
+    .textname{
+        font-size: 20px;
+    }
+    .textDescansa{
+        font-size: 18px;
+    }
+    .circuloPequeño{
+        height: 170px;
+        width: 170px;;
+        background-image: linear-gradient(85deg, #A3591B 0%, #FADC79 16.1099%,#986221 47.2791%, #F7D066 75.5545%, #FFF18F 100%); 
+        -moz-border-radius:50px;
+        -webkit-border-radius:50px;
+        border: 10px;
+        border-radius:50%;
+    }
+}
+
+/* laptop */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .pc{
+        display: none;
+    }
+    .laptop{
+        display: block;
+    }
+    .tablet{
+        display: none;
+    }
+    .cel{
+        display: none;
+    }
+    .tituloPrincipal{
+        font-size: 25px;
+    }
+    .contObituario{
+        background-image: url('https://res.cloudinary.com/olivos-villavicencio/image/upload/c_scale,h_460,w_665/v1654527957/ndyrjaejzkcqc2fymqfx.gif');
+        height: 100%;
+        width: 100%;
+    }
+    .fotohomenajegrande{
+        width: 240px;
+         height: 240px;
+         -moz-border-radius: 50%;
+         -webkit-border-radius: 50%;
+         border-radius: 50%;
+         top: 10px;
+         overflow:hidden; 
+         position: relative;
+    }
+    .circulogrande{
+        height: 260px;
+        width: 260px;;
+        background-image: linear-gradient(85deg, #A3591B 0%, #FADC79 16.1099%,#986221 47.2791%, #F7D066 75.5545%, #FFF18F 100%); 
+        -moz-border-radius:50px;
+        -webkit-border-radius:50px;
+        border: 10px;
+        border-radius:50%;
+    }
+    .titulos{
+        color: #FCF0A5;
+        font-size: 8px;
+    }
+    .description{
+        font-size: 8px;
+        color: black;
+    }
+    .textname{
+        font-size: 15px;
+    }
+    .textDescansa{
+        font-size: 11px;
+    }
+    .textname2{
+        font-size: 20px;
+    }
+    .textDescansa2{
+        font-size: 18px;
+    }
+    .circuloPequeño{
+        height: 100px;
+        width: 100px;;
+        background-image: linear-gradient(85deg, #A3591B 0%, #FADC79 16.1099%,#986221 47.2791%, #F7D066 75.5545%, #FFF18F 100%); 
+        -moz-border-radius:50px;
+        -webkit-border-radius:50px;
+        border: 10px;
+        border-radius:50%;
+    }
+    .fotohomenaje{
+        width: 85px;
+        height: 85px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        top: 7px;
+        overflow:hidden; 
+        position: relative;
+    }
+    .fondoSlider{
+        background-image: url('https://res.cloudinary.com/olivos-villavicencio/image/upload/c_scale,h_185/v1654527957/ndyrjaejzkcqc2fymqfx.gif');
+        height: 300px;
+        width: 50%;
+    }
+}
+
+/* table */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .pc{
+        display: none;
+    }
+    .laptop{
+        display: none;
+    }
+    .tablet{
+        display: block;
+    }
+    .cel{
+        display: none;
+    }
+    .tituloPrincipal{
+        font-size: 25px;
+    }
+    .contObituario{
+        /* height: 100% !important; */
+        background-image: url("https://res.cloudinary.com/dazyyib7u/image/upload/c_scale,h_850/v1662587220/wnlpyp7cayu8yd2woo7o.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .fotohomenajegrande{
+        width: 230px;
+         height: 230px;
+         -moz-border-radius: 50%;
+         -webkit-border-radius: 50%;
+         border-radius: 50%;
+         top: 10px;
+         overflow:hidden; 
+         position: relative;
+    }
+    .circulogrande{
+        height: 250px;
+        width: 250px;;
+        background-image: linear-gradient(85deg, #A3591B 0%, #FADC79 16.1099%,#986221 47.2791%, #F7D066 75.5545%, #FFF18F 100%); 
+        -moz-border-radius:50px;
+        -webkit-border-radius:50px;
+        border: 10px;
+        border-radius:50%;
+    }
+    .titulos{
+        color: #FCF0A5;
+        font-size: 8px;
+        font-weight: 900;
+    }
+    .description{
+        font-size: 8px;
+        color: black;
+    }
+    .textname{
+        font-size: 12px;
+    }
+    .textDescansa{
+        font-size: 10px;
+    }
+    .textname2{
+        font-size: 30px;
+    }
+    .textDescansa2{
+        font-size: 25px;
+    }
+    .circuloPequeño{
+        height: 100px;
+        width: 100px;;
+        background-image: linear-gradient(85deg, #A3591B 0%, #FADC79 16.1099%,#986221 47.2791%, #F7D066 75.5545%, #FFF18F 100%); 
+        -moz-border-radius:50px;
+        -webkit-border-radius:50px;
+        border: 10px;
+        border-radius:50%;
+    }
+    .fotohomenaje{
+        width: 85px;
+        height: 85px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        top: 7px;
+        overflow:hidden; 
+        position: relative;
+    }
+    .fondoSlider{
+        background-image: url('https://res.cloudinary.com/olivos-villavicencio/image/upload/c_scale,h_175/v1654527957/ndyrjaejzkcqc2fymqfx.gif');
+        height: 300px;
+        width: 50%;
+    }
+}
+/* celular */
+@media only screen and (min-width: 414px) and (max-width: 765px) {
+    .pc{
+        display: none;
+    }
+    .laptop{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .cel{
+        display: block;
+    }
+    .tituloPrincipal{
+        font-size: 20px;
+    }
+    .titulos{
+        color: #FCF0A5;
+        font-size: 13px;
+        font-weight: 900;
+    }
+    .description{
+        font-size: 13px;
+        color: black;
+    }
+    .textname{
+        font-size: 15px;
+    }
+    .textDescansa{
+        font-size: 13px;
+    }
+    .circuloPequeño{
+        height: 150px;
+        width: 150px;;
+        background-image: linear-gradient(85deg, #A3591B 0%, #FADC79 16.1099%,#986221 47.2791%, #F7D066 75.5545%, #FFF18F 100%); 
+        -moz-border-radius:50px;
+        -webkit-border-radius:50px;
+        border: 10px;
+        border-radius:50%;
+    }
+    .fotohomenaje{
+        width: 135px;
+        height: 135px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        top: 7px;
+        overflow:hidden; 
+        position: relative;
+    }
+    .fondoSlider{
+        background-image: url('https://res.cloudinary.com/dazyyib7u/image/upload/c_scale,h_430/v1662587220/wnlpyp7cayu8yd2woo7o.png');
+        height: 440px;
+    }
+}
+
+
+

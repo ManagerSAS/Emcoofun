@@ -45,20 +45,10 @@ export default {
                     to: '/homenajes'
                 },
                 {
-                    title:'Actualizacion de datos',
-                    subtitle: 'Actualiza datos de los beneficiarios, añade relacion de datos adicionales',
-                    to: '/novedades-empresariales'
-                },
-                {
-                    title:'Novedades de Afiliaciones Empresariales',
-                    subtitle: 'Reporta novedades de afiliaciones empresariales, Afiliaciones y Retiros',
-                    to: '/novedades-empresariales'
-                },
-                {
-                    title:'Auxilios',
-                    subtitle: 'Solicita auxilios funerarios',
-                    to: '/solicitud-auxilios'
-                },
+                    title:'Afiliacion en linea',
+                    subtitle: 'Afiliate aqui con nosotros, de una manera',
+                    to: '/AfiliacionOnLine'
+                }
             ]
         }
     }

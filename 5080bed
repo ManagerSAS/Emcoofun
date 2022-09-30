@@ -1,0 +1,17 @@
+[33m55ac8d8[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m fix: update form auxilios
+[33m5d1ea50[m build: create new forms, helpers, api
+[33m4930755[m build: create new files api
+[33m9285389[m build: form noveltys update, validations, add Captcha
+[33mffc2bb6[m fix: new changes files about, forms and plans
+[33m2cba59b[m fix: update values serfunllanos
+[33m6f5efb7[m fix: important changes to reduce size the files
+[33mfe7ef7b[m fix: new files and components homenajes, plans
+[33mfbcc4bf[m fix: create pages plans bussiness individual
+[33ma0e1a81[m fix: new files about description and add footer
+[33m43a157a[m fix: create new components, files page index
+[33m4d275b7[m Merge branch 'master' of https://bitbucket.org/makinet/olivos-villavicencio
+[33m9c179b8[m fix: new files about welcome cards
+[33m8f47989[m components/NuxtLogo.vue edited online with Bitbucket
+[33m7233fe5[m components/VuetifyLogo.vue edited online with Bitbucket
+[33mbf56c48[m Initial Bitbucket Pipelines configuration
+[33m5080bed[m build: create single page olivos villavicencio in nuxt

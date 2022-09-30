@@ -1,0 +1,35 @@
+<template>
+    <section class="mb-3"  justify="center" align="center">
+        <v-row  justify="center" align="center" class="mt-5 ml-8 mr-5">
+            <v-col cols="12" sm="12" md="11" lg="8" justify="start" align="center" class="mt-5">
+                <h2 class="text-raleway font-weight-bold" style="color: #E83E58; font-size: 40px;"> Plan exequial empresarial </h2> <br>
+                <p class="text-comfortaa">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis quaerat, fugiat accusantium voluptate fuga 
+                    magnam sed officiis labore deleniti iusto assumenda sint repudiandae itaque quam reprehenderit amet iure culpa excepturi.. </p>
+            </v-col>
+        </v-row>
+        <v-row  class="ml-lg-15 ml-8 mr-5" justify="center" align="center">
+            <v-col cols="12" sm="10" md="6" lg="5" xl="5">
+                <div class="mb-6 ml-md-5">
+                    <h4 class="text-comfortaa " style="font-size: 40px; color: #003B4C; font-weight: 500;">En los Olivos</h4>
+                    <h4 class="text-comfortaa " style="font-size: 30px; color: #003B4C; font-weight: 900;">nos importa la integridad y bienestar </h4>
+                    <h4 class="text-comfortaa " style="font-size: 30px; color: #003B4C;">de cada integrante de tu organización  </h4>
+                </div>
+                    <v-btn
+                        style="background: linear-gradient(to right, #EC6480, #E83E58)" 
+                        class="shadow-principal btn-hover ml-md-5"
+                        dark
+                        rounded-xl
+                        href="https://api.whatsapp.com/send?phone=+573160176457.&amp;text=Hola! me pueden apoyar?"
+                    >
+                         CONOCE NUESTRO PLAN
+                    </v-btn>
+            </v-col>
+            <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="5" xl="5">
+                <img class="d-none d-xl-block d-lg-block" src="../../static/planEmpresa.png" width="600">
+                <img class="d-none d-md-block d-lg-none" src="../../static/planEmpresa.png" width="450">
+                <img class="d-block d-sm-none" src="../../static/planEmpresa.png" width="350">
+            </v-col>
+        </v-row>
+    </section>
+
+</template>

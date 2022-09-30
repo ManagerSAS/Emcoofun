@@ -1,18 +1,42 @@
 <template>
-    <v-row align="center" class="mt-15 mb-15">
-        <v-col cols="12" sm="12" md="12" lg="6">
-            <h1 class="olivos--text display-1 font-weight-bold mb-3">
-                Quienes somos
-            </h1>
-            <h2 class="secondary--text text-h6 mb-3">
-                MAS DE 25 AÑOS DE PREVISIÓN Y PRESTACIÓN DEL SERVICIO EXEQUIAL A LA COMUNIDAD LLANERA.
-            </h2>
-            <p class="secondary--text">
-                Somos una cooperativa de segundo grado, constituida el 8 de marzo de 1994, se crea con el apoyo de varias entidades del sector cooperativo regional y nacional y que hoy son asociados. El 31 de mayo de 1996 se inaugura la Sede en Villavicencio, actualmente contamos con infraestructura propia en los diferentes departamentos, con espacios que brindan comodidad y calidez, mostrando un nuevo estilo de prestación del servicio funerario.
-            </p>
-        </v-col>
-        <v-col cols="12" sm="12" md="12" lg="6" class="text-center">
-            <img src="../../static/logo.webp" alt="" class="mb-6"><br>
-        </v-col>
-    </v-row>
+    <div >
+        <h2 justify="center" align="center" class="mb-5 text-raleway font-weight-bold" 
+        style="color:#003B4C; font-size: 60px; background: linear-gradient(to right, #80C49E, #2EAE9B); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            Los Olivos EMCOOFUN
+        </h2>
+        <v-row justify="center" align="center" >
+            <v-col cols="12" sm="12" md="5" lg="5">
+                <video  playsinline loop controls width="90%" height="400"  class="mt-2"   >
+                    <source src="../../static/LOS_OLIVOS_NEIVA_EMCOOFUN.mp4" >
+                </video>
+            </v-col>
+        </v-row>
+        <v-row justify="center" align="center" >
+            <v-col cols="8" sm="12" md="10" lg="10" >
+                <p class="text-comfortaa" style="color:#003B4C; font-size: 20px;">
+                    Somos una cooperativa de segundo grado que
+                    asocia a cooperativas y fondos de empleados de
+                    primer grado. Somos privilegiados al contar con
+                    respaldo solidario a través de nuestras asociadas, la
+                    crema y nata del cooperativismo está detrás de
+                    nosotros a través de la Aseguradora Solidaria de
+                    Colombia, operadas a través de la Red Nacional Los
+                    Olivos.
+                </p>
+                <p class="text-comfortaa " style=" color:#003B4C; font-size: 20px;">
+                    <span style="font-weight:bold">Los Olivos </span> ha sido y es hoy por hoy la más
+                    auténtica expresión de la integración cooperativa y
+                    solidaria. Nació para atender una necesidad sentida
+                    de las bases sociales para atender la partida al más
+                    allá de las familias de los asociados.
+                </p>
+            </v-col>
+            <!-- <v-col cols="10" sm="12" md="5" lg="5" class="text-center">
+                <video autoplay playsinline loop controls width="80%" height="300"  class="mt-2"   >
+                    <source src="../../static/LOS_OLIVOS_NEIVA_EMCOOFUN.mp4" >
+                </video>
+            
+            </v-col> -->
+        </v-row>
+    </div> 
 </template>

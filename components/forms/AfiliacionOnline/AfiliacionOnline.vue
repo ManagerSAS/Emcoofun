@@ -1,0 +1,432 @@
+<template>
+    <div class="ma-2">
+        <v-row>
+            <v-col cols="12" sm="11" md="11" lg="10">
+
+                <v-form ref="formNovelty" autocomplete="off" enctype="multipart/form-data">
+                    <h3 class="color-blue-dark font-weight-bold mb-6">
+                        Datos del Titular: 
+                    </h3>
+                    <v-row >
+                        <v-col cols="12" sm="11" md="10" lg="8">
+                            <p class="text-raleway" style="color:#003B4C;"> Correo Electronico</p>
+                            <v-text-field
+                                v-model="Correo"
+                                :rules="emailRules"
+                                color="teal darken-4"
+                                label="Correo Electronico"
+                           >
+                           </v-text-field>
+                        </v-col>
+                    </v-row>
+                    <v-row >
+                        <v-col cols="12" sm="11" md="10" lg="9">
+                            <h3 class="text-comfortaa-verde">NUESTRO PLAN DE PREVISIÓN ONLINE</h3>
+                            <div class="text-comfortaa">
+                                Pensando en su protección exequial integral, Los Olivos EMCOOFUN ha diseñado un PLAN DE PREVISIÓN ONLINE para su familia. Por favor diligencie los siguientes datos para la formalización de su afiliación
+                            </div>
+                        </v-col>
+                    </v-row>
+                    <v-card class="pa-5 rounded-lg mt-2">
+                        <v-row>
+                            <v-col cols="12" sm="11" md="10" lg="4">
+                                <h4 class="text-raleway" style="color:#003B4C;"> Estado Civil*</h4>
+                                <v-select
+                                    v-model="EstadoCivil"
+                                    :items="typeEstadoCivil"
+                                    item-value="value"
+                                    item-text="text"
+                                    :rules="nameRules"
+                                    item-color="teal darken-4"
+                                    color="teal darken-4"
+                                    label="Estado Civil"
+                                    clearable
+                                ></v-select>
+                            </v-col>
+                            <v-col cols="12" sm="11" md="10" lg="4">
+                                <h4 class="text-raleway" style="color:#003B4C;"> Tipo de Documento*</h4>
+                                <v-select
+                                    v-model="typeId"
+                                    :items="itemsTypeId"
+                                    item-value="value"
+                                    item-text="text"
+                                    :rules="nameRules"
+                                    item-color="teal darken-4"
+                                    color="teal darken-4"
+                                    label="Tipo Documento"
+                                    clearable
+                                ></v-select>
+                            </v-col>
+                            <v-col cols="12" sm="11" md="10" lg="4">
+                                <h4 class="text-raleway" style="color:#003B4C;"> Numero de Documento*</h4>
+                                <v-text-field
+                                    v-model="NDocument"
+                                    type="number"
+                                    :rules="nameRules"
+                                    color="teal darken-4"
+                                    label="Numero de Documento"
+                                >
+                                </v-text-field>
+                            </v-col>
+                        </v-row>
+                        <v-row>
+                            <v-col cols="12" sm="11" md="10" lg="4">
+                                <h4 class="text-raleway" style="color:#003B4C;"> Primer Nombre*</h4>
+                                <v-text-field
+                                    v-model="Nombre1"
+                                    :rules="nameRules"
+                                    color="teal darken-4"
+                                    label="Primer Nombre"
+                                >
+                                </v-text-field>
+                            </v-col>
+                            <v-col cols="12" sm="11" md="10" lg="4">
+                                <h4 class="text-raleway" style="color:#003B4C;">  Segundo Nombre*</h4>
+                                <v-text-field
+                                    v-model="Nombre2"
+                                    :rules="nameRules"
+                                    color="teal darken-4"
+                                    label="Segundo Nombre"
+                                >
+                                </v-text-field>
+                            </v-col>
+                            <v-col cols="12" sm="11" md="10" lg="4">
+                                <h4 class="text-raleway" style="color:#003B4C;"> Primer Apellido*</h4>
+                                <v-text-field
+                                    v-model="Apellido1"
+                                    :rules="nameRules"
+                                    color="teal darken-4"
+                                    label="Primer Apellido"
+                            >
+                            </v-text-field>
+                            </v-col>
+                        </v-row>
+                        <v-row>
+                            <v-col cols="12" sm="11" md="10" lg="4">
+                                <h4 class="text-raleway" style="color:#003B4C;"> Segundo Apellido*</h4>
+                                <v-text-field
+                                    v-model="Apellido2"
+                                    :rules="nameRules"
+                                    color="teal darken-4"
+                                    label="Segundo Apellido"
+                            >
+                            </v-text-field>
+                            </v-col>
+                            <v-col cols="12" sm="11" md="10" lg="4">
+                                <h4 class="text-raleway" style="color:#003B4C;">  Sexo*</h4>
+                                <v-select
+                                    v-model="Genero"
+                                    :items="TypeSex"
+                                    item-value="value"
+                                    item-text="text"
+                                    :rules="nameRules"
+                                    item-color="teal darken-4"
+                                    color="teal darken-4"
+                                    label="Tipo Documento"
+                                    clearable
+                                ></v-select>
+                            </v-col>
+                            <v-col cols="12" sm="11" md="10" lg="4">
+                                <h4 class="text-raleway" style="color:#003B4C;"> Fecha de nacimiento*</h4>
+                                <v-text-field
+                                    v-model="dateBirth"
+                                    type="date"
+                                    :rules="nameRules"
+                                    color="teal darken-4"
+                                    label="Fecha de nacimiento"
+                                ></v-text-field>
+                            </v-col>
+                        </v-row>
+                        <v-row>
+                            <v-col cols="12" sm="11" md="10" lg="4">
+                                <h4 class="text-raleway" style="color:#003B4C;"> Direccion de Residencia*</h4>
+                                <v-text-field
+                                    v-model="Direccion1"
+                                    :rules="nameRules"
+                                    color="teal darken-4"
+                                    label="Direccion de Residencia"
+                            >
+                            </v-text-field>
+                            </v-col>
+                            <v-col cols="12" sm="11" md="10" lg="4">
+                                <h4 class="text-raleway" style="color:#003B4C;"> Direccion de Residencia 2 (Opcional)</h4>
+                                <v-text-field
+                                    v-model="Direccion2"
+                                    :rules="nameRules"
+                                    color="teal darken-4"
+                                    label="Direccion de Residencia"
+                            >
+                            </v-text-field>
+                            </v-col>
+                            <v-col cols="12" sm="11" md="10" lg="4">
+                                <h4 class="text-raleway" style="color:#003B4C;"> Numero de Contacto*</h4>
+                                <v-text-field
+                                    v-model="numPhone1"
+                                    type="number"
+                                    :rules="nameRules"
+                                    color="teal darken-4"
+                                    label="Numero de Contacto"
+                                ></v-text-field>
+                            </v-col>
+                        </v-row>
+                        <v-row>
+                            <v-col cols="12" sm="11" md="10" lg="4">
+                                <h4 class="text-raleway" style="color:#003B4C;"> Numero de Contacto 2 (Opcional)</h4>
+                                <v-text-field
+                                    v-model="numPhone2"
+                                    type="number"
+                                    :rules="nameRules"
+                                    color="teal darken-4"
+                                    label="Numero de Contacto"
+                                ></v-text-field>
+                            </v-col>
+                        </v-row>
+                    </v-card>
+                    <!-- --------- -->
+                    <v-expansion-panels class="mt-6 rounded-xl">
+                        <v-expansion-panel class="rounded-xl">
+                            <v-expansion-panel-header expand-icon="mdi-menu-down pa-1">
+                                <h4 class="color-blue-dark font-weight-bold">
+                                    NUESTRO PLAN DE PREVISIÓN ONLINE 
+                                </h4>
+                            </v-expansion-panel-header>
+                            <v-expansion-panel-content>
+                                <p class="text-raleway color-blue-dark" >
+                                    El <span class="font-weight-bold font-italic"> PLAN DE PREVISIÓN ONLINE</span> se conforma según el estado civil del titular, si es soltero o casado/unión libre. <br><br>
+
+                                    Si <span class="font-weight-bold ">EL TITULAR DEL PLAN DE PREVISIÓN ONLINE</span> es de estado civil <span class="font-weight-bold ">SOLTERO</span>, podrá vincular a sus <span class="font-weight-bold ">PADRES</span>, con una edad máxima de hasta 70 años. Sin embargo, al renovar este contrato no aplicará límite de edad para los padres que registre. También podrá vincular a todos sus <span class="font-weight-bold ">HERMANOS, con sus respectivas especificaciones</span> (Hermanos desde el 6.° mes de gestación y menores de 30 años, solteros y sin hijos; También hermanos con discapacidad valorada en un 50% o más, estos últimos sin límite de edad de ingreso y permanencia).<br><br>
+
+                                    Si <span class="font-weight-bold ">EL TITULAR DEL PLAN DE PREVISIÓN ONLINE</span> es de estado civil <span class="font-weight-bold ">CASADO / UNIÓN LIBRE</span>, podrá vincular a su <span class="font-weight-bold ">CÓNYUGUE</span> con una edad de ingreso hasta los 70 años, al renovar este contrato no aplicará límite de edad para el conyugue que registre. También podrá vincular a sus <span class="font-weight-bold ">PADRES o SUEGROS</span> (máximo dos (2) beneficiarios, padres o suegros), al renovar este contrato no aplicará límite de edad para los padres o suegros que registre. También podrá vincular a todos sus <span class="font-weight-bold ">HIJOS, con sus respectivas especificaciones</span> (Hijos desde el 6.° mes de gestación y menores de 30 años, solteros y sin hijos; También hijos con discapacidad valorada en un 50% o más, estos últimos sin límite de edad de ingreso y permanencia).
+                                </p>
+                            </v-expansion-panel-content>
+                        </v-expansion-panel>
+                    </v-expansion-panels>
+                    <!-- ------ -->
+                    <v-expansion-panels class="mt-6 rounded-xl">
+                        <v-expansion-panel class="rounded-xl">
+                            <v-expansion-panel-header expand-icon="mdi-menu-down pa-1">
+                                <h4 class="color-blue-dark font-weight-bold">
+                                    COBERTURA DEL PLAN DE PREVISIÓN ONLINE
+                                </h4>
+                            </v-expansion-panel-header>
+                            <v-expansion-panel-content class="color-blue-dark">
+                                <div class="pr-5 pl-5">
+                                    <h4 style="color: #2EAE9B" > En la Afiliación:</h4><br>
+                                    <p class="text-confortaa"><span style="color: #2EAE9B">1.</span> Atención y consulta permanente. </p>
+                                    <p class="text-confortaa"><span style="color: #2EAE9B">2.</span> Cubrimiento del servicio dentro del territorio nacional.</p>
+                                </div>
+                                <div class=" ml-5 mr-5">
+                                    <h3 class="text-confortaa" style="color: #E9522C; font-size: 20px;" > En el Deceso:</h3><br>
+                                    <p class="text-confortaa"><span style="color: #E9522C">1.</span> Atención y orientación todo el año las 24 horas del día a través del PBX 8715555 en Neiva (Huila), Teléfono 8332021 en Garzón, Teléfono 8361961 en Pitalito, Teléfono 4353314 en Florencia (Caquetá) o la línea gratuita 018000911134 a Nivel Nacional. </p>
+                                    <p class="text-confortaa"><span style="color: #E9522C">2.</span> Traslado inicial del cuerpo del fallecido desde el lugar de defunción hasta lugar de la funeraria de le Red Nacional LOS OLIVOS y traslado del cuerpo del afiliado fallecido al sitio de la velación en una distancia de hasta 80 km.. dentro del perímetro urbano don-de se encuentre la sede de LOS OLIVOS, por vía terrestre transitable para vehículos funerarios.</p>
+                                    <p class="text-confortaa"><span style="color: #E9522C">3.</span> Traslado nacional del cuerpo del afiliado fallecido, por vía terrestre transitable para vehículos funerarios, limitado a un perímetro de hasta 300 km. o traslado nacional por vía aérea en vuelos comerciales equivalente a un trayecto a criterio de los Olivos.  </p>
+                                    <p class="text-confortaa"><span style="color: #E9522C">4.</span> Pago de Impuestos de Inhumación, diligencias ante la Secretaría de Salud y registro notarial (el certificado médico de defunción lo deben aportar los familiares) así como los demás trámites que se requieran de acuerdo con la causa del fallecimiento y normatividad vigente.</p>
+                                    <p class="text-confortaa"><span style="color: #E9522C">5.</span> Preservación del fallecido hasta por cuarenta y ocho (48) horas en los laboratorios de las funerarias adscritas a la Red Nacional LOS OLIVOS. </p>
+                                    <p class="text-confortaa"><span style="color: #E9522C">6.</span> Suministro de cofre o ataúd en cualquiera de las referencias designadas los planes en el presente contrato o sus anexos.</p>
+                                </div>
+                                <div class="ml-5 mr-5">
+                                    <h3 class="text-confortaa" style="color: #ED6D81; font-size: 20px;" > Durante la Velacion:</h3><br>
+                                    <p class="text-confortaa"><span style="color: #ED6D81">1.</span> Salas de velación hasta por 24 horas en la Red Nacional LOS OLIVOS, excepto en el Departamento de Antioquia, donde el servicio de velación es hasta por 12 horas y en donde la Red Nacional tenga convenio vigente de acuerdo al caso. </p>
+                                    <p class="text-confortaa"><span style="color: #ED6D81">2.</span> Una ofrenda Floral.</p>
+                                    <p class="text-confortaa"><span style="color: #ED6D81">3.</span> Conjunto recordatorio (denario, libro de oraciones, registro de asistencia). </p>
+                                    <p class="text-confortaa"><span style="color: #ED6D81">4.</span> Servicio de Cafetería (tinto, aromática y agua). </p>
+                                    <p class="text-confortaa"><span style="color: #ED6D81">5.</span> Servicio de teléfono y fax (en donde exista este servicio).</p>
+                                    <p class="text-confortaa"><span style="color: #ED6D81">6.</span> Una serie de hasta seis (6) Carteles.</p>
+                                    <p class="text-confortaa"><span style="color: #ED6D81">7.</span> Velación domiciliaria (incluye préstamo de implementos para la velación y un kit de cafetería). Se realiza de acuerdo a la normatividad vigente.</p>
+                                </div>
+                                <div class="ml-5 mr-5">
+                                    <h3 class="text-confortaa" style="color: #7AB929; font-size: 20px;" > En El Cortejo:</h3><br>
+                                    <p class="text-confortaa"><span style="color: #7AB929">1.</span> Cinta membretada con el nombre del fallecido. </p>
+                                    <p class="text-confortaa"><span style="color: #7AB929">2.</span> Honras fúnebres</p>
+                                    <p class="text-confortaa"><span style="color: #7AB929">3.</span> Transporte público urbano desde la sala de velación al sitio de exequias y destino final, para acompañantes, hasta 25 personas, en ciudades capitales y ciudades intermedias (donde exista este servicio).  </p>
+                                    <p class="text-confortaa"><span style="color: #7AB929">4.</span> Traslado en carroza a lugar de las honras fúnebres y al sitio del destino final por vía transitable para vehículo funerario, siempre y cuando se encuentre dentro del mismo perímetro urbano del lugar de la velación </p>   
+                                </div>
+                                <div class="ml-5 mr-5">
+                                    <h3 class="text-confortaa" style="color: #F59D20; font-size: 20px;" > Destino Final: </h3><br>
+                                    <p class="text-confortaa">Las opciones para destino final son las que a continuación se enuncia, salvo que se pacte lo contrario, las cuales son excluyentes entre sí:  </p>
+                                    <p class="text-confortaa"><span style="color: #F59D20" class="font-weight-bold "> <img src="../../../static/iconos/vineta-03.png" width="15"> Uso temporal de lote o bóveda para la inhumación hasta por cuatro (4) años</span> de EMCOOFUN, los de la Red Nacional Los Olivos, en cementerios distritales, municipales o privados de acuerdo con los convenios que tenga las funerarias adscritas a la Red Nacional LOS OLIVOS.</p>
+                                    <p class="text-confortaa"><span style="color: #F59D20" class="font-weight-bold "> <img src="../../../static/iconos/vineta-03.png" width="15"> Parágrafo 1:</span> En caso de que el tiempo reglamentado por el cementerio sea menor, se aplica el Límite establecido por este.  </p>
+                                    <p class="text-confortaa"><span style="color: #F59D20" class="font-weight-bold "> <img src="../../../static/iconos/vineta-03.png" width="15"> Parágrafo 2:</span> Primará el uso de los cementerios propios, los de la Red Nacional Los Olivos de acuerdo con el convenio Nacional vigente y solo se autorizará cementerios distritales, municipales o privados diferentes a los de la Red Olivos cuando en la ciudad de las exequias no se cuente con cementerio propio o de la Red Olivos. </p>
+                                    <p class="text-confortaa"><span style="color: #F59D20" class="font-weight-bold "> <img src="../../../static/iconos/vineta-03.png" width="15"> Parágrafo 3:</span> Se incluye auxilio para osario, en los cementerios de EMCOOFUN o los de la Red Nacional Los Olivos, en territorios diferentes a la ciudad de Neiva (Huila) de acuerdo con los convenios que se tenga con la Red Nacional LOS OLIVOS, hasta por la suma equivalente a 0.5 smmlv, siempre que el grupo familiar haya permanecido vinculado ininterrumpidamente en el plan de previsión exequial con EMCOOFUN los últimos cuatro (4) años. 2) </p>
+                                    <p class="text-confortaa"><span style="color: #F59D20" class="font-weight-bold "> <img src="../../../static/iconos/vineta-03.png" width="15"> Cremación</span> en los cementerios de EMCOOFUN, los de la Red Nacional Los OLIVOS, en cementerios privados, distritales o municipales, de acuerdo con los convenios que tengan las funerarias adscritas a la Red Nacional LOS OLIVOS.</p>
+                                    <p class="text-confortaa"><span style="color: #F59D20" class="font-weight-bold "> <img src="../../../static/iconos/vineta-03.png" width="15"> Parágrafo 1:</span> Primará el uso de los cementerios propios o los de la Red Nacional Los Olivos de acuerdo con el convenio nacional vigente y sólo se autorizará cementerios distritales, municipales o privados diferentes a los de la Red Olivos cuando en la ciudad de las exequias no se cuente con horno crematorio propio o de la Red Olivos. Se incluye una Urna para las cenizas y el cofre o ataúd es de propiedad de la Red Nacional LOS OLIVOS. </p>
+                                    <p class="text-confortaa"><span style="color: #F59D20" class="font-weight-bold "> <img src="../../../static/iconos/vineta-03.png" width="15"> Parágrafo 2:</span> Se incluye auxilio para cinerarios en los cementerios de EMCOOFUN o los de la Red Nacional Los Olivos, en territorios diferentes a la ciudad de Neiva (Huila) de acuerdo con los convenios que se tenga con la Red Nacional LOS OLIVOS, hasta por la suma equivalente a 0.5 smmlv siempre y cuando el grupo familiar afiliado esté vinculado ininterrumpidamente en el plan de previsión exequial con EMCOOFUN los últimos cuatro (4) años. 3)</p>
+                                    <p class="text-confortaa"><span style="color: #F59D20" class="font-weight-bold "> <img src="../../../static/iconos/vineta-03.png" width="15"> Repatriación de Cenizas:</span> Se reconoce el valor del flete correspondiente a la repatriación de las cenizas hasta por un valor equivalente a 1.5 smmlv, salvo que se pacte lo contrario. </p>
+                                </div>
+                                <div class="ml-5 mr-5">
+                                    <h3 class="text-confortaa" style="color: #2EAE9B; font-size: 20px;" > Servicios Post-Exequiales:</h3><br>
+                                    <p class="text-confortaa"><span style="color: #2EAE9B">1.</span> Misa colectiva del mes (en donde exista este servicio).  </p>
+                                    <p class="text-confortaa"><span style="color: #2EAE9B">2.</span> Misa colectiva de aniversario (en donde exista este servicio).</p>
+                                </div>
+                            </v-expansion-panel-content>
+                        </v-expansion-panel>
+                    </v-expansion-panels>
+                    <v-row class="mt-5" justify="center" align="center">
+                        <v-col cols="12" sm="12" md="12" lg="12">
+                            <h4 class="mb-6 text-raleway" style="color:#003B4C;">
+                                Por favor marque la opción por donde desea realizar su pago para la formalización del contrato con Los Olivos Emcoofun
+                            </h4>
+                            <img src="../../../static/iconos/payU.png" width="200">
+                        </v-col>
+                    </v-row>
+                    <!-- ------- -->
+                    <div class="mt-5">
+                        <h4 class="text-raleway" style="color:#003B4C;"> Autorizo expresamente a EMCOOFUN LOS OLIVOS, en el desarrollo de sus funciones a facturar el valor total a pagar del <span class="font-weight-bold ">PLAN DE PREVISIÓN ONLINE con el cual estoy de acuerdo a las políticas descritas en este formato.</span></h4>
+                    </div>
+                    <v-row no-gutters align="center">
+                        <v-col cols="5">
+                            <v-checkbox
+                                v-model="terminos"
+                                :rules="nameRules"
+                                color="teal darken-4"
+                                label="Acepto políticas de tratamiento de datos"
+                            > </v-checkbox>
+                        </v-col>
+                        <v-col cols="7">
+                            <Nuxt-link target="_blank" to="/terminosycondiciones/privacidad-de-datos"> Ver términos y Condiciones</Nuxt-link>
+                        </v-col>
+                    </v-row>
+                    <v-row no-gutters align="center">
+                        <v-col cols="5">
+                            <v-checkbox
+                                v-model="declaracion"
+                                :rules="nameRules"
+                                color="teal darken-4"
+                                label=" Si, declaro y autorizo"
+                            > </v-checkbox>
+                        </v-col>
+                        <v-col cols="7">
+                            <Nuxt-link target="_blank" to="/terminosycondiciones/privacidad-de-datos"> Autrizacion y Declaracion</Nuxt-link>
+                        </v-col>
+                    </v-row>
+                    <!-- captcha -->
+                    <v-row>
+                        <v-col cols="12" sm="12" md="12" lg="12">
+                            <Gcaptcha @captcha="verifyCaptcha"/>
+                        </v-col>
+                    </v-row>
+                    <v-row>
+                        <v-col cols="12" sm="12" md="12" lg="12">
+                            <v-btn
+                                rounded
+                                class="card-shadow"
+                                dark
+                                color="teal darken-3"
+                                @click="sendInfoNovelty"
+                            > Enviar información 
+                            </v-btn>
+                        </v-col>
+                    </v-row> 
+                 </v-form>
+
+             </v-col>
+         </v-row>
+        <Message :snackbar="snackbar" :color-snackbar="colorSnackbar" :message="message"/> 
+    </div>
+</template>
+<script>
+
+import Gcaptcha from '../recaptcha.vue'
+// import Post from '../../post/post'
+import Message from '../messages/message1.vue'
+export default {
+    components:{ 
+        Gcaptcha, 
+        Message,
+    },
+    data(){
+        return{
+            Correo:'',
+            NDocument: '',
+            Nombre1: '',
+            Nombre2: '',
+            Apellido1: '',
+            Apellido2: '',
+            Genero:'',
+            TypeSex: ['Femenino','Masculino','Otro','Prefiro no decir'],
+            // date birth
+            dateBirth: '',
+            typeId:'',
+            itemsTypeId: ['C.C','C.E','P.E.P'],
+            numPhone1: '',
+            numPhone2: '',
+            Direccion1: '',
+            Direccion2: '',
+            EstadoCivil: '',
+            typeEstadoCivil:['Soltero', 'Casado', 'Unión libre'],
+
+
+
+            snackbar: false,
+            message: '',
+            colorSnackbar: '',
+
+            nameRules: [
+                v => !!v || 'Campo requerido',
+            ],
+            emailRules: [
+                v => /.+@.+\..+/.test(v) || '',
+            ],
+            terminos: false,
+            declaracion: false,
+            resCaptcha: false,
+        }
+    }, 
+    methods:{
+        sendInfoNovelty(){
+            if(this.Correo !== '' && this.NDocument !== '' && this.Nombre1 !== '' && this.Nombre2 !== '' && this.Apellido1 !== '' && this.Apellido2 !== '' && this.Genero !== ''&& this.dateBirth !== ''&& this.typeId !== '' && this.numPhone1 !== ''&& this.Direccion1 !== '' && this.EstadoCivil !== '' && this.terminos === true && this.declaracion === true && this.resCaptcha === true){         
+      
+                const data = {
+                    Correo:this.Correo,
+                    NDocument: this.NDocument,
+                    Nombre1: this.Nombre1,
+                    Nombre2: this.Nombre2,
+                    Apellido1: this.Apellido1,
+                    Apellido2: this.Apellido2,
+                    Genero:this.Genero,
+                    dateBirth: this.dateBirth,
+                    typeId:this.typeId,
+                    numPhone1: this.numPhone1,
+                    numPhone2: this.numPhone2,
+                    Direccion1: this.Direccion1,
+                    Direccion2: this.Direccion2,
+                    EstadoCivil: this.EstadoCivil,
+                }
+                console.log({data})
+                // await Post.postFormAfiliacion( data );
+                // console.log(response);
+                // if(response.error === false){
+                    // this.snackbar = true
+                    // this.colorSnackbar = 'green accent-4'
+                    // this.message = 'Se envio tu solicitud'
+                    // setTimeout(()=>{ this.snackbar = false }, 3000)
+                    // this.$refs.formNovelty.reset()
+                // }else{
+                //     this.snackbar = true
+                //     this.colorSnackbar = 'red accent-3'
+                //     this.message = 'no se envio tu solicitud'
+                //     console.log(response.error)
+                //     setTimeout(()=>{ this.snackbar = false }, 3000)
+                //     this.$refs.formNovelty.reset()
+                // }                    
+            }else{
+                this.snackbar = true
+                this.colorSnackbar = 'red accent-3'
+                this.message = 'Asegurate de diligenciar todos los campos incluyendo el captcha'
+                setTimeout(()=>{ this.snackbar = false },3000)
+                this.$refs.formNovelty.validate()
+            }           
+        },
+        verifyCaptcha(response){
+            if(response){
+                this.resCaptcha = response
+            }
+        },
+    },
+}
+</script>
+<style lang="scss" scoped>
+.bg-list{
+    background-color: #003b4c0f;
+}
+</style>

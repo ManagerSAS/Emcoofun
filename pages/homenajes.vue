@@ -1,14 +1,15 @@
 <template>
-	<v-container fluid>
+	<div >
+		<Header/>
 		<v-row justify="center" align="center" class="mt-md-15 pa-md-0">
 			<v-col cols="12" sm="12" md="9" lg="9" xl="9">
-		        <v-row>
+		        <v-row class="ma-2">
 					<v-col cols="12" sm="12" md="12" lg="10">
 						<h1 class="color-blue-dark display-1 font-weight-bold mb-6">
-							Homenajes:
+							Planeacion del homenaje:
 						</h1>
 						<p class="secondary--text">
-							Para lograr un proceso más humano en la atención del homenaje de su ser querido queremos que tenga presente la siguiente información antes de ingresar a la coordinación del servicio.
+							Para lograr una oportuna atención en la solicitud, llena el siguiente formulario con la información pertinente
 						</p>
 					</v-col>
 				</v-row>
@@ -19,15 +20,19 @@
 				<Formulario/>
 			</v-col>
 		</v-row>
-    </v-container>
+		<Footer style="background: linear-gradient(270deg, #8fddaa 0%, #59ab9b 100%);"/>
+    </div>
 </template>
 <script>
 
 import Formulario from '../components/forms/homenajes/homenajes-olivos.vue';
-
+import Footer from '~/components/Footer2.vue'
+import Header from '~/components/Header.vue';
 export default {
     components:{
-        Formulario
-    }
+    Formulario,
+    Footer,
+    Header
+}
 }
 </script>
