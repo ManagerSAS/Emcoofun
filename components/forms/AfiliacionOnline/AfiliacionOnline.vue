@@ -1,8 +1,7 @@
 <template>
     <div class="ma-2">
-        <v-row>
+        <v-row justify="center" align="star">
             <v-col cols="12" sm="11" md="11" lg="10">
-
                 <v-form ref="formNovelty" autocomplete="off" enctype="multipart/form-data">
                     <h3 class="color-blue-dark font-weight-bold mb-6">
                         Datos del Titular: 
@@ -152,7 +151,6 @@
                                 <h4 class="text-raleway" style="color:#003B4C;"> Direccion de Residencia 2 (Opcional)</h4>
                                 <v-text-field
                                     v-model="Direccion2"
-                                    :rules="nameRules"
                                     color="teal darken-4"
                                     label="Direccion de Residencia"
                             >
@@ -175,7 +173,6 @@
                                 <v-text-field
                                     v-model="numPhone2"
                                     type="number"
-                                    :rules="nameRules"
                                     color="teal darken-4"
                                     label="Numero de Contacto"
                                 ></v-text-field>
@@ -261,14 +258,6 @@
                             </v-expansion-panel-content>
                         </v-expansion-panel>
                     </v-expansion-panels>
-                    <v-row class="mt-5" justify="center" align="center">
-                        <v-col cols="12" sm="12" md="12" lg="12">
-                            <h4 class="mb-6 text-raleway" style="color:#003B4C;">
-                                Por favor marque la opción por donde desea realizar su pago para la formalización del contrato con Los Olivos Emcoofun
-                            </h4>
-                            <img src="../../../static/iconos/payU.png" width="200">
-                        </v-col>
-                    </v-row>
                     <!-- ------- -->
                     <div class="mt-5">
                         <h4 class="text-raleway" style="color:#003B4C;"> Autorizo expresamente a EMCOOFUN LOS OLIVOS, en el desarrollo de sus funciones a facturar el valor total a pagar del <span class="font-weight-bold ">PLAN DE PREVISIÓN ONLINE con el cual estoy de acuerdo a las políticas descritas en este formato.</span></h4>
@@ -316,6 +305,30 @@
                             > Enviar información 
                             </v-btn>
                         </v-col>
+                        <v-row class="mt-5" justify="center" align="center">
+                        <v-col cols="12" sm="12" md="12" lg="12">
+                            <h4 class="mb-6 text-raleway" style="color:#003B4C;">
+                                Por favor al finalizar el formulario realice el pago en la siguiente opcion para la formalización del contrato con Los Olivos Emcoofun
+                            </h4>
+                            <form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
+                                <input type="image" border="0" alt="" src="http://www.payulatam.com/img-secure-2015/boton_pagar_mediano.png" onClick="this.form.urlOrigen.value = window.location.href;"/>
+                                <input name="buttonId" type="hidden" value="rlBdHe6fVbJOg5xqRMieT172I+BKw0mbIXsTfqjqxIomnf2iFwnh0g=="/>
+                                <input name="merchantId" type="hidden" value="88971"/>
+                                <input name="accountId" type="hidden" value="93013"/>
+                                <input name="description" type="hidden" value="Plan de previsión online US4"/>
+                                <input name="referenceCode" type="hidden" value="US4 PAGINA WEB"/>
+                                <input name="amount" type="hidden" value="220000.00"/>
+                                <input name="tax" type="hidden" value="0.00"/>
+                                <input name="taxReturnBase" type="hidden" value="0.00"/>
+                                <input name="currency" type="hidden" value="COP"/>
+                                <input name="lng" type="hidden" value="es"/>
+                                <input name="displayBuyerComments" type="hidden" value="true"/>
+                                <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
+                                <input name="buttonType" value="SIMPLE" type="hidden"/>
+                                <input name="signature" value="bdd8dc8aca4d1d3e3afac0706894fb4e3ea15a84bb8d2f3bd58a5765caa77ae7" type="hidden"/>
+                            </form>
+                        </v-col>
+                    </v-row>
                     </v-row> 
                  </v-form>
 

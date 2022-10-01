@@ -1,10 +1,10 @@
 <template>
 	<div >
 		<Header/>
-		<v-row justify="center" align="center" class="mt-md-15 ma-2">
-			<v-col cols="12" sm="12" md="12" lg="12" xl="9">
-		        <v-row>
-					<v-col cols="12" sm="12" md="12" lg="8" class="text-comfortaa">
+		<v-row  class="mt-md-15 ma-2">
+			<v-col cols="12" sm="12" md="12" lg="12" xl="10">
+		        <v-row justify="center" align="center">
+					<v-col cols="12" sm="12" md="12" lg="10" class="text-comfortaa">
 						<h1 style="color:#003B4C; font-size: 40px; background: linear-gradient(to right, #EC6480, #E83E58); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" class="color-blue-dark font-weight-bold mb-6">
 							Afiliaciones en linea
 						</h1>

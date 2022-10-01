@@ -4,46 +4,56 @@
             <v-form ref="formHomenajes" autocomplete="off">
                 <div>
                     <h3 class="color-blue-dark font-weight-bold mb-3">
-                        Datos del titular:
+                        Datos del solicitante
                     </h3>
-                    <p class="secondary--text"> Por favor indique de manera completa los siguientes datos del titular.</p>
                 </div>
                 <v-row>
-                    <v-col cols="12" sm="12" md="12" lg="6">
+                    <v-col cols="12" sm="12" md="6" lg="6">
                         <v-text-field
                             v-model="nameTitular"
                             :rules="nameRules"
                             color="teal darken-4"
-                            label="Nombre titular"
+                            label="Nombre completo"
                             hide-details
                         ></v-text-field>
                     </v-col>
-                    <v-col cols="12" sm="12" md="12" lg="6">
+                    <v-col cols="12" sm="12" md="3" lg="3">
                         <v-text-field
-                            v-model="address"
+                            v-model="Departamento"
                             :rules="nameRules"
                             color="teal darken-4"
-                            label="Direccion"
+                            label="Departamento"
+                            hide-details
+                        ></v-text-field>
+                    </v-col>
+                    <v-col cols="12" sm="12" md="3" lg="3">
+                        <v-text-field
+                            v-model="Ciudad"
+                            :rules="nameRules"
+                            color="teal darken-4"
+                            label="Ciudad"
                             hide-details
                         ></v-text-field>
                     </v-col>
                 </v-row>
                 <v-row>
                     <v-col cols="12" sm="12" md="12" lg="6">
-                        <v-text-field
-                            v-model="neighborhood"
+                        <v-select
+                            v-model="typeId"
+                            :items="TypesId"
                             :rules="nameRules"
                             color="teal darken-4"
-                            label="Barrio"
+                            item-color="teal darken-4"
+                            label="Afiliado a olivos"
                             hide-details
-                        ></v-text-field>
+                        ></v-select>
                     </v-col>
                     <v-col cols="12" sm="12" md="12" lg="6">
                         <v-text-field
-                            v-model="municipy"
+                            v-model="Barrio"
                             :rules="nameRules"
                             color="teal darken-4"
-                            label="Municipio"
+                            label="Barrio"
                             hide-details
                         ></v-text-field>
                     </v-col>
@@ -51,29 +61,58 @@
                 <v-row class="mb-6">
                     <v-col cols="12" sm="12" md="12" lg="6">
                         <v-text-field
-                            v-model="cellphone"
+                            v-model="numeroId"
                             type="number"
                             :rules="nameRules"
                             color="teal darken-4"
-                            label="Telefono"
+                            label="N° de documento:"
                             hide-details
                         ></v-text-field>
                     </v-col>
                     <v-col cols="12" sm="12" md="12" lg="6">
                         <v-text-field
-                            v-model="email"
+                            v-model="direccion"
                             :rules="emailRules"
                             color="teal darken-4"
+                            label="Dirección"
+                            hide-details
+                        ></v-text-field>
+                    </v-col>
+                </v-row>
+                <v-row class="mb-6">
+                    <v-col cols="12" sm="12" md="12" lg="6">
+                        <v-text-field
+                            v-model="email"
+                            type="number"
+                            :rules="nameRules"
+                            color="teal darken-4"
                             label="Email"
+                            hide-details
+                        ></v-text-field>
+                    </v-col>
+                    <v-col cols="12" sm="12" md="3" lg="3">
+                        <v-text-field
+                            v-model="telefono1"
+                            :rules="emailRules"
+                            color="teal darken-4"
+                            label="Teléfono"
+                            hide-details
+                        ></v-text-field>
+                    </v-col>
+                    <v-col cols="12" sm="12" md="3" lg="3">
+                        <v-text-field
+                            v-model="telefono2"
+                            color="teal darken-4"
+                            label="Teléfono # 2"
                             hide-details
                         ></v-text-field>
                     </v-col>
                 </v-row>
                 <div>
                     <h3 class="color-blue-dark font-weight-bold mb-3">
-                        Datos del homenaje:
+                        Datos del “Ser Querido”
                     </h3>
-                    <p class="secondary--text"> Por favor indique de manera completa los siguientes datos de su ser querido.</p>
+                    <p class="secondary--text"> Por favor comparta con nosotros los siguientes datos del afiliado fallecido.</p>
                 </div>
                 <v-row>
                     <v-col cols="12" sm="12" md="12" lg="6">
@@ -81,22 +120,10 @@
                             v-model="nameHomenaje"
                             :rules="nameRules"
                             color="teal darken-4"
-                            label="Nombre completo"
+                            label="Nombre completo:"
                             hide-details
                         ></v-text-field>
                     </v-col>
-                    <v-col cols="12" sm="12" md="12" lg="6">
-                        <v-text-field
-                            v-model="documento"
-                            type="number"
-                            :rules="nameRules"
-                            color="teal darken-4"
-                            label="N° documento"
-                            hide-details
-                        ></v-text-field>
-                    </v-col>
-                </v-row>
-                <v-row class="mb-6">
                     <v-col cols="12" sm="12" md="12" lg="6">
                         <v-select
                             v-model="afiliaty"
@@ -107,24 +134,58 @@
                             label="Afiliado a olivos"
                             hide-details
                         ></v-select>
+                       
                     </v-col>
+                </v-row>
+                <v-row class="mb-6">
                     <v-col cols="12" sm="12" md="12" lg="6">
-                        <v-text-field
-                            v-model="lugarFallecimiento"
+                        <v-select
+                            v-model="typeIdHomenaje"
+                            :items="TypesId"
                             :rules="nameRules"
                             color="teal darken-4"
-                            label="Lugar de fallecimiento"
+                            item-color="teal darken-4"
+                            label="Afiliado a olivos"
+                            hide-details
+                        ></v-select>
+                    </v-col>
+                    <v-col cols="12" sm="12" md="3" lg="3">
+                        <v-text-field
+                            v-model="DepartamentoFallecimiento"
+                            :rules="nameRules"
+                            color="teal darken-4"
+                            label="Departamento Fallecimiento"
+                            hide-details
+                        ></v-text-field>
+                    </v-col>
+                    <v-col cols="12" sm="12" md="3" lg="3">
+                        <v-text-field
+                            v-model="cityFallecimiento"
+                            :rules="nameRules"
+                            color="teal darken-4"
+                            label="Ciudad Fallecimiento"
+                            hide-details
+                        ></v-text-field>
+                    </v-col>
+                </v-row>
+                <v-row class="mb-6">
+                    <v-col cols="12" sm="12" md="12" lg="6">
+                        <v-text-field
+                            v-model="NumdocumentoHome"
+                            :rules="nameRules"
+                            type="number"
+                            color="teal darken-4"
+                            label="N° de documento:"
                             hide-details
                         ></v-text-field>
                     </v-col>
                 </v-row>
                 <div>
                     <h3 class="color-blue-dark font-weight-bold mb-3">
-                        Documentos:
+                        Certificado de defunción:
                     </h3>                
                     <p class="secondary--text"> 
-                        ¿Cuenta usted con el certificado de defunción y fotocopia de la cedula de su ser querido?
-                        (Si la respuesta es negativa comuniquese con un asesor al (608)-xxxxx o a la linea gratuita 01 8000 xxx xxx extencion 01) 
+                        ¿Ya cuenta con el certificado de defunción y con la fotocopia del documento de su “Ser Querido”? 
                     </p>
                     <v-select
                         v-model="documents"
@@ -137,14 +198,16 @@
                         label="Documentos"
                         clearable
                     ></v-select>
+                    <p class="secondary--text"> 
+                        Si aun no cuentas con estos documentos, comuniquese con uno de nuestros coordinadores al 316 874 7177 o al PBX 8715555 para mayor información
+                    </p>
                 </div>
                 <div>
                     <h3 class="color-blue-dark font-weivght-bold mb-3">
                         Exequias:
                     </h3>
                     <p class="secondary--text">
-                        Las exequias son la ceremonia religiosa que vamos a realizar en nombre de su ser querido, respetando los 
-                        diferentes credos, por favor indíquenos si las exequias serán, Catolicas, Cristiana, Islámica, budista, Otra ¿cuál? 
+                        Las exequias son la ceremonia religiosa que se realizará en nombre de su ser querido, respetando los diferentes credos. Por favor indiquenos si las exequias serán (Católica, Cristiana, Islámica, Budista, otra) 
                     </p>
                     <v-select
                         v-model="exequias"
@@ -168,142 +231,171 @@
                         Templo religioso:
                     </h3>
                     <p class="secondary--text">
-                        Basandonos en su respuesta anterior escriba los lugares donde ustedes quisieran que sean las exequias de su ser querido y la hora: 
-                        (Por favor escriba 2 opciones ya que a veces los templos religiosos no cuentan con disponibilidad del día o la hora) 
+                        Según la sección anterior, escriba los lugares donde quisieran que fuesen las exequias de su ser querido y la hora.
                     </p>
-                    <v-text-field
-                        v-model="church"
-                        :rules="nameRules"
-                        class="mb-2"
-                        color="teal darken-4"
-                        label="Iglesia"
-                        hint="Ejemplo: Iglesia 1, Iglesia 2"
-                    ></v-text-field>
-                    <p class="secondary--text"> Fecha y hora sugerida para las exequias, máximo día siguiente al inicio de la velación (sujeta a disponibilidad)</p>
-                    <v-text-field
-                        v-model="hour"
-                        :rules="nameRules"
-                        type="text"
-                        color="teal darken-4"
-                        label="Fecha y hora"
-                    ></v-text-field>
+                    <p class="secondary--text">
+                        Por favor escriba 2 opciones. A veces los templos religiosos no cuentan con disponibilidad del día o de la hora.
+                    </p>
+                    <v-row>
+                        <v-col cols="12" sm="12" md="12" lg="6">
+                            <v-text-field
+                                v-model="Templo1"
+                                :rules="nameRules"
+                                class="mb-2"
+                                color="teal darken-4"
+                                label="Nombre templo #1:"
+                                hint="Ejemplo: Iglesia 1, Iglesia 2"
+                            ></v-text-field>
+                        </v-col>
+                        <v-col cols="12" sm="12" md="12" lg="6">
+                            <v-text-field
+                                v-model="DireccionTemplo1"
+                                :rules="nameRules"
+                                type="text"
+                                color="teal darken-4"
+                                label="Dirección templo #1:"
+                            ></v-text-field>
+                        </v-col>
+                    </v-row>
+                    <v-row>
+                        <v-col cols="12" sm="12" md="12" lg="6">
+                            <v-text-field
+                                v-model="Templo2"
+                                :rules="nameRules"
+                                class="mb-2"
+                                color="teal darken-4"
+                                label="Nombre templo #2:"
+                                hint="Ejemplo: Iglesia 1, Iglesia 2"
+                            ></v-text-field>
+                        </v-col>
+                        <v-col cols="12" sm="12" md="12" lg="6">
+                            <v-text-field
+                                v-model="DireccionTemplo2"
+                                :rules="nameRules"
+                                type="text"
+                                color="teal darken-4"
+                                label="Dirección templo #2:"
+                            ></v-text-field>
+                        </v-col>
+                    </v-row>
+                    <v-row>
+                        <v-col cols="12" sm="12" md="12" lg="6">
+                            <v-text-field
+                                v-model="Fecha"
+                                :rules="nameRules"
+                                class="mb-2"
+                                color="teal darken-4"
+                                type="date"
+                                label="Fecha::"
+                                hint="Ejemplo: Iglesia 1, Iglesia 2"
+                            ></v-text-field>
+                        </v-col>
+                        <v-col cols="12" sm="12" md="3" lg="3">
+                            <v-text-field
+                                v-model="Hora1"
+                                :rules="nameRules"
+                                type="time"
+                                color="teal darken-4"
+                                label="Hora 1:"
+                            ></v-text-field>
+                        </v-col>
+                        <v-col cols="12" sm="12" md="3" lg="3">
+                            <v-text-field
+                                v-model="Hora2"
+                                :rules="nameRules"
+                                type="time"
+                                color="teal darken-4"
+                                label="Hora 2:"
+                            ></v-text-field>
+                        </v-col>
+                    </v-row>
                 </div>
 
                 <div class="secondary--text mb-8">
                     <h3 class="color-blue-dark font-weivght-bold mb-3">
-                        Decoración de sala:
+                        Homenaje virtual
                     </h3>
                     <p class="secondary--text"> 
-                        En su plan usted puede elegir una de estas 3 opciones:
+                        Como parte de nuestros protocolos, le entregaremos un video de 30 segundos a su Whatsapp; el cual podrà compartir con sus familiares y amigos, por ello requerimos que cuanto antes nos comparta una foto al 316 874 7177. También la puedes subir directamente por este medio.
                     </p>
-                    <ul class="secondary--text mb-3">
-                        <li> Homenaje Fotográfico (Retablo grande que se colocará en la sala o se entregará en su domicilio en villavicencio). </li>
-                        <li> Solo arreglo floral. </li>
-                        <li> Arreglo floral con una foto pequeña. </li>
-                    </ul>
-                </div>
+                    <v-row justify="center" align="center">
+                        <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
+                            <v-file-input
+                                v-model="file"
+                                multiple
+                                name="file"
+                                type="file"
+                                accept="image/*"
+                                color="teal darken-3"
+                                label="Adjuntar archivo(s)"
+                                @change="onSelectedFiles(file)"
+                            ></v-file-input>
+                            <cropper
+                                v-model="foto"
+                                :stencil-props="{
+                                    aspectRatio: 1/1,
+                                }"
+                                :canvas="{
+                                    height: 330,
+                                    width: 330
+                                }"
+                                :src="url"
+                                @change="change"
+                            />
+                        </v-col>
+                        <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
+                            <img :src="src" width="300">
+                        </v-col>
+                    </v-row>
+                    <v-row>
+                        <v-col cols="12" sm="10" md="12" lg="10">
+                            <div class="mb-6">
+                                <p class="secondary--text">
+                                    Aquí pueden dejar unas palabras de amor a su “Ser Querido”.
+                                    (Tengan en cuenta Legado, Eneñanzas, Hobbies y Aspectos destacados en vida)  
+                                </p>
+                                <v-text-field
+                                    v-model="palabras"
+                                    :rules="nameRules"
+                                    color="teal darken-4"
+                                    label="Palabras"
+                                ></v-text-field>
+                            </div>
+                        </v-col>
+                    </v-row>
 
-                <v-card class="rounded-xl mb-8">
-                    <v-slide-group active-class="success" show-arrows>
-                         <v-slide-item
-                         v-for="({src}, index) in articlesAdd2" 
-                                :key="index">
-                                <v-card
-                                    color="white"
-                                    class="ma-2 rounded-xl"
-                                    width="215"
-                                >
-                                <v-img
-                                    class="rounded-xl img-principal"  height="250" 
-                                    lazy-src="https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg"
-                                    :src="src"
-                                ></v-img>
-                           </v-card>
-                        </v-slide-item>
-                    </v-slide-group>
-                </v-card>
-
-                <div class="mb-3">
-                    <v-select
-                        v-model="homenaje"
-                        :items="homenajes"
-                        :rules="nameRules"
-                        item-text="text"
-                        item-value="value"
-                        color="teal darken-4"
-                        item-color="teal darken-4"
-                        clearable
-                        label="Respuesta"
-                        @change="selectedRetablo"
-                    ></v-select>                        
-                    <!-- <p class="secondary--text"> 
-                        Si decide entrega en casa <b>(SOLO RETABLO)</b>  por favor escriba la dirección y el número de teléfono de la persona responsable (esto no tiene costo adicional)    
-                    </p>
-                    <v-text-field
-                        v-model="addressDelivery"
-                        color="teal darken-4"
-                        label="Direccion de entrega"
-                        hint="Ejemplo: Carrera 14 e # 22 - 28"
-                        
-                    ></v-text-field> -->
                 </div>
-                <div class="mb-6">
-                    <h3 class="color-blue-dark font-weivght-bold mb-3">
-                        Destino final:
-                    </h3>
-                    <p class="secondary--text">
-                        Es importante que conozca que si es muerte Violenta la cremación se permite únicamente si tiene orden de fiscalia.
-                    </p>
-                    <v-select
-                        v-model="destinyFinal"
-                        :items="destinoFinal"
-                        :rules="nameRules"
-                        item-color="teal darken-4"
-                        color="teal darken-4"
-                        label="Destino final"
-                        hide-details
-                    ></v-select>
-                </div>
-
-                <div class="mb-6">
-                    <h3 class="color-blue-dark font-weight-bold mb-3">
-                        Homenaje virtual:
-                    </h3>
-                    <p class="secondary--text">
-                        En Los Olivos como parte de nuestros protocolos le entregaremos un vídeo de 30 segundos a su Whatsapp el cual podrá compartir con sus familiares y amigos, por ello requerimos que cuanto antes envíes una foto al número de celular entregado en homenajes.   
-                    </p>
-                </div>
-                <div class="mb-6">
-                    <p class="secondary--text">
-                        Dedicale unas palabras de amor a tu ser querido  (ten en cuenta Legado o enseñanzas, Hoobies y aspectos destacados)  
-                    </p>
-                    <v-text-field
-                        v-model="palabras"
-                        :rules="nameRules"
-                        color="teal darken-4"
-                        label="Palabras"
-                    ></v-text-field>
-                </div>
-                <div class="mb-6">
-                    <p class="secondary--text">
-                        Relaciones del ser querido en vida  
-                    </p>
-                    <v-text-field
-                        v-model="kinship"
-                        :rules="nameRules"
-                        color="teal darken-4"
-                        label="Relación"
-                        hint="Ejemplo: Padre, hijo, hermano"
-                    ></v-text-field>
-                </div>
+                <v-row>
+                    <v-col cols="12" sm="10" md="10" lg="10">
+                        <p class="secondary--text">
+                            Elije uno o varios artículos si deseas añadirlos o si quieres mas información. Asì podras consultar con nuestros Coordinadores en cualquier momento para concretar su adquisición adicionál.  
+                        </p>
+                        <v-card class="rounded-xl mb-8">
+                            <v-slide-group active-class="success" show-arrows>
+                                <v-slide-item
+                                    v-for="({src}, index) in articlesAdd2" 
+                                            :key="index">
+                                            <v-card
+                                                color="white"
+                                                class="ma-2 rounded-xl"
+                                                width="215"
+                                            >
+                                            <v-img
+                                                class="rounded-xl img-principal"  height="250" 
+                                                lazy-src="https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg"
+                                                :src="src"
+                                            ></v-img>
+                                    </v-card>
+                                </v-slide-item>
+                            </v-slide-group>
+                        </v-card>
+                    </v-col>
+                </v-row>
+                
                 <div class="secondary--text mb-8">
                     <h3 class="color-blue-dark font-weivght-bold mb-3">
-                        Articulos complementarios: (valor adicional)
+                        Cofres de lujo (Adicionales)
                     </h3>
-                    <p class="mb-6"> 
-                        Elige uno si deseas mas informacion asi podrás preguntarles a nuestros coordinadores en cualquier momento
-                        <br> 
-                    </p>
                     <v-row>
                         <v-slide-group active-class="success" show-arrows>
                             <v-slide-item
@@ -330,7 +422,7 @@
                 </div>
                  <div class="secondary--text mb-8">
                     <h3 class="color-blue-dark font-weivght-bold mb-3">
-                        Urnas de lujo (modelo de referencia): 
+                        Cenizarios 
                     </h3>
                     <v-row>
                         <v-slide-group active-class="success" show-arrows>
@@ -356,67 +448,20 @@
                         </v-slide-group>
                     </v-row>
                 </div>
-               
-                <h3 class="color-blue-dark font-weight-bold mb-3" > Cenizarios:</h3>
-                <v-card class="rounded-xl mb-8 ">
-                    <v-card-text>
-                        <v-row align="center">
-                            <v-col cols="12" sm="8">
-                                <h3 class="color-blue-dark font-weight-bold mb-3"> Cenizarios Av 40: </h3>
-                                <p class="secondary--text">
-                                    Contamos con un espacio humano, en el cual podrán permanecer las cenizas de su ser querido, si desea puede preguntarle a nuestro
-                                    coordinador sobre este lugar que rinde el más grande homenaje al amor!    
-                                </p>
-                            </v-col>
-                            <v-col cols="12" sm="4">
-                                <v-img
-                                    class="rounded-xl"
-                                    lazy-src="https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg"
-                                    src="https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg"
-                                   
-                                ></v-img>
-                            </v-col>                   
-                        </v-row>
-                    </v-card-text>
-                </v-card>
-
-                <v-card class="rounded-xl mb-8 ">
-                    <v-card-text>
-                        <v-row  align="center">
-                            <v-col cols="12" sm="6">
-                                <h3 class="color-blue-dark font-weight-bold mb-3"> Salas Vip: </h3>
-                                <p class="secondary--text"> En el tercer piso encontrará salas más amplias para las exequias de su ser querido </p>
-                            </v-col>
-                            <v-col cols="12" sm="3">
-                                <v-img
-                                    class="rounded-xl img-principal"
-                                    lazy-src="https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg"
-                                    src="https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg"
-                                    height="180"
-                                ></v-img>
-                            </v-col>
-                            <v-col cols="12" sm="3">
-                                <v-img
-                                    class="rounded-xl"
-                                    lazy-src="https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg"
-                                    src="https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg"
-                                    height="180"
-                                ></v-img>
-                            </v-col>                       
-                        </v-row>
-                    </v-card-text>
-                </v-card>
                  <div class="mb-6">
                     <h3 class="color-blue-dark font-weight-bold mb-3">
                         Prendas:
                     </h3>
                     <p class="secondary--text">
-                        Deseamos rendir el más grande homenaje, por favor coordine con los demás familiares las prendas que desean colocarle a su ser querido, sugerimos la siguiente:    
+                        Deseamos rendir el más grande homenaje, por favor coordine con los demás familiares las prendas que desean colocarle a su “Ser Querido”.
+                    </p>
+                    <p class="secondary--text">
+                        Recomendamos lo siguiente:
                     </p>
                     <ul class="secondary--text mb-3">
-                        <li>Hombre: Camisa y Camisilla de algodón, Pantalón, Correa, Chaqueta o Saco, y ropa interior.</li>
-                        <li>Mujer: Blusa, Falda, Vestido, Ropa interior y Brasier (puedes traer el labial de su preferencia).</li>
-                        <li>Si el fallecimiento es muerte violenta, recomendamos camisas mangas largas, blusas no escotadas y prendas oscuras para una adecuada presentación</li>  
+                        <li>Hombre: Camisa y camisilla de algodón, pantalón, correa, chaqueta o saco y ropa interior</li>
+                        <li>Mujer: Blusa, falda, vestido, ropa interior y brasier (pueden traer el labial de su preferencia).</li>
+                        <li>Si el fallecimiento es muerte violenta, recomendamos camisas manga largas, blusas no escotadas y prendas oscuras para una adecuada presentación</li>  
                     </ul>
                 </div>
                 <v-row no-gutters align="center">
@@ -492,20 +537,27 @@ export default {
             ],
             
             // Datos del titular
-            nameTitular: '',
-            address: '',
-            neighborhood: '',
-            municipy: '',
-            cellphone: '',
-            email: '',
+            nameTitular:'',
+            Departamento:'',
+            Ciudad:'',
+            typeId:'',
+            Barrio:'',
+            numeroId:'',
+            direccion:'',
+            email:'',
+            telefono1:'',
+            telefono2:'',
 
             // datos del homenaje
-            nameHomenaje: '',
-            documento: '',
-            afiliaty: '',
+            nameHomenaje:'',
+            NumdocumentoHome:'',
+            typeIdHomenaje:'',
+            TypesId: [ 'C.C', 'C.E', 'T.I'],
+            afiliaty:'',
             afiliatys: [ 'Si', 'No'],
-            lugarFallecimiento: '',
-
+            DepartamentoFallecimiento:'',
+            cityFallecimiento:'',
+  
             // documentos
             documents: '',
             documentos: [ 'Si','No' ],
@@ -536,23 +588,21 @@ export default {
             ],
 
             // templo religioso
-            church: '',
-            hour: '',
-            homenaje: '',
-            homenajes: [ 
-                'Homenaje fotógrafico (Retablo de 58cm x 36cm)', 
-                'Solo arreglo floral',
-                'Arreglo floral y foto pequeña '
-            ],
-            addressDelivery: '',
-
-            // destino final
-            destinyFinal: '',
-            destinoFinal:['Inhumación (sepultura)', 'Cremación'],
-
+            Templo1:'',
+            DireccionTemplo1:'',
+            Templo2:'',
+            DireccionTemplo2:'',
+            Fecha:'',
+            Hora1:'',
+            Hora2:'',
+            // foto
+            file:null,
+            foto:null,
+            url:'',
+            src:'',
+            fotoSerquerido: null,
             // palabras de amor
             palabras: '',
-            kinship :'',
             // cenizarios
             cenizarios: [ 'Cenizario Sencillo', 'Cenizario Doble','Cenizario Octagonal'],
 
@@ -574,6 +624,44 @@ export default {
         }
     },
     methods:{
+        async onSelectedFiles(file){ 
+                const formdata = new FormData();
+                formdata.append("upload_preset", "fotosObituarios");
+                formdata.append("file", file[0]);
+
+                const requestOptions = {
+                    method: 'POST',
+                    body: formdata,
+                    redirect: 'follow'
+                };
+                await fetch("https://api.cloudinary.com/v1_1/dazyyib7u/image/upload", requestOptions)
+                .then(response => response.json())
+                .then(data => {
+                    this.url = data.url
+                })
+            },
+            change({ coordinates, canvas }) {
+			    this.coordinates = coordinates
+                this.foto = canvas.toDataURL()
+                this.src = this.foto
+                this.enviarImg()
+		    },
+            async enviarImg(){
+                const formdata = new FormData();
+                formdata.append("upload_preset", "fotosCortadas");
+                formdata.append("file", this.src);
+
+                const requestOptions = {
+                    method: 'POST',
+                    body: formdata,
+                    redirect: 'follow'
+                };
+                await fetch("https://api.cloudinary.com/v1_1/dazyyib7u/image/upload", requestOptions)
+                .then(response => response.json())
+                .then(data => {
+                    this.fotoSerquerido = data.url
+                })
+            },
         async sendFormHomenajes(){
             this.botton = false
             this.loading = true
@@ -581,36 +669,37 @@ export default {
             this.colorSnack = 'green accent-4'
             this.message = 'Se esta procesando su informacion por favor espere...'
             
-            setTimeout(()=>{ 
-                this.snackbar = false 
-                this.loading = false
-            },2000)
-
-            if(this.nameTitular !== '' && this.address !== '' && this.neighborhood !== '' && this.municipy !== '' && this.cellphone !== '' && this.email !== '' &&
-                this.nameHomenaje !== '' && this.documento !== '' && this.afiliaty !== '' && this.lugarFallecimiento !== '' && this.documents !== '' &&
-                this.exequias !== '' && this.article !== '' && this.church !== '' && this.hour !== '' && this.homenaje !== '' && 
-                this.destinyFinal !== '' && this.kinship !== '' && this.resCaptcha !== false){
+            if(this.terminos !== false && this.resCaptcha !== false){
 
                 const datas = {
-                    nombre_titular: this.nameTitular,
-                    direccion: this.address,
-                    barrio: this.neighborhood,
-                    municipio: this.municipy,
-                    telefono: this.cellphone,
-                    email: this.email,
-                    nombre_homenaje: this.nameHomenaje,
-                    n_documento: this.documento,
-                    afiliado: this.afiliaty,
-                    lugar_fallecimiento: this.lugarFallecimiento,
-                    documentos: this.documents,
-                    exequias: this.exequias,
-                    otro: this.other,
-                    iglesia: this.church,
-                    hora_exequias: this.hour,
-                    retablo: this.homenaje,
-                    palabras: this.palabras,
-                    destino_final: this.destinyFinal,
-                    parentescos: this.kinship,
+                     nameTitular:this.nameTitular,
+                    Departamento:this.Departamento,
+                    Ciudad:this.Ciudad,
+                    typesId:this.typesId,
+                    Barrio:this.Barrio,
+                    numeroId:this.numeroId,
+                    direccion:this.direccion,
+                    email:this.email,
+                    telefono1:this.telefono1,
+                    telefono2:this.telefono2,
+                    nameHomenaje:this.nameHomenaje,
+                    NumdocumentoHome:this.NumdocumentoHome,
+                    typeIdHomenaje:this.typeIdHomenaje,
+                    afiliaty:this.afiliaty,
+                    DepartamentoFallecimiento:this.DepartamentoFallecimiento,
+                    cityFallecimiento:this.cityFallecimiento,
+                    documents:this.documents,
+                    exequias:this.exequias,
+                    other:this.other,
+                    Templo1:this.Templo1,
+                    DireccionTemplo1:this.DireccionTemplo1,
+                    Templo2:this.Templo2,
+                    DireccionTemplo2:this.DireccionTemplo2,
+                    Fecha:this.Fecha,
+                    Hora1:this.Hora1,
+                    Hora2:this.Hora2,
+                    palabras:this.palabras,
+                    file:this.fotoSerquerido,
                     fecha_registro: this.$moment().format('YYYY-MM-DD HH:mm:ss')
                 }
                 const data  = await Post.postFormHomenajes( datas )

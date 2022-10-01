@@ -129,7 +129,7 @@ export default {
 		width: 220px;
 		position: fixed;
 		z-index: 100; 
-		margin-left:88%;
+		margin-left:85%;
 	}
 }
 @media only screen and(max-width: 1380px) { 

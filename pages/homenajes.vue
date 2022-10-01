@@ -9,7 +9,7 @@
 							Planeacion del homenaje:
 						</h1>
 						<p class="secondary--text">
-							Para lograr una oportuna atención en la solicitud, llena el siguiente formulario con la información pertinente
+							Para lograr una excelente y oportuna atención en la solicitud, por favor diligencia el siguiente formulario:
 						</p>
 					</v-col>
 				</v-row>
