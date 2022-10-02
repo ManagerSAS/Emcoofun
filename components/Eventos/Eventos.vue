@@ -50,9 +50,6 @@ export default ({
     data(){
         return{
             eventos:[],
-            colores:[
-
-            ]
         }
     },
     mounted(){

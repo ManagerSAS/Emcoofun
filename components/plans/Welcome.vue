@@ -1,6 +1,6 @@
 <template>
     <div>
-         <v-carousel class="d-none d-lg-block d-xl-block pc"  delimiter-icon="mdi-seed"  hide-delimiter-background  height="600">
+         <v-carousel class="d-none d-lg-block d-xl-block pc"  delimiter-icon="mdi-seed"  hide-delimiter-background  width="100%">
             <v-carousel-item
                 v-for="({src},index) in sliderPc"
                 :key="index"
@@ -35,15 +35,15 @@ export default ({
     data() {
         return{
             sliderPc: [
-                {titulo: "Servicio al cliente", src:"https://res.cloudinary.com/dhl17zanz/image/upload/v1661782025/neiva/banners/twpoop0xabnjnatusebr.png"},
+                {titulo: "Servicio al cliente", src:"https://res.cloudinary.com/dazyyib7u/image/upload/v1664739716/Banners/Home/whsipxelgvgtiggc0ppf.jpg"},
                 {titulo: "La tranquilidad", src:"https://res.cloudinary.com/olivos-villavicencio/image/upload/v1651004790/f3nggn4zbwrsh0u6bsim.jpg"}
             ],
             sliderLaptop: [
-                {titulo: "Servicio al cliente", src:"https://res.cloudinary.com/dhl17zanz/image/upload/v1661782024/neiva/banners/egnkkn27vsdxqx2gw6mk.png"},
+                {titulo: "Servicio al cliente", src:"https://res.cloudinary.com/dazyyib7u/image/upload/v1664739716/Banners/Home/gb6evdadu7hodl4ajawz.jpg"},
                 {titulo: "La tranquilidad", src:"https://res.cloudinary.com/dhl17zanz/image/upload/v1653657970/fubdjyggapah7no5jyen.jpg"}
             ],
             sliderCel: [
-                {titulo: "Servicio al cliente", src:"https://res.cloudinary.com/dhl17zanz/image/upload/v1661782024/neiva/banners/ml5metcv1cuptsydb7dp.png"},
+                {titulo: "Servicio al cliente", src:"https://res.cloudinary.com/dazyyib7u/image/upload/v1664739716/Banners/Home/fk3pfnmcdrsddki33oaq.jpg"},
                 {titulo: "La tranquilidad", src:"https://res.cloudinary.com/dhl17zanz/image/upload/v1653657007/inzy2j5jwpxivy1u5ldy.jpg"}
             ]
         }

@@ -21,7 +21,7 @@
                             <div align="center" justify="center">
                                 <v-btn  style="background-color: #ED6D81; color: white" elevation="2" class="mt-2" v-if="mostrar === false" @click="mostrar = !mostrar">Ver más</v-btn>
                                 <v-btn  style="background-color: #ED6D81; color: white" elevation="2" class="mt-2" v-if="mostrar === true" @click="mostrar = !mostrar">Ver menos</v-btn>
-                                <v-btn  style="background-color: #ED6D81; color: white" elevation="2" class="mt-2">Afiliarme</v-btn>
+                                <v-btn href="/AfiliacionOnLine"  style="background-color: #ED6D81; color: white" elevation="2" class="mt-2">Afiliarme</v-btn>
                             </div>
                         </div>
                     </v-col>

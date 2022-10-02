@@ -2,8 +2,8 @@
     <div>
         <Header/>
         <Welcome/>
-		<v-row justify="center" align="center" class="mt-md-2 mb-md-15 pa-md-0">
-			<v-col cols="12" sm="12" md="12" lg="12" xl="9">
+		<v-row justify="center" align="center" >
+			<v-col cols="12" sm="12" md="12" lg="10" xl="10">
 				<Pay/>
 			</v-col>
 		</v-row>

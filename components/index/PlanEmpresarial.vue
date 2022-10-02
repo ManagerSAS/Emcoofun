@@ -19,7 +19,7 @@
                         class="shadow-principal btn-hover ml-md-5"
                         dark
                         rounded-xl
-                        href="https://api.whatsapp.com/send?phone=+573160176457.&amp;text=Hola! me pueden apoyar?"
+                        href="https://api.whatsapp.com/send?phone=573174041842&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20necesito%20un%20asesor%20empresarial%20de%20Emcoofun%20Los%20Olivos%20por%20favor%20%F0%9F%99%8F%F0%9F%98%80"
                     >
                          CONOCE NUESTRO PLAN
                     </v-btn>

@@ -19,16 +19,16 @@
                 </div>  
             </v-col> 
             <v-col cols="12" sm="10" md="6" lg="6">  
-                <img class="d-none d-xl-block d-lg-block" src="../../static/OtrosServicios/destino_final.png" width="500">
-                <img class="d-none d-md-block d-lg-none" src="../../static/OtrosServicios/destino_final.png" width="300">
-                <img class="d-block d-sm-none"  src="../../static/OtrosServicios/destino_final.png" width="300">
+                <img class="d-none d-xl-block d-lg-block" src="../../static/OtrosServicios/destino_final.png" width="80%">
+                <img class="d-none d-md-block d-lg-none" src="../../static/OtrosServicios/destino_final.png" width="70%">
+                <img class="d-block d-sm-none"  src="../../static/OtrosServicios/destino_final.png" width="70%">
             </v-col>
         </v-row>
         <v-row justify="center" align="center" >
             <v-col cols="10" sm="10" md="6" lg="6">
-                <img class="d-none d-xl-block d-lg-block" src="../../static/OtrosServicios/opciones_destino.png" width="500">
-                <img class="d-none d-md-block d-lg-none" src="../../static/OtrosServicios/opciones_destino.png" width="300">
-                <img  class="d-block d-sm-none"  src="../../static/OtrosServicios/opciones_destino.png" width="300">
+                <img class="d-none d-xl-block d-lg-block" src="../../static/OtrosServicios/opciones_destino.png" width="80%">
+                <img class="d-none d-md-block d-lg-none" src="../../static/OtrosServicios/opciones_destino.png" width="70%">
+                <img  class="d-block d-sm-none"  src="../../static/OtrosServicios/opciones_destino.png" width="70%">
             </v-col>  
             <v-col justify="center" align="start" cols="10" sm="10" md="6" lg="6">
                 <h4 class="mb-6 text-raleway" style="color:#6E1228; font-size: 20px; font-weight: 800;">
@@ -56,16 +56,16 @@
                 </div>  
             </v-col> 
             <v-col cols="10" sm="10" md="6" lg="6">  
-                <img class="d-none d-xl-block d-lg-block" src="../../static/OtrosServicios/otros_servicios.png" width="500">
-                <img class="d-none d-md-block d-lg-none" src="../../static/OtrosServicios/otros_servicios.png" width="300">
-                <img  class="d-block d-sm-none"  src="../../static/OtrosServicios/otros_servicios.png" width="300"> 
+                <img class="d-none d-xl-block d-lg-block" src="../../static/OtrosServicios/otros_servicios.png" width="80%">
+                <img class="d-none d-md-block d-lg-none" src="../../static/OtrosServicios/otros_servicios.png" width="70%">
+                <img  class="d-block d-sm-none"  src="../../static/OtrosServicios/otros_servicios.png" width="70%"> 
             </v-col>
         </v-row>
         <v-row justify="center" align="center" >
             <v-col cols="12" sm="10" md="6" lg="6">
-                <img class="d-none d-xl-block d-lg-block" src="../../static/OtrosServicios/protocolos.png" width="500">
-                <img class="d-none d-md-block d-lg-none" src="../../static/OtrosServicios/protocolos.png" width="300">
-                <img  class="d-block d-sm-none"  src="../../static/OtrosServicios/protocolos.png" width="300">
+                <img class="d-none d-xl-block d-lg-block" src="../../static/OtrosServicios/protocolos.png" width="80%">
+                <img class="d-none d-md-block d-lg-none" src="../../static/OtrosServicios/protocolos.png" width="70%">
+                <img  class="d-block d-sm-none"  src="../../static/OtrosServicios/protocolos.png" width="70%">
             </v-col>
             <v-col justify="center" align="start" cols="10" sm="10" md="6" lg="6">
                 <h4 class="mb-6 text-raleway" style="color:#6E1228; font-size: 20px; font-weight: 800;">
@@ -74,6 +74,11 @@
                 <div justify="center" align="start">
                     <p> <v-icon>mdi-menu-right</v-icon> Despedida</p>
                     <p> <v-icon>mdi-menu-right</v-icon> Entrega de cenizas.</p>
+                    <p> <v-icon>mdi-menu-right</v-icon>Protocolo de entrega del Ser Querido en Sala de Velación.</p>
+                    <p> <v-icon>mdi-menu-right</v-icon>Protocolo de despedida del Ser Querido - Cremación</p>
+                    <p> <v-icon>mdi-menu-right</v-icon>Protocolo de despedida del ser querido - inhumación en Lote</p>
+                    <p> <v-icon>mdi-menu-right</v-icon>Protocolo de despedida del ser querido - inhumación en Bóveda</p>
+                    <p> <v-icon>mdi-menu-right</v-icon>Protocolo de entrega de cenizas del Ser Querido en Parque Cementerio Jardín de Los Olivos.</p>
                 </div>
             </v-col> 
         </v-row>

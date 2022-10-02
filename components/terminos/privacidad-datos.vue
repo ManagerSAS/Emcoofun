@@ -27,7 +27,7 @@
         <v-row >
             <v-col justify="center" align="start" cols="11" sm="10" md="12" lg="12">
                 <p class="secondary--text">
-                    Con el propósito de dar cumplimiento a lo señalado al respecto en la LEY 190 DE 1995 “Estatuto Anticorrupción” y demás normas legales concordantes para la adquisición de bienes del Estado.
+                    Con el propósito de dar cumplimiento a lo señalado al respecto en la LEY 190 DE 1995 “Estatuto Anticorrupción” y demás normas legales concordantes para la adquisición de bienes del Estado.</p>
                 <p class="secondary--text">   1. Declaro que los recursos que entrego provienen de actividades lícitas, de conformidad con la normatividad Colombiana.</p>
                 <p class="secondary--text">    2. Que no admitiré que terceros efectúen depósitos en mis cuentas con fondos provenientes de las actividades ilícitas contempladas en el Código Penal Colombiano o en cualquier otra norma que lo adiciones; ni efectuaré transacciones destinadas a tales actividades o a favor de personas relacionas con las mismas.</p>
                 <p class="secondary--text">    3. Autorizo a resolver cualquier acuerdo, negocio o contrato celebrado con EMCOOFUN en caso de infracción de cualquiera de los ítems contenidos en este documento eximiendo a la entidad de toda responsabilidad que se derive por información errónea, falsa o inexacta que yo hubiere proporcionado en este documento, o de la violación del mismo.</p>

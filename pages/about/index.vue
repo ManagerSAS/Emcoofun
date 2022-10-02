@@ -15,8 +15,9 @@
         </v-row>
         <Sedesolivos/>
         <ParqueCementerio style="background-color: rgb(227,235,235,0.5)"/>
-        <CifrasEmcoofun />
-        <v-row style="background-color: rgb(227,235,235,0.5)" justify="center" align="center" class="mt-15 mb-10 pa-5 pa-md-5">
+        <GaleriaEventos/>
+        <CifrasEmcoofun style="background-color: rgb(227,235,235,0.5)"/>
+        <v-row justify="center" align="center" class="mt-15 mb-10 pa-5 pa-md-5">
 			<v-col cols="12" sm="12" md="12" lg="12" xl="9">
                 <Values />
             </v-col>
@@ -47,6 +48,7 @@ import Footer from '~/components/Footer2.vue'
 import Header from '~/components/Header.vue';
 import ParqueCementerio from '~/components/sedes/parqueCementerio.vue';
 import Sedesolivos from '~/components/index/Sedes.vue';
+import GaleriaEventos from '~/components/about/GaleriaEventos.vue';
 
 
 export default {
@@ -62,7 +64,8 @@ export default {
     Footer,
     Header,
     ParqueCementerio,
-    Sedesolivos
+    Sedesolivos,
+    GaleriaEventos
 },
 }
 </script>

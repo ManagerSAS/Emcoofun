@@ -15,7 +15,7 @@ export default {
     }, 
     async postFormHomenajes( data ){
         const response = await olivosApi.post( forms + '/homenajes', data)
-        return response.data
+        console.log(response)
     },
     async postFormContac( data ){
         const response = await olivosApi.post( forms + '/formulario-contacto', data)
@@ -42,5 +42,4 @@ export default {
         const response = await olivosApi.post( forms + '/UpdateEvent', data)
         return response.data
     },
-
 }

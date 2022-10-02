@@ -83,7 +83,6 @@
                     <v-col cols="12" sm="12" md="12" lg="6">
                         <v-text-field
                             v-model="email"
-                            type="number"
                             :rules="nameRules"
                             color="teal darken-4"
                             label="Email"
@@ -94,6 +93,7 @@
                         <v-text-field
                             v-model="telefono1"
                             :rules="emailRules"
+                            type="number"
                             color="teal darken-4"
                             label="Teléfono"
                             hide-details
@@ -103,6 +103,7 @@
                         <v-text-field
                             v-model="telefono2"
                             color="teal darken-4"
+                            type="number"
                             label="Teléfono # 2"
                             hide-details
                         ></v-text-field>
@@ -672,10 +673,10 @@ export default {
             if(this.terminos !== false && this.resCaptcha !== false){
 
                 const datas = {
-                     nameTitular:this.nameTitular,
+                    nameTitular:this.nameTitular,
                     Departamento:this.Departamento,
                     Ciudad:this.Ciudad,
-                    typesId:this.typesId,
+                    typesId:this.typeId,
                     Barrio:this.Barrio,
                     numeroId:this.numeroId,
                     direccion:this.direccion,
@@ -702,6 +703,7 @@ export default {
                     file:this.fotoSerquerido,
                     fecha_registro: this.$moment().format('YYYY-MM-DD HH:mm:ss')
                 }
+                console.log(datas)
                 const data  = await Post.postFormHomenajes( datas )
                 if(data.error === false){
                     this.botton = true

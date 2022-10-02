@@ -12,7 +12,7 @@
 							v-bind="attrs"
 							v-on="on"
 							fab
-							href="https://api.whatsapp.com/send?phone=+573160176457.&amp;text=Hola! me pueden apoyar?"
+							href="https://api.whatsapp.com/send?phone=573155804703&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20necesito%20asesoria%20online%20de%20Emcoofun%20Los%20Olivos%20por%20favor%20%F0%9F%99%8F%F0%9F%98%80"
 							target="_blank"
 							>
 						</v-btn>

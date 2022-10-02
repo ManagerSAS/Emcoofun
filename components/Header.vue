@@ -53,7 +53,7 @@ export default {
 			btnsNav:[
 				{ text: 'Inicio', to: '/' },
 				{ text: 'Quienes somos', to: '/about' },
-				{ text: 'Planes exequiales', to: 'plans' },
+				{ text: 'Planes exequiales', to: '/plans' },
 				{ text: 'Homenajes', to: '/homenaje'  },
 				{ text: 'Sedes',to: '/sedes' },
 				{ text: 'Productos',to: '/tienda/ProductsCementerio' },

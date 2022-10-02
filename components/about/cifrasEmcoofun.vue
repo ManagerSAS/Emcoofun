@@ -13,9 +13,10 @@
                     <v-row justify="center" align="center">
                         <v-col cols="8">
                             <div class="mb-6">
-                                <p class="text-comfortaa mb-6" style="font-size: 20px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem, voluptatum iusto cumque aperiam reprehenderit, ab consequatur officia consequuntur ut debitis eum veniam maiores pariatur aut facilis suscipit quasi. Ut.
-                                    </p>
-                                <p class="text-comfortaa" style="font-size: 20px">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni ab velit accusantium animi quod eum consequuntur perferendis! Quos eveniet laudantium sunt hic iusto ipsa ipsam porro nulla veritatis, officia quo..</p>
+                                <div class="text-raleway" style="color:#CF4545; font-size: 50px; font-weight: 800;">45 años</div>
+                                <div class="text-raleway mb-6" style="color:#CF4545; font-size: 25px">de historia</div>
+
+                                <p class="text-comfortaa" style="font-size: 20px">Brindando un homenaje al amor, lo que nos convierte en la Red Funeraria más importante de Colombia. Con la mayor cobertura geográfica nacional.</p>
                             </div>
                         </v-col>
                     </v-row>

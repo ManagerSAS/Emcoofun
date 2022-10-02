@@ -30,16 +30,16 @@
                         <v-icon class="botonRedes" >mdi-instagram mdi-36px</v-icon>
                     </div>
                 </v-col>
-                <v-col class="mt-10" cols="12" sm="12" md="3" lg="3" xl="3">
-                    <h3 class="text-comfortaa mb-2" style="color:white; font-size: 22px; font-weight: bold;">
+                <v-col class="mt-10" cols="12" sm="12" md="2" lg="2" xl="2">
+                    <h3 class="text-comfortaa mb-2" style="color:white; font-size: 20px; font-weight: bold;">
                         Enlaces de interés
                     </h3>
                     <div
                         v-for="({text, to}, index) in interesting"
                         :key="index"
-                        class="mb-1 text-comfortaa" style="color:white; font-size: 15px; font-weight: 400; "
+                        class="mb-1 text-comfortaa" style="color:white; font-size: 12px;"
                     >
-                       <img src="../static/iconos/vineta-03.png" width="15">  <Nuxt-link class="text" style="color:white; text-decoration: none;" :to="to"> {{ text }} </Nuxt-link>
+                       <img src="../static/iconos/vineta-03.png" width="15">  <Nuxt-link class="text" style="color:white; text-decoration: none;font-size: 15px;" :to="to "> {{ text }} </Nuxt-link>
                     </div>
                 </v-col>
                 <v-col class="mt-10" cols="12" sm="12" md="3" lg="3" xl="3">
@@ -93,7 +93,7 @@
                         </v-row>
                     </div>
                 </v-col>
-                <v-col class="mt-10" cols="12" sm="12" md="3" lg="3" xl="3">
+                <v-col class="mt-10" cols="12" sm="12" md="4" lg="4" xl="4">
                     <v-row  align="center" justify="center" class="align-items-center p-green-light" >
                         <v-col cols="12" md="12" lg="11" color="#26A69A" class="text-center text-md-center">
                             <img src="../static/iconos/contacto.png" alt="" height="40">
@@ -197,7 +197,7 @@
                                     ></v-textarea>
                                 </v-col>
                             </v-row>
-                            <!-- <Gcaptcha class="mt-2" @captcha="verifyCaptcha"/> -->
+                            <Gcaptcha class="mt-2" @captcha="verifyCaptcha"/>
                             <v-row class="mt-5">
                                 <v-row no-gutters align="center">
                                     <v-col cols="2">
@@ -249,10 +249,10 @@
 </template>
 <script>
 import Post from './post/post'
-// import Gcaptcha from './forms/recaptcha.vue'
+import Gcaptcha from './forms/recaptcha.vue'
 export default {
     components:{
-        // Gcaptcha
+        Gcaptcha
     },
     data(){
         return{
@@ -261,10 +261,11 @@ export default {
                 { text: 'Solicitudes en línea', to: '/solicitudes-en-linea' },               
                 { text: 'Proteccion de datos', to: '/terminosycondiciones/privacidad-de-datos' },
                 { text: 'Registro de Defuncion', to: '/registration' },
-                { text: 'Velacion virtual', to: '/' },
+                { text: 'Velacion virtual', to: '/VelacionVirtual' },
                 { text: 'Actualizacion RTE', to: '/ActualizacionRTE' },
                 { text: '¿Preguntas frecuentes?', to: '/PreguntasFrecuentes' },
-                { text: 'NotiOlivos', to: '/Eventos' },
+                { text: 'Facturacion Electronica', to: '/FacturacionElectronica/FacturacionElectronica' },
+                { text: 'NotiOlivos', to: '/Notiolivos' },
                 { text: 'Los Olivos Obituarios', to: '/OlivosObituarios/Login' },
 
             ],
