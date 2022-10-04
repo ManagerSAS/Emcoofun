@@ -36,10 +36,12 @@
           data() {
             return{
               Sercvicios:[
-                  {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347671/DesatinoFinalCenizario/nx2ds1f852no8oredu2a.png'},
-                  {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347670/DesatinoFinalCenizario/byjwxfnadc8hvbkyo50r.png'},
-                  {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347671/DesatinoFinalCenizario/eptdon2krsfoctxjs1fq.png'},
-                  {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347670/DesatinoFinalCenizario/cuz2bjfqahzj8uwrudqt.png'},
+                  {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664919927/Productos/Jardineria/m9nwcm1pwsuuaf2ch7ax.png'},
+                  {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664919926/Productos/Jardineria/wwt4mcwdpucp7a5hxauo.png'},
+                  {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664919926/Productos/Jardineria/chrcvqlzrh5xwyunxgc2.png'},
+                  {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664919926/Productos/Jardineria/h76eoca4yyzi0j2zwqnv.png'},
+                  {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664919926/Productos/Jardineria/ugeshsunvanlqhbdybuy.png'},
+                  {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664919926/Productos/Jardineria/mms1piudhhybuzxrjt2i.png'},
               ],
               settings  :{
                 "autoplay": true,

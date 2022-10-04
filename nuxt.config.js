@@ -17,12 +17,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      // { rel: 'stylesheet', type: 'text/css', href: 'https://unpkg.com/vue-croppa/dist/vue-croppa.min.css' },
     ],
     script: [
-      // {
-      //   src: "https://unpkg.com/vue-croppa/dist/vue-croppa.min.js",
-      // },
+
     ]
 
   },
@@ -72,7 +69,7 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
+      lang: 'es'
     }
   },
 

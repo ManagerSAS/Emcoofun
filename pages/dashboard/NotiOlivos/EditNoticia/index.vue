@@ -11,6 +11,7 @@
    import Header from '~/components/OlivosObituarios/layouts/Header.vue';
     import Footer from '~/components/OlivosObituarios/layouts/Footer.vue';
    export default {
+    middleware: 'auth',
        components:{
             EditNoticia,
             Header,

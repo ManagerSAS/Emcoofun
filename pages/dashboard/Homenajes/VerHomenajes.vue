@@ -15,6 +15,7 @@ import Footer from '~/components/OlivosObituarios/layouts/Footer.vue';
 import VerHomenajes from '~/components/OlivosObituarios/Homenajes/VerHomenajes.vue';
 
 export default {
+    middleware: 'auth',
     components:{
     Header,
     Footer,

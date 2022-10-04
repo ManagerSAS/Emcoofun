@@ -85,16 +85,21 @@ export default ({
         data() {
           return{
             Cenizario:[
-                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347671/DesatinoFinalCenizario/nx2ds1f852no8oredu2a.png'},
-                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347670/DesatinoFinalCenizario/byjwxfnadc8hvbkyo50r.png'},
-                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347671/DesatinoFinalCenizario/eptdon2krsfoctxjs1fq.png'},
-                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347670/DesatinoFinalCenizario/cuz2bjfqahzj8uwrudqt.png'},
+                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347671/Productos/cenizarios/eptdon2krsfoctxjs1fq.png'},
+                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347671/Productos/cenizarios/nx2ds1f852no8oredu2a.png'},
+                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347671/Productos/cenizarios/aotuvdycxhjksglnoltd.png'},
+                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347670/Productos/cenizarios/byjwxfnadc8hvbkyo50r.png'},
+                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347670/Productos/cenizarios/kt5jsn8kod6iptowum2e.png'},
+                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347670/Productos/cenizarios/jtunaxwp1jeb8nuwjksa.png'},
+                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347669/Productos/cenizarios/xbcthnr9mcfocklgykhr.png'},
             ],
             CofresCenizario:[
-                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347671/DesatinoFinalCenizario/nx2ds1f852no8oredu2a.png'},
-                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347670/DesatinoFinalCenizario/byjwxfnadc8hvbkyo50r.png'},
-                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347671/DesatinoFinalCenizario/eptdon2krsfoctxjs1fq.png'},
-                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347670/DesatinoFinalCenizario/cuz2bjfqahzj8uwrudqt.png'},
+                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664920906/Productos/cenizarios/hvguljdgvmbkbykh7800.png'},
+                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664920906/Productos/cenizarios/hg3dqofvlawlksvt0yp0.png'},
+                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664920905/Productos/cenizarios/sy5meczd9leruov1o9ng.png'},
+                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664920905/Productos/cenizarios/alishtpsfvi0jnibwkwg.png'},
+                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664920905/Productos/cenizarios/pmoasy1ozzmslzd3sraz.png'},
+                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664920905/Productos/cenizarios/w9vc56mcgiyxkjf9paqm.png'},
             ],
             settings  :{
                 "autoplay": true,

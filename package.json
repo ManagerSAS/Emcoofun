@@ -29,6 +29,7 @@
     "ngx-cloudinary-upload-widget": "^0.0.7",
     "nuxt": "^2.15.7",
     "read-excel-file": "^5.4.7",
+    "universal-cookie": "^4.0.4",
     "vue-advanced-cropper": "^1.11.3",
     "vue-axios": "^3.3.7",
     "vue-carousel": "^0.18.0",

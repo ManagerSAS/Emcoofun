@@ -11,10 +11,12 @@ import Dashboard from '~/components/OlivosObituarios/dashboard/index.vue';
 import Footer from '~/components/OlivosObituarios/layouts/Footer.vue';
 
 export default {
+    middleware: 'auth',
     components:{
-    Header,
-    Dashboard,
-    Footer
-},
+        Header,
+        Dashboard,
+        Footer
+    },
+
 }
 </script>

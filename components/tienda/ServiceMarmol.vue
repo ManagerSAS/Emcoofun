@@ -36,10 +36,11 @@
           data() {
             return{
               Sercvicios:[
-                  {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347671/DesatinoFinalCenizario/nx2ds1f852no8oredu2a.png'},
-                  {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347670/DesatinoFinalCenizario/byjwxfnadc8hvbkyo50r.png'},
-                  {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347671/DesatinoFinalCenizario/eptdon2krsfoctxjs1fq.png'},
-                  {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1663347670/DesatinoFinalCenizario/cuz2bjfqahzj8uwrudqt.png'},
+                  {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664919831/Productos/Marmoleria/ezlb4jbhly0eomz34sbj.png'},
+                  {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664919831/Productos/Marmoleria/cjchaxmpaa0lvfstyts5.png'},
+                  {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664919831/Productos/Marmoleria/ewhtfz9tjll5zspel2uy.png'},
+                  {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664919831/Productos/Marmoleria/ijymocyjh6ywzruxdelz.png'},
+                  {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664919831/Productos/Marmoleria/uuwqowekuofeoyzqm3hf.png'},
               ],
               settings  :{
                 "autoplay": true,

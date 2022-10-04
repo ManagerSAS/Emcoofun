@@ -15,6 +15,7 @@ import Footer from '~/components/OlivosObituarios/layouts/Footer.vue';
 import GenerarReporte from '~/components/OlivosObituarios/GenerarReporte/GenerarReporte.vue';
 
 export default {
+    middleware: 'auth',
     components:{
     Header,
     Footer,

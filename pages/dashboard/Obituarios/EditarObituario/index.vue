@@ -15,6 +15,7 @@ import EditarObituario from '~/components/OlivosObituarios/EditarObituario/index
 import Footer from '~/components/OlivosObituarios/layouts/Footer.vue';
 
 export default {
+    middleware: 'auth',
     components:{
     Header,
     EditarObituario,
