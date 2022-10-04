@@ -9,7 +9,7 @@
         </v-row>
         <Asociados style="background-color: rgb(227,235,235,0.5)"/>
         <v-row justify="center" align="center" class="mt-5">
-			<v-col cols="12" sm="12" md="12" lg="12" xl="10">
+            <v-col cols="12" sm="12" md="12" lg="12" xl="10">
                 <Redolivos/>
             </v-col>
         </v-row>

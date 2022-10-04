@@ -142,7 +142,7 @@
                     <v-col cols="12" sm="12" md="12" lg="6">
                         <v-select
                             v-model="typeIdHomenaje"
-                            :items="TypesId"
+                            :items="TypesIdHomenaje"
                             :rules="nameRules"
                             color="teal darken-4"
                             item-color="teal darken-4"
@@ -554,6 +554,7 @@ export default {
             NumdocumentoHome:'',
             typeIdHomenaje:'',
             TypesId: [ 'C.C', 'C.E', 'T.I'],
+            TypesIdHomenaje: [ 'C.C', 'C.E', 'T.I'],
             afiliaty:'',
             afiliatys: [ 'Si', 'No'],
             DepartamentoFallecimiento:'',

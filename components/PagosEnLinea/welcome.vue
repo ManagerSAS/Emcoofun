@@ -13,7 +13,7 @@
     @media only screen and (min-width: 1600px) {
         .btnPisition{
             position: relative;
-            top: 30em;
+            top: 25em;
         }
         .BannerPagos{
             background-image: url('../../static/banners/pagospc.jpg');

@@ -12,11 +12,10 @@
                 <v-form ref="formObtuario" autocomplete="off">
                     <v-row>
                         <v-col cols="12" sm="10" md="5" lg="5">
-                            <p class="text-raleway" style="color:#003B4C;"> Ciudad donde se visualizara el Obituario.</p>
+                            <p class="text-raleway" style="color:#003B4C;">Ciudad donde se visualizara el Obituario.</p>
                             <v-select
                                 v-model="ciudad"
                                 :items="ciudades"
-                                item-value="value"
                                 item-text="text"
                                 :rules="nameRules"
                                 item-color="teal darken-4"
@@ -272,12 +271,12 @@
                             </h1>
                         </v-col>
                     </v-row>
+                    <p class="text-raleway" style="color:#003B4C; font-size: 20px;" justify="center" align="center">Antes de Adjuntar foto validar si el titular ya agrego una en el formulario de homenajes*</p>
                     <v-row justify="center" align="center">
                         <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
                             <v-file-input
                                 v-model="file"
                                 multiple
-                                name="file"
                                 type="file"
                                 accept="image/*"
                                 color="teal darken-3"
@@ -321,7 +320,6 @@
                             ></v-progress-circular>
                         </v-col>
                     </v-row>
-                    
                     <v-row justify="center" align="center">
                         <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
                             <v-btn
@@ -382,8 +380,6 @@ import Post from '../../post/Obituarios'
                 LugarExequias:'',
                 FechaSalidaSala:'',
                 HoraSalidaSala:'',
-                foto:null,
-                file:null,
                 
                 // Inhumacion
                 DestinoFinal:'',
@@ -399,6 +395,9 @@ import Post from '../../post/Obituarios'
                 message:'',
                 colorSnackbar:'',
                 loading: false,
+                // foto
+                file:null,
+                foto:null,
                 url:'',
                 src:'',
                 fotoSerquerido: null,
@@ -406,7 +405,8 @@ import Post from '../../post/Obituarios'
             }
         },
         methods:{
-            async onSelectedFiles(file){ 
+            async onSelectedFiles(file){
+            
                 const formdata = new FormData();
                 formdata.append("upload_preset", "fotosObituarios");
                 formdata.append("file", file[0]);
@@ -445,8 +445,10 @@ import Post from '../../post/Obituarios'
                 })
             },
             async EnviarInfor(){
-                
-                if(this.ciudad !=='' && this.NDocumento !== '' && this.nombre1 !== '' && this.nombre2 !== '' && this.apellido1 !== ''&& this.apellido2 !== '' && this.fechaNacimiento !== ''&& this.fechaFallecimiento !== '' && this.LugarFallecimiento !== '' && this.Notaria !== '' && this.NombreSala !== ''&& this.fechaExequias !== '' && this.HoraExequias !== '' && this.Departamento !== '' && this.LugarExequias !== '' && this.DestinoFinal !== '' && this.HoraInhumacion !== '' && this.Ciudad !== '' && this.Sector !== '' && this.Ubicacion !== '' && this.NRegistro !== '' && this.FechaExhumacion !== '' && this.fotoSerquerido !== ''){
+                if(this.fotoSerquerido === null){
+                    this.fotoSerquerido = ''
+                }
+                if(this.ciudad !=='' && this.NDocumento !== '' && this.nombre1 !== '' && this.nombre2 !== '' && this.apellido1 !== ''&& this.apellido2 !== '' && this.fechaNacimiento !== ''&& this.fechaFallecimiento !== '' && this.LugarFallecimiento !== '' && this.Notaria !== '' && this.NombreSala !== ''&& this.fechaExequias !== '' && this.HoraExequias !== '' && this.Departamento !== '' && this.LugarExequias !== '' && this.DestinoFinal !== '' && this.HoraInhumacion !== '' && this.Ciudad !== '' && this.Sector !== '' && this.Ubicacion !== '' && this.NRegistro !== '' && this.FechaExhumacion !== '' ){
 
                     this.snackbar= true
                     this.loading= true
@@ -486,10 +488,8 @@ import Post from '../../post/Obituarios'
                         FechaExhumacion: this.FechaExhumacion,
                         fechaRegistro: hoy.getFullYear() + '-' + ( hoy.getMonth() + 1 )  + '-' +  hoy.getDate()
                     }
-
-                    console.log(datos)
-
                     const data = await Post.postObituario( datos )
+                    console.log(data.data)
                     if(data.data.error === false){
                         this.snackbar = true
                         this.loading= false
@@ -497,7 +497,7 @@ import Post from '../../post/Obituarios'
                         this.message = 'El obituario se ha creado exitosamente.'
                         setTimeout(()=>{ this.snackbar = false },3000)
                         this.$refs.formObtuario.reset()
-                        this.src=''
+                        this.src = ''
                     }
                     else{
                         this.snackbar = true

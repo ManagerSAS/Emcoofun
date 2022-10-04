@@ -259,6 +259,35 @@
                         </v-expansion-panel>
                     </v-expansion-panels>
                     <!-- ------- -->
+                    <v-expansion-panels class="mt-6 rounded-xl">
+                        <v-expansion-panel class="rounded-xl">
+                            <v-expansion-panel-header expand-icon="mdi-menu-down pa-1">
+                                <h4 class="color-blue-dark font-weight-bold">
+                                    Condiciones para solictar el servicio
+                                </h4>
+                            </v-expansion-panel-header>
+                            <v-expansion-panel-content>
+                                <p class="text-raleway color-blue-dark" >
+
+                                </p>
+                            </v-expansion-panel-content>
+                        </v-expansion-panel>
+                    </v-expansion-panels>
+                    <v-expansion-panels class="mt-6 rounded-xl">
+                        <v-expansion-panel class="rounded-xl">
+                            <v-expansion-panel-header expand-icon="mdi-menu-down pa-1">
+                                <h4 class="color-blue-dark font-weight-bold">
+                                    Seguro
+                                </h4>
+                            </v-expansion-panel-header>
+                            <v-expansion-panel-content>
+                                <p class="text-raleway color-blue-dark" >
+                                    
+                                </p>
+                            </v-expansion-panel-content>
+                        </v-expansion-panel>
+                    </v-expansion-panels>
+                    <!-- ----- -->
                     <div class="mt-5">
                         <h4 class="text-raleway" style="color:#003B4C;"> Autorizo expresamente a EMCOOFUN LOS OLIVOS, en el desarrollo de sus funciones a facturar el valor total a pagar del <span class="font-weight-bold ">PLAN DE PREVISIÓN ONLINE con el cual estoy de acuerdo a las políticas descritas en este formato.</span></h4>
                     </div>

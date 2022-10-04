@@ -16,7 +16,6 @@
                             append-icon="mdi-magnify"
                             label="Datos de busqueda"
                             @keyup.enter="Enviar"
-                            
                         ></v-text-field>
                     </v-card-title>
                     <v-data-table
@@ -335,7 +334,7 @@
                             <v-row class="ma-2" justify="center" align="center">
                                 <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
                                     <v-img
-                                        v-model="editedItem.file"
+                                        v-model="editedItem.foto"
                                         color="teal accent-4"
                                         label="Numero registro"
                                         :src="editedItem.foto"
@@ -431,10 +430,9 @@ import Post from '../../post/Obituarios'
             Hora1:'',
             Hora2:'',
             palabras:'',
-            file:'',
+            foto:'',
             fecha_registro:'',
 		},
-
         dialogEditItem: false,
         datos:'',
         Homenaje:[],
@@ -451,15 +449,11 @@ import Post from '../../post/Obituarios'
             this.dialogEditItem = true
         },
         async editarHomenaje(){
-
             this.loading= true
             this.snackbar= true
             this.colorSnackbar = 'green accent-4'
             this.message = 'Por Favor Espere...'
-
-            setTimeout(()=>{ this.snackbar = false },4000)
             const response = await Post.editHomenaje(this.editedItem);
-
             if(response.error === false){
                 this.loading= false
                 this.snackbar= true
@@ -471,12 +465,14 @@ import Post from '../../post/Obituarios'
             location.reload()
         },
         async Enviar(){
+            this.Homenaje=[]
             this.loading= true
             this.snackbar= true
             this.colorSnackbar = 'teal accent-4'
             this.message = 'Consultando homenaje... Por Favor Espere...'
             if(this.datos !== ''){
                 const response = await Post.ConsultHomenaje(this.datos);
+                console.log(response)
                 if(response.error === false){
                     
                     this.loading= false
@@ -515,9 +511,11 @@ import Post from '../../post/Obituarios'
                             Hora1: element.Hora1,
                             Hora2: element.Hora2,
                             palabras: element.palabras,
-                            file: element.file,
+                            foto: element.foto,
                             fecha_registro: element.fecha_registro,
                         })
+
+                        console.log(this.Homenaje)
                     })
                 }else{
                     this.snackbar = true

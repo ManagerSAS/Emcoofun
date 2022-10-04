@@ -6,18 +6,18 @@
                     <v-app-bar-nav-icon style="background: linear-gradient(to right, #9CC9D2, #499893);" class="text-comfortaa ma-5"  @click="drawer = !drawer"></v-app-bar-nav-icon>
                     <v-navigation-drawer justify="center" align="start" v-model="drawer"  app temporary> 
                         <v-list density="compact">
-                            <v-subheader><a href = "https://www.losolivosneiva.com/"><img src="../../../static/nav/logo.webp" alt="" width="110px" ></a></v-subheader>
+                            <v-subheader><a href = "/"><img src="../../../static/nav/logo.webp" alt="" width="110px" ></a></v-subheader>
                             <v-list-item
                                 v-for="({ text, to }, index) in  btnsNav" 
                                 :key="index"
                                 :to="{ path: to }"
-                                class="color-blue-dark "  
+                                class="color-blue-dark"  
                             >
                                 <v-list-item-title >{{text}}</v-list-item-title>
                             </v-list-item>
                         </v-list>
                     </v-navigation-drawer>
-                    <a href = "https://www.losolivosneiva.com/"><img src="@/static/nav/logo_blanco.webp" alt="" width="150px" ></a>
+                    <a href = "/"><img src="@/static/nav/logo_blanco.webp" alt="" width="150px" ></a>
                 </v-col>
                 <v-spacer></v-spacer>
                 <v-col justify="center" align="center" cols="12" sm="2" md="2" lg="2" xl="2">

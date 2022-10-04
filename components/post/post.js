@@ -9,13 +9,9 @@ export default {
         console.log(response)
         return response.data
     },
-    postFormAuxilios( data ){
-        olivosApi.post( forms + '/auxilios-funerarios', data)
-            .then( response => response.json() )
-    }, 
     async postFormHomenajes( data ){
         const response = await olivosApi.post( forms + '/homenajes', data)
-        console.log(response)
+        return response.data
     },
     async postFormContac( data ){
         const response = await olivosApi.post( forms + '/formulario-contacto', data)
