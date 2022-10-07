@@ -1,7 +1,7 @@
 <template>
-		<div>
+	<div>
 			<Header/>
-			<div class="flotante" justify="end" align="end">
+			<!-- <div class="flotante" justify="end" align="end">
 				<v-tooltip left color="success" v-model="show">
 					<template v-slot:activator="{ on, attrs }">
 						<v-btn
@@ -39,10 +39,10 @@
 					target="_blank"
 					>
 				</v-btn>
-			</div>	
+			</div>	 -->
 			<Welcome/>
 			<CallToAction style="background-color: rgb(227,235,235,0.5)"/>
-			<Cards />
+			<Cards justify="center" align="center" class="mt-5 mb-4"/>
 			<Sedes style="background-color: rgb(227,235,235,0.5)"/>
 			<parqueCementerio />
 			<Asistence style="background-color: rgb(227,235,235,0.2)"/>
@@ -56,6 +56,7 @@
 			<PlanEmpresarial />
 			<!-- <Footer style="background: linear-gradient(270deg, #8fddaa 0%, #59ab9b 100%);"/> -->
 			<Footer2 style="background: linear-gradient(270deg, #8fddaa 0%, #59ab9b 100%);"/>
+
 		</div>
 </template>
 
@@ -163,19 +164,4 @@ export default {
 		margin-left:200px;
 	}
 }
-
-.d-100{
-    max-width: 100%;
-}
-.card-shadow{
-	box-shadow: 1px 60px 55px -25px #00000018 !important;
-}
-.shadow-principal{
-    box-shadow: 1px 2px 45px -8px rgba(0, 0, 0, 0.18) !important;
-}
-.card-shadow-2{
-	box-shadow: 1px 35px 45px -25px rgba(0,0,0,0.09412) !important;
-}
-
-
 </style>

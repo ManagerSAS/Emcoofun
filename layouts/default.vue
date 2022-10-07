@@ -3,7 +3,7 @@
     	<v-main>	
         		<Nuxt />
     	</v-main>
-  </v-app>
+  	</v-app>
 </template>
 
 

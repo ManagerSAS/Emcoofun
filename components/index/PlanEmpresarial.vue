@@ -1,5 +1,5 @@
 <template>
-    <section class="mb-3"  justify="center" align="center">
+    <v-container fluid class="mb-3"  justify="center" align="center">
         <v-row  justify="center" align="center" class="mt-5 ml-8 mr-5">
             <v-col cols="12" sm="12" md="11" lg="8" justify="start" align="center" class="mt-5">
                 <h2 class="text-raleway font-weight-bold" style="color: #E83E58; font-size: 40px;"> Plan exequial empresarial </h2> <br>
@@ -27,9 +27,9 @@
             <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="5" xl="5">
                 <img class="d-none d-xl-block d-lg-block" src="../../static/planEmpresa.png" width="600">
                 <img class="d-none d-md-block d-lg-none" src="../../static/planEmpresa.png" width="450">
-                <img class="d-block d-sm-none" src="../../static/planEmpresa.png" width="350">
+                <img class="d-block d-sm-none" src="../../static/planEmpresa.png" width="300">
             </v-col>
         </v-row>
-    </section>
+    </v-container >
 
 </template>

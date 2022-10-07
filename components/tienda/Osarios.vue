@@ -19,7 +19,7 @@
                          </div>
                      </VueSlickCarousel>
                      <div>
-                         <v-btn href="https://api.whatsapp.com/send?phone=573164708294&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20quiero%20el%20servicio%20de%20destino%20final%20OSARIOS%20%20%F0%9F%8E%9A%EF%B8%8F%20%2C%20me%20pueden%20brindar%20asesor%C3%ADa%20por%20favor%20%20%F0%9F%99%8F" justify="center" align="center" class="mb-5 text-comfortaa font-weight-black botn" >
+                         <v-btn target="_blank" href="https://api.whatsapp.com/send?phone=573164708294&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20quiero%20el%20servicio%20de%20destino%20final%20OSARIOS%20%20%F0%9F%8E%9A%EF%B8%8F%20%2C%20me%20pueden%20brindar%20asesor%C3%ADa%20por%20favor%20%20%F0%9F%99%8F" justify="center" align="center" class="mb-5 text-comfortaa font-weight-black botn" >
                          <span class="text-yellow">Comprar</span> 
                          </v-btn>
                      </div>
@@ -45,7 +45,7 @@
                          </div>
                      </VueSlickCarousel>
                      <div>
-                         <v-btn href="https://api.whatsapp.com/send?phone=573164708294&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20quiero%20el%20servicio%20de%20destino%20final%20OSARIOS%20%20%F0%9F%8E%9A%EF%B8%8F%20%2C%20me%20pueden%20brindar%20asesor%C3%ADa%20por%20favor%20%20%F0%9F%99%8F" justify="center" align="center" class="mb-5 text-comfortaa font-weight-black botn" >
+                         <v-btn target="_blank" href="https://api.whatsapp.com/send?phone=573164708294&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20quiero%20el%20servicio%20de%20destino%20final%20OSARIOS%20%20%F0%9F%8E%9A%EF%B8%8F%20%2C%20me%20pueden%20brindar%20asesor%C3%ADa%20por%20favor%20%20%F0%9F%99%8F" justify="center" align="center" class="mb-5 text-comfortaa font-weight-black botn" >
                          <span class="text-yellow">Comprar</span> 
                          </v-btn>
                      </div>
@@ -76,10 +76,12 @@
          data() {
            return{
              Osarios:[
-                 {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664920667/Productos/Osario/kjzhyopaqtg6xym2rkxw.png'},
-                 {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664920667/Productos/Osario/kgpfbcxadaf7zyvakvvy.png'},
-                 {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664920667/Productos/Osario/uom880hepinttqmmacnq.png'},
-                 {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664920668/Productos/Osario/h1qifxk46vvu4tux9acp.png'},
+                 {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664989800/Productos/Osario/xnk2fsfhzrz46zimrmub.png'},
+                 {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664989800/Productos/Osario/lofaxvotmxh00yjhxrbn.png'},
+                 {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664989800/Productos/Osario/z84gnfaresgm0vikvj0q.png'},
+                 {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664989800/Productos/Osario/db6lhiqhiuuabvq6wmjg.png'},
+                 {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664989800/Productos/Osario/rmxfwntsqsshwlgq2dof.png'},
+                 {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664396400/Productos/Osario/myldtjr9a2jhygp6jmh0.png'},
              ],
              CofresOsarios:[
                 {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664920667/Productos/Osario/kjzhyopaqtg6xym2rkxw.png'},

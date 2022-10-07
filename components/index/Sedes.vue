@@ -1,54 +1,53 @@
 <template>
-    <div justify="center" align="center" >
-            <v-row class="mt-5" justify="center" align="center" >
-                <v-col cols="12" sm="10" md="11" lg="8" justify="center" align="center">
-                    <h2 class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 40px;"> Sedes Los  Olivos Emcoofun </h2> <br>
-                    <p class="text-comfortaa secondary--text"> Los Olivos EMCOOFUN promueve la previsión, prestación de servicios exequiales y de destino final integrales de excelente calidad. Contribuyendo a la inclusión social de sus asociados, “con rango de acción en los departamentos del Huila, Caquetá y  Putumayo </p>
-                </v-col>
-            </v-row>
-            <v-row justify="center" align="center">
-                <v-col cols="12" sm="10" md="12" lg="10" justify="center" align="center">
-                    <v-slide-group 
-                        class="pa-4"
-                        active-class="success"
-                        show-arrows
-                        
+    <v-container fluid justify="center" align="center" >
+        <v-row class="mt-5" justify="center" align="center" >
+            <v-col cols="12" sm="12" md="11" lg="8" justify="center" align="center">
+                <h2 class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 40px;"> Sedes Los  Olivos Emcoofun </h2> <br>
+                <p class="text-comfortaa secondary--text"> Los Olivos EMCOOFUN promueve la previsión, prestación de servicios exequiales y de destino final integrales de excelente calidad. Contribuyendo a la inclusión social de sus asociados, “con rango de acción en los departamentos del Huila, Caquetá y  Putumayo </p>
+            </v-col>
+        </v-row>
+        <v-row justify="center" align="center">
+            <v-col cols="12" sm="12" md="12" lg="10" justify="center" align="center">
+                <v-slide-group 
+                    class="pa-4"
+                    active-class="success"
+                    show-arrows
+                >
+                    <v-slide-item
+                        v-for="({src, text, direccion}, index) in articlesAdd2" 
+                        :key="index"
                     >
-                        <v-slide-item
-                            v-for="({src, text, direccion}, index) in articlesAdd2" 
-                            :key="index"
-                        >
-                    <div class="text-md-center mx-auto mb-8 mr-3 "
-                        justify="center" align="center"
-                    >
-                            <v-img
-                                class="img-principal mr-3 ml-3"   
-                                :src="src"
-                                height="200"
-                                width="300"
-                            ></v-img>
-                            <v-btn justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa font-weight-black" >
-                                {{ text }}
-                            </v-btn> <br>
-                        <div class="text-raleway font-weight-black" > 
-                            {{ direccion }} 
-                        </div>
-                    </div>    
-                </v-slide-item>
-            </v-slide-group>
-                </v-col>
-            </v-row>
-            <v-btn 
-                style="background-color: #003B4C "
-                class="shadow-principal btn-hover mb-10 text-comfortaa"
-                rounded-xl
-                dark
-                large
-                to="sedes" 
-            >
-                Conoce nuestras sedes Emcoofun
-            </v-btn>
-    </div>
+                <div class="text-md-center mx-auto mb-8 mr-3 "
+                    justify="center" align="center"
+                >
+                        <v-img
+                            class="img-principal mr-3 ml-3"   
+                            :src="src"
+                            height="200"
+                            width="300"
+                        ></v-img>
+                        <v-btn justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa font-weight-black" >
+                            {{ text }}
+                        </v-btn> <br>
+                    <div class="text-raleway font-weight-black" > 
+                        {{ direccion }} 
+                    </div>
+                </div>    
+            </v-slide-item>
+        </v-slide-group>
+            </v-col>
+        </v-row>
+        <v-btn 
+            style="background-color: #003B4C "
+            class="shadow-principal btn-hover mb-10 text-comfortaa"
+            rounded-xl
+            dark
+            large
+            to="sedes" 
+        >
+            Conoce nuestras sedes Emcoofun
+        </v-btn>
+    </v-container >
 </template>
 <script>
 

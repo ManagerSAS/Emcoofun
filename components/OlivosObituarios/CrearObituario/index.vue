@@ -406,7 +406,6 @@ import Post from '../../post/Obituarios'
         },
         methods:{
             async onSelectedFiles(file){
-            
                 const formdata = new FormData();
                 formdata.append("upload_preset", "fotosObituarios");
                 formdata.append("file", file[0]);

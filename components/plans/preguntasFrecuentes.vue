@@ -1,6 +1,7 @@
 <template>
     <div class="pa-2">
-       <v-row>
+       <v-row justify="center" 
+                    align="center">
            <v-col cols="12" sm="11" md="12" lg="12">
                 <p 
                     class="text-h3 texto mt-5 mb-lg-10 " 

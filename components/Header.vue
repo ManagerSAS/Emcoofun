@@ -1,34 +1,33 @@
 <template>
-      <div>
-          <v-toolbar  
-                  color="white"
-                  class="pl-md-16 pr-md-16 fixed-bar"
-                  flat
-                  dense fixed
-                  height="80"
-              >        
-      
-                  <v-toolbar-title class="pt-3">
-                      <a href = "https://www.losolivosneiva.com/"><img src="../static/nav/logo.webp" alt="" width="130px" ></a>
-                  </v-toolbar-title>
-              
-                  <v-spacer></v-spacer>
-      
-                  <NuxtLink 
-                      v-for="({ text, to }, index) in  btnsNav" 
-                      :key="index"
-                      :to="{ path: to }"
-                      class="s-acortag color-blue-dark d-none d-md-none d-lg-flex"    
-                  > {{ text }}
-                  </NuxtLink> 
-                  
-                  <v-app-bar-nav-icon class="d-block d-lg-none d-md-block d-sm-block"  @click="drawer = !drawer"></v-app-bar-nav-icon>
-                  
-              </v-toolbar>
+    <div>
+        <v-toolbar  
+            color="white"
+            class="fixed-bar"
+            dense fixed
+            height="80"
+            >        
+
+            <v-toolbar-title class="pt-3">
+                <a href = "/"><img src="../static/nav/logo.webp" alt="" width="130px" ></a>
+            </v-toolbar-title>
+        
+            <v-spacer></v-spacer>
+
+            <NuxtLink 
+                v-for="({ text, to }, index) in  btnsNav" 
+                :key="index"
+                :to="{ path: to }"
+                class="s-acortag color-blue-dark d-none d-md-none d-lg-flex"    
+            > {{ text }}
+            </NuxtLink> 
+            
+            <v-app-bar-nav-icon class="d-block d-lg-none d-md-block d-sm-block"  @click="drawer = !drawer"></v-app-bar-nav-icon>
+            
+        </v-toolbar>
       
               <v-navigation-drawer v-model="drawer"  app temporary> 
                   <v-list density="compact">
-                      <v-subheader><a href = "https://www.losolivosneiva.com/"><img src="../static/nav/logo.webp" alt="" width="130px" ></a></v-subheader>
+                      <v-subheader><a href = "/"><img src="../static/nav/logo.webp" alt="" width="130px" ></a></v-subheader>
                       <v-list-item
                           v-for="({ text, to }, index) in  btnsNav" 
                           :key="index"
@@ -39,7 +38,7 @@
                       </v-list-item>
                   </v-list>
               </v-navigation-drawer>
-      </div>  
+    </div>  
 </template>
 <script>
 

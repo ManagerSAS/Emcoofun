@@ -61,7 +61,7 @@
                         </div>
                     </VueSlickCarousel>
                     <div>
-                        <v-btn href="https://api.whatsapp.com/send?phone=573164708294&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20quiero%20el%20servicio%20de%20destino%20final%20COLUMBARIO%20EN%20FLOR%20DE%20LOTO%20%F0%9F%8C%BB%20%2C%20me%20pueden%20brindar%20asesor%C3%ADa%20por%20favor%20%20%F0%9F%99%8F" justify="center" align="center" class="text-comfortaa font-weight-black botn" >
+                        <v-btn target="_blank" href="https://api.whatsapp.com/send?phone=573164708294&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20quiero%20el%20servicio%20de%20destino%20final%20COLUMBARIO%20EN%20FLOR%20DE%20LOTO%20%F0%9F%8C%BB%20%2C%20me%20pueden%20brindar%20asesor%C3%ADa%20por%20favor%20%20%F0%9F%99%8F" justify="center" align="center" class="text-comfortaa font-weight-black botn" >
                             Comprar
                         </v-btn>
                     </div>
@@ -84,7 +84,7 @@
                         </div>
                     </VueSlickCarousel>
                     <div>
-                        <v-btn href="https://api.whatsapp.com/send?phone=573164708294&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20quiero%20el%20servicio%20de%20destino%20final%20COLUMBARIO%20AL%20REDEDOR%20DEL%20LAGO%20%F0%9F%8C%B7%20%2C%20me%20pueden%20brindar%20asesor%C3%ADa%20por%20favor%20%20%F0%9F%99%8F" justify="center" align="center" class="text-comfortaa font-weight-black botn" >
+                        <v-btn target="_blank" href="https://api.whatsapp.com/send?phone=573164708294&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20quiero%20el%20servicio%20de%20destino%20final%20COLUMBARIO%20AL%20REDEDOR%20DEL%20LAGO%20%F0%9F%8C%B7%20%2C%20me%20pueden%20brindar%20asesor%C3%ADa%20por%20favor%20%20%F0%9F%99%8F" justify="center" align="center" class="text-comfortaa font-weight-black botn" >
                             Comprar
                         </v-btn>
                     </div>
@@ -107,7 +107,7 @@
                         </div>
                     </VueSlickCarousel>
                     <div>
-                        <v-btn href="https://api.whatsapp.com/send?phone=573164708294&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20quiero%20el%20servicio%20de%20destino%20final%20COLUMBARIO%20M%C3%9ALTIPLE%20(entre%20b%C3%B3vedas)%20%F0%9F%8C%B7%20%2C%20me%20pueden%20brindar%20asesor%C3%ADa%20por%20favor%20%20%F0%9F%99%8F" justify="center" align="center" class="text-comfortaa font-weight-black botn" >
+                        <v-btn target="_blank" href="https://api.whatsapp.com/send?phone=573164708294&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20quiero%20el%20servicio%20de%20destino%20final%20COLUMBARIO%20M%C3%9ALTIPLE%20(entre%20b%C3%B3vedas)%20%F0%9F%8C%B7%20%2C%20me%20pueden%20brindar%20asesor%C3%ADa%20por%20favor%20%20%F0%9F%99%8F" justify="center" align="center" class="text-comfortaa font-weight-black botn" >
                             Comprar
                         </v-btn>
                     </div>

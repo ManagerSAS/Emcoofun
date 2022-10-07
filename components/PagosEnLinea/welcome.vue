@@ -2,7 +2,7 @@
     <div class="BannerPagos">
         <v-row >
             <v-col justify="center" align="center" class="mt-15" cols="12" sm="12" md="8" lg="8">
-                <v-btn class="btnPisition" style="background: linear-gradient(to right, #4B9098, #14625D); color: #FCF0A5;">
+                <v-btn target="_blank" href="https://losolivos.co/" class="btnPisition" style="background: linear-gradient(to right, #4B9098, #14625D); color: #FCF0A5;">
                     Red Olivos
                 </v-btn>
             </v-col>
