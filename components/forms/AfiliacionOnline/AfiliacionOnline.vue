@@ -13,7 +13,7 @@
                                 v-model="Correo"
                                 :rules="emailRules"
                                 color="teal darken-4"
-                                label="Correo Electronico"
+                                label="Correo Electrónico"
                            >
                            </v-text-field>
                         </v-col>
@@ -63,7 +63,7 @@
                                     type="number"
                                     :rules="nameRules"
                                     color="teal darken-4"
-                                    label="Numero de Documento"
+                                    label="Número de Documento"
                                 >
                                 </v-text-field>
                             </v-col>
@@ -143,7 +143,7 @@
                                     v-model="Direccion1"
                                     :rules="nameRules"
                                     color="teal darken-4"
-                                    label="Direccion de Residencia"
+                                    label="Dirección de Residencia"
                             >
                             </v-text-field>
                             </v-col>
@@ -152,7 +152,7 @@
                                 <v-text-field
                                     v-model="Direccion2"
                                     color="teal darken-4"
-                                    label="Direccion de Residencia"
+                                    label="Dirección de Residencia"
                             >
                             </v-text-field>
                             </v-col>
@@ -163,7 +163,7 @@
                                     type="number"
                                     :rules="nameRules"
                                     color="teal darken-4"
-                                    label="Numero de Contacto"
+                                    label="Número de Contacto"
                                 ></v-text-field>
                             </v-col>
                         </v-row>
@@ -174,7 +174,7 @@
                                     v-model="numPhone2"
                                     type="number"
                                     color="teal darken-4"
-                                    label="Numero de Contacto"
+                                    label="Número de Contacto"
                                 ></v-text-field>
                             </v-col>
                         </v-row>
@@ -259,35 +259,7 @@
                         </v-expansion-panel>
                     </v-expansion-panels>
                     <!-- ------- -->
-                    <v-expansion-panels class="mt-6 rounded-xl">
-                        <v-expansion-panel class="rounded-xl">
-                            <v-expansion-panel-header expand-icon="mdi-menu-down pa-1">
-                                <h4 class="color-blue-dark font-weight-bold">
-                                    Condiciones para solictar el servicio
-                                </h4>
-                            </v-expansion-panel-header>
-                            <v-expansion-panel-content>
-                                <p class="text-raleway color-blue-dark" >
-
-                                </p>
-                            </v-expansion-panel-content>
-                        </v-expansion-panel>
-                    </v-expansion-panels>
-                    <v-expansion-panels class="mt-6 rounded-xl">
-                        <v-expansion-panel class="rounded-xl">
-                            <v-expansion-panel-header expand-icon="mdi-menu-down pa-1">
-                                <h4 class="color-blue-dark font-weight-bold">
-                                    Seguro
-                                </h4>
-                            </v-expansion-panel-header>
-                            <v-expansion-panel-content>
-                                <p class="text-raleway color-blue-dark" >
-                                    
-                                </p>
-                            </v-expansion-panel-content>
-                        </v-expansion-panel>
-                    </v-expansion-panels>
-                    <!-- ----- -->
+                
                     <div class="mt-5">
                         <h4 class="text-raleway" style="color:#003B4C;"> Autorizo expresamente a EMCOOFUN LOS OLIVOS, en el desarrollo de sus funciones a facturar el valor total a pagar del <span class="font-weight-bold ">PLAN DE PREVISIÓN ONLINE con el cual estoy de acuerdo a las políticas descritas en este formato.</span></h4>
                     </div>
@@ -301,7 +273,7 @@
                             > </v-checkbox>
                         </v-col>
                         <v-col cols="7">
-                            <Nuxt-link target="_blank" to="/terminosycondiciones/privacidad-de-datos"> Ver términos y Condiciones</Nuxt-link>
+                            <Nuxt-link target="_blank" to="/terminosycondiciones/privacidad-de-datos">Ver términos y Condiciones</Nuxt-link>
                         </v-col>
                     </v-row>
                     <v-row no-gutters align="center">
@@ -310,11 +282,11 @@
                                 v-model="declaracion"
                                 :rules="nameRules"
                                 color="teal darken-4"
-                                label=" Si, declaro y autorizo"
+                                label=" Sí, declaro y autorizo"
                             > </v-checkbox>
                         </v-col>
                         <v-col cols="7">
-                            <Nuxt-link target="_blank" to="/terminosycondiciones/privacidad-de-datos"> Autrizacion y Declaracion</Nuxt-link>
+                            <Nuxt-link target="_blank" to="/terminosycondiciones/privacidad-de-datos">Autrización y Declaracion</Nuxt-link>
                         </v-col>
                     </v-row>
                     <!-- captcha -->
@@ -337,7 +309,7 @@
                         <v-row class="mt-5" justify="center" align="center">
                         <v-col cols="12" sm="12" md="12" lg="12">
                             <h4 class="mb-6 text-raleway" style="color:#003B4C;">
-                                Por favor al finalizar el formulario realice el pago en la siguiente opcion para la formalización del contrato con Los Olivos Emcoofun
+                                Por favor, al finalizar el formulario realice el pago en la siguiente opción para la formalización del contrato con Los Olivos Emcoofun
                             </h4>
                             <form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
                                 <input type="image" border="0" alt="" src="http://www.payulatam.com/img-secure-2015/boton_pagar_mediano.png" onClick="this.form.urlOrigen.value = window.location.href;"/>

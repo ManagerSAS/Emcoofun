@@ -1,9 +1,9 @@
 <template>
-    <div>
+    <div >
         <v-toolbar  
             color="white"
-            class="fixed-bar"
-            dense fixed
+            
+            dense 
             height="80"
             >        
 
@@ -51,7 +51,7 @@ export default {
 			fixed: false,
 			btnsNav:[
 				{ text: 'Inicio', to: '/' },
-				{ text: 'Quienes somos', to: '/about' },
+				{ text: '¿Quiénes somos?', to: '/about' },
 				{ text: 'Planes exequiales', to: '/plans' },
 				{ text: 'Homenajes', to: '/homenaje'  },
 				{ text: 'Sedes',to: '/sedes' },

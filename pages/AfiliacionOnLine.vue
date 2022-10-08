@@ -6,7 +6,7 @@
 		        <v-row justify="center" align="center">
 					<v-col cols="12" sm="12" md="12" lg="10" class="text-comfortaa">
 						<h1 style="color:#003B4C; font-size: 40px; background: linear-gradient(to right, #EC6480, #E83E58); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" class="color-blue-dark font-weight-bold mb-6">
-							Afiliaciones en linea
+							Afiliaciones en línea
 						</h1>
 						<div style="font-size:15px">
 							<p class="secondary--text">
@@ -25,7 +25,7 @@
 								<span style="color:#003B4C; font-weight: bold;">Florencia:</span> (4) 435 3314 - (4) 435 1433 - (4) 435 7558 - 316 8747213
 							</div>
 							<div>
-								<span style="color:#003B4C; font-weight: bold;">Garzon:</span> (8) 833 2021 - (8) 833 4879 - 316 8747185   
+								<span style="color:#003B4C; font-weight: bold;">Garzón:</span> (8) 833 2021 - (8) 833 4879 - 316 8747185   
 							</div>
 							<div>
 								<span style="color:#003B4C; font-weight: bold;">Pitalito:</span> (8) 836 1961 - (8) 836 6929 - 316 8747226

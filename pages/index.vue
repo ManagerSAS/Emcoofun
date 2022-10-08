@@ -1,63 +1,57 @@
 <template>
 	<div>
-			<Header/>
-			<!-- <div class="flotante" justify="end" align="end">
-				<v-tooltip left color="success" v-model="show">
-					<template v-slot:activator="{ on, attrs }">
-						<v-btn
-							elevation="24"
-							class="whatsapp"
-							width="50"
-							height="50"
-							v-bind="attrs"
-							v-on="on"
-							fab
-							href="https://api.whatsapp.com/send?phone=573155804703&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20necesito%20asesoria%20online%20de%20Emcoofun%20Los%20Olivos%20por%20favor%20%F0%9F%99%8F%F0%9F%98%80"
-							target="_blank"
-							>
-						</v-btn>
-					</template>
-					<span>Chat Online</span>
-				</v-tooltip><br>
-				<v-btn
-					elevation="24"
-					class="facebook mt-2"
-					width="50"
-					height="50"
-					fab
-					href="https://www.facebook.com/LosOlivosEmcoofun"
-					target="_blank"
-					>
-				</v-btn><br>
-				<v-btn
-					elevation="24"
-					class="instagram mt-2"
-					width="50"
-					height="50"
-					fab
-					href="https://www.instagram.com/losolivosemcoofun/"
-					target="_blank"
-					>
-				</v-btn>
-			</div>	 -->
-			<Welcome/>
-			<CallToAction style="background-color: rgb(227,235,235,0.5)"/>
-			<Cards justify="center" align="center" class="mt-5 mb-4"/>
-			<Sedes style="background-color: rgb(227,235,235,0.5)"/>
-			<parqueCementerio />
-			<Asistence style="background-color: rgb(227,235,235,0.2)"/>
-			<Asociados />	
-			<Testimonios style="background-color: rgb(227,235,235,0.5)"/>
-			<!-- <v-row justify="center" align="center" class="ml-5 mt-15  mr-5">
-				<v-col cols="12" sm="12" md="12" lg="12" xl="9">
-					<Formcontact/>
-				</v-col>
-			</v-row> -->
-			<PlanEmpresarial />
-			<!-- <Footer style="background: linear-gradient(270deg, #8fddaa 0%, #59ab9b 100%);"/> -->
-			<Footer2 style="background: linear-gradient(270deg, #8fddaa 0%, #59ab9b 100%);"/>
-
-		</div>
+		<Header/>
+		<!-- <div class="flotante" justify="end" align="end">
+			<v-tooltip left color="success" v-model="show">
+				<template v-slot:activator="{ on, attrs }">
+					<v-btn
+						elevation="24"
+						class="whatsapp"
+						width="50"
+						height="50"
+						v-bind="attrs"
+						v-on="on"
+						fab
+						href="https://api.whatsapp.com/send?phone=573155804703&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20necesito%20asesoria%20online%20de%20Emcoofun%20Los%20Olivos%20por%20favor%20%F0%9F%99%8F%F0%9F%98%80"
+						target="_blank"
+						>
+					</v-btn>
+				</template>
+				<span>Chat Online</span>
+			</v-tooltip><br>
+			<v-btn
+				elevation="24"
+				class="facebook mt-2"
+				width="50"
+				height="50"
+				fab
+				href="https://www.facebook.com/LosOlivosEmcoofun"
+				target="_blank"
+				>
+			</v-btn><br>
+			<v-btn
+				elevation="24"
+				class="instagram mt-2"
+				width="50"
+				height="50"
+				fab
+				href="https://www.instagram.com/losolivosemcoofun/"
+				target="_blank"
+				>
+			</v-btn>
+		</div>	 -->
+		<Welcome/>
+		<CallToAction style="background-color: rgb(227,235,235,0.5)"/>
+		<Cards justify="center" align="center" class="mt-5 mb-4"/>
+		<Sedes style="background-color: rgb(227,235,235,0.5)"/>
+		<parqueCementerio />
+		<Asistence style="background-color: rgb(227,235,235,0.2)"/>
+		<Asociados />	
+		<Testimonios style="background-color: rgb(227,235,235,0.5)"/>
+		<PlanEmpresarial />
+		<!-- <Footer style="background: linear-gradient(270deg, #8fddaa 0%, #59ab9b 100%);"/> -->
+		<Footer2 style="background: linear-gradient(270deg, #8fddaa 0%, #59ab9b 100%);"/>
+	</div>
 </template>
 
 <script>
@@ -67,11 +61,9 @@ import Cards from '~/components/index/Cards.vue';
 import Asistence from '~/components/index/Asistencias.vue';
 import Sedes from '~/components/index/Sedes.vue';
 import Asociados from '~/components/index/Asociados.vue';
-// import Formcontact from '~/components/index/FormContact.vue';
 import Testimonios from '~/components/index/Testimonios.vue';
 import parqueCementerio from '~/components/index/parquecementerio.vue'
 import PlanEmpresarial from '~/components/index/PlanEmpresarial.vue';
-// import Footer from '~/components/Footer.vue'
 import Header from '~/components/Header.vue';
 import CallToAction from '~/components/index/CallToAction.vue';
 import Footer2 from '~/components/Footer2.vue';
@@ -82,12 +74,10 @@ export default {
     Cards,
     Sedes,
     Asociados,
-    // Formcontact,
     parqueCementerio,
     Asistence,
     Testimonios,
     PlanEmpresarial,
-    // Footer,
     Header,
     CallToAction,
     Footer2

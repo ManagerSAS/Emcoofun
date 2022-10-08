@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid>
+    <div>
         <v-carousel class="d-none d-lg-block d-xl-block pc" width="100%" :cycle="true"  delimiter-icon="mdi-seed"  hide-delimiter-background show-arrows-on-hover >
             <v-carousel-item
                 
@@ -28,7 +28,7 @@
             >
             </v-carousel-item>
         </v-carousel>
-    </v-container>
+    </div>
 </template>
 <script>
 export default ({
