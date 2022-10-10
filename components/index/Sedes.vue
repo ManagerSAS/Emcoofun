@@ -17,36 +17,41 @@
                         v-for="({src, text, direccion}, index) in articlesAdd2" 
                         :key="index"
                     >
-                <div class="text-md-center mx-auto mb-8 mr-3 "
-                    justify="center" align="center"
-                >
-                        <v-img
-                            class="img-principal mr-3 ml-3"   
-                            :src="src"
-                            height="200"
-                            width="300"
-                        ></v-img>
-                        <v-btn justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa font-weight-black" >
-                            {{ text }}
-                        </v-btn> <br>
-                    <div class="text-raleway font-weight-black" > 
-                        {{ direccion }} 
-                    </div>
-                </div>    
-            </v-slide-item>
-        </v-slide-group>
+                        <div class="text-md-center mx-auto mb-8 mr-3 "
+                            justify="center" align="center"
+                        >
+                        
+                                <v-img
+                                    class="img-principal mr-3 ml-3"   
+                                    :src="src"
+                                    height="200"
+                                    width="300"
+                                ></v-img>
+                                <v-btn   style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa font-weight-black" >
+                                    {{ text }}
+                                </v-btn> <br>
+                            <div class="text-raleway font-weight-black" > 
+                                {{ direccion }} 
+                            </div>
+                        </div>    
+                    </v-slide-item>
+                </v-slide-group>
             </v-col>
         </v-row>
-        <v-btn 
-            style="background-color: #003B4C "
-            class="shadow-principal btn-hover mb-10 text-comfortaa"
-            rounded-xl
-            dark
-            large
-            to="sedes" 
-        >
-            Conoce nuestras sedes Emcoofun
-        </v-btn>
+        <v-row justify="center" align="center">
+            <v-col justify="center" align="center">
+                <v-btn 
+                    style="background-color: #003B4C "
+                    class="shadow-principal btn-hover mb-10 text-comfortaa"
+                    rounded-xl
+                    dark
+                    large
+                    to="sedes" 
+                >
+                    Conoce nuestras sedes Emcoofun
+                </v-btn>
+            </v-col>
+        </v-row>
     </v-container >
 </template>
 <script>

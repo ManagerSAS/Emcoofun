@@ -1,9 +1,9 @@
 <template>
-    <div class="pt-5 fixed-bar header-section">
-        <div justify="center" align="center" >
-            <v-row >
+    <v-container fluid>
+        <div class="pt-5 fixed-bar header-section">
+            <v-row justify="center" align="center">
                 <v-col cols="12" sm="2" md="2" lg="2" xl="2">
-                    <v-app-bar-nav-icon style="background: linear-gradient(to right, #9CC9D2, #499893);" class="text-comfortaa ma-5"  @click="drawer = !drawer"></v-app-bar-nav-icon>
+                    <v-app-bar-nav-icon style="background: linear-gradient(to right, #9CC9D2, #499893);" class="text-comfortaa "  @click="drawer = !drawer"></v-app-bar-nav-icon>
                     <v-navigation-drawer justify="center" align="start" v-model="drawer"  app temporary> 
                         <v-list density="compact">
                             <v-subheader><a href = "/"><img src="../../../static/nav/logo.webp" alt="" width="110px" ></a></v-subheader>
@@ -21,13 +21,13 @@
                 </v-col>
                 <v-spacer></v-spacer>
                 <v-col justify="center" align="center" cols="12" sm="2" md="2" lg="2" xl="2">
-                   <v-btn class="text-comfortaa ma-5" style="background: linear-gradient(to right, #9CC9D2, #499893); " @click="logout">
+                    <v-btn class="text-comfortaa ma-5" style="background: linear-gradient(to right, #9CC9D2, #499893); " @click="logout">
                     Cerrar 
-                   </v-btn>
+                    </v-btn>
                 </v-col>
             </v-row>
-        </div>
-    </div>  
+        </div>  
+    </v-container>
 </template>
 <script>
 
@@ -61,7 +61,6 @@ export default {
 <style lang="scss" scoped>
 .header-section {
     min-height: 100px;
-    
 }
 
 </style>

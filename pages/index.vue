@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<Header/>
-		<!-- <div class="flotante" justify="end" align="end">
+		<div class="flotante" justify="end" align="end">
 			<v-tooltip left color="success" v-model="show">
 				<template v-slot:activator="{ on, attrs }">
 					<v-btn
@@ -39,7 +39,7 @@
 				target="_blank"
 				>
 			</v-btn>
-		</div>	 -->
+		</div>	
 		<Welcome/>
 		<CallToAction style="background-color: rgb(227,235,235,0.5)"/>
 		<Cards justify="center" align="center" class="mt-5 mb-4"/>

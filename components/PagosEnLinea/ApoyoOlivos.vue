@@ -1,5 +1,5 @@
 <template>
-    <div style="background: linear-gradient(to right, #B7456A, #650F2E)">
+    <v-container fluid style="background: linear-gradient(to right, #B7456A, #650F2E)">
         <v-row>
             <v-col justify="center" align="center">
                 <div>
@@ -9,20 +9,19 @@
                 </div>
             </v-col>
         </v-row>
-         <v-row justify="center" align="center">
-            <v-col class="position" cols="12" sm="12" lg="5" md="6"  xl="5">
-                 <v-btn
-                 class="text-raleway" style=" font-size: 20px; font-weight: 800; color:#410411;"
-                 to="/sedes"
-                 color="#FBEFA3">
+        <v-row justify="center" align="center">
+            <v-col justify="center" align="center" class="position" cols="12" sm="12" lg="5" md="6"  xl="5">
+                    <v-btn
+                    class="text-raleway" style=" font-size: 20px; font-weight: 800; color:#410411;"
+                    to="/sedes"
+                    color="#FBEFA3">
                     Nuestros Cementerios
                 </v-btn>
             </v-col>
         </v-row>
-    </div>
+    </v-container>
 </template>
 <style lang="scss">
-
 @media only screen and(min-width: 1440px) { 
 	.position{
         position: relative;
@@ -42,13 +41,11 @@
         top:53%;
     }
 }
-@media only screen and(max-width: 430px) { 
+@media only screen and(max-width: 414px) { 
 	.position{
+        width: 400px;
         position: relative;
-        top:40%;
-        left: 20%;
-        align-self: center;
-        align-content: center;
+        top:-1em;
     }
 }
 </style>

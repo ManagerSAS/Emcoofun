@@ -1,120 +1,124 @@
 <template>
-     <div >
-        <v-row justify="center" align="center">
-            <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
-                <h1 class="mb-6 text-raleway" style="color:#003B4C; font-size: 36px; font-weight: 800;">
-                    Crear Evento
-                </h1>
-            </v-col>
-        </v-row>
-        <v-row>
-            <v-col>
-                <v-form ref="formObtuario" autocomplete="off">
-                    <v-row justify="center" align="center">
-                        <v-col justify="center" align="start" cols="12" sm="12" md="12" lg="12">
-                            <h1 class="mb-6 text-raleway" style="color:#003B4C; font-size: 25px; font-weight: 800;">
-                                Datos Del evento
-                            </h1>
-                        </v-col>
-                    </v-row>
-                    <v-row justify="center" align="center">
-                        <v-col justify="center" align="start" cols="12" sm="10" md="4" lg="4">
-                            <v-text-field
-                                v-model="NombreEvento"
-                                :rules="nameRules"
-                                color="teal darken-4"
-                                label="Nombre del Evento"
-                           >
-                           </v-text-field>
-                        </v-col>
-                        <v-col justify="center" align="start" cols="12" sm="10" md="4" lg="4">
-                            <v-text-field
-                                v-model="LugarEvento"
-                                :rules="nameRules"
-                                color="teal darken-4"
-                                label="Lugar del Evento"
-                           >
-                           </v-text-field>
-                        </v-col>
-                        <v-col justify="center" align="start" cols="12" sm="10" md="4" lg="4">
-                            <v-text-field
-                                v-model="fechaEvento"
-                                type="date"
-                                :rules="nameRules"
-                                color="teal darken-4"
-                                label="Fecha Evento"
-                            ></v-text-field>
-                        </v-col>
-                    </v-row>
-                    <v-row justify="center" align="center">
-                        <v-col justify="center" align="start" cols="12" sm="10" md="4" lg="4">
-                            <v-text-field
-                                v-model="HoraEvento"
-                                type="time"
-                                :rules="nameRules"
-                                color="teal darken-4"
-                                label="Hora del Evento"
-                            ></v-text-field>
-                        </v-col>
-                        <v-col justify="center" align="start" cols="12" sm="10" md="4" lg="4">
-                            <v-file-input
-                                v-model="file"
-                                multiple
-                                name="file"
-                                type="file"
-                                accept="image/*"
-                                color="teal darken-3"
-                                label="Adjuntar archivo(s)"
-                                @change="onSelectedFiles(file)"
-                            ></v-file-input>
-                        </v-col>
-                        <v-col justify="center" align="start" cols="12" sm="10" md="4" lg="4">
-                            <v-text-field
-                                v-model="DescripcionEvento"
-                                :rules="nameRules"
-                                row="2"
-                                color="teal darken-4"
-                                label="Descripcion del evento"
-                           >
-                           </v-text-field>
-                        </v-col>
-                    </v-row>
-                    <v-row justify="center" align="center">
-                        <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
-                            <v-btn
-                                class="ma-2"
-                                outlined
-                                color="teal darken-4"
-                                @click="CrearEvento()"
+     <v-container fluid>
+        <v-row justify="center" align="center" class="mt-15 mb-15">
+            <v-col  cols="12" sm="12" md="10" lg="8" xl="8">
+                <v-row justify="center" align="center">
+                    <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
+                        <h1 class="mb-6 text-raleway" style="color:#003B4C; font-size: 36px; font-weight: 800;">
+                            Crear Evento
+                        </h1>
+                    </v-col>
+                </v-row>
+                <v-row>
+                    <v-col>
+                        <v-form ref="formObtuario" autocomplete="off">
+                            <v-row justify="center" align="center">
+                                <v-col justify="center" align="start" cols="12" sm="12" md="12" lg="12">
+                                    <h1 class="mb-6 text-raleway" style="color:#003B4C; font-size: 25px; font-weight: 800;">
+                                        Datos Del evento
+                                    </h1>
+                                </v-col>
+                            </v-row>
+                            <v-row justify="center" align="center">
+                                <v-col justify="center" align="start" cols="12" sm="10" md="4" lg="4">
+                                    <v-text-field
+                                        v-model="NombreEvento"
+                                        :rules="nameRules"
+                                        color="teal darken-4"
+                                        label="Nombre del Evento"
                                 >
-                                Crear Evento
-                            </v-btn>
-                        </v-col>
-                    </v-row>
-                    <v-row justify="center" align="center">
-                        <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
-                            <v-snackbar
-                                class="pb-8"
-                                :timeout="3000"
-                                :value="snackbar"
-                                :color="colorSnackbar"
-                                rounded="pill"
-                            > {{ message }} </v-snackbar>
-                        </v-col>
-                    </v-row>
-                    <v-row justify="center" align="center">
-                        <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
-                            <v-progress-circular
-                                v-show="loading"
-                                indeterminate
-                                color="teal darken-3"
-                            ></v-progress-circular>
-                        </v-col>
-                    </v-row>
-                </v-form>
+                                </v-text-field>
+                                </v-col>
+                                <v-col justify="center" align="start" cols="12" sm="10" md="4" lg="4">
+                                    <v-text-field
+                                        v-model="LugarEvento"
+                                        :rules="nameRules"
+                                        color="teal darken-4"
+                                        label="Lugar del Evento"
+                                >
+                                </v-text-field>
+                                </v-col>
+                                <v-col justify="center" align="start" cols="12" sm="10" md="4" lg="4">
+                                    <v-text-field
+                                        v-model="fechaEvento"
+                                        type="date"
+                                        :rules="nameRules"
+                                        color="teal darken-4"
+                                        label="Fecha Evento"
+                                    ></v-text-field>
+                                </v-col>
+                            </v-row>
+                            <v-row justify="center" align="center">
+                                <v-col justify="center" align="start" cols="12" sm="10" md="4" lg="4">
+                                    <v-text-field
+                                        v-model="HoraEvento"
+                                        type="time"
+                                        :rules="nameRules"
+                                        color="teal darken-4"
+                                        label="Hora del Evento"
+                                    ></v-text-field>
+                                </v-col>
+                                <v-col justify="center" align="start" cols="12" sm="10" md="4" lg="4">
+                                    <v-file-input
+                                        v-model="file"
+                                        multiple
+                                        name="file"
+                                        type="file"
+                                        accept="image/*"
+                                        color="teal darken-3"
+                                        label="Adjuntar archivo(s)"
+                                        @change="onSelectedFiles(file)"
+                                    ></v-file-input>
+                                </v-col>
+                                <v-col justify="center" align="start" cols="12" sm="10" md="4" lg="4">
+                                    <v-text-field
+                                        v-model="DescripcionEvento"
+                                        :rules="nameRules"
+                                        row="2"
+                                        color="teal darken-4"
+                                        label="Descripcion del evento"
+                                >
+                                </v-text-field>
+                                </v-col>
+                            </v-row>
+                            <v-row justify="center" align="center">
+                                <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
+                                    <v-btn
+                                        class="ma-2"
+                                        outlined
+                                        color="teal darken-4"
+                                        @click="CrearEvento()"
+                                        >
+                                        Crear Evento
+                                    </v-btn>
+                                </v-col>
+                            </v-row>
+                            <v-row justify="center" align="center">
+                                <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
+                                    <v-snackbar
+                                        class="pb-8"
+                                        :timeout="3000"
+                                        :value="snackbar"
+                                        :color="colorSnackbar"
+                                        rounded="pill"
+                                    > {{ message }} </v-snackbar>
+                                </v-col>
+                            </v-row>
+                            <v-row justify="center" align="center">
+                                <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
+                                    <v-progress-circular
+                                        v-show="loading"
+                                        indeterminate
+                                        color="teal darken-3"
+                                    ></v-progress-circular>
+                                </v-col>
+                            </v-row>
+                        </v-form>
+                    </v-col>
+                </v-row>
             </v-col>
         </v-row>
-    </div>
+    </v-container>
 </template>
 <script>
 import Post from '../../../post/post'

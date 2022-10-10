@@ -1,7 +1,7 @@
 <template>
     <v-container fluid>
         <v-row justify="center" align="center" class="mt-5 mb-4">
-            <v-col  cols="12" sm="12" md="3" lg="3" >
+            <v-col cols="12" sm="12" md="3" lg="3" >
                 <div style="width: 80%">
                     <div  class="mb-6  ">                                
                         <h1 justify="center" align="center"> 

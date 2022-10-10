@@ -1,5 +1,5 @@
 <template>
-    <div  class="text-comfortaa">
+    <v-container fluid  class="text-comfortaa">
         <v-row justify="center" align="center" class="ma-10 ">
             <v-col justify="center" align="center" cols="12" sm="8" md="10" lg="9" xl="9">
                 <p style="color:#10303B; font-size:300%; font-weight: bold;" class="font-italic">Bienvenido a Los Olivos EMCOOFUN</p>
@@ -56,6 +56,6 @@
                 </v-row>
             </v-col>
         </v-row>
-    </div>
+    </v-container >
 </template>
 

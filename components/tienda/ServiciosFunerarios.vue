@@ -1,5 +1,5 @@
 <template>
-    <div class="mb-10 ">
+    <v-container fluid class="mb-10 ">
         <div class="mt-10">
             <v-row justify="center" align="center">
                 <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
@@ -43,7 +43,7 @@
         <v-row justify="center" align="center" v-show="FotosArreglosFlorales">
             <v-col justify="center" align="center" cols="10" sm="10" md="10" lg="10">
                 <v-sheet style="background-color: #DFD6EA" justify="center" align="center" class="mx-auto rounded-xl mb-8">
-                    <VueSlickCarousel v-bind="settings">
+                    <VueSlickCarousel :arrows="false" v-bind="settings">
                         <div justify="center" align="center" v-for="({src,nombre},index) in fotosFlores"
                         :key="index" class="ma-lg-2 mt-5 mb-5">
                             <div>
@@ -68,7 +68,7 @@
         <v-row justify="center" align="center" v-show="FotosCondolencias">
             <v-col justify="center" align="center" cols="12" sm="12" md="10" lg="10">
                 <v-sheet style="background-color: #DFD6EA" justify="center" align="center" class=" rounded-xl mb-8">
-                    <VueSlickCarousel v-bind="settings">
+                    <VueSlickCarousel :arrows="false" v-bind="settings">
                         <div justify="center" align="center" v-for="({src,nombre},index) in Condolencias"
                         :key="index" class="ma-lg-2 mt-5 mb-5">
                             <div>
@@ -88,9 +88,8 @@
                     </div>
                 </v-sheet>
             </v-col>
-        </v-row>
-        
-    </div>
+        </v-row>   
+    </v-container>
 </template>
 <style>
     a{

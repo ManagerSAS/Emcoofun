@@ -1,19 +1,21 @@
 <template>
-    <div class="BannerHomenajes">
-        <v-row justify="center" align="center">
-            <v-col justify="center" align="center" class="mt-15" cols="12" sm="12" md="12" lg="11">
-                <v-btn class="btnPisitionho" style="background: linear-gradient(to right, rgba(185, 70, 106), rgba(120, 15, 46)); color: #FCF0A5;">
-                    Velación virtual
-                </v-btn>
-            </v-col>
-        </v-row>
-    </div>
+    <v-container fluid>
+        <div class="BannerHomenajes">
+            <v-row justify="center" align="center">
+                <v-col justify="center" align="center" class="mt-15" cols="12" sm="12" md="12" lg="11">
+                    <v-btn class="btnPisitionho" style="background: linear-gradient(to right, rgba(185, 70, 106), rgba(120, 15, 46)); color: #FCF0A5;">
+                        Velación virtual
+                    </v-btn>
+                </v-col>
+            </v-row>
+        </div>
+    </v-container>
 </template>
 <style lang="scss" >
     @media only screen and (min-width: 1600px) {
         .btnPisitionho{
             position: relative;
-            top: 30em;
+            top: 25em;
         }
         .BannerHomenajes{
             background-image: url('../../static/banners/bannerHomenajesPc.jpg');

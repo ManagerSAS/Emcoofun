@@ -13,20 +13,7 @@
                     <h1 class="display-1 font-weight-bold">Login</h1>
                     <p> Si tienes problemas para ingresar comunicate con un administrador. </p>
                 </div>
-    
-                <!-- <v-btn
-                    color="teal darken-3"
-                    large        
-                    block
-                    rounded
-                    outlined
-                    class="mb-9"
-                >
-                    Recuperar usuario
-                </v-btn>
-     -->
                 <v-divider class="mb-9"></v-divider>
-    
                 <v-form ref="login" lazy-validation>
                     <v-text-field
                         v-model="email"
@@ -37,7 +24,6 @@
                         color="teal darken-3"
                         label="Correo"
                     ></v-text-field>
-    
                     <v-text-field
                         v-model="password"
                         :append-icon="show ? 'mdi-eye' : 'mdi-eye-off'"
@@ -50,7 +36,6 @@
                         class="input-group--focused"
                         @click:append="show = !show"                    
                     ></v-text-field>
-    
                     <v-btn
                         color="teal darken-3"
                             elevation="0"
@@ -70,7 +55,6 @@
                             color="teal darken-3"
                         ></v-progress-circular>
                     </div>
-
                     <v-snackbar
                         :timeout="-1"
                         :value="showError"

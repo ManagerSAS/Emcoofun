@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <v-container fluid>
         <div class="BannerPagos">
             <v-row >
                 <v-col justify="center" align="center" class="mt-15" cols="12" sm="12" md="8" lg="8">
@@ -137,7 +137,7 @@
                 > {{ message }} </v-snackbar>
             </v-col>
         </v-row>
-    </div>
+    </v-container>
 </template>
 <style lang="scss" >
     @media only screen and (min-width: 1600px) {

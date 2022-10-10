@@ -1,5 +1,5 @@
 <template>
-    <div style="margin: 0">
+    <div>
         <Header style="background: linear-gradient(to top, #347D7D, #1D424A);"/>
         <Dashboard/>
         <Footer style="background: linear-gradient(to top, #347D7D, #1D424A);"/>

@@ -2,11 +2,7 @@
     <div>
         <Header/>
         <Welcome/>
-		<v-row justify="center" align="center" >
-			<v-col cols="12" sm="12" md="12" lg="10" xl="10">
-				<Pay/>
-			</v-col>
-		</v-row>
+		<Pay/>
         <PagoPresencial/>
         <ApoyoOlivos/>
         <PlanEmpresarial/>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <v-container fluid>
         <v-row justify="center" align="center">
             <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
                 <h1 class="mb-6 text-raleway" style="color:#003B4C; font-size: 25px; font-weight: 800;">
@@ -9,11 +9,11 @@
         </v-row>
         <v-row justify="center" align="center">
             <v-col justify="center" align="center" cols="12" sm="11" md="11" lg="11">
-                <VueSlickCarousel v-bind="settings"  justify="center" align="center" class="rounded-xl mb-8">
+                <VueSlickCarousel :arrows="false" v-bind="settings"  justify="center" align="center" class="rounded-xl mb-8">
                     <div justify="center" align="center" v-for="({src},index) in Sercvicios"
                     :key="index" class=" mt-5 mb-5">
                         <div>
-                            <img class="d-none d-xl-block d-lg-block" :lazy-src="src" :src="src" width="80%">
+                            <img :lazy-src="src" :src="src" width="80%">
                         </div>
                     </div>
                 </VueSlickCarousel>
@@ -24,7 +24,7 @@
                 </div>
             </v-col>
         </v-row>
-    </div>
+    </v-container>
 </template>
 <script>
     import VueSlickCarousel from 'vue-slick-carousel'

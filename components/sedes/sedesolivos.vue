@@ -1,169 +1,173 @@
 <template>
-    <div class="mb-10">
-        <v-row justify="center" align="center">
-            <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
-                <h1 class="mb-6 text-raleway" style="color:#003B4C; font-size: 36px; font-weight: 800;">
-                    Sedes EMCOOFUN
-                </h1>
-            </v-col>
-        </v-row>
-        <v-row justify="center" align="center">
-            <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="5" xl="5">
-                <div>
-                    <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/neiva.png" width="500">
-                    <img class="d-none d-md-block d-lg-none" src="../../static/sedes/neiva.png" width="400">
-                    <img class="d-block d-sm-none"  src="../../static/sedes/neiva.png" width="300">
-                </div>
-                <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
-                    <div>
-                        <v-btn @click="mostrarNeiva" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa font-weight-black" >
-                             Sede Principal Nieva
-                        </v-btn> <br></div>
-                    <div>Direccion: Calle 16 No. 2-56</div>
-                    <div>Linea Atencion: : PBX: 8715555</div>
-                    <div>Whatsapp : +57 3168747157</div>
-                </div>
-            </v-col>
-            <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="5" xl="5">
-                <div>
-                    <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/garzon.png" width="500">
-                    <img class="d-none d-md-block d-lg-none" src="../../static/sedes/garzon.png" width="400">
-                    <img class="d-block d-sm-none"  src="../../static/sedes/garzon.png" width="300">
-                </div>
-                <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
-                    <div>
-                        <v-btn @click="mostrarGarzon" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa font-weight-black" >
-                            Sede Garzón
-                        </v-btn>
-                    </div>
-                    <div>Direccion: Calle 7 No. 12-00</div>
-                    <div>Linea Atencion: : (8) 8332021-(8) 8334879</div>
-                    <div>Whatsapp : +57 3168747185</div>
-                </div>
-            </v-col>
-        </v-row>
-        <!-- FotosNeiva -->
-        <v-row justify="center" align="center" v-show="FotosNeiva">
-            <v-col justify="center" align="center" cols="12" sm="12" md="10" lg="10">
-                <v-sheet justify="center" align="center" class="rounded-xl mb-8">
-                    <VueSlickCarousel v-bind="settings">
-                        <div v-for="({src,nombreSala} ,index) in sedesNeiva" :key="index">
-                            <v-card  color="white"
-                                    class="ma-2 rounded-xl"
-                                    width="315" >
-                                <v-img
-                                    class="rounded-xl img-principal"  height="250" 
-                                    :lazy-src="src"
-                                    :src="src"
-                                ></v-img><br>
-                                <p class="text-comfortaa" style="color:#003B4C; font-size: 20px;">{{nombreSala}}</p>
-                            </v-card>
+    <v-container fluid class="mb-10">
+        <v-row  justify="center" align="center" >
+            <v-col cols="12" sm="12" md="12" lg="12" xl="12">
+                <v-row justify="center" align="center">
+                    <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
+                        <h1 class="mb-6 text-raleway" style="color:#003B4C; font-size: 36px; font-weight: 800;">
+                            Sedes EMCOOFUN
+                        </h1>
+                    </v-col>
+                </v-row>
+                <v-row justify="center" align="center">
+                    <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="5" xl="5">
+                        <div>
+                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/neiva.png" width="500">
+                            <img class="d-none d-md-block d-lg-none" src="../../static/sedes/neiva.png" width="400">
+                            <img class="d-block d-sm-none"  src="../../static/sedes/neiva.png" width="300">
                         </div>
-                    </VueSlickCarousel>
-                </v-sheet>
-            </v-col>
-        </v-row>
-        <!-- FotosGarzon -->
-        <v-row justify="center" align="center" v-show="FotosGarzon">
-            <v-col justify="center" align="center" cols="12" sm="12" md="10" lg="10">
-                <v-sheet justify="center" align="center" class="rounded-xl mb-8">
-                    <VueSlickCarousel v-bind="settings">
-                        <div v-for="({src,nombreSala} ,index) in sedesGarzon" :key="index">
-                            <v-card  color="white"
-                                    class="ma-2 rounded-xl"
-                                    width="315" >
-                                <v-img
-                                    class="rounded-xl img-principal"  height="250" 
-                                    :lazy-src="src"
-                                    :src="src"
-                                ></v-img><br>
-                                <p class="text-comfortaa" style="color:#003B4C; font-size: 20px;">{{nombreSala}}</p>
-                            </v-card>
+                        <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
+                            <div>
+                                <v-btn @click="mostrarNeiva" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa font-weight-black" >
+                                    Sede Principal Nieva
+                                </v-btn> <br></div>
+                            <div>Direccion: Calle 16 No. 2-56</div>
+                            <div>Linea Atencion: : PBX: 8715555</div>
+                            <div>Whatsapp : +57 3168747157</div>
                         </div>
-                    </VueSlickCarousel>
-                </v-sheet>
-            </v-col>
-        </v-row>
+                    </v-col>
+                    <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="5" xl="5">
+                        <div>
+                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/garzon.png" width="500">
+                            <img class="d-none d-md-block d-lg-none" src="../../static/sedes/garzon.png" width="400">
+                            <img class="d-block d-sm-none"  src="../../static/sedes/garzon.png" width="300">
+                        </div>
+                        <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
+                            <div>
+                                <v-btn @click="mostrarGarzon" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa font-weight-black" >
+                                    Sede Garzón
+                                </v-btn>
+                            </div>
+                            <div>Direccion: Calle 7 No. 12-00</div>
+                            <div>Linea Atencion: : (8) 8332021-(8) 8334879</div>
+                            <div>Whatsapp : +57 3168747185</div>
+                        </div>
+                    </v-col>
+                </v-row>
+                <!-- FotosNeiva -->
+                <v-row justify="center" align="center" v-show="FotosNeiva">
+                    <v-col justify="center" align="center" cols="12" sm="12" md="10" lg="10">
+                        <v-sheet justify="center" align="center" class="rounded-xl mb-8">
+                            <VueSlickCarousel v-bind="settings">
+                                <div v-for="({src,nombreSala} ,index) in sedesNeiva" :key="index">
+                                    <v-card  color="white"
+                                            class="ma-2 rounded-xl"
+                                            width="315" >
+                                        <v-img
+                                            class="rounded-xl img-principal"  height="250" 
+                                            :lazy-src="src"
+                                            :src="src"
+                                        ></v-img><br>
+                                        <p class="text-comfortaa" style="color:#003B4C; font-size: 20px;">{{nombreSala}}</p>
+                                    </v-card>
+                                </div>
+                            </VueSlickCarousel>
+                        </v-sheet>
+                    </v-col>
+                </v-row>
+                <!-- FotosGarzon -->
+                <v-row justify="center" align="center" v-show="FotosGarzon">
+                    <v-col justify="center" align="center" cols="12" sm="12" md="10" lg="10">
+                        <v-sheet justify="center" align="center" class="rounded-xl mb-8">
+                            <VueSlickCarousel v-bind="settings">
+                                <div v-for="({src,nombreSala} ,index) in sedesGarzon" :key="index">
+                                    <v-card  color="white"
+                                            class="ma-2 rounded-xl"
+                                            width="315" >
+                                        <v-img
+                                            class="rounded-xl img-principal"  height="250" 
+                                            :lazy-src="src"
+                                            :src="src"
+                                        ></v-img><br>
+                                        <p class="text-comfortaa" style="color:#003B4C; font-size: 20px;">{{nombreSala}}</p>
+                                    </v-card>
+                                </div>
+                            </VueSlickCarousel>
+                        </v-sheet>
+                    </v-col>
+                </v-row>
 
-        <v-row justify="center" align="center">
-            <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="5" xl="5">
-                <div>
-                    <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/florencia.png" width="500">
-                    <img class="d-none d-md-block d-lg-none" src="../../static/sedes/florencia.png" width="400">
-                    <img class="d-block d-sm-none"  src="../../static/sedes/florencia.png" width="300">
-                </div>
-                <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
-                    <div >
-                        <v-btn @click="mostrarPitalito" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa font-weight-black" >
-                            Sede Pitalito
-                        </v-btn>
-                    </div>
-                    <div>Direccion: Carrera 3 No. 5-19</div>
-                    <div>Linea Atencion: :  (8) 8361961 – (8) 8366929 </div>
-                    <div>Whatsapp : +57 3168747226</div>
-                </div>
-            </v-col>
-            <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="5" xl="5">
-                <div>
-                    <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/pitalito.png" width="500">
-                    <img class="d-none d-md-block d-lg-none" src="../../static/sedes/pitalito.png" width="400">
-                    <img class="d-block d-sm-none"  src="../../static/sedes/pitalito.png" width="300">
-                </div>
-                <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
-                    <div>
-                        <v-btn @click="mostrarFlorencia" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa font-weight-black" >
-                            Sede  Florencia
-                        </v-btn>
-                    </div>
-                    <div>Direccion: Carrera 15 No. 15-34/36</div>
-                    <div>Linea Atencion: (4) 4353314 - (4) 4351433 - (4) 4357558 </div>
-                    <div>Watsapp : +57 3168747213</div>
-                </div>
-            </v-col>
-        </v-row>
-        <!-- FotosPitalito -->
-        <v-row justify="center" align="center" v-show="FotosPitalito">
-            <v-col justify="center" align="center" cols="12" sm="12" md="10" lg="10">
-                <v-sheet justify="center" align="center" class="rounded-xl mb-8">
-                    <VueSlickCarousel v-bind="settings">
-                        <div v-for="({src,nombreSala} ,index) in sedesPitalito" :key="index">
-                            <v-card  color="white"
-                                    class="ma-2 rounded-xl"
-                                    width="315" >
-                                <v-img
-                                    class="rounded-xl img-principal"  height="250" 
-                                    :lazy-src="src"
-                                    :src="src"
-                                ></v-img><br>
-                                <p class="text-comfortaa" style="color:#003B4C; font-size: 20px;">{{nombreSala}}</p>
-                            </v-card>
+                <v-row justify="center" align="center">
+                    <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="5" xl="5">
+                        <div>
+                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/florencia.png" width="500">
+                            <img class="d-none d-md-block d-lg-none" src="../../static/sedes/florencia.png" width="400">
+                            <img class="d-block d-sm-none"  src="../../static/sedes/florencia.png" width="300">
                         </div>
-                    </VueSlickCarousel>
-                </v-sheet>
-            </v-col>
-        </v-row>
-        <!-- FotosFlorencia -->
-        <v-row justify="center" align="center" v-show="FotosFlorencia">
-            <v-col cols="12" sm="12" md="10" lg="10"  justify="center" align="center" >
-                <v-sheet justify="center" align="center" class="rounded-xl mb-8">
-                    <VueSlickCarousel v-bind="settings">
-                        <div v-for="({src,nombreSala} ,index) in sedesFlorencia" :key="index">
-                            <v-card  color="white"
-                                    class="ma-2 rounded-xl"
-                                    width="315" >
-                                <v-img
-                                    class="rounded-xl img-principal"  height="250" 
-                                    :lazy-src="src"
-                                    :src="src"
-                                ></v-img><br>
-                                <p class="text-comfortaa" style="color:#003B4C; font-size: 20px;">{{nombreSala}}</p>
-                            </v-card>
+                        <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
+                            <div >
+                                <v-btn @click="mostrarPitalito" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa font-weight-black" >
+                                    Sede Pitalito
+                                </v-btn>
+                            </div>
+                            <div>Direccion: Carrera 3 No. 5-19</div>
+                            <div>Linea Atencion: :  (8) 8361961 – (8) 8366929 </div>
+                            <div>Whatsapp : +57 3168747226</div>
                         </div>
-                    </VueSlickCarousel>
-                </v-sheet>
+                    </v-col>
+                    <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="5" xl="5">
+                        <div>
+                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/pitalito.png" width="500">
+                            <img class="d-none d-md-block d-lg-none" src="../../static/sedes/pitalito.png" width="400">
+                            <img class="d-block d-sm-none"  src="../../static/sedes/pitalito.png" width="300">
+                        </div>
+                        <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
+                            <div>
+                                <v-btn @click="mostrarFlorencia" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa font-weight-black" >
+                                    Sede  Florencia
+                                </v-btn>
+                            </div>
+                            <div>Direccion: Carrera 15 No. 15-34/36</div>
+                            <div>Linea Atencion: (4) 4353314 - (4) 4351433 - (4) 4357558 </div>
+                            <div>Watsapp : +57 3168747213</div>
+                        </div>
+                    </v-col>
+                </v-row>
+                <!-- FotosPitalito -->
+                <v-row justify="center" align="center" v-show="FotosPitalito">
+                    <v-col justify="center" align="center" cols="12" sm="12" md="10" lg="10">
+                        <v-sheet justify="center" align="center" class="rounded-xl mb-8">
+                            <VueSlickCarousel v-bind="settings">
+                                <div v-for="({src,nombreSala} ,index) in sedesPitalito" :key="index">
+                                    <v-card  color="white"
+                                            class="ma-2 rounded-xl"
+                                            width="315" >
+                                        <v-img
+                                            class="rounded-xl img-principal"  height="250" 
+                                            :lazy-src="src"
+                                            :src="src"
+                                        ></v-img><br>
+                                        <p class="text-comfortaa" style="color:#003B4C; font-size: 20px;">{{nombreSala}}</p>
+                                    </v-card>
+                                </div>
+                            </VueSlickCarousel>
+                        </v-sheet>
+                    </v-col>
+                </v-row>
+                <!-- FotosFlorencia -->
+                <v-row justify="center" align="center" v-show="FotosFlorencia">
+                    <v-col cols="12" sm="12" md="10" lg="10"  justify="center" align="center" >
+                        <v-sheet justify="center" align="center" class="rounded-xl mb-8">
+                            <VueSlickCarousel v-bind="settings">
+                                <div v-for="({src,nombreSala} ,index) in sedesFlorencia" :key="index">
+                                    <v-card  color="white"
+                                            class="ma-2 rounded-xl"
+                                            width="315" >
+                                        <v-img
+                                            class="rounded-xl img-principal"  height="250" 
+                                            :lazy-src="src"
+                                            :src="src"
+                                        ></v-img><br>
+                                        <p class="text-comfortaa" style="color:#003B4C; font-size: 20px;">{{nombreSala}}</p>
+                                    </v-card>
+                                </div>
+                            </VueSlickCarousel>
+                        </v-sheet>
+                    </v-col>
+                </v-row>
             </v-col>
         </v-row>
-    </div>
+    </v-container>
 </template>
 <script>
     import VueSlickCarousel from 'vue-slick-carousel'

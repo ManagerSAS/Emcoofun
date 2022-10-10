@@ -5,9 +5,9 @@
                 <h2>OBITUARIOS SEDE {{city}}</h2>
             </v-col>
         </v-row>
-        <v-row v-if="obituarios.length === 0">
-            <v-col justify="center" align="center" cols="12" >
-                <img src="../../../static/NoHayObituarios.png" width="500">
+        <v-row justify="center" align="center" v-if="obituarios.length === 0">
+            <v-col justify="center" align="center" cols="12" lg="5">
+                <img src="../../../static/NoHayObituarios.png" width="80%">
             </v-col>
         </v-row>
         <!-- obituarios extra pc -->
