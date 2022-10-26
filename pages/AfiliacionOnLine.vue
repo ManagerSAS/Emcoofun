@@ -1,7 +1,7 @@
 <template>
 	<div >
 		<Header/>
-		<Formulario/>
+		<Formulario style="background-image: url(https://res.cloudinary.com/dazyyib7u/image/upload/v1664031736/xjaotapgqpbdqnypm6en.png); width: auto;"/>
 		<Footer style="background: linear-gradient(270deg, #8fddaa 0%, #59ab9b 100%);"/>
     </div>
 </template>

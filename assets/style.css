@@ -4,8 +4,6 @@
     height: 11em;
     border-radius: 50% 50% 50% 50%;
 }
-
-
 @media only screen and (min-width: 1600px) {
     .pc{
         display: block;

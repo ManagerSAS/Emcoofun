@@ -10,7 +10,7 @@
             >
             </v-carousel-item>
         </v-carousel>
-        <v-carousel class="d-none d-md-block d-lg-none laptop" :cycle="true"  delimiter-icon="mdi-seed"  hide-delimiter-background show-arrows-on-hover width="100%">
+        <v-carousel class="d-none d-md-block d-lg-none" :cycle="true"  delimiter-icon="mdi-seed"  hide-delimiter-background show-arrows-on-hover width="100%">
             <v-carousel-item
                 v-for="({src},index) in sliderLaptop"
                 :key="index"

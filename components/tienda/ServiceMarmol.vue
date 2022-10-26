@@ -18,8 +18,8 @@
                     </div>
                 </VueSlickCarousel>
                 <div>
-                    <v-btn target="_blank" href="https://api.whatsapp.com/send?phone=573164708294&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20quiero%20el%20servicio%20Marmoler%C3%ADa%20y%20mantenimiento%20de%20tumbas%20%F0%9F%8E%9A%EF%B8%8F%20%2C%20me%20pueden%20brindar%20asesor%C3%ADa%20por%20favor%20%20%F0%9F%99%8F" justify="center" align="center" class="mb-5 text-comfortaa font-weight-black botn" >
-                    <span class="text-yellow">Comprar</span> 
+                    <v-btn target="_blank" href="https://api.whatsapp.com/send?phone=573164708294&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20quiero%20el%20servicio%20Marmoler%C3%ADa%20y%20mantenimiento%20de%20tumbas%20%F0%9F%8E%9A%EF%B8%8F%20%2C%20me%20pueden%20brindar%20asesor%C3%ADa%20por%20favor%20%20%F0%9F%99%8F" justify="center" align="center" class="mb-5 text-comfortaa font-weight-black botn white--text" >
+                        Comprar 
                     </v-btn>
                 </div>
             </v-col>

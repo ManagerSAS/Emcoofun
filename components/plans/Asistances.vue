@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-row class="mt-15 mb-15">
+        <v-row class="mb-15">
             <v-col cols="12" sm="12" md="8">
                 <h1 class="color-blue-dark display-1 font-weight-bold mb-6">
                    Asistencias: 

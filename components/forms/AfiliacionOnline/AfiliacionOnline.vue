@@ -1,6 +1,6 @@
 <template>
     <v-container fluid >
-        <v-row justify="center" align="center" class="mb-15 mt-10 pa-md-0">
+        <v-row  align="center" justify="center" class="mb-15 mt-10 pa-md-0">
 			<v-col cols="12" sm="12" md="12" lg="12" xl="9">
                 <v-row justify="center" align="star">
                     <v-col cols="12" sm="11" md="11" lg="11">
@@ -220,13 +220,72 @@
                                         </h4>
                                     </v-expansion-panel-header>
                                     <v-expansion-panel-content>
-                                        <p class="text-raleway color-blue-dark" >
-                                            El <span class="font-weight-bold font-italic"> PLAN DE PREVISIÓN ONLINE</span> se conforma según el estado civil del titular, si es soltero o casado/unión libre. <br><br>
-
-                                            Si <span class="font-weight-bold ">EL TITULAR DEL PLAN DE PREVISIÓN ONLINE</span> es de estado civil <span class="font-weight-bold ">SOLTERO</span>, podrá vincular a sus <span class="font-weight-bold ">PADRES</span>, con una edad máxima de hasta 70 años. Sin embargo, al renovar este contrato no aplicará límite de edad para los padres que registre. También podrá vincular a todos sus <span class="font-weight-bold ">HERMANOS, con sus respectivas especificaciones</span> (Hermanos desde el 6.° mes de gestación y menores de 30 años, solteros y sin hijos; También hermanos con discapacidad valorada en un 50% o más, estos últimos sin límite de edad de ingreso y permanencia).<br><br>
-
-                                            Si <span class="font-weight-bold ">EL TITULAR DEL PLAN DE PREVISIÓN ONLINE</span> es de estado civil <span class="font-weight-bold ">CASADO / UNIÓN LIBRE</span>, podrá vincular a su <span class="font-weight-bold ">CÓNYUGUE</span> con una edad de ingreso hasta los 70 años, al renovar este contrato no aplicará límite de edad para el conyugue que registre. También podrá vincular a sus <span class="font-weight-bold ">PADRES o SUEGROS</span> (máximo dos (2) beneficiarios, padres o suegros), al renovar este contrato no aplicará límite de edad para los padres o suegros que registre. También podrá vincular a todos sus <span class="font-weight-bold ">HIJOS, con sus respectivas especificaciones</span> (Hijos desde el 6.° mes de gestación y menores de 30 años, solteros y sin hijos; También hijos con discapacidad valorada en un 50% o más, estos últimos sin límite de edad de ingreso y permanencia).
-                                        </p>
+                                        <p> El<strong> PLAN DE PREVISIÓN EXEQUIAL ONLINE</strong> se conforma según el estado civil del titular, si es soltero o casado/unión libre.</p>
+                                        <p><strong> ESTADO CIVIL: SOLTERO</strong></p>
+                                        <v-list-item>
+                                            <v-list-item-content>
+                                                <v-list-item-title>
+                                                        <strong> EL TITULAR DEL PLAN DE PREVISIÓN EXEQUIAL ONLINE</strong> , podrá contratar este servicio de previsión desde los 18 años hasta los 65 años. En renovación no aplicará límite de edad.
+                                                </v-list-item-title>
+                                                <v-list-item-title>
+                                                        <strong>SUS BENEFICIARIOS:</strong> , podrá contratar este servicio de previsión desde los 18 años hasta los 65 años. En renovación no aplicará límite de edad
+                                                    <v-list-item>
+                                                        <v-list-item-content>
+                                                            <v-list-item-title>
+                                                                <strong>- PADRES</strong>, con edad de ingreso máxima de hasta 70 años.  En renovación no aplicará límite de edad
+                                                            </v-list-item-title>
+                                                            <v-list-item-title>
+                                                                <strong>- HERMANOS</strong>, desde el 6° mes de gestación y hasta 30 años de edad, que sean solteros y sin hijos.
+                                                            </v-list-item-title>
+                                                            <v-list-item-title>
+                                                                <strong>- HERMANOS</strong>, que demuestren un estado de discapacidad valorada en un 50% o más. Para estos hermanos en estado de discapacidad no les aplicará límite de edad en su ingreso ni en su permanencia.
+                                                            </v-list-item-title>
+                                                        </v-list-item-content>
+                                                    </v-list-item>
+                                                </v-list-item-title>
+                                            </v-list-item-content>
+                                        </v-list-item>
+                                        <p><strong>ESTADO CIVIL: CASADO / UNIÓN LIBRE</strong></p>
+                                        <v-list-item>
+                                            <v-list-item-content>
+                                                <v-list-item-title>
+                                                        <strong> EL TITULAR DEL PLAN DE PREVISIÓN EXEQUIAL ONLINE</strong>, podrá contratar este servicio de previsión desde los 18 años hasta los 65 años.  En renovación no aplicará límite de edad.
+                                                </v-list-item-title>
+                                                <v-list-item-title>
+                                                        <strong>SUS BENEFICIARIOS:</strong>
+                                                    <v-list-item>
+                                                        <v-list-item-content>
+                                                            <v-list-item-title>
+                                                                <strong>- CÓNYUGE</strong>, con una edad de ingreso hasta los 65 años. En renovación no aplicará límite de edad.
+                                                            </v-list-item-title>
+                                                            <v-list-item-title>
+                                                                <strong>- PADRES O SUEGROS</strong>, con edad de ingreso máxima de hasta 70 años. Máximo dos (2) beneficiarios. En renovación no aplicará límite de edad.
+                                                            </v-list-item-title>
+                                                            <v-list-item-title>
+                                                                <strong>- HIJOS</strong>, desde el 6° mes de gestación y hasta 30 años de edad, que sean solteros y sin hijos.
+                                                            </v-list-item-title>
+                                                            <v-list-item-title>
+                                                                <strong>- HIJOS</strong>, que demuestren un estado de discapacidad valorada en un 50% o más. Para estos hermanos en estado de discapacidad no les aplicará límite de edad en su ingreso ni en su permanencia.
+                                                            </v-list-item-title>
+                                                        </v-list-item-content>
+                                                    </v-list-item>
+                                                </v-list-item-title>
+                                            </v-list-item-content>
+                                        </v-list-item>
+                                        <strong> PERIODOS DE CARENCIA PARA TENER DERECHO AL SERVICIO EXEQUIAL:</strong>
+                                        <p>Periodo que inicia a partir de la fecha de pago de su afiliación durante el cual no tendrá derecho al servicio exequial ; dependiendo de la causa de fallecimiento</p>
+                                        <v-list-item>
+                                            <v-list-item-content>
+                                                <v-list-item-title>
+                                                    1. En caso de muerte natural o suicidio, es un periodo de carencia de 90 días.
+                                                </v-list-item-title>
+                                                <v-list-item-title>
+                                                    2.En caso de muerte accidental u homicidio, es desde la hora 24 (12 de la media noche de ese mismo día) luego de radicado el pago de su afiliación.
+                                                </v-list-item-title>
+                                            </v-list-item-content>
+                                        </v-list-item><br>
+                                        <p><strong> NOTA 1.</strong>En caso de fallecimiento de los progenitores, estos no podrán ser reemplazados.</p>
+                                        <p><strong> NOTA 2.</strong>Al momento de solicitar el servicio deberá demostrar el parentesco, fecha de nacimiento y edad del fallecido con el documento de identidad correspondiente; para validar el derecho al servicio funerario.</p>
                                     </v-expansion-panel-content>
                                 </v-expansion-panel>
                             </v-expansion-panels>
@@ -386,7 +445,7 @@
 <script>
 
 import Gcaptcha from '../recaptcha.vue'
-// import Post from '../../post/post'
+import Post from '../../post/post'
 import Message from '../messages/message1.vue'
 export default {
     components:{ 
@@ -433,7 +492,7 @@ export default {
         }
     }, 
     methods:{
-        sendInfoNovelty(){
+        async sendInfoNovelty(){
             if(this.Correo !== '' && this.NDocument !== '' && this.Nombre1 !== '' && this.Nombre2 !== '' && this.Apellido1 !== '' && this.Apellido2 !== '' && this.Genero !== ''&& this.dateBirth !== ''&& this.typeId !== '' && this.numPhone1 !== ''&& this.Direccion1 !== '' && this.EstadoCivil !== '' && this.terminos === true && this.AutoEmcoofun === true && this.declaracion === true && this.resCaptcha === true){         
       
                 const data = {
@@ -452,23 +511,22 @@ export default {
                     Direccion2: this.Direccion2,
                     EstadoCivil: this.EstadoCivil,
                 }
-                console.log({data})
-                // await Post.postFormAfiliacion( data );
-                // console.log(response);
-                // if(response.error === false){
-                    // this.snackbar = true
-                    // this.colorSnackbar = 'green accent-4'
-                    // this.message = 'Se envio tu solicitud'
-                    // setTimeout(()=>{ this.snackbar = false }, 3000)
-                    // this.$refs.formNovelty.reset()
-                // }else{
-                //     this.snackbar = true
-                //     this.colorSnackbar = 'red accent-3'
-                //     this.message = 'no se envio tu solicitud'
-                //     console.log(response.error)
-                //     setTimeout(()=>{ this.snackbar = false }, 3000)
-                //     this.$refs.formNovelty.reset()
-                // }                    
+                const response = await Post.postFormAfiliacion( data );
+                console.log(response);
+                if(response.error === false){
+                    this.snackbar = true
+                    this.colorSnackbar = 'green accent-4'
+                    this.message = 'Se envio tu solicitud'
+                    setTimeout(()=>{ this.snackbar = false }, 3000)
+                    this.$refs.formNovelty.reset()
+                }else{
+                    this.snackbar = true
+                    this.colorSnackbar = 'red accent-3'
+                    this.message = 'no se envio tu solicitud'
+                    console.log(response.error)
+                    setTimeout(()=>{ this.snackbar = false }, 3000)
+                    this.$refs.formNovelty.reset()
+                }                    
             }else{
                 this.snackbar = true
                 this.colorSnackbar = 'red accent-3'

@@ -2,7 +2,7 @@
     <v-container fluid class="mb-3"  justify="center" align="center">
         <v-row  justify="center" align="center" class="mt-5 ml-8 mr-5">
             <v-col cols="12" sm="12" md="11" lg="8" justify="start" align="center" >
-                <h2 class="text-raleway font-weight-bold" style="color: #E83E58; font-size: 40px;"> Plan exequial empresarial </h2>
+                <h2 class="text-raleway font-weight-bold" style="color: #E83E58; font-size: 40px;"> PLAN EXEQUIAL EMPRESARIAL </h2>
             </v-col>
         </v-row>
         <v-row  class="ml-lg-15 ml-8 mr-5" justify="center" align="center">

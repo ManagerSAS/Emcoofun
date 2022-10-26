@@ -1,11 +1,11 @@
 <template>
-    <div >
-        <h2 justify="center" align="center" class="mb-5 text-raleway font-weight-bold" 
+    <v-container fluid justify="center" align="start">
+        <h2 justify="center" align="center" class="text-raleway font-weight-bold" 
         style="color:#003B4C; font-size: 60px; background: linear-gradient(to right, #80C49E, #2EAE9B); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
             Los Olivos EMCOOFUN
         </h2>
         <v-row justify="center" align="center" >
-            <v-col cols="12" sm="12" md="5" lg="5">
+            <v-col justify="center" align="center" cols="12" sm="12" md="5" lg="5">
                 <video  playsinline loop controls width="90%" height="400"  class="mt-2"   >
                     <source src="../../static/LOS_OLIVOS_NEIVA_EMCOOFUN.mp4" >
                 </video>
@@ -31,12 +31,6 @@
                     allá de las familias de los asociados.
                 </p>
             </v-col>
-            <!-- <v-col cols="10" sm="12" md="5" lg="5" class="text-center">
-                <video autoplay playsinline loop controls width="80%" height="300"  class="mt-2"   >
-                    <source src="../../static/LOS_OLIVOS_NEIVA_EMCOOFUN.mp4" >
-                </video>
-            
-            </v-col> -->
         </v-row>
-    </div> 
+    </v-container> 
 </template>

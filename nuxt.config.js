@@ -12,7 +12,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Un Homenaje al amor' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -28,7 +28,6 @@ export default {
   css: [
     'assets/fonts.css',
     'assets/style.css',
-
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

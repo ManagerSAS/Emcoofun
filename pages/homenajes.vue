@@ -1,6 +1,7 @@
 <template>
 	<div >
 		<Header/>
+        <RedesSociales/>
 		<Formulario/>
 		<Footer style="background: linear-gradient(270deg, #8fddaa 0%, #59ab9b 100%);"/>
     </div>
@@ -10,11 +11,13 @@
 import Formulario from '../components/forms/homenajes/homenajes-olivos.vue';
 import Footer from '~/components/Footer2.vue'
 import Header from '~/components/Header.vue';
+import RedesSociales from '~/components/RedesSociales/index.vue';
 export default {
     components:{
     Formulario,
     Footer,
-    Header
+    Header,
+    RedesSociales
 }
 }
 </script>

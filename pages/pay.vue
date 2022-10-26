@@ -1,6 +1,7 @@
 <template>
     <div>
         <Header/>
+        <RedesSociales/>
         <Welcome/>
 		<Pay/>
         <PagoPresencial/>
@@ -17,6 +18,7 @@ import PlanEmpresarial from '~/components/index/PlanEmpresarial.vue';
 import Footer from '~/components/Footer2.vue'
 import Header from '~/components/Header.vue';
 import Welcome from '~/components/PagosEnLinea/welcome.vue';
+import RedesSociales from '~/components/RedesSociales/index.vue';
 export default {
     components:{
     Pay,
@@ -25,7 +27,8 @@ export default {
     PagoPresencial,
     Footer,
     Header,
-    Welcome
+    Welcome,
+    RedesSociales
 }
 }
 

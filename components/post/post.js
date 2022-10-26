@@ -5,8 +5,7 @@ const forms = '/api/v1/forms'
 export default {
     
     async postFormAfiliacion( data ){
-        const response = await olivosApi.post( forms + '/postFormAfiliacion', data)
-        console.log(response)
+        const response = await olivosApi.post( forms + '/AfiliacionesOnLine', data)
         return response.data
     },
     async postFormHomenajes( data ){

@@ -27,14 +27,14 @@
                 </v-row>
                 <div class="d-none d-xl-block d-lg-block d-md-block mt-5 mb-5">
                     <v-row  justify="center" align="center">
-                        <v-col cols="10" sm="4" md="5" lg="5">
+                        <v-col cols="10" sm="4" md="5" lg="5" justify="center" align="center">
                             <v-btn 
                                 style="background: linear-gradient(to right, #B9466A, #660F2E); color: white;"
                                 class="shadow-principal btn-hover text-comfortaa font-weight-black "
                                 rounded-xl
                                 dark
                                 large
-                                to="sedes"
+                                to="/sedes"
                             >
                                 Conoce nuestros parques Cementerios
                             </v-btn>

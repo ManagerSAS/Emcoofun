@@ -1,34 +1,31 @@
 <template>
-    <div > 
-        <v-row justify="center" align="center" class="mt-15 ">
+    <v-container fluid > 
+        <v-row justify="center" align="center">
             <v-col  cols="12" sm="6" md="7" lg="7">   
-                <div class="ml-lg-5 mr-md-8 ml-5 mr-5">
-                    <v-row>
-                        <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
-                            <h2 style="color:#6E1228; font-size: 36px; font-weight: 800;" class="text-raleway" >
-                                Nuestras Cifras
-                            </h2>
-                        </v-col>
-                    </v-row>
-                    <v-row justify="center" align="center">
-                        <v-col cols="8">
-                            <div class="mb-6">
-                                <div class="text-raleway" style="color:#CF4545; font-size: 50px; font-weight: 800;">45 años</div>
-                                <div class="text-raleway mb-6" style="color:#CF4545; font-size: 25px">de historia</div>
-
-                                <p class="text-comfortaa" style="font-size: 20px">Brindando un homenaje al amor, lo que nos convierte en la Red Funeraria más importante de Colombia. Con la mayor cobertura geográfica nacional.</p>
-                            </div>
-                        </v-col>
-                    </v-row>
-                </div>
+                <v-row>
+                    <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
+                        <h2 style="color:#6E1228; font-size: 36px; font-weight: 800;" class="text-raleway" >
+                            Nuestras Cifras
+                        </h2>
+                    </v-col>
+                </v-row>
+                <v-row justify="center" align="center">
+                    <v-col cols="8">
+                        <div class="mb-6">
+                            <div class="text-raleway" style="color:#003B4C; font-size: 50px; font-weight: 800;">45 años</div>
+                            <div class="text-raleway mb-6" style="color:#003B4C; font-size: 25px">de historia</div>
+                            <p class="text-comfortaa" style="font-size: 20px">Brindando un homenaje al amor, lo que nos convierte en la Red Funeraria más importante de Colombia. Con la mayor cobertura geográfica nacional.</p>
+                        </div>
+                    </v-col>
+                </v-row>
             </v-col>
-            <v-col  cols="12" sm="6" md="5" lg="5">   
-                <img class="d-none d-xl-block d-lg-block" src="../../static/cifras/nuestasCifras.png"  width="500">
-                <img class="d-none d-md-block d-lg-none" src="../../static/cifras/nuestasCifras.png"  width="350">
-                <img class="d-block d-sm-none" src="../../static/cifras/nuestasCifras.png"  width="250">
+            <v-col justify="center" align="start" cols="12" sm="6" md="5" lg="5">   
+                <img class="d-none d-xl-block d-lg-block" src="../../static/cifras/nuestasCifras.png"  width="80%">
+                <img class="d-none d-md-block d-lg-none" src="../../static/cifras/nuestasCifras.png"  width="80%">
+                <img class="d-block d-sm-none" src="../../static/cifras/nuestasCifras.png"  width="80%">
             </v-col>
         </v-row>  
-    </div>
+    </v-container >
 </template>
 
 <style lang="scss">

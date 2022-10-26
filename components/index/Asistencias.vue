@@ -11,7 +11,7 @@
                 <h2 class="mb-10 text-raleway font-weight-bold" style="color:#7AB929; font-size: 40px; ">Sinergia <br></h2>
                 <div class="mb-6">
                     <p class="text-comfortaa mb-6" style="font-size: 20px">Para Los Olivos es un orgullo contar con el respaldo solidario a través de
-                        nuestras asociadas, la crema y la nata del cooperativismo está detrás de nuestra compañía, con el respaldo técnico a través de la Aseguradora Solidara de Colombia y el respaldo operativo a través de Red Nacional Los Olivos.
+                        nuestras asociadas, la crema y la nata del cooperativismo está detrás de nuestra compañía, con el respaldo técnico a través de la Aseguradora Solidaria de Colombia y el respaldo operativo a través de la Red Nacional Los Olivos.
                         </p>
                     <p class="text-comfortaa" style="font-size: 20px">Los Olivos, es líder en la prestación de servicios funerarios integrales y de previsión exequial en Colombia y está presente en todo el territorio nacional.</p>
                 </div>

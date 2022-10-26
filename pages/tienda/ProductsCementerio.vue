@@ -1,6 +1,7 @@
 <template>
     <div>
         <Header/>
+        <RedesSociales/>
         <Welcome/>
         <ServiciosFunerarios class="mb-5"/>
         <DestinoFinalCenizas class="mb-5" style="background-color: rgb(227,235,235,0.5)"/>
@@ -21,18 +22,20 @@ import Osarios from '~/components/tienda/Osarios.vue'
 import Columbarios from '~/components/tienda/Columbarios.vue'
 import ServiceJardin from '~/components/tienda/ServiceJardin.vue'
 import ServiceMarmol from '~/components/tienda/ServiceMarmol.vue'
+import RedesSociales from '~/components/RedesSociales/index.vue'
 export default ({
     components:{
-        Header,
-        Welcome,
-        ServiciosFunerarios,
-        DestinoFinalCenizas,
-        Osarios,
-        Columbarios,
-        ServiceJardin,
-        ServiceMarmol,
-        Footer
-    }
+    Header,
+    Welcome,
+    ServiciosFunerarios,
+    DestinoFinalCenizas,
+    Osarios,
+    Columbarios,
+    ServiceJardin,
+    ServiceMarmol,
+    Footer,
+    RedesSociales
+}
 })
 
 </script>

@@ -1,10 +1,10 @@
 <template>
     <div>
         <v-row id="empresariales"  justify="center" align="center" >
-			<v-col cols="12" sm="12" md="11" lg="10" xl="9" class="mt-5">
+			<v-col cols="12" sm="12" md="11" lg="10" xl="9" >
                 <v-row >
                     <v-col sm="12" md="6" lg="6" xl="6">
-                        <div class="mt-12 pt-9 ml-5 mr-5">
+                        <div class="pt-9 ml-5 mr-5">
                             <p class="texto" style="color: #E9522C" > En el Deceso:</p><br>
                             <p class="font"><span style="color: #E9522C">1.</span> Atención y orientación todo el año las 24 horas del día a través del PBX 8715555 en Neiva (Huila), Teléfono 8332021 en Garzón, Teléfono 8361961 en Pitalito, Teléfono 4353314 en Florencia (Caquetá) o la línea gratuita 018000911134 a Nivel Nacional. </p>
                             <div v-if="mostrar" >
@@ -22,7 +22,7 @@
                         </div>
                     </v-col>
                     <v-col sm="12" md="6" lg="6" xl="5" justify="center" align="center" >
-                        <img src="../../static/deceso.png" width="300">
+                        <img src="../../static/deceso.png" width="60%">
                     </v-col>
                 </v-row>
             </v-col>

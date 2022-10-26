@@ -9,7 +9,7 @@
                         </h1>
                     </v-col>
                 </v-row>
-                <v-row v-if="eventos.length === 0">
+                <v-row justify="center" align="center" v-if="eventos.length === 0">
                     <v-col justify="center" align="center" cols="12" lg="5" md="5">
                         <img src="../../static/NoHayEventos.png" width="80%">
                     </v-col>

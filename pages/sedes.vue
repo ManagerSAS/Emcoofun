@@ -1,6 +1,7 @@
 <template>
     <div>
         <Header/>
+		<RedesSociales/>
         <Sedesolivos style="background-color: rgb(227,235,235,0.5)"/>
         <Parquescementerio />
         <ServiciosEmcoofun style="background-color: rgb(227,235,235,0.5)"/>
@@ -13,13 +14,15 @@ import Sedesolivos from '~/components/sedes/sedesolivos.vue'
 import Footer from '~/components/Footer2.vue'
 import Header from '~/components/Header.vue'
 import ServiciosEmcoofun from '~/components/sedes/ServiciosEmcoofun.vue'
+import RedesSociales from '~/components/RedesSociales/index.vue'
 export default ({
     components:{
-        Sedesolivos,
-        Parquescementerio,
-        Footer,
-        Header,
-        ServiciosEmcoofun
-    }
+    Sedesolivos,
+    Parquescementerio,
+    Footer,
+    Header,
+    ServiciosEmcoofun,
+    RedesSociales
+}
 })
 </script>

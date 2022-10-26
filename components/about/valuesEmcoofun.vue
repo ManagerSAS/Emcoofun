@@ -1,33 +1,37 @@
 <template>
-    <div class="mt-5 mb-10">
-        <v-row>
-            <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
-                <h2 style="color:#003B4C; font-size: 36px; font-weight: 800;" class="text-raleway">
-                    Valores EMCOOFUN
-                </h2>
+    <v-container  fluid>
+        <v-row justify="center" align="center" class="mt-15 mb-10 pa-5 pa-md-5">
+			<v-col cols="12" sm="12" md="12" lg="12" xl="9">
+                <v-row>
+                    <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
+                        <h2 style="color:#003B4C; font-size: 36px; font-weight: 800;" class="text-raleway">
+                            Valores EMCOOFUN
+                        </h2>
+                    </v-col>
+                </v-row>
+                <v-row class="mt-10">
+                    <v-col 
+                        v-for="({icon, title, description}, index) in values"
+                        :key="index"
+                        cols="12" sm="12" md="6" lg="6">
+                        <div class="rounded-xl ">
+                            <v-row >
+                                <v-col justify="center" align="center" cols="2" class="margen">
+                                    <div class="rounded-xl  pa-2 box-shadow-green tamanocontent" outlined style="background: linear-gradient(to right, #9DC31A, #79B729); " >
+                                        <img :src="icon" class="tamanoimg">
+                                    </div>
+                                </v-col>
+                                <v-col cols="10" class="secondary--text">
+                                    <h3 style="color:#AAD054; font-size: 30px; font-weight: bold;" class="text-comfortaa"> {{ title }} </h3>
+                                    <span style="color:#003A4B; font-size: 20px;" class="text-raleway"> {{ description }} </span>
+                                </v-col>
+                            </v-row>
+                        </div>
+                    </v-col>            
+                </v-row>
             </v-col>
         </v-row>
-        <v-row class="mt-10">
-            <v-col 
-                v-for="({icon, title, description}, index) in values"
-                :key="index"
-                cols="12" sm="12" md="6" lg="6">
-                <div class="rounded-xl ">
-                    <v-row >
-                        <v-col justify="center" align="center" cols="2" class="margen">
-                            <div class="rounded-xl  pa-2 box-shadow-green tamanocontent" outlined style="background: linear-gradient(to right, #9DC31A, #79B729); " >
-                                <img :src="icon" class="tamanoimg">
-                            </div>
-                        </v-col>
-                        <v-col cols="10" class="secondary--text">
-                            <h3 style="color:#AAD054; font-size: 30px; font-weight: bold;" class="text-comfortaa"> {{ title }} </h3>
-                            <span style="color:#003A4B; font-size: 20px;" class="text-raleway"> {{ description }} </span>
-                        </v-col>
-                    </v-row>
-                </div>
-            </v-col>            
-        </v-row>
-    </div>
+    </v-container>
 </template>
 <script>
 export default {

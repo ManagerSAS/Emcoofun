@@ -4,10 +4,10 @@
 			<v-col cols="12" sm="12" md="12" lg="10" xl="9" class="mt-5">
                 <v-row >
                     <v-col sm="12" md="6" lg="6" xl="5" justify="center" align="center" >
-                        <img src="../../static/destinoFinal.png" width="300">
+                        <img src="../../static/destinoFinal.png" width="70%">
                     </v-col>
-                    <v-col sm="12" md="6" lg="6" xl="6">
-                        <div class="mt-lg-12 ml-5 mr-5 pt-lg-9 mb-5">
+                    <v-col justify="center" align="start" sm="12" md="6" lg="6" xl="6">
+                        <div class="ml-5 mr-5 mb-5">
                             <p class="texto" style="color: #F59D20" > Destino Final: </p><br>
                             <p class="font">Las opciones para destino final son las que a continuación se enuncia, salvo que se pacte lo contrario, las cuales son excluyentes entre sí:  </p>
                             <div v-if="mostrar" >

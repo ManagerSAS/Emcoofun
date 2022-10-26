@@ -4,7 +4,7 @@
 			<v-col cols="12" sm="12" md="12" lg="10" xl="9" class="mt-5">
                 <v-row >
                     <v-col sm="6" md="6" lg="6" xl="6">
-                        <div class="mt-lg-12 ml-5 mr-5 pt-9">
+                        <div class=" ml-5 mr-5 ">
                             <p class="texto" style="color: #7AB929" > En El Cortejo:</p><br>
                             <p class="font"><span style="color: #7AB929">1.</span> Cinta membretada con el nombre del fallecido. </p>
                             <p class="font"><span style="color: #7AB929">2.</span> Honras fúnebres</p>
@@ -20,7 +20,7 @@
                         </div>
                     </v-col>
                      <v-col sm="12" md="6" lg="6" xl="5" justify="center" align="center" >
-                        <img src="../../static/cortejo.png" width="300">
+                        <img src="../../static/cortejo.png" width="60%">
                     </v-col>
                 </v-row>
             </v-col>

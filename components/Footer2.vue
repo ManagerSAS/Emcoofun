@@ -27,8 +27,8 @@
                         </div>
                         <div>
                             <p class="text-comfortaa" style="color:white; font-size: 20px; font-weight: bold;"> Síguenos en nuestas redes sociales: </p>
-                            <v-icon class="botonRedes" >mdi-facebook mdi-36px</v-icon>
-                            <v-icon class="botonRedes" >mdi-instagram mdi-36px</v-icon>
+                           <a href="https://www.facebook.com/LosOlivosEmcoofun" target="_blank" rel="noopener noreferrer"><v-icon class="botonRedes" >mdi-facebook mdi-36px</v-icon></a> 
+                            <a href="https://www.instagram.com/emcoofunlosolivos/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer"><v-icon class="botonRedes" >mdi-instagram mdi-36px</v-icon></a>
                         </div>
                     </v-col>
                     <v-col class="mt-10" cols="12" sm="12" md="2" lg="2" xl="2">
@@ -67,7 +67,7 @@
                                 </v-col>
                                 <v-col cols="10" >
                                     <span class="text-white"> Sede Pitalito - Huila</span><br>
-                                <span>Dirección: Carrera 3 No. 5-19 </span><br>
+                                    <a style="color:white" href="https://goo.gl/maps/s6M2LeBGccCWnRPS8" target="_blank" rel="noopener noreferrer"><span class="text-white">Dirección: Carrera 3 No. 5-19 </span><br></a>
                                 </v-col>
                             </v-row>
                         
@@ -78,7 +78,7 @@
                                 </v-col>
                                 <v-col cols="10" >
                                     <span class="text-white"> Sede Florencia</span><br>
-                                    <span>Dirección: Carrera 15 No. 15-34/36 </span><br>
+                                    <a style="color:white"  href="https://goo.gl/maps/dih8Ljm64UTo7tb28" target="_blank" rel="noopener noreferrer"><span class="text-white">Dirección: Carrera 15 No. 15-34/36 </span><br></a>
                                 </v-col>
                             </v-row>
     
@@ -89,7 +89,7 @@
                                 </v-col>
                                 <v-col cols="10" >
                                     <span class="text-white"> Sede Garzón - Huila</span><br>
-                                    <span >Dirección: Calle 7 No. 12-00</span><br>
+                                    <a href="https://goo.gl/maps/Cp7dAtdW2NCLtD31A" style="color:white" target="_blank" rel="noopener noreferrer"><span class="text-white">Dirección: Calle 7 No. 12-00</span><br></a>
                                 </v-col>
                             </v-row>
                         </div>

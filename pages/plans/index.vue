@@ -1,6 +1,7 @@
 <template>
     <div>
         <Header/>
+        <RedesSociales/>
         <Welcome/>
         <Afiliacion />
         <Deceso style="background-color: rgb(227,235,235,0.5)" />
@@ -23,6 +24,7 @@ import Preguntas from '~/components/plans/preguntasFrecuentes.vue';
 import Footer from '~/components/Footer2.vue'
 import Header from '~/components/Header.vue';
 import GaleriaRedOlivos from '~/components/plans/GaleriaRedOlivos.vue';
+import RedesSociales from '~/components/RedesSociales/index.vue';
 
 export default {
     components:{
@@ -35,7 +37,8 @@ export default {
     Preguntas,
     Footer,
     Header,
-    GaleriaRedOlivos
+    GaleriaRedOlivos,
+    RedesSociales
 },
 }
 </script>

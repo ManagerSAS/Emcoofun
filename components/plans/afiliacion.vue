@@ -8,8 +8,8 @@
             </v-col>
         </v-row>
         <v-row justify="center" align="center">
-            <v-col cols="12" sm="12" md="5" lg="5" xl="5" justify="center" align="center" >
-                <img justify="center" align="center" src="../../static/afilicacion.png" width="300">
+            <v-col cols="12" sm="12" md="5" lg="4" xl="5" justify="center" align="center" >
+                <img  src="../../static/afilicacion.png" width="50%">
             </v-col>
             <v-col cols="12" sm="12" md="5" lg="6" xl="6">
                 <div class="ma-5 ">

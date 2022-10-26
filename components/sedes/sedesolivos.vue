@@ -224,9 +224,9 @@ export default ({
         sedesNeiva:[
             {src:'https://res.cloudinary.com/dazyyib7u/image/upload/c_scale,h_374,q_auto:best/v1662384757/SalaSedes/Neiva/keagwosqvkiib97yuqle.jpg', nombreSala:'Salón Oratorio'},
             {src:'https://res.cloudinary.com/dazyyib7u/image/upload/c_scale,h_374,q_auto:best/v1662384757/SalaSedes/Neiva/oplnxisljvday5gpvddn.jpg', nombreSala:'Salón Oratorio'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/c_scale,h_374,q_auto:best/v1662385217/SalaSedes/Neiva/x0tcwqufoaytrth9elxh.jpg', nombreSala:'Sala Tercer Piso'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/c_scale,h_374,q_auto:best/v1662385220/SalaSedes/Neiva/qjgkvgpimgehwfjsa2qa.jpg', nombreSala:'Sala Tercer Piso'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/c_scale,h_374,q_auto:best/v1662384757/SalaSedes/Neiva/ktphothu0w3y05oi0xc0.jpg', nombreSala:'Sala Tercer Piso'},
+            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/c_scale,h_374,q_auto:best/v1662385217/SalaSedes/Neiva/x0tcwqufoaytrth9elxh.jpg', nombreSala:'Salas de velación'},
+            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/c_scale,h_374,q_auto:best/v1662385220/SalaSedes/Neiva/qjgkvgpimgehwfjsa2qa.jpg', nombreSala:'Salas de velación'},
+            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/c_scale,h_374,q_auto:best/v1662384757/SalaSedes/Neiva/ktphothu0w3y05oi0xc0.jpg', nombreSala:'Salas de velación'},
         ],
         sedesGarzon:[
             {src:'https://res.cloudinary.com/dazyyib7u/image/upload/c_scale,h_374,q_auto:best/v1662389729/SalaSedes/Garzon/vwmlnyhj8rlgpqlf3z48.jpg', nombreSala:'Sala Rosa'},

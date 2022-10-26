@@ -56,8 +56,8 @@
                             </div>
                         </div>
                     </VueSlickCarousel>
-                    <div>
-                        <v-btn target="_blank" href="https://api.whatsapp.com/send?phone=573168747157&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20quiero%20comprar%20un%20arreglo%20floral%20%2C%20me%20pueden%20brindar%20asesor%C3%ADa%20por%20favor%20%F0%9F%8C%BB%F0%9F%8C%BC" justify="center" align="center" class="text-comfortaa font-weight-black botn" >
+                    <div >
+                        <v-btn target="_blank" href="https://api.whatsapp.com/send?phone=573168747157&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20quiero%20comprar%20un%20arreglo%20floral%20%2C%20me%20pueden%20brindar%20asesor%C3%ADa%20por%20favor%20%F0%9F%8C%BB%F0%9F%8C%BC" justify="center" align="center" class="mb-5 text-comfortaa font-weight-black botn white--text" >
                             Comprar
                         </v-btn>
                     </div>
@@ -81,8 +81,8 @@
                             </div>
                         </div>
                     </VueSlickCarousel>
-                    <div>
-                        <v-btn target="_blank" href="https://api.whatsapp.com/send?phone=573168747157&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20quiero%20comprar%20un%20BONO%20DE%20CONDOLENCIAS%20%2C%20me%20pueden%20brindar%20asesor%C3%ADa%20por%20favor%20%F0%9F%92%8C%E2%9C%89%EF%B8%8F" justify="center" align="center" class="text-comfortaa font-weight-black botn" >
+                    <div class="ma-2">
+                        <v-btn target="_blank" href="https://api.whatsapp.com/send?phone=573168747157&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20quiero%20comprar%20un%20BONO%20DE%20CONDOLENCIAS%20%2C%20me%20pueden%20brindar%20asesor%C3%ADa%20por%20favor%20%F0%9F%92%8C%E2%9C%89%EF%B8%8F" justify="center" align="center" class="text-comfortaa font-weight-black botn white--text" >
                             Comprar
                         </v-btn>
                     </div>

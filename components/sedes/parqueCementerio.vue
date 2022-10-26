@@ -1,7 +1,7 @@
 <template>
     <v-container fluid justify="center" align="center">
         <v-row justify="center" align="center">
-            <v-col cols="12" sm="12" md="12" lg="12" xl="12">
+            <v-col cols="12" sm="12" md="12" lg="10" xl="11">
                 <v-row justify="center" align="center">
                     <v-col cols="12" sm="12" md="12" lg="10" justify="center" align="center">
                         <h2 class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 40px;"> Parques Cementerios </h2> <br>
@@ -9,19 +9,19 @@
                     </v-col>
                 </v-row>
                 <v-row justify="center" align="center">
-                    <v-col cols="12" sm="12" md="6" lg="6">
-                        <video width="90%" height="100%" class="mt-2" controls>
+                    <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
+                        <video width="80%" class="mt-2" controls>
                             <source src="../../static/testmonios/jardin_Los_Olivos1.mp4" type="video/mp4">
                         </video>
                     </v-col>
-                    <v-col cols="12" sm="12" md="6" lg="6">
-                        <video justify="center" align="center" width="90%" height="100%" class="mt-2" controls>
+                    <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
+                        <video justify="center" align="center" width="80%"  class="mt-2" controls>
                             <source src="../../static/testmonios/jardin_Los_Olivos2.mp4" type="video/mp4">
                         </video>
                     </v-col>
                 </v-row>
                 <v-row  justify="center" align="center">
-                    <v-col cols="10" sm="4" md="5" lg="5">
+                    <v-col justify="center" align="center" cols="10" sm="4" md="5" lg="5">
                         <v-btn 
                             style="background: linear-gradient(to right, #B9466A, #660F2E); color: white;"
                             class="shadow-principal btn-hover text-comfortaa font-weight-black "

@@ -1,6 +1,7 @@
 <template>
     <div>
         <Header />
+        <RedesSociales/>
         <v-row justify="center" align="center" >
             <v-col cols="12" sm="12" md="10" lg="10">
                 <Objetivo justify="center" align="center"/>
@@ -21,6 +22,7 @@ import Footer2 from '~/components/Footer2';
 import Objetivo from '~/components/Sinergia/Objetivo.vue';
 import Premisa from '~/components/Sinergia/Premisa.vue';
 import PlaneacionPlanSinergia from '~/components/Sinergia/PlaneacionPlanSinergia.vue';
+import RedesSociales from '~/components/RedesSociales/index.vue';
 
 export default {
     components:{
@@ -28,7 +30,8 @@ export default {
     Objetivo,
     Footer2,
     Premisa,
-    PlaneacionPlanSinergia
+    PlaneacionPlanSinergia,
+    RedesSociales
 }
     }
 </script>

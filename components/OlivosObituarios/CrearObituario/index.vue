@@ -451,18 +451,13 @@ import Post from '../../post/Obituarios'
                 if(this.fotoSerquerido === null){
                     this.fotoSerquerido = ''
                 }
-                if(this.ciudad !=='' && this.NDocumento !== '' && this.nombre1 !== '' && this.nombre2 !== '' && this.apellido1 !== ''&& this.apellido2 !== '' && this.fechaNacimiento !== ''&& this.fechaFallecimiento !== '' && this.LugarFallecimiento !== '' && this.Notaria !== '' && this.NombreSala !== ''&& this.fechaExequias !== '' && this.HoraExequias !== '' && this.Departamento !== '' && this.LugarExequias !== '' && this.DestinoFinal !== '' && this.HoraInhumacion !== '' && this.Ciudad !== '' && this.Sector !== '' && this.Ubicacion !== '' && this.NRegistro !== '' && this.FechaExhumacion !== '' ){
+                if(this.ciudad !=='' && this.NDocumento !== '' && this.nombre1 !== '' && this.apellido1 !== '' && this.fechaNacimiento !== ''&& this.fechaFallecimiento !== '' && this.LugarFallecimiento !== '' && this.Notaria !== '' && this.NombreSala !== ''&& this.fechaExequias !== '' && this.HoraExequias !== '' && this.Departamento !== '' && this.LugarExequias !== '' && this.DestinoFinal !== '' && this.HoraInhumacion !== '' && this.Ciudad !== '' && this.Sector !== '' && this.Ubicacion !== '' && this.NRegistro !== '' && this.FechaExhumacion !== '' ){
 
                     this.snackbar= true
                     this.loading= true
                     this.message='Enviando Datos... Por favor Espere'
                     this.colorSnackbar='teal accent-4'
                     const hoy = new Date(); 
-                    setTimeout(() => {
-                            this.snackbar= false
-                            this.loading = false
-                        }, 3000);
-
                     const datos ={
                         Visualizacion: this.ciudad,
                         NDocumento: this.NDocumento, 
@@ -513,12 +508,8 @@ import Post from '../../post/Obituarios'
                     
                 }else{
                     this.snackbar= true
-                    this.loading= true
                     this.message='Por favor llenar todos los campos'
                     this.colorSnackbar='red'
-                    setTimeout(() => {
-                            this.loading = false
-                        }, 3000);
                 }
                 
             }
