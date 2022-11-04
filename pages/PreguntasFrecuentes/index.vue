@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid>
+    <div>
         <Header/>
         <RedesSociales/>
         <v-row justify="center" align="center" class="ml-5 mt-15 mb-10 mr-5">
@@ -8,7 +8,7 @@
             </v-col>
         </v-row>
         <Footer style="background: linear-gradient(270deg, #8fddaa 0%, #59ab9b 100%);"/>
-    </v-container >
+    </div >
 </template>
 <script>
 

@@ -7,7 +7,7 @@
             </v-col>
         </v-row>
         <v-row justify="center" align="center">
-            <v-col cols="12" sm="12" md="12" lg="10" justify="center" align="center">
+            <v-col cols="12" sm="12" md="12" lg="11" justify="center" align="center">
                 <v-slide-group 
                     class="pa-4"
                     active-class="success"
@@ -21,15 +21,15 @@
                             justify="center" align="center"
                         >
                         
-                                <v-img
-                                    class="img-principal mr-3 ml-3"   
-                                    :src="src"
-                                    height="200"
-                                    width="300"
-                                ></v-img>
-                                <v-btn   style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa font-weight-black" >
-                                    {{ text }}
-                                </v-btn> <br>
+                            <v-img
+                                class="img-principal mb-1"   
+                                :src="src"
+                                height="210"
+                                width="310"
+                            ></v-img>
+                            <v-btn   style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-capitalize text-comfortaa font-weight-black" >
+                                {{ text }}
+                            </v-btn> <br>
                             <div class="text-raleway font-weight-black" > 
                                 {{ direccion }} 
                             </div>
@@ -42,7 +42,7 @@
             <v-col justify="center" align="center">
                 <v-btn 
                     style="background-color: #003B4C "
-                    class="shadow-principal btn-hover mb-10 text-comfortaa"
+                    class="shadow-principal btn-hover mb-10 text-comfortaa text-capitalize"
                     rounded-xl
                     dark
                     large
@@ -60,10 +60,10 @@ export default {
   data() {
     return{
       articlesAdd2: [
-                 { text: 'Sede principal Neiva', direccion:'Calle 16 No. 2-56', src: 'https://res.cloudinary.com/dhl17zanz/image/upload/v1653669081/neiva/sedes/thbcpgoawm8r9d6vrvoq.png' },
-                 { text: 'Sede Pitalito', direccion:'Carrera 3 No. 5-19', src: 'https://res.cloudinary.com/dhl17zanz/image/upload/v1653669081/neiva/sedes/g5zyesbrip4jtyg3ovsf.png' },
-                 { text: 'Sede Florencia', direccion:'Carrera 15 No. 15-34/36', src: 'https://res.cloudinary.com/dhl17zanz/image/upload/v1653669081/neiva/sedes/bo0lzaw2qmvd2io1tw2o.png' },
-                 { text: 'Sede Garzón', direccion:'Calle 7 No. 12-00', src: 'https://res.cloudinary.com/dhl17zanz/image/upload/v1653669081/neiva/sedes/d34lou0fefdtmk9itx5j.png' },
+                 { text: 'Sede principal Neiva', direccion:'Calle 16 No. 2-56', src: '/sedes/neiva.png' },
+                 { text: 'Sede Pitalito', direccion:'Carrera 3 No. 5-19', src: '/sedes/pitalito.png' },
+                 { text: 'Sede Florencia', direccion:'Carrera 15 No. 15-34/36', src: '/sedes/florencia.png' },
+                 { text: 'Sede Garzón', direccion:'Calle 7 No. 12-00', src: '/sedes/garzon.png' },
              ],
 
     }

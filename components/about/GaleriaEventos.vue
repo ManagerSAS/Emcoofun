@@ -8,12 +8,12 @@
             </v-col>
         </v-row>
         <v-row justify="center" align="center">
-            <v-col justify="center" align="center" cols="12" sm="12" md="10" lg="10">
+            <v-col justify="center" align="center" cols="12" sm="12" md="10" lg="11">
                 <v-sheet justify="center" align="center" class="rounded-xl">
                     <VueSlickCarousel :arrows="false" v-bind="settings">
                         <div v-for="({src} ,index) in Eventos" :key="index">
                             <v-img
-                                class="rounded-xl img-principal"  width="80%" 
+                                class="rounded-xl img-principal"  width="70%" 
                                 :lazy-src="src"
                                 :src="src"
                             ></v-img><br>
@@ -34,16 +34,15 @@ export default ({
     data() {
       return{
         Eventos:[
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664485801/Galeria/jcilaaadusfrjnyu4ijr.png'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664485801/Galeria/ktqq7epgd0bctvwby4jn.png'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664485801/Galeria/jwvatwm25gvudvoaihy2.png'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664485801/Galeria/pc4el8uhrobnn2ngpf7w.png'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664485801/Galeria/tsuaecjcy2nfg0oagmjd.png'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664485801/Galeria/ittwvobhbegzgvuvzxdp.png'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664485801/Galeria/slcspaefnejuswmjhauv.png'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664485800/Galeria/msh3ilg2b4k8mdhgxsql.png'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1664485801/Galeria/div2omh3ndxgubj6idan.png'},
-
+            {src:'/Galeria/eventos/event1.png'},
+            {src:'/Galeria/eventos/event2.png'},
+            {src:'/Galeria/eventos/event3.png'},
+            {src:'/Galeria/eventos/event4.png'},
+            {src:'/Galeria/eventos/event5.png'},
+            {src:'/Galeria/eventos/event6.png'},
+            {src:'/Galeria/eventos/event7.png'},
+            {src:'/Galeria/eventos/event8.png'},
+            {src:'/Galeria/eventos/event9.png'},
         ],
         settings  :{
             "centerPadding": "5px",

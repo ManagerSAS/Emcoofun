@@ -15,7 +15,7 @@
                     <div><br>
                         <v-btn
                             style="background: linear-gradient(to right, #A7CB68, #5AB780)"
-                            class="shadow-principal btn-hover"
+                            class="shadow-principal btn-hover text-capitalize"
                             dark
                             rounded-xl
                             to="pay"
@@ -31,15 +31,15 @@
                         <h1 justify="center" align="center"> 
                             <img src="../../static/iconos/registroObituario.png" alt="" height="60">
                         </h1>
-                        <h1 class="text-raleway font-weight-black" style="color: #003B4C">Registro de defunción</h1>
+                        <h1 class="text-raleway font-weight-black text-capitalize" style="color: #003B4C">Registro de defunción</h1>
                     </div>
                     <div class="color-blue-dark">
-                        Haz click aquí y encuentra el registro civil de defunción. Solo digite el número de cédula de tu ser querido
+                        Haz click aquí y encuentra el registro civil de defunción. Solo digita el número de cédula de tu ser querido
                     </div>
                     <div><br>
                         <v-btn 
                             style="background: linear-gradient(to right, #80C49D, #2EAE9B)"
-                            class="shadow-principal btn-hover"
+                            class="shadow-principal btn-hover text-capitalize"
                             dark
                             rounded-xl
                             to="registration"
@@ -63,7 +63,7 @@
                     <div><br>
                         <v-btn
                             style="background: linear-gradient(to right, #EC6480, #E83E58)" 
-                            class="shadow-principal btn-hover"
+                            class="shadow-principal btn-hover text-capitalize"
                             dark
                             rounded-xl
                             to="/obituarios"

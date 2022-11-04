@@ -1,8 +1,8 @@
 <template>
     <div>
-        <v-carousel class="d-none d-lg-block d-xl-block pc" width="100%" :cycle="true"  delimiter-icon="mdi-seed"  hide-delimiter-background show-arrows-on-hover >
+        <v-carousel class="d-none d-lg-block d-xl-block pc" height="100%" :cycle="true"  delimiter-icon="mdi-seed"  hide-delimiter-background show-arrows-on-hover >
             <v-carousel-item
-                
+                class="bg-cover"
                 v-for="({src},index) in sliderPc"
                 :key="index"
                 :src="src"
@@ -10,7 +10,7 @@
             >
             </v-carousel-item>
         </v-carousel>
-        <v-carousel class="d-none d-md-block d-lg-none" :cycle="true"  delimiter-icon="mdi-seed"  hide-delimiter-background show-arrows-on-hover width="100%">
+        <!-- <v-carousel class="d-none d-md-block d-lg-none" :cycle="true"  delimiter-icon="mdi-seed"  hide-delimiter-background show-arrows-on-hover width="100%">
             <v-carousel-item
                 v-for="({src},index) in sliderLaptop"
                 :key="index"
@@ -27,15 +27,23 @@
                 cycle
             >
             </v-carousel-item>
-        </v-carousel>
+        </v-carousel> -->
     </div>
 </template>
+<style lang="scss">
+    .bg-cover{
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+</style>
+
 <script>
 export default ({
     data() {
         return{
             sliderPc: [
-                {src:'https://res.cloudinary.com/dazyyib7u/image/upload/c_scale,h_500,w_1921/v1662383569/Banners/Home/dtgvmipzpgtph4jhisg9.png'},
+                {src:'banners/BannerPlanPc.png'},
                 {src:"https://res.cloudinary.com/dazyyib7u/image/upload/c_scale,h_500,w_1921/v1662383759/Banners/Home/kcnhsrmwi4psggtseajj.png"}
             ],
             sliderLaptop: [

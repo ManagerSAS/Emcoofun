@@ -2,13 +2,13 @@
     <div >
         <v-toolbar  
             color="white"
-            
+            fixed
             dense 
             height="80"
             >        
 
             <v-toolbar-title class="pt-3">
-                <a href = "/"><img src="../static/nav/logo.webp" alt="" width="130px" ></a>
+                <a href = "/" class="header-logo"><img src="../static/nav/logo.webp" alt="" width="130px" ></a>
             </v-toolbar-title>
         
             <v-spacer></v-spacer>
@@ -25,24 +25,22 @@
             
         </v-toolbar>
       
-              <v-navigation-drawer v-model="drawer"  app temporary> 
-                  <v-list density="compact">
-                      <v-subheader><a href = "/"><img src="../static/nav/logo.webp" alt="" width="130px" ></a></v-subheader>
-                      <v-list-item
-                          v-for="({ text, to }, index) in  btnsNav" 
-                          :key="index"
-                          :to="{ path: to }"
-                          class="color-blue-dark "  
-                      >
-                          <v-list-item-title >{{text}}</v-list-item-title>
-                      </v-list-item>
-                  </v-list>
-              </v-navigation-drawer>
+        <v-navigation-drawer v-model="drawer"  app temporary> 
+            <v-list density="compact">
+                <v-subheader><a href = "/"><img src="../static/nav/logo.webp" alt="" width="130px" ></a></v-subheader>
+                <v-list-item
+                    v-for="({ text, to }, index) in  btnsNav" 
+                    :key="index"
+                    :to="{ path: to }"
+                    class="color-blue-dark "  
+                >
+                    <v-list-item-title >{{text}}</v-list-item-title>
+                </v-list-item>
+            </v-list>
+        </v-navigation-drawer>
     </div>  
 </template>
 <script>
-
-
 export default {
   	data () {
 	    return {
@@ -77,12 +75,10 @@ export default {
 .color-blue-dark{
 	color: #003B4C;
 }
-.box-search{
-    width: 250px;
-}
+
 .header-logo{
 	position: relative;
-	left: 12.5rem;
+	left: 1rem;
 }
 .fixed-bar {
   position: sticky;

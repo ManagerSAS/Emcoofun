@@ -1,12 +1,12 @@
 <template>
-    <div >
+    <v-container fluid >
         <v-row id="empresariales"  justify="center" align="center" >
 			<v-col cols="12" sm="12" md="12" lg="10" xl="9" class="mt-5 mb-5">
                 <v-row >
-                    <v-col sm="12" md="5" lg="6" xl="5"  justify="center" align="center">
+                    <v-col cols="12" sm="12" md="5" lg="6" xl="5"  justify="center" align="center">
                         <img src="../../static/velacion.png" width="60%">
                     </v-col>
-                    <v-col sm="12" md="6" lg="6" xl="6">
+                    <v-col cols="12" sm="12" md="6" lg="6" xl="6">
                         <div class="ml-5 mr-5">
                             <p class="texto" style="color: #ED6D81" > Durante la Velacion:</p><br>
                             <p class="font"><span style="color: #ED6D81">1.</span> Salas de velación hasta por 24 horas en la Red Nacional LOS OLIVOS, excepto en el Departamento de Antioquia, donde el servicio de velación es hasta por 12 horas y en donde la Red Nacional tenga convenio vigente de acuerdo al caso. </p>
@@ -19,16 +19,16 @@
                                 <p class="font"><span style="color: #ED6D81">7.</span> Velación domiciliaria (incluye préstamo de implementos para la velación y un kit de cafetería). Se realiza de acuerdo a la normatividad vigente.</p>
                             </div>
                             <div align="center" justify="center">
-                                <v-btn  style="background-color: #ED6D81; color: white" elevation="2" class="mt-2" v-if="mostrar === false" @click="mostrar = !mostrar">Ver más</v-btn>
-                                <v-btn  style="background-color: #ED6D81; color: white" elevation="2" class="mt-2" v-if="mostrar === true" @click="mostrar = !mostrar">Ver menos</v-btn>
-                                <v-btn href="/AfiliacionOnLine"  style="background-color: #ED6D81; color: white" elevation="2" class="mt-2">Afiliarme</v-btn>
+                                <v-btn  style="background-color: #ED6D81; color: white" elevation="2" class="mt-2 text-capitalize" v-if="mostrar === false" @click="mostrar = !mostrar">Ver más</v-btn>
+                                <v-btn  style="background-color: #ED6D81; color: white" elevation="2" class="mt-2 text-capitalize" v-if="mostrar === true" @click="mostrar = !mostrar">Ver menos</v-btn>
+                                <v-btn href="/AfiliacionOnLine"  style="background-color: #ED6D81; color: white" elevation="2" class="mt-2 text-capitalize">Afiliarme</v-btn>
                             </div>
                         </div>
                     </v-col>
                 </v-row>
             </v-col>
         </v-row>
-    </div>
+    </v-container>
 </template>
 <script>
 

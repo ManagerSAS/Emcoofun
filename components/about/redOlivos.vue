@@ -7,7 +7,7 @@
                         <img src="../../static/redOlivos.png" width="90%">
                     </v-col>
                     <v-col cols="12" sm="10" md="6" lg="6" class="text-comfortaa"  >
-                        <h2 style="font-size:40px; color: #F18C20; " class="mb-5">Red Olivos</h2>
+                        <h2 style="font-size:40px; color: #F18C20; " class="mb-5">Red olivos</h2>
                         <p style="font-size:22px; color:#003B4C;">Los Olivos es la RED de Servicios Funerarios más
                         importante de Colombia: Con la mayor cobertura
                         geográfica nacional, más de 6 millones de personas

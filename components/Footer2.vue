@@ -268,7 +268,7 @@ export default {
                 { text: 'Velación virtual', to: '/VelacionVirtual' },
                 { text: 'Actualización RTE', to: '/ActualizacionRTE' },
                 { text: '¿Preguntas frecuentes?', to: '/PreguntasFrecuentes' },
-                { text: 'Facturacion Electrónica', to: '/FacturacionElectronica/FacturacionElectronica' },
+                { text: 'Facturación Electrónica', to: '/FacturacionElectronica/FacturacionElectronica' },
                 { text: 'NotiOlivos', to: '/Notiolivos' },
                 { text: 'Los Olivos Obituarios', to: '/OlivosObituarios/Login' },
 

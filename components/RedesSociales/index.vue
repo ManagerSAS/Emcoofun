@@ -1,5 +1,5 @@
 <template>
-    <div class="flotante" justify="end" align="end">
+    <div class="flotante" justify="center" align="center">
         <v-tooltip left color="success" v-model="show">
             <template v-slot:activator="{ on, attrs }">
                 <v-btn
@@ -62,50 +62,9 @@
 	background-image: url('~/static/iconos/iconFace.png');
 }
 .flotante{
-    width: 220px;
+    max-width: 80px;
     position: fixed;
-    z-index: 100; 
-    margin-left: 40%;
+    z-index: 10; 
+    right: 0; 
 }
-@media only screen and(min-width: 1600px) { 
-	.flotante{
-		width: 220px; 
-		position: fixed;
-		z-index: 100; 
-		margin-left:88%;
-	}
-}
-@media only screen and (min-width: 1200px) and (max-width: 1599px) { 
-	.flotante{
-		width: 220px;
-		position: fixed;
-		z-index: 100; 
-		margin-left:83%;
-	}
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) { 
-	.flotante{
-		position: fixed;
-		width: 100px;
-		z-index: 100; 
-		margin-left:88%;
-	}
-}
-@media only screen and (min-width: 768px) and (max-width: 952px) { 
-	.flotante{
-		position: fixed;
-		width: 100px;
-		z-index: 100; 
-		margin-left:84%;
-	}
-}
-@media only screen and (min-width: 413px) and (max-width: 765px) { 
-	.flotante{
-		position: fixed;
-		z-index: 100; 
-        width: 100px;
-		margin-left: 75%;
-	}
-}
-
 </style>

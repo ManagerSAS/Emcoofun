@@ -35,16 +35,16 @@ export default ({
     data() {
         return{
             sliderPc: [
-                {titulo: "Servicio al cliente", src:"https://res.cloudinary.com/dazyyib7u/image/upload/v1664739716/Banners/Home/whsipxelgvgtiggc0ppf.jpg"},
-                {titulo: "La tranquilidad", src:"https://res.cloudinary.com/olivos-villavicencio/image/upload/v1651004790/f3nggn4zbwrsh0u6bsim.jpg"}
+                {titulo: "Servicio al cliente", src:"/banners/plans/bannerPC1.jpg"},
+                {titulo: "La tranquilidad", src:"/banners/plans/bannerPC2.jpg"}
             ],
             sliderLaptop: [
-                {titulo: "Servicio al cliente", src:"https://res.cloudinary.com/dazyyib7u/image/upload/v1664739716/Banners/Home/gb6evdadu7hodl4ajawz.jpg"},
-                {titulo: "La tranquilidad", src:"https://res.cloudinary.com/dhl17zanz/image/upload/v1653657970/fubdjyggapah7no5jyen.jpg"}
+                {titulo: "Servicio al cliente", src:"/banners/plans/bannerLaptop1.jpg"},
+                {titulo: "La tranquilidad", src:"/banners/plans/bannerLaptop2.jpg"}
             ],
             sliderCel: [
-                {titulo: "Servicio al cliente", src:"https://res.cloudinary.com/dazyyib7u/image/upload/v1664739716/Banners/Home/fk3pfnmcdrsddki33oaq.jpg"},
-                {titulo: "La tranquilidad", src:"https://res.cloudinary.com/dhl17zanz/image/upload/v1653657007/inzy2j5jwpxivy1u5ldy.jpg"}
+                {titulo: "Servicio al cliente", src:"/banners/plans/bannercel1.jpg"},
+                {titulo: "La tranquilidad", src:"/banners/plans/bannercel2.jpg"}
             ]
         }
     },

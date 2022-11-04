@@ -35,17 +35,17 @@ export default {
                 {
                     icon: '/iconos/trabajoEquipo.png',
                     title: 'Trabajo en equipo',
-                    description: 'Las bases de nuestras accionesson: El diseño y oferta integral deplanes y servicios, las sinergias entre las áreas de la organización ,el alineamiento con las políticas y objetivos de la organización, paragarantizar el crecimiento y desarrollo',
+                    description: 'Las bases de nuestras acciones son: El diseño y oferta integral deplanes y servicios, las sinergias entre las áreas de la organización, el alineamiento con las políticas y objetivos de la organización, para garantizar el crecimiento y desarrollo',
                 },
                 {
                     icon: '/iconos/responsabilidad.png',
                     title: 'Responsabilidad y Compromiso',
-                    description: 'Asumimos nuestras funciones con laresponsabilidad y cumplimiento quegarantiza nuestra propia satisfacción,la de nuestros clientes y los resultados esperados por nuestras empresas asociadas',
+                    description: 'Asumimos nuestras funciones con la responsabilidad y cumplimiento que garantiza nuestra propia satisfacción, la de nuestros clientes y los resultados esperados por nuestras empresas asociadas',
                 },
                 {
                     icon: '/iconos/liderazgo.png',
                     title: 'Liderazgo',
-                    description: 'Estamos atentos en la búsqueda deoportunidades de desarrollo en losplanes y servicios, en la canalizaciónde las necesidades de nuestros clientes y en aunar esfuerzos en las diferentes áreas para lograr los ideales de la organización.',
+                    description: 'Estamos atentos en la búsqueda de oportunidades de desarrollo en los planes y servicios, en la canalizaciónde las necesidades de nuestros clientes y en aunar esfuerzos en las diferentes áreas para lograr los ideales de la organización.',
                 },
                 {
                     icon: '/iconos/transparenca.png',

@@ -30,7 +30,7 @@
                         <v-col cols="10" sm="4" md="5" lg="5" justify="center" align="center">
                             <v-btn 
                                 style="background: linear-gradient(to right, #B9466A, #660F2E); color: white;"
-                                class="shadow-principal btn-hover text-comfortaa font-weight-black "
+                                class="shadow-principal btn-hover text-comfortaa font-weight-black text-capitalize "
                                 rounded-xl
                                 dark
                                 large
@@ -47,7 +47,7 @@
                             <v-btn 
                                 width="200"
                                 style="background: linear-gradient(to right, #B9466A, #660F2E); color: white;"
-                                class="shadow-principal btn-hover text-comfortaa font-weight-black "
+                                class="shadow-principal btn-hover text-comfortaa font-weight-black text-capitalize "
                                 rounded-xl
                                 dark
                                 large

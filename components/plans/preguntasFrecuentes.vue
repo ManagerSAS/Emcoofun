@@ -1,7 +1,6 @@
 <template>
-    <div class="pa-2">
-       <v-row justify="center" 
-                    align="center">
+    <v-container fluid >
+       <v-row justify="center"  align="center">
            <v-col cols="12" sm="11" md="12" lg="12">
                 <p 
                     class="text-h3 texto mt-5 mb-lg-10 " 
@@ -21,12 +20,12 @@
                         <div >
                             <v-divider style=" border-style:dashed" color="#DDE05D" width="80%"></v-divider>
                         </div>
-                        <div class="mt-6">
+                        <div class="mt-6 ml-lg-2 ml-md-2">
                             <p style="font-family: 'Comfortaa', cursive; font-weight: bold; font-size: 21px; color: #DDE05D;">¿Qué requisitos necesito para afiliarme?</p>
-                            <p style="font-family: 'Comfortaa', cursive; font-weight: bold; font-size: 18px; color: white;">LEn realidad, los requisitos son mínimos, información del titular y su grupo familiar que debe contener fechas de nacimiento, nombres completos y parentescos con el titular.</p>
+                            <p style="font-family: 'Comfortaa', cursive; font-weight: bold; font-size: 18px; color: white;">En realidad, los requisitos son mínimos, información del titular y su grupo familiar que debe contener fechas de nacimiento, nombres completos y parentescos con el titular.</p>
                         </div>
                         <div align="center" justify="center">
-                            <v-btn  style="background-color: #DDE05D; color: white" elevation="2" class="mt-2">Ver más</v-btn>
+                            <v-btn href="/PreguntasFrecuentes"  style="background-color: #DDE05D; color: white" elevation="2" class="mt-2">Ver más</v-btn>
                         </div>
                     </v-col>
                    <v-col sm="11" md="6" lg="6" xl="4" justify="center" align="center" >
@@ -36,7 +35,7 @@
                 </v-row>
            </v-col>
        </v-row>
-    </div>
+    </v-container>
 </template>
 <style >
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');

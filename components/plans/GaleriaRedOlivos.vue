@@ -1,119 +1,125 @@
 <template>
-    <div>
-        <v-row justify="center" align="center">
-            <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
-                <h1 class="mb-6 text-raleway" style="color:#003B4C; font-size: 36px; font-weight: 800;">
-                    RED OLIVOS
-                </h1>
-            </v-col>
-        </v-row>
+    <v-container fluid>
+        <div justify="center" align="center" cols="12" sm="12" md="12" lg="12">
+            <h1 class="mb-6 pt-6 text-raleway" style="color:#003B4C; font-size: 36px; font-weight: 800;">
+                RED OLIVOS
+            </h1>
+        </div>
         <v-row justify="center" align="center">
             <v-col justify="center" align="center" cols="12" sm="12" md="10" lg="10">
-                <v-sheet justify="center" align="center" class=" mb-8">
-                    <VueSlickCarousel style="background-color: rgb(227,235,235,0.5)" v-bind="settings">
-                        <div v-for="({src,nameSede} ,index) in Eventos" :key="index">
-                            <v-img
-                                class="rounded-xl img-principal"  max-width="80%" 
-                                :lazy-src="src"
-                                :src="src"
-                            ></v-img><br>
-                            <p class="text-comfortaa" style="color:#003B4C; font-size: 20px;">{{nameSede}}</p>
-                        </div>
-                    </VueSlickCarousel>
-                </v-sheet>
+                <VueSlickCarousel :arrows="false" v-bind="settings">
+                    <div v-for="({src,nameSede} ,index) in Eventos" :key="index">
+                        <v-img
+                            class="rounded-xl img-principal"  max-width="80%" 
+                            :src="src"
+                        ></v-img><br>
+                        <p class="text-comfortaa" style="color:#003B4C; font-size: 20px;">{{nameSede}}</p>
+                    </div>
+                </VueSlickCarousel>
             </v-col>
         </v-row>
-    </div>
+    </v-container>
 </template>
 <script>
-    import VueSlickCarousel from 'vue-slick-carousel'
-  import 'vue-slick-carousel/dist/vue-slick-carousel.css'
-  // optional style for arrows & dots
-  import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+// optional style for arrows & dots
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 export default ({
     components: { VueSlickCarousel },
     data() {
       return{
         Eventos:[
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441481/04.%20Galeria/hrprxzvifnw8clcxpp1e.png',nameSede:'Evento'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441481/04.%20Galeria/a0lcirgq9wer3roy0krz.png',nameSede:'Evento'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441481/04.%20Galeria/tztomgsqiuy2viq2tex1.png',nameSede:'Evento'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441480/04.%20Galeria/bxkgximwcnzazpuwwnmj.png',nameSede:'Evento'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441481/04.%20Galeria/wwwegxwyhgwvxi0hdges.png',nameSede:'Evento'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441480/04.%20Galeria/knflbyi7dmgefqi5xm7z.png',nameSede:'Evento'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441477/04.%20Galeria/l8kkcqcoxernp56belcd.png',nameSede:'Evento'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441480/04.%20Galeria/vpxgy0k233ozm3fb8uha.png',nameSede:'Evento'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441480/04.%20Galeria/akw74wsxszrl46eai4ik.png',nameSede:'Evento'},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441480/04.%20Galeria/us8qzhl3bfsek1ubygeg.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441480/04.%20Galeria/jbsdzhseo6h2m4czx5oz.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441480/04.%20Galeria/zo0pknspuvztgraudti5.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441479/04.%20Galeria/ljqoh3kmu2mywrpbz1m5.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441479/04.%20Galeria/q6x2mcgocstnxeaqzhgp.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441480/04.%20Galeria/nltke22hfvfxot4yq9yp.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441479/04.%20Galeria/lmm0uullixepudtwsqyy.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441480/04.%20Galeria/d4p1vgmog8mgr78k48ck.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441479/04.%20Galeria/ijwtspj5if6vbkdxzmfd.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441479/04.%20Galeria/mq9p7qng7crtacjvndgr.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441479/04.%20Galeria/enxmuokfbudyqd3ov6rb.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441480/04.%20Galeria/cc3ii2sx1mve6l3uoyap.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441478/04.%20Galeria/np6lbed8j6jxxsykpsa7.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441479/04.%20Galeria/ryyn0egfm1ejpudybvzp.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441479/04.%20Galeria/g9ofybk1ryygirqyx3wq.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441479/04.%20Galeria/i84zox8c5bmcdblc0oug.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441479/04.%20Galeria/bzednbmpmrou8jmbguda.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441479/04.%20Galeria/g5mqyfc1wawiphvqzgc8.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441479/04.%20Galeria/rro7tsqmcs110adzzmih.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441478/04.%20Galeria/eogbdzovexhs7o2skwdd.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441478/04.%20Galeria/oszdwtwxsobgspli7uvk.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441478/04.%20Galeria/afkjcj7icdtaokjsrvfw.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441478/04.%20Galeria/dndf2qljb88sedolpiri.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441478/04.%20Galeria/wdmox4wlvkl7zmns3ifz.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441478/04.%20Galeria/xtk3dlfj47mg7sxghpbp.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441478/04.%20Galeria/se1tc8od4reu9e9xxl6q.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441477/04.%20Galeria/w4qxfweurhy4ftjuqxay.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441477/04.%20Galeria/vhebschuby41ypyghlhs.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441477/04.%20Galeria/yeu2ldphrlhyezmasvzy.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441477/04.%20Galeria/j8dbyubeosqeudfvaxef.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441478/04.%20Galeria/meblq8anwfhxkcuubs5e.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441478/04.%20Galeria/xorgem0cf00sgrrwfheh.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441478/04.%20Galeria/uojjbvxfuoz3f2i4zhl9.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441477/04.%20Galeria/l8kkcqcoxernp56belcd.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441477/04.%20Galeria/ihf2rgvnx0nkeyk1epff.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441477/04.%20Galeria/sezvsaqvynxcsll0eqfx.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441477/04.%20Galeria/bkph0wwjrtfdmitnfzoi.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441477/04.%20Galeria/ylenozxcbje6bpn024gs.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441477/04.%20Galeria/thxyp742velfe8qoliz1.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441477/04.%20Galeria/gxjdc6qcxftjj4mkmfni.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441476/04.%20Galeria/uaymta1meex7ixqscdql.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441476/04.%20Galeria/q5jssmlxxke0i8nt8xda.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441476/04.%20Galeria/asgk7wnmldbk0rqbbeet.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441476/04.%20Galeria/rsunnns40l4hfvip50dw.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441476/04.%20Galeria/lmkagusuit9v7gmnmgqp.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441476/04.%20Galeria/n4hr3oft72y86qsvpcty.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441476/04.%20Galeria/qjnl9g9bmfeadc5iqntw.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441475/04.%20Galeria/ud0cwxn7dknstcxqw4h9.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441475/04.%20Galeria/epuh50l8bdeasykbea5x.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441475/04.%20Galeria/xiwdijgvzukbqsrsq1o4.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441476/04.%20Galeria/plknubgm5j0fsjarsqt5.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441476/04.%20Galeria/srrkfysf1dslcfmjlkyy.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441476/04.%20Galeria/k7lizlvndqlaupnlcoer.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441476/04.%20Galeria/j5lqlidxwnkl8jm15i7y.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441474/04.%20Galeria/oajwyikvu23yf6dvleu7.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441474/04.%20Galeria/x72i97odwqyw25edne36.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441475/04.%20Galeria/vcgsac2ppftttwzqka2o.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441475/04.%20Galeria/ocoeacxhp8gpuw0kykls.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441475/04.%20Galeria/jhribiesryx7f2b7dfal.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441475/04.%20Galeria/ovparv6h7q5vpezlwglu.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441475/04.%20Galeria/tozdisbqfqsuwvahy9re.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441474/04.%20Galeria/dsessctxfseaa88v9vja.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441474/04.%20Galeria/bmoudkiapprgxvpt2efn.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441474/04.%20Galeria/uapcmlgucmtkoyjzxxvr.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441474/04.%20Galeria/bx54lyqstendvwu4etxw.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441474/04.%20Galeria/vwsogcbx0s3r9qpjmpcr.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441474/04.%20Galeria/pw4svrfbdtluk11yxwbw.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441474/04.%20Galeria/g8ijecqzflq0vlsqbais.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441474/04.%20Galeria/mprvj0wcstdkbvpxlrww.png',nameSede:''},
-            {src:'https://res.cloudinary.com/dazyyib7u/image/upload/v1665441474/04.%20Galeria/wtygiznofc1ufydn6otz.png',nameSede:''},
+            // Barrancabermeja y Sur de Bolivar
+            {src:'/Galeria/Redolivos/1_Barrancabermeja_y_Sur_de_Bolivar-1.png',nameSede:'Barrancabermeja y Sur de Bolivar'},
+            {src:'/Galeria/Redolivos/1_Barrancabermeja_y_Sur_de_Bolivar-2.png',nameSede:'Barrancabermeja y Sur de Bolivar'},
+            {src:'/Galeria/Redolivos/1_Barrancabermeja_y_Sur_de_Bolivar-3.png',nameSede:'Barrancabermeja y Sur de Bolivar'},
+            {src:'/Galeria/Redolivos/1_Barrancabermeja_y_Sur_de_Bolivar-4.png',nameSede:'Barrancabermeja y Sur de Bolivar'},
+            {src:'/Galeria/Redolivos/1_Barrancabermeja_y_Sur_de_Bolivar-5.png',nameSede:'Barrancabermeja y Sur de Bolivar'},
+            // Atantico-Cesar-y-La-Guajira
+            {src:'/Galeria/Redolivos/2-Atantico-Cesar-y-La-Guajira-1.png',nameSede:'Atantico, Cesar y La Guajira'},
+            {src:'/Galeria/Redolivos/2-Atantico-Cesar-y-La-Guajira-2.png',nameSede:'Atantico, Cesar y La Guajira'},
+            {src:'/Galeria/Redolivos/2-Atantico-Cesar-y-La-Guajira-3.png',nameSede:'Atantico, Cesar y La Guajira'},
+            {src:'/Galeria/Redolivos/2-Atantico-Cesar-y-La-Guajira-4.png',nameSede:'Atantico, Cesar y La Guajira'},
+            {src:'/Galeria/Redolivos/2-Atantico-Cesar-y-La-Guajira-5.png',nameSede:'Atantico, Cesar y La Guajira'},
+            // Cundinamarca
+            {src:'/Galeria/Redolivos/3-Cundinamarca-1.png',nameSede:'Cundinamarca'},
+            {src:'/Galeria/Redolivos/3-Cundinamarca-2.png',nameSede:'Cundinamarca'},
+            {src:'/Galeria/Redolivos/3-Cundinamarca-3.png',nameSede:'Cundinamarca'},
+            {src:'/Galeria/Redolivos/3-Cundinamarca-4.png',nameSede:'Cundinamarca'},
+            // Bucaramanga
+            {src:'/Galeria/Redolivos/4-Bucaramanga-1.png',nameSede:'Bucaramanga'},
+            {src:'/Galeria/Redolivos/4-Bucaramanga-2.png',nameSede:'Bucaramanga'},
+            {src:'/Galeria/Redolivos/4-Bucaramanga-3.png',nameSede:'Bucaramanga'},
+            {src:'/Galeria/Redolivos/4-Bucaramanga-4.png',nameSede:'Bucaramanga'},
+            {src:'/Galeria/Redolivos/4-Bucaramanga-5.png',nameSede:'Bucaramanga'},
+            // Caldas
+            {src:'/Galeria/Redolivos/5-Caldas-1.png',nameSede:'Caldas'},
+            {src:'/Galeria/Redolivos/5-Caldas-2.png',nameSede:'Caldas'},
+            {src:'/Galeria/Redolivos/5-Caldas-3.png',nameSede:'Caldas'},
+            {src:'/Galeria/Redolivos/5-Caldas-4.png',nameSede:'Caldas'},
+            {src:'/Galeria/Redolivos/5-Caldas-5.png',nameSede:'Caldas'},
+            // Valle Cauca y Narino
+            {src:'/Galeria/Redolivos/6-Valle-Cauca-y-Narino-1.png',nameSede:'Valle del Cauca y Narino'},
+            {src:'/Galeria/Redolivos/6-Valle-Cauca-y-Narino-2.png',nameSede:'Valle del Cauca y Narino'},
+            {src:'/Galeria/Redolivos/6-Valle-Cauca-y-Narino-3.png',nameSede:'Valle del Cauca y Narino'},
+            {src:'/Galeria/Redolivos/6-Valle-Cauca-y-Narino-4.png',nameSede:'Valle del Cauca y Narino'},
+            {src:'/Galeria/Redolivos/6-Valle-Cauca-y-Narino-5.png',nameSede:'Valle del Cauca y Narino'},
+            // Bolivar
+            {src:'/Galeria/Redolivos/7-Bolivar-1.png',nameSede:'Bolivar'},
+            {src:'/Galeria/Redolivos/7-Bolivar-2.png',nameSede:'Bolivar'},
+            {src:'/Galeria/Redolivos/7-Bolivar-3.png',nameSede:'Bolivar'},
+            {src:'/Galeria/Redolivos/7-Bolivar-4.png',nameSede:'Bolivar'},
+            {src:'/Galeria/Redolivos/7-Bolivar-5.png',nameSede:'Bolivar'},
+            // Tolima
+            {src:'/Galeria/Redolivos/9-Tolima-1.png',nameSede:'Tolima'},
+            {src:'/Galeria/Redolivos/9-Tolima-2.png',nameSede:'Tolima'},
+            {src:'/Galeria/Redolivos/9-Tolima-3.png',nameSede:'Tolima'},
+            {src:'/Galeria/Redolivos/9-Tolima-4.png',nameSede:'Tolima'},
+            {src:'/Galeria/Redolivos/9-Tolima-5.png',nameSede:'Tolima'},
+            // Antioquia
+            {src:'/Galeria/Redolivos/10-Antioquia-1.png',nameSede:'Antioquia'},
+            {src:'/Galeria/Redolivos/10-Antioquia-2.png',nameSede:'Antioquia'},
+            {src:'/Galeria/Redolivos/10-Antioquia-3.png',nameSede:'Antioquia'},
+            {src:'/Galeria/Redolivos/10-Antioquia-4.png',nameSede:'Antioquia'},
+            {src:'/Galeria/Redolivos/10-Antioquia-5.png',nameSede:'Antioquia'},
+            {src:'/Galeria/Redolivos/10-Antioquia-6.png',nameSede:'Antioquia'},
+            // Cordoba y Sucre
+            {src:'/Galeria/Redolivos/11-Cordoba-y-Sucre-1.png',nameSede:'Cordoba y Sucre'},
+            {src:'/Galeria/Redolivos/11-Cordoba-y-Sucre-2.png',nameSede:'Cordoba y Sucre'},
+            {src:'/Galeria/Redolivos/11-Cordoba-y-Sucre-3.png',nameSede:'Cordoba y Sucre'},
+            {src:'/Galeria/Redolivos/11-Cordoba-y-Sucre-4.png',nameSede:'Cordoba y Sucre'},
+            {src:'/Galeria/Redolivos/11-Cordoba-y-Sucre-5.png',nameSede:'Cordoba y Sucre'},
+            // Huila y Florencia
+            {src:'/Galeria/Redolivos/12-Huila-y-Florencia-1.png',nameSede:'Huila y Florencia'},
+            {src:'/Galeria/Redolivos/12-Huila-y-Florencia-2.png',nameSede:'Huila y Florencia'},
+            {src:'/Galeria/Redolivos/12-Huila-y-Florencia-3.png',nameSede:'Huila y Florencia'},
+            {src:'/Galeria/Redolivos/12-Huila-y-Florencia-4.png',nameSede:'Huila y Florencia'},
+            {src:'/Galeria/Redolivos/12-Huila-y-Florencia-5.png',nameSede:'Huila y Florencia'},
+            // Quindio y Risaralda
+            {src:'/Galeria/Redolivos/13-Quindio-y-Risaralda-1.png',nameSede:'Quindio y Risaralda'},
+            {src:'/Galeria/Redolivos/13-Quindio-y-Risaralda-2.png',nameSede:'Quindio y Risaralda'},
+            {src:'/Galeria/Redolivos/13-Quindio-y-Risaralda-3.png',nameSede:'Quindio y Risaralda'},
+            {src:'/Galeria/Redolivos/13-Quindio-y-Risaralda-4.png',nameSede:'Quindio y Risaralda'},
+            {src:'/Galeria/Redolivos/13-Quindio-y-Risaralda-5.png',nameSede:'Quindio y Risaralda'},
+            // Magdalena
+            {src:'/Galeria/Redolivos/14-Magdalena-1.png',nameSede:'Magdalena'},
+            {src:'/Galeria/Redolivos/14-Magdalena-2.png',nameSede:'Magdalena'},
+            {src:'/Galeria/Redolivos/14-Magdalena-3.png',nameSede:'Magdalena'},
+            {src:'/Galeria/Redolivos/14-Magdalena-4.png',nameSede:'Magdalena'},
+            {src:'/Galeria/Redolivos/14-Magdalena-5.png',nameSede:'Magdalena'},
+            // Norte del Valle
+            {src:'/Galeria/Redolivos/15-Norte-del-Valle-1.png',nameSede:'Norte del Valle'},
+            {src:'/Galeria/Redolivos/15-Norte-del-Valle-2.png',nameSede:'Norte del Valle'},
+            {src:'/Galeria/Redolivos/15-Norte-del-Valle-3.png',nameSede:'Norte del Valle'},
+            {src:'/Galeria/Redolivos/15-Norte-del-Valle-4.png',nameSede:'Norte del Valle'},
+            // Llanos Orientales
+            {src:'/Galeria/Redolivos/16-Llanos-Orientales-1.png',nameSede:'Llanos Orientales'},
+            {src:'/Galeria/Redolivos/16-Llanos-Orientales-2.png',nameSede:'Llanos Orientales'},
+            {src:'/Galeria/Redolivos/16-Llanos-Orientales-3.png',nameSede:'Llanos Orientales'},
+            {src:'/Galeria/Redolivos/16-Llanos-Orientales-4.png',nameSede:'Llanos Orientales'},
+            {src:'/Galeria/Redolivos/16-Llanos-Orientales-5.png',nameSede:'Llanos Orientales'},
+            {src:'/Galeria/Redolivos/16-Llanos-Orientales-6.png',nameSede:'Llanos Orientales'},
         ],
         settings  :{
             "autoplay": true,
@@ -129,7 +135,7 @@ export default ({
                         "slidesToShow": 2,
                         "slidesToScroll": 2,
                         "infinite": true,
-                        "dots": true
+                        "dots": false
                     }
                 },
                 {
@@ -138,7 +144,7 @@ export default ({
                         "slidesToShow": 1,
                         "slidesToScroll": 1,
                         "infinite": true,
-                        "dots": true
+                        "dots": false
                     }
                 }
                 ,
@@ -148,7 +154,7 @@ export default ({
                         "slidesToShow": 1,
                         "slidesToScroll": 1,
                         "infinite": true,
-                        "dots": true
+                        "dots": false
                     }
                 }
             ]

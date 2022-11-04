@@ -1,61 +1,64 @@
 <template>
-    <v-container fluid>
-        <div class="BannerHomenajes">
-            <v-row justify="center" align="center">
-                <v-col justify="center" align="center" class="mt-15" cols="12" sm="12" md="12" lg="11">
-                    <v-btn class="btnPisitionho" style="background: linear-gradient(to right, rgba(185, 70, 106), rgba(120, 15, 46)); color: #FCF0A5;">
-                        Velación virtual
-                    </v-btn>
-                </v-col>
-            </v-row>
+        <div class="BannerHomenajes p  b-0">
+            <img width="100%" class="d-none d-lg-block d-xl-block" src="../../static/banners/homenajes/bannerHomenajesPc.jpg" alt="" srcset="">
+            <img width="100%" class="d-none d-md-block d-lg-none" src="../../static/banners/homenajes/bannerHomenajesLaptop.jpg" alt="" srcset="">
+            <img width="100%" class="d-block d-sm-none" src="../../static/banners/homenajes/bannerHomenajesCel.jpg" alt="" srcset="">
+            <v-btn class="btnPisition" style="background: linear-gradient(to right, rgba(185, 70, 106), rgba(120, 15, 46)); color: #FCF0A5;">
+                Velación virtual
+            </v-btn>
         </div>
-    </v-container>
 </template>
 <style lang="scss" >
     @media only screen and (min-width: 1600px) {
-        .btnPisitionho{
+        .btnPisition{
             position: relative;
-            top: 25em;
-        }
-        .BannerHomenajes{
-            background-image: url('../../static/banners/bannerHomenajesPc.jpg');
-            height: 500px;
-            width: 100%;
+            top: -5em;
+            left: 28%;
+            // float: center;
         }
     }
-    @media only screen and (min-width: 1200px) and (max-width: 1536px) {
-        .btnPisitionho{
-            position: flex;
-            top: 22em;
-        }
-        .BannerHomenajes{
-            background-image: url('../../static/banners/bannerHomenajesPc2.png');
-            height: 450px;
-            width: 100%;
+    @media only screen and (min-width: 1200px) and (max-width: 1599px) {
+        .btnPisition{
+            top: -5em;
+            left: 28%;
         }
     }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        .btnPisitionho{
-            position: flex;
-            top: 13em;
+        .btnPisition{
+            top: -4em;
+            left: 28%;
+        }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 952px) {
+        .btnPisition{
+            top: 60em;
+            left: 35%;
         }
         .BannerHomenajes{
-            background-image: url('../../static/banners/bannerHomenajesLaptop.jpg');
-            height: 320px;
+            background-image: url('../../static/banners/pagos/bannerpagostablet.png');
+            height: 60em;
             width: 100%;
         }
     }
-    @media only screen and (min-width: 413px) and (max-width: 765px) {
-        .btnPisitionho{
-            position: flex;
-            top: 26em;
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+        .btnPisition{
+            top: -2em;
+            left: 35%;
         }
         .BannerHomenajes{
-            background-image: url('../../static/banners/bannerHomenajesCel.jpg');
-            height: 500px;
+            background-image: url('../../static/banners/pagos/bannerpagoscel2.png');
+            height: 60em;
             width: 100%;
         }
     }
-
-
+    @media only screen and (min-width: 413px) and (max-width: 575px) {
+        .btnPisition{
+            top: -4em;
+            left: 30%;
+        }
+    }
+    .btnPisition{
+        top: -4em;
+        left: 30%;
+    }
 </style>

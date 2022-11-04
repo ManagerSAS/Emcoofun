@@ -2,7 +2,7 @@
     <div>
         <Header/>
         <RedesSociales/>
-        <FacturacionElectronica/>
+        <FacturacionElectronica class="mb-5"/>
         <Footer style="background: linear-gradient(270deg, #8fddaa 0%, #59ab9b 100%);"/>
     </div>
 </template>

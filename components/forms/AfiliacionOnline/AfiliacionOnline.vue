@@ -216,7 +216,7 @@
                                 <v-expansion-panel class="rounded-xl">
                                     <v-expansion-panel-header expand-icon="mdi-menu-down pa-1">
                                         <h4 class="color-blue-dark font-weight-bold">
-                                            NUESTRO PLAN DE PREVISIÓN ONLINE 
+                                            Nuestro Plan de previsión online 
                                         </h4>
                                     </v-expansion-panel-header>
                                     <v-expansion-panel-content>
@@ -294,7 +294,7 @@
                                 <v-expansion-panel class="rounded-xl">
                                     <v-expansion-panel-header expand-icon="mdi-menu-down pa-1">
                                         <h4 class="color-blue-dark font-weight-bold">
-                                            COBERTURA DEL PLAN DE PREVISIÓN ONLINE
+                                            Cobertura del plan de previsón online
                                         </h4>
                                     </v-expansion-panel-header>
                                     <v-expansion-panel-content class="color-blue-dark">

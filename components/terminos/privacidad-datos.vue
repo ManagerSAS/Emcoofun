@@ -22,7 +22,7 @@
                 <v-row justify="center" align="center">
                         <v-col justify="center" align="center" cols="12" sm="11" md="12" lg="12">
                             <h1 class="mb-6 text-comfortaa" style="color:#003B4C; font-size: 30px; font-weight: 800;">
-                                Protección de datos
+                                Autorización SARLAFT
                             </h1>
                         </v-col>
                     </v-row>

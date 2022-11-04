@@ -61,7 +61,10 @@
                     </v-col>
                     <v-col cols="12" sm="12" md="4" lg="2" xl="2" >
                         <img  src="../../static/iconosemcoofun/coopserfun.png" width="150px">
-                    </v-col>  
+                    </v-col> 
+                    <v-col cols="12" sm="12" md="4" lg="2" xl="2" >
+                        <img  src="../../static/iconosemcoofun/olivosserfuncoop.png" width="150px">
+                    </v-col> 
                 </v-row> 
             </v-col>
         </v-row>
