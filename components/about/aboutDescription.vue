@@ -6,9 +6,7 @@
         </h2>
         <v-row justify="center" align="center" >
             <v-col justify="center" align="center" cols="12" sm="12" md="5" lg="5">
-                <video  playsinline loop controls width="90%" height="400"  class="mt-2"   >
-                    <source src="../../static/LOS_OLIVOS_NEIVA_EMCOOFUN.mp4" >
-                </video>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BdfrDRezO8w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </v-col>
         </v-row>
         <v-row justify="center" align="center" >

@@ -5,7 +5,7 @@
                 <v-row justify="center" align="center">
                     <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
                         <h1 class="mb-6 text-raleway" style="color:#003B4C; font-size: 36px; font-weight: 800;">
-                            Sedes EMCOOFUN
+                            SEDES EMCOOFUN
                         </h1>
                     </v-col>
                 </v-row>
@@ -18,8 +18,8 @@
                         </div>
                         <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
                             <div>
-                                <v-btn @click="mostrarNeiva" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa font-weight-black" >
-                                    Sede Principal Nieva
+                                <v-btn @click="mostrarNeiva" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa text-capitalize font-weight-black" >
+                                    Sede principal Neiva
                                 </v-btn> <br></div>
                             <div>Direccion: Calle 16 No. 2-56</div>
                             <div>Linea Atencion: : PBX: 8715555</div>
@@ -34,7 +34,7 @@
                         </div>
                         <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
                             <div>
-                                <v-btn @click="mostrarGarzon" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa font-weight-black" >
+                                <v-btn @click="mostrarGarzon" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa text-capitalize font-weight-black" >
                                     Sede Garzón
                                 </v-btn>
                             </div>
@@ -96,7 +96,7 @@
                         </div>
                         <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
                             <div >
-                                <v-btn @click="mostrarPitalito" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa font-weight-black" >
+                                <v-btn @click="mostrarPitalito" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa text-capitalize font-weight-black" >
                                     Sede Pitalito
                                 </v-btn>
                             </div>
@@ -113,7 +113,7 @@
                         </div>
                         <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
                             <div>
-                                <v-btn @click="mostrarFlorencia" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa font-weight-black" >
+                                <v-btn @click="mostrarFlorencia" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa text-capitalize font-weight-black" >
                                     Sede  Florencia
                                 </v-btn>
                             </div>

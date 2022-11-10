@@ -10,7 +10,7 @@
             >
             </v-carousel-item>
         </v-carousel>
-        <v-carousel class="d-none d-md-block d-lg-none laptop" cycle  delimiter-icon="mdi-seed"  hide-delimiter-background height="350" >
+        <v-carousel class="d-none d-md-block d-lg-none laptop" cycle  delimiter-icon="mdi-seed"  hide-delimiter-background height="100%" >
             <v-carousel-item
                 v-for="({src},index) in sliderLaptop"
                 :key="index"
@@ -35,8 +35,8 @@ export default ({
     data() {
         return{
             sliderPc: [
-                {titulo: "Servicio al cliente", src:"/banners/plans/bannerPC1.jpg"},
-                {titulo: "La tranquilidad", src:"/banners/plans/bannerPC2.jpg"}
+                {titulo: "Servicio al cliente", src:"/banners/plans/bannerPc1.jpg"},
+                {titulo: "La tranquilidad", src:"/banners/plans/bannerPc2.jpg"}
             ],
             sliderLaptop: [
                 {titulo: "Servicio al cliente", src:"/banners/plans/bannerLaptop1.jpg"},

@@ -9,20 +9,14 @@
                     </v-col>
                 </v-row>
                 <v-row justify="center" align="center">
-                    <v-col cols="12" sm="3" md="3" lg="3">
-                            <video width="100%" height="100%" class="mt-2" controls>
-                                <source src="../../static/testmonios/testimoni1.mp4" type="video/mp4">
-                            </video>
+                    <v-col cols="12" sm="3" md="4" lg="3" justify="center" align="center">
+                        <iframe src="https://www.youtube.com/embed/wZ6H5_mFD30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </v-col>
-                    <v-col cols="12" sm="3" md="3" lg="3">
-                            <video justify="center" align="center" width="100%" height="100%" class="mt-2" controls>
-                                <source src="../../static/testmonios/testimonio2.mp4" type="video/mp4">
-                            </video>
+                    <v-col cols="12" sm="3" md="4" lg="3" justify="center" align="center" >
+                        <iframe src="https://www.youtube.com/embed/nzAHTrCGjNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </v-col>
-                    <v-col cols="12" sm="3" md="3" lg="3">
-                            <video width="100%" height="100%" class="mt-2" controls>
-                                <source src="../../static/testmonios/testimono3.mp4" type="video/mp4">
-                            </video>
+                    <v-col cols="12" sm="3" md="4" lg="3" justify="center" align="center">
+                        <iframe src="https://www.youtube.com/embed/LckJb3z9MAM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </v-col>
                 </v-row>
                 <v-row justify="center" align="center" class="ml-5 mr-5">
@@ -44,21 +38,15 @@
                     <v-carousel justify="center" align="center" class="cel d-block d-sm-none mb-5"  height="70%" :cycle="true" delimiter-icon="mdi-seed"  hide-delimiter-background show-arrows-on-hovers>
                             <v-carousel-item justify="center" align="center"
                             >
-                                <video width="90%" height="90%" class="mt-2" controls>
-                                    <source src="../../static/testmonios/testimoni1.mp4" type="video/mp4">
-                                </video>
+                                <iframe src="https://www.youtube.com/embed/wZ6H5_mFD30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </v-carousel-item>
+                            <v-carousel-item justify="center" align="center"
+                            >
+                                <iframe src="https://www.youtube.com/embed/nzAHTrCGjNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </v-carousel-item>
                             <v-carousel-item justify="center" align="center"
                             >
-                                <video width="90%" height="92%" class="mt-2" controls>
-                                    <source src="../../static/testmonios/testimonio2.mp4" type="video/mp4">
-                                </video>
-                            </v-carousel-item>
-                            <v-carousel-item justify="center" align="center"
-                            >
-                                <video width="90%" height="92%" class="mt-2" controls>
-                                    <source src="../../static/testmonios/testimono3.mp4" type="video/mp4">
-                                </video>
+                            <iframe src="https://www.youtube.com/embed/LckJb3z9MAM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </v-carousel-item>
                         </v-carousel>
                         <v-row justify="center" align="center" class="ml-5 mr-5">

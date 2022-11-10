@@ -9,7 +9,7 @@
         </v-row>
         <v-row justify="center" align="center">
             <v-col justify="center" align="center">
-                <img src="../../static/PAGOS.png" width="80%">
+                <img src="../../static/PAGOS.jpg" width="70%">
             </v-col>
         </v-row>
     </v-container>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-carousel class="d-none d-lg-block d-xl-block pc" height="100%" :cycle="true"  delimiter-icon="mdi-seed"  hide-delimiter-background show-arrows-on-hover >
+        <v-carousel class="d-none d-lg-block d-xl-block pc" width="100%" :cycle="true"  delimiter-icon="mdi-seed"  hide-delimiter-background show-arrows-on-hover >
             <v-carousel-item
                 class="bg-cover"
                 v-for="({src},index) in sliderPc"
@@ -10,7 +10,7 @@
             >
             </v-carousel-item>
         </v-carousel>
-        <!-- <v-carousel class="d-none d-md-block d-lg-none" :cycle="true"  delimiter-icon="mdi-seed"  hide-delimiter-background show-arrows-on-hover width="100%">
+        <v-carousel class="d-none d-md-block d-lg-none" :cycle="true"  delimiter-icon="mdi-seed"  hide-delimiter-background show-arrows-on-hover height="100%">
             <v-carousel-item
                 v-for="({src},index) in sliderLaptop"
                 :key="index"
@@ -27,7 +27,7 @@
                 cycle
             >
             </v-carousel-item>
-        </v-carousel> -->
+        </v-carousel>
     </div>
 </template>
 <style lang="scss">
@@ -43,16 +43,16 @@ export default ({
     data() {
         return{
             sliderPc: [
-                {src:'banners/BannerPlanPc.png'},
-                {src:"https://res.cloudinary.com/dazyyib7u/image/upload/c_scale,h_500,w_1921/v1662383759/Banners/Home/kcnhsrmwi4psggtseajj.png"}
+                {src:'/banners/index/BannerPlanPc.jpg'},
+                {src:'/banners/index/BannerPlanPc2.jpg'}
             ],
             sliderLaptop: [
-                {src:"https://res.cloudinary.com/dazyyib7u/image/upload/v1662383569/Banners/Home/pplwcntmi0wtkxtbtsq6.png"},
-                {src:"https://res.cloudinary.com/dazyyib7u/image/upload/v1662383759/Banners/Home/mbuoaqakniwwltxbqkyp.png"}
+                {src:"/banners/index/BannerPlanLaptop1.jpg"},
+                {src:"/banners/index/BannerPlanLaptop2.jpg"}
             ],
             sliderCel: [
-                {src:"https://res.cloudinary.com/dazyyib7u/image/upload/v1662383569/Banners/Home/uolhwwijhpxw5nrd4ani.png"},
-                {src:"https://res.cloudinary.com/dazyyib7u/image/upload/v1662383759/Banners/Home/iafc8f5jv5cb8qafrfp3.png"}
+                {src:"/banners/index/BannerPlanCel1.jpg"},
+                {src:"/banners/index/BannerPlanCel2.jpg"}
             ]
         }
     },

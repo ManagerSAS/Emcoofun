@@ -1,5 +1,7 @@
 <template>
-    <div>
+    <div style="background-image: url(https://res.cloudinary.com/dazyyib7u/image/upload/v1664031736/xjaotapgqpbdqnypm6en.png); background-position: center;
+        background-size: cover ;
+        background-repeat: no-repeat;">
         <Header/>
         <RedesSociales/>
         <Welcome/>

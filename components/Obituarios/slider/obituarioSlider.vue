@@ -356,7 +356,7 @@ export default {
         return{
             obituarios:[],
             loading: false,
-            settings  :{
+            settings: {
                 "centerMode": true,
                 "centerPadding": "5px",
                 "autoplay": true,
@@ -412,7 +412,6 @@ export default {
     },
     mounted(){
         this.selectedCity()
-    
     },
     methods:{
         async selectedCity(){

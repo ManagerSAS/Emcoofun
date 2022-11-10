@@ -11,7 +11,7 @@
         <GaleriaEventos/>
         <CifrasEmcoofun style="background-color: rgb(227,235,235,0.5)"/>
         <Values />  
-        <Principies/>  
+        <Principies style="background-color: rgb(227,235,235,0.5)"/>  
         <Testimonios/>
         <Footer style="background: linear-gradient(270deg, #8fddaa 0%, #59ab9b 100%);"/>
     </div>

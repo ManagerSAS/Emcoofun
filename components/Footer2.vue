@@ -1,6 +1,6 @@
 <template>
     <v-container fluid>
-        <v-row justify="center" align="center" >
+        <v-row justify="center" align="center" class="text-raleway">
             <v-col cols="11" >
                 <v-row>
                     <v-col cols="12" sm="12" md="3" lg="3" xl="3">

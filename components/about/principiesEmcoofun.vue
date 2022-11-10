@@ -19,7 +19,7 @@
                         <div>
                             <div class="mb-5"><img :src="icon"  ></div>
                             <div style="color:#003B4C; font-size: 25px; font-weight: bold;" class="text-raleway mb-5">{{title}}</div>
-                            <div style="color:#003A4B; font-size: 15px; text-align: justify;" class="text-raleway">{{description}}</div>
+                            <div style="color:#003A4B; font-size: 15px; text-align: justify;" class="text-comfortaa">{{description}}</div>
                         </div>
                     </v-col>
                 </v-row>  

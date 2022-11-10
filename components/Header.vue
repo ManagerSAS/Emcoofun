@@ -6,25 +6,19 @@
             dense 
             height="80"
             >        
-
-            <v-toolbar-title class="pt-3">
-                <a href = "/" class="header-logo"><img src="../static/nav/logo.webp" alt="" width="130px" ></a>
-            </v-toolbar-title>
-        
+            <!-- <v-toolbar-title class="pt-3"> -->
+                <a href = "/" class="header-logo pt-3"><img src="../static/nav/logo.webp" alt="" width="120px" ></a>
+            <!-- </v-toolbar-title> -->
             <v-spacer></v-spacer>
-
             <NuxtLink 
                 v-for="({ text, to }, index) in  btnsNav" 
                 :key="index"
                 :to="{ path: to }"
-                class="s-acortag color-blue-dark d-none d-md-none d-lg-flex"    
+                class="s-acortag color-blue-dark d-none d-md-block d-lg-flex text-raleway"    
             > {{ text }}
             </NuxtLink> 
-            
-            <v-app-bar-nav-icon class="d-block d-lg-none d-md-block d-sm-block"  @click="drawer = !drawer"></v-app-bar-nav-icon>
-            
+            <v-app-bar-nav-icon class="d-block d-lg-none d-md-none d-sm-block text-raleway"  @click="drawer = !drawer"></v-app-bar-nav-icon>
         </v-toolbar>
-      
         <v-navigation-drawer v-model="drawer"  app temporary> 
             <v-list density="compact">
                 <v-subheader><a href = "/"><img src="../static/nav/logo.webp" alt="" width="130px" ></a></v-subheader>
@@ -32,7 +26,7 @@
                     v-for="({ text, to }, index) in  btnsNav" 
                     :key="index"
                     :to="{ path: to }"
-                    class="color-blue-dark "  
+                    class="color-blue-dark text-raleway"  
                 >
                     <v-list-item-title >{{text}}</v-list-item-title>
                 </v-list-item>

@@ -18,7 +18,7 @@
                 <div class="mb-6">
                     <v-btn 
                         style="background: linear-gradient(to right, #9FC419, #7AB929); color: white;"
-                        class="shadow-principal btn-hover"
+                        class="shadow-principal btn-hover text-raleway"
                         rounded-xl
                         dark
                         large

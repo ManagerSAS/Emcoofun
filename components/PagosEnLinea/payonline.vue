@@ -15,7 +15,7 @@
                             <v-col  cols="12" sm="5" md="5" lg="6" justify="center" align="center">
                                 <img src="../../static/iconos/FacturaElectronica-02.png" width="150px">
                                 <div style="color:#E9522C; font-size: 20px; font-weight: 800;">
-                                    <p>Pagos con tarjeta de credito</p>
+                                    <p class="text-raleway">Pagos con tarjeta de credito</p>
                                 </div>
                                 <div>
                                     <form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
@@ -44,7 +44,7 @@
                             <v-col  cols="12" sm="5" md="5" lg="6" justify="center" align="center">
                                 <img src="../../static/iconos/PagosEnLinea-02.png" width="150px">
                                 <div style="color:#E9522C; font-size: 20px; font-weight: 800;">
-                                    <p>Pagos PSE</p>
+                                    <p class="text-raleway">Pagos PSE</p>
                                 </div>
                                 <div>
                                     <form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">

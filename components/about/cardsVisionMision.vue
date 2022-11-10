@@ -19,7 +19,7 @@
                     </v-col>
                     <v-col cols="12" sm="2" md="2" lg="2" justify="center" align="center">
                         <img src="../../static/iconos/vision.png" height="100"><br>
-                        <h2  justify="center" align="center" class=" text-raleway">Vision</h2>
+                        <h2  justify="center" align="center" class="text-raleway">Vision</h2>
                     </v-col>
                 </v-row>
             </v-col>

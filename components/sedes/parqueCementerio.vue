@@ -10,14 +10,10 @@
                 </v-row>
                 <v-row justify="center" align="center">
                     <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
-                        <video width="80%" class="mt-2" controls>
-                            <source src="../../static/testmonios/jardin_Los_Olivos1.mp4" type="video/mp4">
-                        </video>
+                        <iframe width="90%" height="215" src="https://www.youtube.com/embed/FhumQr9W0fs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </v-col>
                     <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
-                        <video justify="center" align="center" width="80%"  class="mt-2" controls>
-                            <source src="../../static/testmonios/jardin_Los_Olivos2.mp4" type="video/mp4">
-                        </video>
+                        <iframe width="90%" height="215" src="https://www.youtube.com/embed/5UmQ31vXWn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </v-col>
                 </v-row>
                 <v-row  justify="center" align="center">

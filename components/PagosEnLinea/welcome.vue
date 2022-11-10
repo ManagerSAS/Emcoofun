@@ -3,7 +3,7 @@
         <img width="100%" class="d-none d-lg-block d-xl-block" src="../../static/banners/pagos/pagospc.jpg" alt="" srcset="">
         <img width="100%" class="d-none d-md-block d-lg-none" src="../../static/banners/pagos/pagosLaptop.jpg" alt="" srcset="">
         <img width="100%" class="d-block d-sm-none" src="../../static/banners/pagos/pagoCel.jpg" alt="" srcset="">
-        <v-btn target="_blank" href="https://losolivos.co/" class="btnPisition" style="background: linear-gradient(to right, #4B9098, #14625D); color: #FCF0A5;">
+        <v-btn target="_blank" href="https://losolivos.co/" class="btnPisition text-raleway" style="background: linear-gradient(to right, #4B9098, #14625D); color: #FCF0A5;">
             Red Olivos
         </v-btn>
     </div>

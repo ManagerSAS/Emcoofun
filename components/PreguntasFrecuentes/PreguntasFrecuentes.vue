@@ -56,8 +56,8 @@
                         v-for="({pregunta,respuesta},index) in preguntasCementerio"
                         :key="index"
                     >
-                        <v-expansion-panel-header style="color:#003B4C;">{{pregunta}}</v-expansion-panel-header>
-                        <v-expansion-panel-content>
+                        <v-expansion-panel-header style="color:#003B4C;" class="text-raleway">{{pregunta}}</v-expansion-panel-header>
+                        <v-expansion-panel-content class="text-comfortaa">
                             {{respuesta}}
                         </v-expansion-panel-content>
                     </v-expansion-panel>

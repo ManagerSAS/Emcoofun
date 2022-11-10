@@ -3,7 +3,7 @@
             <img width="100%" class="d-none d-lg-block d-xl-block" src="../../static/banners/homenajes/bannerHomenajesPc.jpg" alt="" srcset="">
             <img width="100%" class="d-none d-md-block d-lg-none" src="../../static/banners/homenajes/bannerHomenajesLaptop.jpg" alt="" srcset="">
             <img width="100%" class="d-block d-sm-none" src="../../static/banners/homenajes/bannerHomenajesCel.jpg" alt="" srcset="">
-            <v-btn class="btnPisition" style="background: linear-gradient(to right, rgba(185, 70, 106), rgba(120, 15, 46)); color: #FCF0A5;">
+            <v-btn class="btnPisition" href="/VelacionVirtual" style="background: linear-gradient(to right, rgba(185, 70, 106), rgba(120, 15, 46)); color: #FCF0A5;">
                 Velación virtual
             </v-btn>
         </div>
@@ -35,7 +35,7 @@
             left: 35%;
         }
         .BannerHomenajes{
-            background-image: url('../../static/banners/pagos/bannerpagostablet.png');
+            background-image: url('../../static/banners/homenajes/bannerHomenajesCel.jpg');
             height: 60em;
             width: 100%;
         }
@@ -46,7 +46,7 @@
             left: 35%;
         }
         .BannerHomenajes{
-            background-image: url('../../static/banners/pagos/bannerpagoscel2.png');
+            background-image: url('../../static/banners/homenajes/bannerHomenajesCel.jpg');
             height: 60em;
             width: 100%;
         }

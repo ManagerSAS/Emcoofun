@@ -47,7 +47,7 @@ export default {
 
     }
     .texto{
-        font-family: 'Comfortaa', cursive;
+        font-family: 'Raleway', sans-serif;
         font-weight: bold;
         font-size: 30px;
         color: #003B4C;

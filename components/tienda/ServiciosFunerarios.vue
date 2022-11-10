@@ -47,8 +47,8 @@
                         <div justify="center" align="center" v-for="({src,nombre},index) in fotosFlores"
                         :key="index" class="ma-lg-2 mt-5 mb-5">
                             <div>
-                                <img class="d-none d-xl-block d-lg-block" :lazy-src="src" :src="src" width="300">
-                                <img class="d-none d-md-block d-lg-none" :lazy-src="src" :src="src" width="250">
+                                <img class="d-none d-xl-block d-lg-block" :lazy-src="src" :src="src" width="80%">
+                                <img class="d-none d-md-block d-lg-none" :lazy-src="src" :src="src" width="80%">
                                 <img class="d-block d-sm-none"  :lazy-src="src" :src="src" width="200">
                             </div>
                             <div>
@@ -72,8 +72,8 @@
                         <div justify="center" align="center" v-for="({src,nombre},index) in Condolencias"
                         :key="index" class="ma-lg-2 mt-5 mb-5">
                             <div>
-                                <img class="d-none d-xl-block d-lg-block" :lazy-src="src" :src="src" width="300">
-                                <img class="d-none d-md-block d-lg-none" :lazy-src="src" :src="src" width="250">
+                                <img class="d-none d-xl-block d-lg-block" :lazy-src="src" :src="src" width="80%">
+                                <img class="d-none d-md-block d-lg-none" :lazy-src="src" :src="src" width="80%">
                                 <img class="d-block d-sm-none"  :lazy-src="src" :src="src" width="200">
                             </div>
                             <div>

@@ -42,7 +42,7 @@
                             <v-row justify="center" align="center">
                                 <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
                                     <h1 class="mb-6 mt-5 text-raleway" style="color: white; font-size: 20px; font-weight: 800;">
-                                        Datos del registro de defuncion
+                                        Datos del registro de defunción
                                     </h1>
                                 </v-col>
                             </v-row>
@@ -51,47 +51,33 @@
                     <v-card-text >
                         <v-card class="mb-5" v-for="(registro,index) in Registro" :key="index">
                             <v-row class="ma-2">
-                                <v-col cols="12" sm="12" md="4" lg="4">
-                                    <div>
-                                        <p class="text-comfortaa" style="color:#003B4C; font-size: 20px; font-weight: 800;">
-                                            Numero Registro: <span class="text-raleway" style="color:black; font-size: 20px; font-weight: 400;">{{registro.NRegistro}}</span>
+                                <v-col cols="12" sm="12" md="12" lg="12">
+                                    <div justify="center" align="center">
+                                        <p class="text-raleway text-uppercase" style="color:#003B4C; font-size: 20px; font-weight: bold;">
+                                            {{registro.nombreCompleto}}
                                         </p>
                                     </div>
-                                </v-col>
-                                <v-col cols="12" sm="12" md="4" lg="4">
-                                    <div>
-                                        <p class="text-comfortaa" style="color:#003B4C; font-size: 20px; font-weight: 800;">
-                                            Nombre: <span class="text-raleway" style="color:black; font-size: 20px; font-weight: 400;">{{registro.nombreCompleto}}</span>
-                                        </p>
-                                    </div>
-                                </v-col>
-                                <v-col cols="12" sm="12" md="4" lg="4">
-                                    <div>
-                                        <p class="text-comfortaa" style="color:#003B4C; font-size: 20px; font-weight: 800;">
-                                            Nombre: <span class="text-raleway" style="color:black; font-size: 20px; font-weight: 400;">{{registro.Ciudad}} - {{registro.Departamento}}</span>
-                                        </p> 
-                                    </div>
-                                </v-col>
+                                </v-col>     
                             </v-row>
-                            <v-row class="ma-2">
-                                <v-col cols="12" sm="12" md="4" lg="4">
+                            <v-row justify="center" align="center" class="ma-2">
+                                <v-col cols="12" sm="12" md="4" lg="3">
                                     <div>
                                         <p class="text-comfortaa" style="color:#003B4C; font-size: 20px; font-weight: 800;"> 
-                                            Fecha: <span class="text-raleway" style="color:black; font-size: 20px; font-weight: 400;">{{registro.fechaFallecimiento}}</span>
+                                            Cedúla: <span class="text-raleway" style="color:black; font-size: 20px; font-weight: 400;">{{registro.NDocumento}}</span>
                                         </p>
                                     </div>
                                 </v-col>
-                                <v-col cols="12" sm="12" md="4" lg="4">
+                                <v-col cols="12" sm="12" md="4" lg="5">
                                     <div>
-                                        <p class="text-comfortaa" style="color:#003B4C; font-size: 20px; font-weight: 800;"> 
-                                            Cedula: <span class="text-raleway" style="color:black; font-size: 20px; font-weight: 400;">{{registro.NDocumento}}</span>
+                                        <p class="text-comfortaa" style="color:#003B4C; font-size: 20px; font-weight: 800;">
+                                            Número Registro: <span class="text-raleway text-uppercase" style="color:black; font-size: 20px; font-weight: 400;">{{registro.NRegistro}}</span>
                                         </p>
                                     </div>
                                 </v-col>
                                 <v-col cols="12" sm="12" md="4" lg="4">
                                     <div>
                                         <p class="text-comfortaa" style="color:#003B4C; font-size: 20px; font-weight: 800;">
-                                            Notaria: <span class="text-raleway" style="color:black; font-size: 20px; font-weight: 400;">{{registro.Notaria}}</span>
+                                            Notaría: <span class="text-raleway text-uppercase" style="color:black; font-size: 20px; font-weight: 400;">{{registro.Notaria}}</span>
                                         </p>
                                     </div>
                                 </v-col>
