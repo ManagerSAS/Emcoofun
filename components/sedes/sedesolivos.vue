@@ -12,8 +12,8 @@
                 <v-row justify="center" align="center">
                     <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="5" xl="5">
                         <div>
-                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/neiva.png" width="500">
-                            <img class="d-none d-md-block d-lg-none" src="../../static/sedes/neiva.png" width="400">
+                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/neiva.png" width="65%">
+                            <img class="d-none d-md-block d-lg-none" src="../../static/sedes/neiva.png" width="65%">
                             <img class="d-block d-sm-none"  src="../../static/sedes/neiva.png" width="300">
                         </div>
                         <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
@@ -21,15 +21,15 @@
                                 <v-btn @click="mostrarNeiva" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa text-capitalize font-weight-black" >
                                     Sede principal Neiva
                                 </v-btn> <br></div>
-                            <div>Direccion: Calle 16 No. 2-56</div>
-                            <div>Linea Atencion: : PBX: 8715555</div>
+                            <div>Dirección: Calle 16 No. 2-56</div>
+                            <div>Línea Atención: PBX: 8715555</div>
                             <div>Whatsapp : +57 3168747157</div>
                         </div>
                     </v-col>
                     <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="5" xl="5">
                         <div>
-                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/garzon.png" width="500">
-                            <img class="d-none d-md-block d-lg-none" src="../../static/sedes/garzon.png" width="400">
+                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/garzon.png" width="65%">
+                            <img class="d-none d-md-block d-lg-none" src="../../static/sedes/garzon.png" width="65%">
                             <img class="d-block d-sm-none"  src="../../static/sedes/garzon.png" width="300">
                         </div>
                         <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
@@ -38,8 +38,8 @@
                                     Sede Garzón
                                 </v-btn>
                             </div>
-                            <div>Direccion: Calle 7 No. 12-00</div>
-                            <div>Linea Atencion: : (8) 8332021-(8) 8334879</div>
+                            <div>Dirección: Calle 7 No. 12-00</div>
+                            <div>Línea Atención: (8) 8332021-(8) 8334879</div>
                             <div>Whatsapp : +57 3168747185</div>
                         </div>
                     </v-col>
@@ -90,8 +90,8 @@
                 <v-row justify="center" align="center">
                     <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="5" xl="5">
                         <div>
-                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/florencia.png" width="500">
-                            <img class="d-none d-md-block d-lg-none" src="../../static/sedes/florencia.png" width="400">
+                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/florencia.png" width="65%">
+                            <img class="d-none d-md-block d-lg-none" src="../../static/sedes/florencia.png" width="65%">
                             <img class="d-block d-sm-none"  src="../../static/sedes/florencia.png" width="300">
                         </div>
                         <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
@@ -100,15 +100,15 @@
                                     Sede Pitalito
                                 </v-btn>
                             </div>
-                            <div>Direccion: Carrera 3 No. 5-19</div>
-                            <div>Linea Atencion: :  (8) 8361961 – (8) 8366929 </div>
+                            <div>Dirección: Carrera 3 No. 5-19</div>
+                            <div>Línea Atención:  (8) 8361961 – (8) 8366929 </div>
                             <div>Whatsapp : +57 3168747226</div>
                         </div>
                     </v-col>
                     <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="5" xl="5">
                         <div>
-                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/pitalito.png" width="500">
-                            <img class="d-none d-md-block d-lg-none" src="../../static/sedes/pitalito.png" width="400">
+                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/pitalito.png" width="65%">
+                            <img class="d-none d-md-block d-lg-none" src="../../static/sedes/pitalito.png" width="65%">
                             <img class="d-block d-sm-none"  src="../../static/sedes/pitalito.png" width="300">
                         </div>
                         <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
@@ -117,9 +117,9 @@
                                     Sede  Florencia
                                 </v-btn>
                             </div>
-                            <div>Direccion: Carrera 15 No. 15-34/36</div>
-                            <div>Linea Atencion: (4) 4353314 - (4) 4351433 - (4) 4357558 </div>
-                            <div>Watsapp : +57 3168747213</div>
+                            <div>Dirección: Carrera 15 No. 15-34/36</div>
+                            <div>Línea Atención: (4) 4353314 - (4) 4351433 - (4) 4357558 </div>
+                            <div>Whatsapp : +57 3168747213</div>
                         </div>
                     </v-col>
                 </v-row>

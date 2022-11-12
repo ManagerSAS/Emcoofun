@@ -89,7 +89,7 @@
                                         ></v-select>
                                     </v-col>
                                     <v-col cols="12" sm="11" md="10" lg="4">
-                                        <h4 class="text-raleway" style="color:#003B4C;"> Numero de Documento*</h4>
+                                        <h4 class="text-raleway" style="color:#003B4C;"> Número de Documento*</h4>
                                         <v-text-field
                                             v-model="NDocument"
                                             type="number"
@@ -102,7 +102,7 @@
                                 </v-row>
                                 <v-row>
                                     <v-col cols="12" sm="11" md="10" lg="4">
-                                        <h4 class="text-raleway" style="color:#003B4C;"> Primer Nombre*</h4>
+                                        <h4 class="text-raleway" style="color:#003B4C;">Primer Nombre*</h4>
                                         <v-text-field
                                             v-model="Nombre1"
                                             :rules="nameRules"
@@ -112,10 +112,9 @@
                                         </v-text-field>
                                     </v-col>
                                     <v-col cols="12" sm="11" md="10" lg="4">
-                                        <h4 class="text-raleway" style="color:#003B4C;">  Segundo Nombre*</h4>
+                                        <h4 class="text-raleway" style="color:#003B4C;">Segundo Nombre</h4>
                                         <v-text-field
                                             v-model="Nombre2"
-                                            :rules="nameRules"
                                             color="teal darken-4"
                                             label="Segundo Nombre"
                                         >
@@ -134,10 +133,9 @@
                                 </v-row>
                                 <v-row>
                                     <v-col cols="12" sm="11" md="10" lg="4">
-                                        <h4 class="text-raleway" style="color:#003B4C;"> Segundo Apellido*</h4>
+                                        <h4 class="text-raleway" style="color:#003B4C;">Segundo Apellido</h4>
                                         <v-text-field
                                             v-model="Apellido2"
-                                            :rules="nameRules"
                                             color="teal darken-4"
                                             label="Segundo Apellido"
                                     >
@@ -153,7 +151,7 @@
                                             :rules="nameRules"
                                             item-color="teal darken-4"
                                             color="teal darken-4"
-                                            label="Tipo Documento"
+                                            label="Sexo"
                                             clearable
                                         ></v-select>
                                     </v-col>
@@ -170,7 +168,7 @@
                                 </v-row>
                                 <v-row>
                                     <v-col cols="12" sm="11" md="10" lg="4">
-                                        <h4 class="text-raleway" style="color:#003B4C;"> Direccion de Residencia*</h4>
+                                        <h4 class="text-raleway" style="color:#003B4C;"> Dirección de Residencia*</h4>
                                         <v-text-field
                                             v-model="Direccion1"
                                             :rules="nameRules"
@@ -180,7 +178,7 @@
                                     </v-text-field>
                                     </v-col>
                                     <v-col cols="12" sm="11" md="10" lg="4">
-                                        <h4 class="text-raleway" style="color:#003B4C;"> Direccion de Residencia 2 (Opcional)</h4>
+                                        <h4 class="text-raleway" style="color:#003B4C;"> Dirección de Residencia 2 (Opcional)</h4>
                                         <v-text-field
                                             v-model="Direccion2"
                                             color="teal darken-4"
@@ -189,7 +187,7 @@
                                     </v-text-field>
                                     </v-col>
                                     <v-col cols="12" sm="11" md="10" lg="4">
-                                        <h4 class="text-raleway" style="color:#003B4C;"> Numero de Contacto*</h4>
+                                        <h4 class="text-raleway" style="color:#003B4C;"> Número de Contacto*</h4>
                                         <v-text-field
                                             v-model="numPhone1"
                                             type="number"
@@ -201,7 +199,7 @@
                                 </v-row>
                                 <v-row>
                                     <v-col cols="12" sm="11" md="10" lg="4">
-                                        <h4 class="text-raleway" style="color:#003B4C;"> Numero de Contacto 2 (Opcional)</h4>
+                                        <h4 class="text-raleway" style="color:#003B4C;"> Número de Contacto 2 (Opcional)</h4>
                                         <v-text-field
                                             v-model="numPhone2"
                                             type="number"
@@ -493,7 +491,7 @@ export default {
     }, 
     methods:{
         async sendInfoNovelty(){
-            if(this.Correo !== '' && this.NDocument !== '' && this.Nombre1 !== '' && this.Nombre2 !== '' && this.Apellido1 !== '' && this.Apellido2 !== '' && this.Genero !== ''&& this.dateBirth !== ''&& this.typeId !== '' && this.numPhone1 !== ''&& this.Direccion1 !== '' && this.EstadoCivil !== '' && this.terminos === true && this.AutoEmcoofun === true && this.declaracion === true && this.resCaptcha === true){         
+            if(this.Correo !== '' && this.NDocument !== '' && this.Nombre1 !== '' &&  this.Apellido1 !== ''  && this.Genero !== ''&& this.dateBirth !== ''&& this.typeId !== '' && this.numPhone1 !== ''&& this.Direccion1 !== '' && this.EstadoCivil !== '' && this.terminos === true && this.AutoEmcoofun === true && this.declaracion === true && this.resCaptcha === true){         
       
                 const data = {
                     Correo:this.Correo,

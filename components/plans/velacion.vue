@@ -8,7 +8,7 @@
                     </v-col>
                     <v-col cols="12" sm="12" md="6" lg="6" xl="6">
                         <div class="ml-5 mr-5">
-                            <p class="texto " style="color: #ED6D81" >Durante la Velacion:</p><br>
+                            <p class="texto " style="color: #ED6D81" >Durante la Velación:</p><br>
                             <p class="font"><span style="color: #ED6D81">1.</span> Salas de velación hasta por 24 horas en la Red Nacional LOS OLIVOS, excepto en el Departamento de Antioquia, donde el servicio de velación es hasta por 12 horas y en donde la Red Nacional tenga convenio vigente de acuerdo al caso. </p>
                             <p class="font"><span style="color: #ED6D81">2.</span> Una ofrenda Floral.</p>
                             <div v-if="mostrar" >

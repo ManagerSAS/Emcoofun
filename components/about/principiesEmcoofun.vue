@@ -9,24 +9,35 @@
                         </h2>
                     </v-col>
                 </v-row>
-                <v-row justify="center" align="center" class="mt-15 mr-5 ml-5 mb-5">
+                <v-row justify="center" align="start" class=" mr-5 ml-5 ">
                     <v-col 
                         justify="center" align="center"
                         v-for="({ icon, title, description }, index) in principies"
                         :key="index"
+                       class="contenPrincipies"
                         cols="12" sm="12" md="4" lg="4"
                     >
-                        <div>
-                            <div class="mb-5"><img :src="icon"  ></div>
-                            <div style="color:#003B4C; font-size: 25px; font-weight: bold;" class="text-raleway mb-5">{{title}}</div>
-                            <div style="color:#003A4B; font-size: 15px; text-align: justify;" class="text-comfortaa">{{description}}</div>
-                        </div>
+                    <div justify="start" align="center">
+                        <img :src="icon"  >
+                        <h2 style="color:#003B4C; font-weight: bold;" class="text-raleway mb-5">{{title}}</h2>
+                        <p style="color:#003A4B; font-size: 14px;" class="text-comfortaa">{{description}}</p>
+                    </div>
                     </v-col>
                 </v-row>  
             </v-col>
         </v-row>      
     </v-container>
 </template>
+<style lang="scss">
+.contenPrincipies{
+    width: 100%;
+    line-height: 1.5rem;
+    @media only screen and (min-width: 1600px) {
+        width: 80%;
+    
+    }
+}
+</style>
 <script>
 export default {
     data(){
