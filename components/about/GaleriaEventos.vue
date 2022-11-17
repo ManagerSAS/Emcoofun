@@ -68,7 +68,7 @@ export default ({
                         "slidesToShow": 1,
                         "slidesToScroll": 1,
                         "infinite": true,
-                        "dots": true
+                        "dots": false
                     }
                 }
                 ,
@@ -78,7 +78,7 @@ export default ({
                         "slidesToShow": 1,
                         "slidesToScroll": 1,
                         "infinite": true,
-                        "dots": true
+                        "dots": false
                     }
                 }
             ]

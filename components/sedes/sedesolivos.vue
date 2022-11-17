@@ -1,46 +1,47 @@
 <template>
     <v-container fluid class="mb-10">
         <v-row  justify="center" align="center" >
-            <v-col cols="12" sm="12" md="12" lg="12" xl="12">
+            <v-col cols="12" sm="12" md="12" lg="10" xl="10">
                 <v-row justify="center" align="center">
                     <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
-                        <h1 class="mb-6 text-raleway" style="color:#003B4C; font-size: 36px; font-weight: 800;">
+                        <h1 class="mb-0 text-raleway" style="color:#003B4C; font-size: 36px; font-weight: 800;">
                             SEDES EMCOOFUN
                         </h1>
                     </v-col>
                 </v-row>
                 <v-row justify="center" align="center">
-                    <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="5" xl="5">
+                    <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="4" xl="4">
                         <div>
-                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/neiva.png" width="65%">
+                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/neiva.png" width="500px">
                             <img class="d-none d-md-block d-lg-none" src="../../static/sedes/neiva.png" width="65%">
                             <img class="d-block d-sm-none"  src="../../static/sedes/neiva.png" width="300">
                         </div>
                         <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
-                            <div>
-                                <v-btn @click="mostrarNeiva" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa text-capitalize font-weight-black" >
+                            <div class="mb-2">
+                                <v-btn @click="mostrarNeiva" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa text-capitalize font-weight-black mb-2" >
                                     Sede principal Neiva
-                                </v-btn> <br></div>
-                            <div>Dirección: Calle 16 No. 2-56</div>
-                            <div>Línea Atención: PBX: 8715555</div>
-                            <div>Whatsapp : +57 3168747157</div>
+                                </v-btn>
+                            </div>
+                            <div class="text-raleway">Dirección: Calle 16 No. 2-56</div>
+                            <div class="text-raleway">Línea Atención: PBX: 8715555</div>
+                            <div class="text-raleway">Whatsapp : +57 3168747157</div>
                         </div>
                     </v-col>
-                    <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="5" xl="5">
+                    <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="4" xl="4">
                         <div>
-                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/garzon.png" width="65%">
+                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/garzon.png"  width="500px">
                             <img class="d-none d-md-block d-lg-none" src="../../static/sedes/garzon.png" width="65%">
                             <img class="d-block d-sm-none"  src="../../static/sedes/garzon.png" width="300">
                         </div>
                         <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
-                            <div>
-                                <v-btn @click="mostrarGarzon" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa text-capitalize font-weight-black" >
+                            <div class="mb-2">
+                                <v-btn @click="mostrarGarzon" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa text-capitalize font-weight-black mb-2" >
                                     Sede Garzón
                                 </v-btn>
                             </div>
-                            <div>Dirección: Calle 7 No. 12-00</div>
-                            <div>Línea Atención: (8) 8332021-(8) 8334879</div>
-                            <div>Whatsapp : +57 3168747185</div>
+                            <div class="text-raleway">Dirección: Calle 7 No. 12-00</div>
+                            <div class="text-raleway">Línea Atención: (8) 8332021-(8) 8334879</div>
+                            <div class="text-raleway">Whatsapp : +57 3168747185</div>
                         </div>
                     </v-col>
                 </v-row>
@@ -86,40 +87,39 @@
                         </v-sheet>
                     </v-col>
                 </v-row>
-
                 <v-row justify="center" align="center">
-                    <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="5" xl="5">
+                    <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="4" xl="4">
                         <div>
-                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/florencia.png" width="65%">
+                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/florencia.png" width="500px">
                             <img class="d-none d-md-block d-lg-none" src="../../static/sedes/florencia.png" width="65%">
                             <img class="d-block d-sm-none"  src="../../static/sedes/florencia.png" width="300">
                         </div>
                         <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
-                            <div >
-                                <v-btn @click="mostrarPitalito" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa text-capitalize font-weight-black" >
+                            <div class="mb-2">
+                                <v-btn @click="mostrarPitalito" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa text-capitalize font-weight-black mb-2" >
                                     Sede Pitalito
                                 </v-btn>
                             </div>
-                            <div>Dirección: Carrera 3 No. 5-19</div>
-                            <div>Línea Atención:  (8) 8361961 – (8) 8366929 </div>
-                            <div>Whatsapp : +57 3168747226</div>
+                            <div class="text-raleway">Dirección: Carrera 3 No. 5-19</div>
+                            <div class="text-raleway">Línea Atención:  (8) 8361961–(8) 8366929 </div>
+                            <div class="text-raleway">Whatsapp : +57 3168747226</div>
                         </div>
                     </v-col>
-                    <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="5" xl="5">
+                    <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="4" xl="4">
                         <div>
-                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/pitalito.png" width="65%">
+                            <img class="d-none d-xl-block d-lg-block" src="../../static/sedes/pitalito.png" width="500px">
                             <img class="d-none d-md-block d-lg-none" src="../../static/sedes/pitalito.png" width="65%">
                             <img class="d-block d-sm-none"  src="../../static/sedes/pitalito.png" width="300">
                         </div>
                         <div class="text-raleway font-weight-bold" style="color: #003B4C; font-size: 15px;">
-                            <div>
-                                <v-btn @click="mostrarFlorencia" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa text-capitalize font-weight-black" >
+                            <div class="mb-2">
+                                <v-btn @click="mostrarFlorencia" justify="center" align="center"  style="cursor: default; background: linear-gradient(to right, #F59D20, #E9522C); color: white;" class="text-comfortaa text-capitalize font-weight-black mb-2" >
                                     Sede  Florencia
                                 </v-btn>
                             </div>
-                            <div>Dirección: Carrera 15 No. 15-34/36</div>
-                            <div>Línea Atención: (4) 4353314 - (4) 4351433 - (4) 4357558 </div>
-                            <div>Whatsapp : +57 3168747213</div>
+                            <div class="text-raleway">Dirección: Carrera 15 No. 15-34/36</div>
+                            <div class="text-raleway">Línea Atención: (4) 4353314 - (4) 4351433 - (4) 4357558 </div>
+                            <div class="text-raleway">Whatsapp : +57 3168747213</div>
                         </div>
                     </v-col>
                 </v-row>

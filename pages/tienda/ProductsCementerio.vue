@@ -1,16 +1,16 @@
 <template>
-    <div style="background-image: url(https://res.cloudinary.com/dazyyib7u/image/upload/v1664031736/xjaotapgqpbdqnypm6en.png); background-position: center;
-        background-size: cover ;
-        background-repeat: no-repeat;">
+    <div >
         <Header/>
         <RedesSociales/>
         <Welcome/>
-        <ServiciosFunerarios class="mb-5"/>
-        <DestinoFinalCenizas class="mb-5" style="background-color: rgb(227,235,235,0.5)"/>
-        <Osarios/>
-        <Columbarios class="mb-5" style="background-color: rgb(227,235,235,0.5)"/>
-        <ServiceJardin/>
-        <ServiceMarmol  style="background-color: rgb(227,235,235,0.5)"/>
+        <div >
+            <ServiciosFunerarios class="mb-5" style="background-image: url(https://res.cloudinary.com/dazyyib7u/image/upload/v1664031736/xjaotapgqpbdqnypm6en.png); background-position: center; background-repeat: no-repeat;"/>
+            <DestinoFinalCenizas class="mb-5" style="background-color: rgb(227,235,235,0.5); background-image: url(https://res.cloudinary.com/dazyyib7u/image/upload/v1664031736/xjaotapgqpbdqnypm6en.png); background-position: center; background-repeat: no-repeat;"/>
+            <Osarios style="background-image: url(https://res.cloudinary.com/dazyyib7u/image/upload/v1664031736/xjaotapgqpbdqnypm6en.png); background-position: center; background-repeat: no-repeat;"/>
+            <Columbarios class="mb-5" style="background-color: rgb(227,235,235,0.5); background-image: url(https://res.cloudinary.com/dazyyib7u/image/upload/v1664031736/xjaotapgqpbdqnypm6en.png); background-position: center; background-repeat: no-repeat;"/>
+            <ServiceJardin style="background-image: url(https://res.cloudinary.com/dazyyib7u/image/upload/v1664031736/xjaotapgqpbdqnypm6en.png); background-position: center; background-repeat: no-repeat;"/>
+            <ServiceMarmol  style="background-color: rgb(227,235,235,0.5); background-image: url(https://res.cloudinary.com/dazyyib7u/image/upload/v1664031736/xjaotapgqpbdqnypm6en.png); background-position: center; background-repeat: no-repeat;"/>
+        </div>
         <Footer style="background: linear-gradient(270deg, #8fddaa 0%, #59ab9b 100%);"/>
     </div>
 </template>

@@ -13,7 +13,7 @@
         <!-- obituarios extra pc -->
         <div class="pc " justify="center" align="center">
             <v-row v-if="obituarios.length">
-                <v-col cols="12" md="7" lg="7" align="center">
+                <v-col cols="7" align="center">
                     <v-row justify="center" align="center">
                         <v-col cols="11" style="background-color: #ECECEC;" class="rounded-lg ml-3">
                             <div  align="center"  class="text-center justify-center text-raleway-verde">
@@ -29,63 +29,67 @@
                         indeterminate
                         color="green"
                     ></v-progress-linear>
-                    <v-row>
+                    <v-row justify="center" align="center">
                         <v-col cols="12">
                             <div class="justify-center ml-3" >
                                 <v-carousel
                                     hide-delimiter-background
                                     delimiter-icon="mdi-minus"
                                     show-arrows-on-hover
-                                    height="750"
+                                    height="700"
                                     interval="10000"
                                     cycle
-                                    v-if="obituarios.length"                                
+                                    class="mt-1"
+                                    v-if="obituarios.length"    
+                                    justify="center" align="center"                            
                                 >
-                                    <v-carousel-item v-for="(obituarios ,index) in obituarios" :key="index" class="contObituario mt-8">
-                                        <v-row justify="center" align="start">
-                                            <v-col cols="12" lg="11" class="mt-5">
-                                                <div class="text-raleway white--text font-weight-bold" style="font-size: 40px;">{{obituarios.nombreCompleto}}</div>
-                                                <div class="text-raleway font-italic white--text" style="font-size: 20px;">Descansa en la paz del señor</div>
-                                            </v-col>        
-                                        </v-row> 
-                                        <v-row>
-                                            <v-col cols="12" lg="5" class="justify-end" align="center">
-                                                <div  class="circulogrande">
-                                                    <div >
-                                                        <img class="fotohomenajegrande" :src="obituarios.foto" v-if="obituarios.visualizarFoto === 0" >
-                                                        <img class="fotohomenajegrande" v-else src="../../../static/CintaLuto.jpg" >
+                                    <v-carousel-item v-for="(obituarios ,index) in obituarios" :key="index" class="contObituario " justify="center" align="center">
+                                        <div justify="center" align="center">
+                                            <v-row justify="center" align="start">
+                                                <v-col cols="12" lg="11" class="mt-5" style="max-width: 550px">
+                                                    <div class="text-raleway white--text font-weight-bold textname">{{obituarios.nombreCompleto}}</div>
+                                                    <div class="text-raleway font-italic white--text textDescansa">Descansa en la paz del señor</div>
+                                                </v-col>        
+                                            </v-row> 
+                                            <v-row  justify="center" align="center">
+                                                <v-col cols="12" lg="5" class="justify-end" >
+                                                    <div  class="circulogrande">
+                                                        <div >
+                                                            <img class="fotohomenajegrande" :src="obituarios.foto" v-if="obituarios.visualizarFoto === 0" >
+                                                            <img class="fotohomenajegrande" v-else src="../../../static/CintaLuto.jpg" >
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </v-col>
-                                            <v-col cols="12" lg="6" class="mt-8">
-                                                <div class="text-comfortaa text-left mb-1 " style="font-size: 30px;"><span style="color: #FCF0A5;">Fecha fallecimiento: </span>   {{obituarios.fecha_fallecimiento}}</div>
-                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 30px;"><span style="color: #FCF0A5;">Nombre sala: </span>   {{obituarios.nombre_sala}}</div>
-                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 30px;"><span style="color: #FCF0A5;">Fecha Salida sala: </span>   {{obituarios.fecha_salida_sala}}</div>
-                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 30px;"><span style="color: #FCF0A5;">Hora Salida sala: </span>   {{obituarios.hora_salida_sala}}</div>
-                                                <v-divider style="width: 100%;" class="mt-3 mb-3"></v-divider>
-                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 30px;"><span style="color: #FCF0A5;">Hora exequias: </span>   {{obituarios.hora_exequias}}</div>
-                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 30px;"><span style="color: #FCF0A5;">Fecha exequias: </span>   {{obituarios.fecha_exequias}}</div>
-                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 30px;"><span style="color: #FCF0A5;">Lugar exequias: </span>   {{obituarios.lugar_exequias}}</div>
-                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 30px;"><span style="color: #FCF0A5;">Destino final: </span>   {{obituarios.destino_final_cementerio}}</div>
-                                            </v-col>
-                                        </v-row> 
+                                                </v-col>
+                                                <v-col cols="12" lg="6" justify="center" align="center">
+                                                    <div class="text-comfortaa text-left mb-1 " style="font-size: 1.5em;"><span style="color: #FCF0A5;">Fecha fallecimiento: </span>   {{obituarios.fecha_fallecimiento}}</div>
+                                                    <div class="text-comfortaa text-left  mb-1" style="font-size: 1.5em;"><span style="color: #FCF0A5;">Nombre sala: </span>   {{obituarios.nombre_sala}}</div>
+                                                    <div class="text-comfortaa text-left  mb-1" style="font-size: 1.5em;"><span style="color: #FCF0A5;">Fecha Salida sala: </span>   {{obituarios.fecha_salida_sala}}</div>
+                                                    <div class="text-comfortaa text-left  mb-1" style="font-size: 1.5em;"><span style="color: #FCF0A5;">Hora Salida sala: </span>   {{obituarios.hora_salida_sala}}</div>
+                                                    <v-divider style="width: 90%;" class="mt-3 mb-3"></v-divider>
+                                                    <div class="text-comfortaa text-left  mb-1" style="font-size: 1.5em;"><span style="color: #FCF0A5;">Hora exequias: </span>   {{obituarios.hora_exequias}}</div>
+                                                    <div class="text-comfortaa text-left  mb-1" style="font-size: 1.5em;"><span style="color: #FCF0A5;">Fecha exequias: </span>   {{obituarios.fecha_exequias}}</div>
+                                                    <div class="text-comfortaa text-left  mb-1" style="font-size: 1.5em;"><span style="color: #FCF0A5;">Lugar exequias: </span>   {{obituarios.lugar_exequias}}</div>
+                                                    <div class="text-comfortaa text-left  mb-1" style="font-size: 1.5em;"><span style="color: #FCF0A5;">Destino final: </span>   {{obituarios.destino_final_cementerio}}</div>
+                                                </v-col>
+                                            </v-row> 
+                                        </div>
                                     </v-carousel-item>
                                 </v-carousel>
                             </div>
                         </v-col>
                     </v-row>
                 </v-col>
-                <v-col cols="12" md="5" lg="4" class="ml-1 rounded-lg mb-15" style="background-color: #ECECEC; height: 850px;">
-                    <VueSlickCarousel v-bind="settings" v-if="obituarios.length" :style="{height: '800px'}">
+                <v-col cols="4" class="ml-1 rounded-lg mb-15" style="background-color: #ECECEC; height: 850px;">
+                    <VueSlickCarousel v-bind="settings" v-if="obituarios.length" :style="{height: '750px'}">
                         <div v-for="(Contenido ,index) in obituarios" :key="index" class="ml-5 fondoSlider">
-                            <div >
-                                <v-row>
+                            <div>
+                                <v-row justify="center" align="center">
                                     <v-col cols="12" lg="11" >
                                         <div class="text-raleway mt-2 text-center white--text font-weight-bold text-capitalize">{{Contenido.nombreCompleto}}</div>
                                         <div class="text-raleway text-center font-italic white--text" style="font-size: 10px;">Descansa en la paz del señor</div>
                                     </v-col>        
                                 </v-row>
-                                <v-row > 
+                                <v-row justify="center" align="center"> 
                                     <v-col cols="12" lg="4" class="justify-end" align="center">
                                         <div  class="circuloPequeño ml-5">
                                             <img class="fotohomenaje" v-if="Contenido.visualizarFoto === 0" :src="Contenido.foto" >
@@ -97,7 +101,7 @@
                                         <div class="text-comfortaa text-left mb-1 description" ><span class="titulos">Nombre sala: </span>   {{Contenido.nombre_sala}}</div>
                                         <div class="text-comfortaa text-left mb-1 description" ><span class="titulos">Fecha Salida sala: </span>   {{Contenido.fecha_salida_sala}}</div>
                                         <div class="text-comfortaa text-left mb-1 description" ><span class="titulos">Hora Salida Sala: </span>   {{Contenido.hora_salida_sala}}</div>
-                                        <v-divider style="width: 80%;" class="mt-3 mb-3"></v-divider>
+                                        <v-divider style="width: 70%;" class="mt-3 mb-3"></v-divider>
                                         <div class="text-comfortaa text-left mb-1 description" ><span class="titulos">Hora exequias: </span>   {{Contenido.hora_exequias}}</div>
                                         <div class="text-comfortaa text-left mb-1 description" ><span class="titulos">Fecha exequias: </span>   {{Contenido.fecha_exequias}}</div>
                                         <div class="text-comfortaa text-left mb-1 description" ><span class="titulos">Lugar exequias: </span>   {{Contenido.lugar_exequias}}</div>
@@ -122,28 +126,29 @@
                 </v-col>
             </v-row>
             <v-row >
-                <v-col cols="12" md="8" lg="6" align="center">
+                <v-col cols="7" align="center">
                     <v-row justify="center" align="center">
                         <v-col cols="12" md="12">
-                            <div class="justify-center" >
+                            <div >
                                 <v-carousel
                                     hide-delimiter-background
                                     delimiter-icon="mdi-minus"
                                     show-arrows-on-hover
-                                    height="490"
+                                    height="550px"
+                                    width="800px"
                                     interval="10000"
                                     cycle
                                     v-if="obituarios.length"                                
                                 >
-                                    <v-carousel-item v-for="(obituarios ,index) in obituarios" :key="index" class="contObituario mt-8">
+                                    <v-carousel-item v-for="(obituarios ,index) in obituarios" :key="index" class="contObituario ">
                                             <v-row>
-                                            <v-col cols="12" lg="12" class="mt-5">
+                                            <v-col cols="12" class="mt-5">
                                                 <div class="text-raleway white--text font-weight-bold textname2">{{obituarios.nombreCompleto}}</div>
                                                 <div class="text-raleway font-italic white--text textDescansa2" >Descansa en la paz del señor</div>
                                             </v-col>        
                                         </v-row> 
                                         <v-row>
-                                            <v-col cols="12" md="5" lg="5" class="justify-end" align="start">
+                                            <v-col cols="5" class="justify-end" align="center">
                                                 <div  class="circulogrande ml-3">
                                                     <div align="center">
                                                         <img class="fotohomenajegrande" :src="obituarios.foto" v-if="obituarios.visualizarFoto === 0" >
@@ -151,16 +156,16 @@
                                                     </div>
                                                 </div>
                                             </v-col>
-                                            <v-col cols="12" md="7" lg="5" >
-                                                <div class="text-comfortaa text-left mb-1 " style="font-size: 20px;"><span style="color: #FCF0A5;">Fecha fallecimiento: </span>   {{obituarios.fecha_fallecimiento}}</div>
-                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 20px;"><span style="color: #FCF0A5;">Nombre sala: </span>   {{obituarios.nombre_sala}}</div>
-                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 20px;"><span style="color: #FCF0A5;">Fecha Salida sala: </span>   {{obituarios.fecha_salida_sala}}</div>
-                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 20px;"><span style="color: #FCF0A5;">Hora Salida sala: </span>   {{obituarios.hora_salida_sala}}</div>
+                                            <v-col cols="7" >
+                                                <div class="text-comfortaa text-left mb-1 " style="font-size: 1em;"><span style="color: #FCF0A5;">Fecha fallecimiento: </span>   {{obituarios.fecha_fallecimiento}}</div>
+                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 1em;"><span style="color: #FCF0A5;">Nombre sala: </span>   {{obituarios.nombre_sala}}</div>
+                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 1em;"><span style="color: #FCF0A5;">Fecha Salida sala: </span>   {{obituarios.fecha_salida_sala}}</div>
+                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 1em;"><span style="color: #FCF0A5;">Hora Salida sala: </span>   {{obituarios.hora_salida_sala}}</div>
                                                 <v-divider style="width: 80%;" class="mt-1 mb-1"></v-divider>
-                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 20px;"><span style="color: #FCF0A5;">Hora exequias: </span>   {{obituarios.hora_exequias}}</div>
-                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 20px;"><span style="color: #FCF0A5;">Fecha exequias: </span>   {{obituarios.fecha_exequias}}</div>
-                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 20px;"><span style="color: #FCF0A5;">Lugar exequias: </span>   {{obituarios.lugar_exequias}}</div>
-                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 20px;"><span style="color: #FCF0A5;">Destino final: </span>   {{obituarios.destino_final_cementerio}}</div>
+                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 1em;"><span style="color: #FCF0A5;">Hora exequias: </span>   {{obituarios.hora_exequias}}</div>
+                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 1em;"><span style="color: #FCF0A5;">Fecha exequias: </span>   {{obituarios.fecha_exequias}}</div>
+                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 1em;"><span style="color: #FCF0A5;">Lugar exequias: </span>   {{obituarios.lugar_exequias}}</div>
+                                                <div class="text-comfortaa text-left  mb-1" style="font-size: 1em;"><span style="color: #FCF0A5;">Destino final: </span>   {{obituarios.destino_final_cementerio}}</div>
                                             </v-col>
                                         </v-row> 
                                     </v-carousel-item>
@@ -169,8 +174,8 @@
                         </v-col>
                     </v-row>
                 </v-col>
-                <v-col cols="12" md="4" lg="4" class="rounded-lg mt-10 mb-10" style="background-color: #ECECEC; height: 520px; ">
-                    <VueSlickCarousel v-bind="settings" v-if="obituarios.length"  :style="{height: '450px'}">
+                <v-col cols="5" class="rounded-lg mt-10 mb-10" style="background-color: #ECECEC; height: 400px; ">
+                    <VueSlickCarousel v-bind="settings" v-if="obituarios.length" >
                         <div v-for="(Contenido ,index) in obituarios" :key="index" class="fondoSlider">
                             <v-row>
                                 <v-col cols="12" lg="11" >
@@ -178,14 +183,14 @@
                                     <div class="text-raleway text-center font-italic white--text textDescansa" >Descansa en la paz del señor</div>
                                 </v-col>        
                             </v-row>
-                            <v-row class="mb-5">
-                                <v-col cols="12" md="5" lg="4" class="justify-end" align="center">
+                            <v-row class="mb-5 mr-1">
+                                <v-col cols="6" class="justify-end" align="center">
                                     <div  class="circuloPequeño ml-5">
                                         <img class="fotohomenaje" v-if="Contenido.visualizarFoto === 0" :src="Contenido.foto" >
                                         <img class="fotohomenaje" v-else src="../../../static/CintaLuto.jpg" >
                                     </div>
                                 </v-col>
-                                <v-col cols="12" md="7" lg="6" >
+                                <v-col cols="6"  >
                                     <div class="text-comfortaa mb-1 description" ><span class="titulos">Fecha fallecimiento: </span>   {{Contenido.fecha_fallecimiento}}</div>
                                     <div class="text-comfortaa mb-1 description" ><span class="titulos">Nombre sala: </span>   {{Contenido.nombre_sala}}</div>
                                     <div class="text-comfortaa mb-1 description" ><span class="titulos">Fecha Salida sala: </span>   {{Contenido.fecha_salida_sala}}</div>
@@ -433,6 +438,7 @@ export default {
                     ciudad: this.city
                 })  
             }); 
+            console.log(this.obituarios)
             if(this.obituarios.length !== 0 ) {
                 this.loading = false;
             }else{

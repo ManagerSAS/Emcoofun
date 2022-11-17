@@ -3,10 +3,10 @@
         <Header/>
         <RedesSociales/>
         <Welcome/>
-        <CicloHomenaje  style="background-color: rgb(227,235,235,0.5)" justify="center" align="center" class="pt-5 pb-5"/>
-        <parqueCementerio/> 
-        <PlansExequial style="background-color: rgb(227,235,235,0.5)"/>
-        <Testimonios/> 
+        <CicloHomenaje justify="center" align="center" class="mb-10"/>
+        <parqueCementerio style="background-color: rgb(227,235,235,0.5)"/> 
+        <PlansExequial/>
+        <Testimonios style="background-color: rgb(227,235,235,0.5)"/> 
         <Footer style="background: linear-gradient(270deg, #8fddaa 0%, #59ab9b 100%);"/>     
     </div>
 </template>

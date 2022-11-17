@@ -19,8 +19,8 @@
                     </v-col>
                 </v-row>
             </v-col>
-            <v-col justify="center" align="start" cols="12" sm="6" md="5" lg="5">   
-                <img class="d-none d-xl-block d-lg-block" src="../../static/cifras/nuestasCifras.png"  width="80%">
+            <v-col justify="center" align="center" cols="12" sm="12" md="5" lg="4">   
+                <img class="d-none d-xl-block d-lg-block" src="../../static/cifras/nuestasCifras.png"  width="100%">
                 <img class="d-none d-md-block d-lg-none" src="../../static/cifras/nuestasCifras.png"  width="80%">
                 <img class="d-block d-sm-none" src="../../static/cifras/nuestasCifras.png"  width="80%">
             </v-col>

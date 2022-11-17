@@ -10,7 +10,7 @@
             </v-col>
         </v-row>
         <v-row justify="center" align="center" >
-            <v-col cols="8" sm="12" md="10" lg="10" >
+            <v-col cols="11" sm="11" md="10" lg="10" >
                 <p class="text-comfortaa" style="color:#003B4C; font-size: 20px;">
                     Somos una cooperativa de segundo grado que
                     asocia a cooperativas y fondos de empleados de

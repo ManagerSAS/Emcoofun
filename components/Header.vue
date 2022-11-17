@@ -1,9 +1,7 @@
 <template>
-    <div >
+    <div class="headerstatic">
         <v-toolbar  
             color="white"
-            fixed
-            dense 
             height="80"
             >        
             <!-- <v-toolbar-title class="pt-3"> -->
@@ -56,9 +54,11 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.border-header{
-    border-bottom: 1px solid #80808033 !important;
-    background-color: rgba(255,255,255,var(0.5));
+.headerstatic{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 .s-acortag{
     padding: 15px 15px;

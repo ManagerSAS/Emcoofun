@@ -38,7 +38,7 @@
                         </div>
                         <div class="bt-5">
                             <v-btn @click="ShowMultiples" justify="center" align="center"  style="background: linear-gradient(to right, #A780B8, #442158); color: white;" class="text-comfortaa font-weight-black" >
-                              Multiples
+                              Múltiples
                             </v-btn>
                         </div>
                     </v-col>

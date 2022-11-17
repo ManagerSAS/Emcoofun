@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-carousel class="d-none d-lg-block d-xl-block pc" width="100%" :cycle="true"  delimiter-icon="mdi-seed"  hide-delimiter-background show-arrows-on-hover >
+        <v-carousel class="d-none d-lg-block d-xl-block pc" width="100%" height="100%" :cycle="true"  delimiter-icon="mdi-seed"  hide-delimiter-background show-arrows-on-hover >
             <v-carousel-item
                 class="bg-cover"
                 v-for="({src},index) in sliderPc"
@@ -10,7 +10,7 @@
             >
             </v-carousel-item>
         </v-carousel>
-        <v-carousel class="d-none d-md-block d-lg-none" :cycle="true"  delimiter-icon="mdi-seed"  hide-delimiter-background show-arrows-on-hover height="100%">
+        <v-carousel class="d-none d-md-block d-lg-none" :cycle="true"  delimiter-icon="mdi-seed"  hide-delimiter-background show-arrows-on-hover width="100%" height="100%">
             <v-carousel-item
                 v-for="({src},index) in sliderLaptop"
                 :key="index"

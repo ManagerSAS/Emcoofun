@@ -27,8 +27,8 @@
                         </div>
                         <div>
                             <p class="text-comfortaa" style="color:white; font-size: 20px; font-weight: bold;"> Síguenos en nuestas redes sociales: </p>
-                           <a href="https://www.facebook.com/LosOlivosEmcoofun" target="_blank" rel="noopener noreferrer"><v-icon class="botonRedes" >mdi-facebook mdi-36px</v-icon></a> 
-                            <a href="https://www.instagram.com/emcoofunlosolivos/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer"><v-icon class="botonRedes" >mdi-instagram mdi-36px</v-icon></a>
+                            <a style="text-decoration:none;" href="https://www.facebook.com/LosOlivosEmcoofun" target="_blank" rel="noopener noreferrer"><v-icon class="botonRedes" >mdi-facebook mdi-36px</v-icon></a> 
+                            <a style="text-decoration:none;" href="https://www.instagram.com/emcoofunlosolivos/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer"><v-icon class="botonRedes" >mdi-instagram mdi-36px</v-icon></a>
                         </div>
                     </v-col>
                     <v-col class="mt-10" cols="12" sm="12" md="2" lg="2" xl="2">
@@ -40,7 +40,7 @@
                             :key="index"
                             class="mb-1 text-comfortaa" style="color:white; font-size: 12px;"
                         >
-                           <img src="../static/iconos/vineta-03.png" width="15">  <Nuxt-link class="text" style="color:white; text-decoration: none;font-size: 15px;" :to="to "> {{ text }} </Nuxt-link>
+                           <img src="../static/iconos/vineta-03.png" width="15"><Nuxt-link class="text" style="color:white; text-decoration: none;font-size: 15px;" :to="to "> {{ text }} </Nuxt-link>
                         </div>
                     </v-col>
                     <v-col class="mt-10" cols="12" sm="12" md="3" lg="3" xl="3">
@@ -51,45 +51,46 @@
                         </div>
                         <div style="color:white; font-size: 18px; font-weight: 400; ">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.591903042192!2d-75.29560698467243!3d2.9329896552599575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b74621ec706fb%3A0x9450d529c27be798!2sCl.%2016%20%232-56%2C%20Neiva%2C%20Huila!5e0!3m2!1ses!2sco!4v1662479377177!5m2!1ses!2sco" width="220" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
-                            <v-row justify="center" align="center">
-                                <v-col>
-                                    <img src="../static/iconos/vineta-03.png" width="15">
-                                </v-col>
-                                <v-col cols="10" >
-                                    <span class="text-white"> Sede Principal Neiva - Huila</span><br>
-                                    <span>Dirección: Calle 16 No. 2-56</span><br>
+                            <v-row justify="center" align="start">
+                                <v-col cols="12">
+                                    <div class="text-white"> 
+                                        <img src="../static/iconos/vineta-03.png" width="15">
+                                        Sede Principal Neiva - Huila
+                                        <br>
+                                        <p class="ml-5" > Dirección: Calle 16 No. 2-56</p>
+                                    </div>
                                 </v-col>
                             </v-row>
-                            <v-divider width="90%" color="#FBE78B"></v-divider>
-                            <v-row justify="center" align="center">
-                                <v-col >
-                                    <img src="../static/iconos/vineta-03.png" width="15">
-                                </v-col>
-                                <v-col cols="10" >
-                                    <span class="text-white"> Sede Pitalito - Huila</span><br>
-                                    <a style="color:white" href="https://goo.gl/maps/s6M2LeBGccCWnRPS8" target="_blank" rel="noopener noreferrer"><span class="text-white">Dirección: Carrera 3 No. 5-19 </span><br></a>
+                            <v-divider width="80%" color="#FBE78B"></v-divider>
+                            <v-row justify="center" align="start">
+                                <v-col cols="12" >
+                                    <div class="text-white"> 
+                                        <img src="../static/iconos/vineta-03.png" width="15">
+                                        Sede Pitalito - Huila<br>
+                                        <a style="color:white" href="https://goo.gl/maps/s6M2LeBGccCWnRPS8" target="_blank" rel="noopener noreferrer"><span class="text-white ml-5">Dirección: Carrera 3 No. 5-19 </span><br></a>
+                                    </div>
                                 </v-col>
                             </v-row>
                         
                             <v-divider width="90%" color="#FBE78B"></v-divider>
-                            <v-row justify="center" align="center">
-                                <v-col >
-                                    <img src="../static/iconos/vineta-03.png" width="15">
-                                </v-col>
-                                <v-col cols="10" >
-                                    <span class="text-white"> Sede Florencia</span><br>
-                                    <a style="color:white"  href="https://goo.gl/maps/dih8Ljm64UTo7tb28" target="_blank" rel="noopener noreferrer"><span class="text-white">Dirección: Carrera 15 No. 15-34/36 </span><br></a>
+                            <v-row justify="center" align="start">
+                                <v-col cols="12" >
+                                    <div class="text-white"> 
+                                        <img src="../static/iconos/vineta-03.png" width="15">
+                                        Sede Florencia><br>
+                                        <a style="color:white"  href="https://goo.gl/maps/dih8Ljm64UTo7tb28" target="_blank" rel="noopener noreferrer"><span class="text-white ml-5">Dirección: Carrera 15 No. 15-34/36</span> <br></a>
+                                    </div>
                                 </v-col>
                             </v-row>
     
                             <v-divider width="90%" color="#FBE78B"></v-divider>
                             <v-row justify="center" align="center">
-                                <v-col >
-                                    <img src="../static/iconos/vineta-03.png" width="15">
-                                </v-col>
-                                <v-col cols="10" >
-                                    <span class="text-white"> Sede Garzón - Huila</span><br>
-                                    <a href="https://goo.gl/maps/Cp7dAtdW2NCLtD31A" style="color:white" target="_blank" rel="noopener noreferrer"><span class="text-white">Dirección: Calle 7 No. 12-00</span><br></a>
+                                <v-col cols="12" >
+                                    <div class="text-white"> 
+                                        <img src="../static/iconos/vineta-03.png" width="15">
+                                        Sede Garzón - Huila<br>
+                                        <a href="https://goo.gl/maps/Cp7dAtdW2NCLtD31A" style="color:white" target="_blank" rel="noopener noreferrer"><span class="text-white ml-5">Dirección: Calle 7 No. 12-00</span><br></a>
+                                    </div>
                                 </v-col>
                             </v-row>
                         </div>

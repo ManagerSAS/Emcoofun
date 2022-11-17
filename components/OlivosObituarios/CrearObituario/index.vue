@@ -36,49 +36,47 @@
                             </v-row>
                             <v-row justify="center" align="center">
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
-                                <v-text-field
+                                    <v-text-field
                                         v-model="NDocumento"
                                         :rules="nameRules"
                                         color="teal darken-4"
                                         label="Numero de documento"
-                                >
+                                    >
                                 </v-text-field>
                                 </v-col>
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
-                                <v-text-field
+                                    <v-text-field
                                         v-model="nombre1"
                                         :rules="nameRules"
                                         color="teal darken-4"
                                         label="Primer Nombre"
-                                >
+                                    >
                                 </v-text-field>
                                 </v-col>
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
-                                <v-text-field
+                                    <v-text-field
                                         v-model="nombre2"
-                                        :rules="nameRules"
                                         color="teal darken-4"
                                         label="Segundo Nombre"
-                                >
+                                    >
                                 </v-text-field>
                                 </v-col>
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
-                                <v-text-field
+                                    <v-text-field
                                         v-model="apellido1"
                                         :rules="nameRules"
                                         color="teal darken-4"
                                         label="Primer Apellido"
-                                >
+                                    >
                                 </v-text-field>
                                 </v-col>
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
-                                <v-text-field
+                                    <v-text-field
                                         v-model="apellido2"
-                                        :rules="nameRules"
                                         color="teal darken-4"
                                         label="Segundo Apellido"
-                                >
-                                </v-text-field>
+                                    >
+                                    </v-text-field>
                                 </v-col>
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
                                     <v-text-field

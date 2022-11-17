@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid justify="center" align="center">
+    <v-container  fluid justify="center" align="center">
         <v-row  justify="center" align="center" >
             <v-col cols="12" sm="12" md="10" lg="8" xl="8">
                 <v-row justify="center" align="center">
@@ -20,14 +20,14 @@
                             <p> <v-icon>mdi-menu-right</v-icon> Cremación</p>
                         </div>  
                     </v-col> 
-                    <v-col cols="12" sm="10" md="6" lg="6">  
+                    <v-col justify="center" align="center" cols="12" sm="10" md="6" lg="6">  
                         <img class="d-none d-xl-block d-lg-block" src="../../static/OtrosServicios/destino_final.png" width="80%">
                         <img class="d-none d-md-block d-lg-none" src="../../static/OtrosServicios/destino_final.png" width="70%">
                         <img class="d-block d-sm-none"  src="../../static/OtrosServicios/destino_final.png" width="70%">
                     </v-col>
                 </v-row>
                 <v-row justify="center" align="center" >
-                    <v-col cols="10" sm="10" md="6" lg="6">
+                    <v-col justify="center" align="center" cols="10" sm="10" md="6" lg="6">
                         <img class="d-none d-xl-block d-lg-block" src="../../static/OtrosServicios/opciones_destino.png" width="80%">
                         <img class="d-none d-md-block d-lg-none" src="../../static/OtrosServicios/opciones_destino.png" width="70%">
                         <img  class="d-block d-sm-none"  src="../../static/OtrosServicios/opciones_destino.png" width="70%">
@@ -57,14 +57,14 @@
                             <p> <v-icon>mdi-menu-right</v-icon>Ceremonias especiales.</p>
                         </div>  
                     </v-col> 
-                    <v-col cols="10" sm="10" md="6" lg="6">  
+                    <v-col justify="center" align="center" cols="10" sm="10" md="6" lg="6">  
                         <img class="d-none d-xl-block d-lg-block" src="../../static/OtrosServicios/otros_servicios.png" width="80%">
                         <img class="d-none d-md-block d-lg-none" src="../../static/OtrosServicios/otros_servicios.png" width="70%">
                         <img  class="d-block d-sm-none"  src="../../static/OtrosServicios/otros_servicios.png" width="70%"> 
                     </v-col>
                 </v-row>
                 <v-row justify="center" align="center" >
-                    <v-col cols="12" sm="10" md="6" lg="6">
+                    <v-col justify="center" align="center" cols="12" sm="10" md="6" lg="6">
                         <img class="d-none d-xl-block d-lg-block" src="../../static/OtrosServicios/protocolos.png" width="80%">
                         <img class="d-none d-md-block d-lg-none" src="../../static/OtrosServicios/protocolos.png" width="70%">
                         <img  class="d-block d-sm-none"  src="../../static/OtrosServicios/protocolos.png" width="70%">

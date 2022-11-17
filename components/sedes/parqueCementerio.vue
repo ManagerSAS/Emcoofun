@@ -20,7 +20,7 @@
                     <v-col justify="center" align="center" cols="10" sm="4" md="5" lg="5">
                         <v-btn 
                             style="background: linear-gradient(to right, #B9466A, #660F2E); color: white;"
-                            class="shadow-principal btn-hover text-comfortaa font-weight-black "
+                            class="shadow-principal btn-hover text-comfortaa font-weight-black mb-4"
                             rounded-xl
                             dark
                             large

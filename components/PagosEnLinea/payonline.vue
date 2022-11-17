@@ -3,9 +3,9 @@
         <v-row justify="center" align="center" >
 			<v-col cols="12" sm="12" md="12" lg="10" xl="10">
                 <v-row justify="center" align="center">
-                    <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
-                        <h1 class="mb-6 text-raleway" style="color:#003B4C; font-size: 36px; font-weight: 800;">
-                            Nuestros medios de pago
+                    <v-col justify="center" align="center" cols="12" sm="10" md="12" lg="12">
+                        <h1 class="mb-6 ml-1 mr-1 text-raleway" style="color:#003B4C;line-height: normal;  font-size: 36px; font-weight: 800;">
+                            Nuestros <br> medios de pago
                         </h1>
                     </v-col>
                 </v-row>
@@ -15,7 +15,7 @@
                             <v-col  cols="12" sm="5" md="5" lg="6" justify="center" align="center">
                                 <img src="../../static/iconos/FacturaElectronica-02.png" width="150px">
                                 <div style="color:#E9522C; font-size: 20px; font-weight: 800;">
-                                    <p class="text-raleway">Pagos con tarjeta de credito</p>
+                                    <p class="text-raleway">Pagos con tarjeta de credíto</p>
                                 </div>
                                 <div>
                                     <form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
@@ -44,7 +44,7 @@
                             <v-col  cols="12" sm="5" md="5" lg="6" justify="center" align="center">
                                 <img src="../../static/iconos/PagosEnLinea-02.png" width="150px">
                                 <div style="color:#E9522C; font-size: 20px; font-weight: 800;">
-                                    <p class="text-raleway">Pagos PSE</p>
+                                    <p class="text-raleway mt-1">Pagos PSE</p>
                                 </div>
                                 <div>
                                     <form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
