@@ -67,7 +67,7 @@
                                     <div class="text-white"> 
                                         <img src="../static/iconos/vineta-03.png" width="15">
                                         Sede Pitalito - Huila<br>
-                                        <a style="color:white" href="https://goo.gl/maps/s6M2LeBGccCWnRPS8" target="_blank" rel="noopener noreferrer"><span class="text-white ml-5">Dirección: Carrera 3 No. 5-19 </span><br></a>
+                                        <a style="color:white; text-decoration: none; " href="https://goo.gl/maps/s6M2LeBGccCWnRPS8" target="_blank" rel="noopener noreferrer"><span class="text-white ml-5">Dirección: Carrera 3 No. 5-19 </span><br></a>
                                     </div>
                                 </v-col>
                             </v-row>
@@ -77,8 +77,8 @@
                                 <v-col cols="12" >
                                     <div class="text-white"> 
                                         <img src="../static/iconos/vineta-03.png" width="15">
-                                        Sede Florencia><br>
-                                        <a style="color:white"  href="https://goo.gl/maps/dih8Ljm64UTo7tb28" target="_blank" rel="noopener noreferrer"><span class="text-white ml-5">Dirección: Carrera 15 No. 15-34/36</span> <br></a>
+                                        Sede Florencia<br>
+                                        <a style="color:white; text-decoration: none;"  href="https://goo.gl/maps/dih8Ljm64UTo7tb28" target="_blank" rel="noopener noreferrer"><span class="text-white ml-5">Dirección: Carrera 15 No. 15-34/36</span> <br></a>
                                     </div>
                                 </v-col>
                             </v-row>
@@ -89,7 +89,7 @@
                                     <div class="text-white"> 
                                         <img src="../static/iconos/vineta-03.png" width="15">
                                         Sede Garzón - Huila<br>
-                                        <a href="https://goo.gl/maps/Cp7dAtdW2NCLtD31A" style="color:white" target="_blank" rel="noopener noreferrer"><span class="text-white ml-5">Dirección: Calle 7 No. 12-00</span><br></a>
+                                        <a href="https://goo.gl/maps/Cp7dAtdW2NCLtD31A" style="color:white;text-decoration: none; " target="_blank" rel="noopener noreferrer"><span class="text-white ml-5">Dirección: Calle 7 No. 12-00</span><br></a>
                                     </div>
                                 </v-col>
                             </v-row>

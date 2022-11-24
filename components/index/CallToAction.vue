@@ -7,7 +7,7 @@
                         <a href="/AfiliacionOnLine">
                             <img class="mt-15 mb-15 d-none d-xl-block d-lg-block" src="../../static/botonAfiliacion.png" width="400">
                             <img class="d-none d-md-block d-lg-none" src="../../static/botonAfiliacion.png" width="70%">
-                            <img class="mt-15 mb-5 d-block d-sm-none" src="../../static/botonAfiliacion.png" width="80%">
+                            <img class="mt-15 mb-5 d-block d-sm-none" src="../../static/botonAfiliacion.png" width="70%">
                         </a>
                     </v-col>
                     <v-col justify="center" align="center" cols="12" sm="6" md="6" lg="6">
