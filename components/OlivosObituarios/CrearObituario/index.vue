@@ -249,7 +249,7 @@
                                         v-model="NRegistro"
                                         :rules="nameRules"
                                         color="teal darken-4"
-                                        label="Numero registor de defuncion"
+                                        label="Numero registro de defuncion"
                                 >
                                 </v-text-field>
                                 </v-col>
@@ -259,7 +259,7 @@
                                         :rules="nameRules"
                                         type="date"
                                         color="teal darken-4"
-                                        label="Fecha Exhimacion"
+                                        label="Fecha Exhumacion"
                                 >
                                 </v-text-field>
                                 </v-col>
