@@ -101,16 +101,15 @@
                                         v-model="LugarFallecimiento"
                                         :rules="nameRules"
                                         color="teal darken-4"
-                                        label="Lugar Fallecimiento"
+                                        label="(Recinto donde fallecio y ciudad ej. Clinica medilaser - Neica)"
                                 >
                                 </v-text-field>
                                 </v-col>
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
                                 <v-text-field
-                                        v-model="Notaria"
-                                        :rules="nameRules"
-                                        color="teal darken-4"
-                                        label="Notaria"
+                                    v-model="Notaria"
+                                    color="teal darken-4"
+                                    label="Notaria"
                                 >
                                 </v-text-field>
                                 </v-col>
@@ -125,10 +124,10 @@
                             <v-row align="center">
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
                                 <v-text-field
-                                        v-model="NombreSala"
-                                        :rules="nameRules"
-                                        color="teal darken-4"
-                                        label="Nombre de la Sala"
+                                    v-model="NombreSala"
+                                    :rules="nameRules"
+                                    color="teal darken-4"
+                                    label="Nombre de la Sala"
                                 >
                                 </v-text-field>
                                 </v-col>
@@ -138,7 +137,7 @@
                                         type="date"
                                         :rules="nameRules"
                                         color="teal darken-4"
-                                        label="Fecha de las Exequias"
+                                        label="Fecha del ingreso a las sala de velación"
                                     ></v-text-field>
                                 </v-col>
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
@@ -147,15 +146,7 @@
                                         type="time"
                                         :rules="nameRules"
                                         color="teal darken-4"
-                                        label="Hora de las Exequias"
-                                    ></v-text-field>
-                                </v-col>
-                                <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
-                                    <v-text-field
-                                        v-model="Departamento"
-                                        :rules="nameRules"
-                                        color="teal darken-4"
-                                        label="Departamento"
+                                        label="Hora del ingreso a las sala de velación"
                                     ></v-text-field>
                                 </v-col>
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
@@ -172,7 +163,7 @@
                                         type="date"
                                         :rules="nameRules"
                                         color="teal darken-4"
-                                        label="Fecha Salida Sala"
+                                        label="Fecha salida de exequias"
                                     ></v-text-field> 
                                 </v-col>
                                 <v-col justify="center" align="center" cols="12" sm="10" md="2" lg="2">
@@ -181,26 +172,38 @@
                                         type="time"
                                         :rules="nameRules"
                                         color="teal darken-4"
-                                        label="Hora Salida Sala"
+                                        label="Hora salida de exequias"
                                     ></v-text-field> 
                                 </v-col>
                             </v-row>
                             <v-row justify="center" align="center">
                                 <v-col justify="center" align="center" cols="12" sm="10" md="12" lg="12">
                                     <h1 class="mb-6 text-raleway" style="color:#003B4C; font-size: 30px; font-weight: 800;">
-                                        Inhumacion
+                                        Destino final 
                                     </h1>
                                 </v-col>
                             </v-row>
                             <v-row align="center">
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
-                                <v-text-field
+                                    <v-select
+                                        :items="destinos"
                                         v-model="DestinoFinal"
+                                        name="area"
+                                        item-text="text"
+                                        label="Destino Final"
+                                        @change="prueba"
+                                    >
+                                    </v-select>
+                                </v-col>
+                                <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
+                                    <v-text-field
+                                        v-if="ciudad='Neiva'"
+                                        v-model="campoSanto"
                                         :rules="nameRules"
                                         color="teal darken-4"
-                                        label="Destino Final o Cementerio"
-                                >
-                                </v-text-field>
+                                        label="Nombre del campo santo / Cementerio"
+                                    >
+                                    </v-text-field>
                                 </v-col>
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
                                     <v-text-field
@@ -216,23 +219,7 @@
                                         v-model="Ciudad"
                                         :rules="nameRules"
                                         color="teal darken-4"
-                                        label="Ciudad"
-                                    ></v-text-field>
-                                </v-col>
-                                <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
-                                    <v-text-field
-                                        v-model="Sector"
-                                        :rules="nameRules"
-                                        color="teal darken-4"
-                                        label="Sector"
-                                    ></v-text-field>
-                                </v-col>
-                                <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
-                                    <v-text-field
-                                        v-model="Ubicacion"
-                                        :rules="nameRules"
-                                        color="teal darken-4"
-                                        label="Ubicacion"
+                                        label="Ciudad de destino final"
                                     ></v-text-field>
                                 </v-col>
                             </v-row>
@@ -245,13 +232,13 @@
                             </v-row>
                             <v-row align="center">
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
-                                <v-text-field
-                                        v-model="NRegistro"
-                                        :rules="nameRules"
-                                        color="teal darken-4"
-                                        label="Numero registro de defuncion"
-                                >
-                                </v-text-field>
+                                    <v-text-field
+                                            v-model="NRegistro"
+                                            :rules="nameRules"
+                                            color="teal darken-4"
+                                            label="Numero registro de defuncion"
+                                    >
+                                    </v-text-field>
                                 </v-col>
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
                                 <v-text-field
@@ -364,6 +351,17 @@ import Post from '../../post/Obituarios'
                     'Pitalito',
                     'Florencia'
                 ],
+                DestinoFinal:'',
+                destinos: [
+                    { text: 'Destino final', disabled: true },
+                    { text: 'Inhumación en lote', disabled: false },
+                    { text: 'Inhumación en bóveda', disabled: false },
+                    { text: 'Osario', disabled: false },
+                    { text: 'Cremacion', disabled: true },
+                    { text: 'Columbario al redor del lago', disabled: false },
+                    { text: 'Columbario multiple', disabled: false },
+                ],
+                
                 // Datos Generales
                 NDocumento:'',
                 nombre1:'',
@@ -384,11 +382,9 @@ import Post from '../../post/Obituarios'
                 HoraSalidaSala:'',
                 
                 // Inhumacion
-                DestinoFinal:'',
                 HoraInhumacion:'',
                 Ciudad:'',
-                Sector:'',
-                Ubicacion:'',
+                campoSanto:'',
                 // Otros
                 NRegistro:'',
                 FechaExhumacion:'',

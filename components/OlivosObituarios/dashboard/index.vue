@@ -2,8 +2,8 @@
     <v-container fluid  class="text-comfortaa">
         <v-row justify="center" align="center" class="ma-10 ">
             <v-col justify="center" align="center" cols="12" sm="8" md="10" lg="9" xl="9">
-                <p style="color:#10303B; font-size:300%; font-weight: bold;" class="font-italic">Bienvenido a Los Olivos EMCOOFUN</p>
-                <p class="text-raleway" style="color: #003B4C;font-size: 2em; font-weight: 400;">El nuevo sistema implementado para mejorar los procesos de la empresa que ira creciendo poco a poco.</p>
+                <p style="color:#10303B; font-size:300%; font-weight: bold;" class="font-italic">EMCOOFUN los Olivos</p>
+                <p class="text-raleway" style="color: #003B4C;font-size: 2em; font-weight: 400;">Espacio para la administración de nuestra página web</p>
             </v-col>
         </v-row>
         <v-row justify="center" align="center">
