@@ -348,46 +348,63 @@
                                 </v-expansion-panel>
                             </v-expansion-panels>
                             <!-- ------- -->
-                        
-                            <div class="mt-5">
-                                <h4 class="text-raleway" style="color:#003B4C;"> Autorizo expresamente a EMCOOFUN LOS OLIVOS, en el desarrollo de sus funciones a facturar el valor total a pagar del <span class="font-weight-bold ">PLAN DE PREVISIÓN ONLINE con el cual estoy de acuerdo a las políticas descritas en este formato.</span></h4>
-                            </div>
-                            <v-row no-gutters align="center">
-                                <v-col cols="5">
-                                    <v-checkbox
-                                        v-model="AutoEmcoofun"
-                                        :rules="nameRules"
-                                        color="teal darken-4"
-                                        label="Autorizo"
-                                    > </v-checkbox>
-                                </v-col>
-                            </v-row>
-                            <v-row no-gutters align="center">
-                                <v-col cols="5">
-                                    <v-checkbox
-                                        v-model="terminos"
-                                        :rules="nameRules"
-                                        color="teal darken-4"
-                                        label="Acepto políticas de tratamiento de datos"
-                                    > </v-checkbox>
-                                </v-col>
-                                <v-col cols="7">
-                                    <Nuxt-link target="_blank" to="/terminosycondiciones/privacidad-de-datos">Ver términos y Condiciones</Nuxt-link>
-                                </v-col>
-                            </v-row>
-                            <v-row no-gutters align="center">
-                                <v-col cols="5">
-                                    <v-checkbox
-                                        v-model="declaracion"
-                                        :rules="nameRules"
-                                        color="teal darken-4"
-                                        label=" Sí, declaro y autorizo"
-                                    > </v-checkbox>
-                                </v-col>
-                                <v-col cols="7">
-                                    <Nuxt-link target="_blank" to="/terminosycondiciones/privacidad-de-datos">Autrización y Declaracion SARLAFT</Nuxt-link>
-                                </v-col>
-                            </v-row>
+                        <v-row justify="center" align="center">
+                            <v-col cols="12" md="8" sm="12" lg="8">
+                                <div class="mt-5">
+                                    <h4 class="text-raleway" style="color:#003B4C;"> Autorizo expresamente a EMCOOFUN LOS OLIVOS, en el desarrollo de sus funciones a facturar el valor total a pagar del <span class="font-weight-bold ">PLAN DE PREVISIÓN ONLINE con el cual estoy de acuerdo a las políticas descritas en este formato.</span></h4>
+                                </div>
+                                <v-row no-gutters align="center">
+                                    <v-col cols="5">
+                                        <v-checkbox
+                                            v-model="AutoEmcoofun"
+                                            :rules="nameRules"
+                                            color="teal darken-4"
+                                            label="Autorizo"
+                                        > </v-checkbox>
+                                    </v-col>
+                                </v-row>
+                                <v-row no-gutters align="center">
+                                    <v-col cols="5">
+                                        <v-checkbox
+                                            v-model="terminos"
+                                            :rules="nameRules"
+                                            color="teal darken-4"
+                                            label="Acepto políticas de tratamiento de datos"
+                                        > </v-checkbox>
+                                    </v-col>
+                                    <v-col cols="7">
+                                        <Nuxt-link target="_blank" to="/terminosycondiciones/privacidad-de-datos">Ver términos y Condiciones</Nuxt-link>
+                                    </v-col>
+                                </v-row>
+                                <v-row no-gutters align="center">
+                                    <v-col cols="5">
+                                        <v-checkbox
+                                            v-model="declaracion"
+                                            :rules="nameRules"
+                                            color="teal darken-4"
+                                            label=" Sí, declaro y autorizo"
+                                        > </v-checkbox>
+                                    </v-col>
+                                    <v-col cols="7">
+                                        <Nuxt-link target="_blank" to="/terminosycondiciones/privacidad-de-datos">Autrización y Declaracion SARLAFT</Nuxt-link>
+                                    </v-col>
+                                </v-row>
+                            </v-col>
+                            <v-col cols="12" md="4" sm="12" lg="4" class="mt-5 " justify="center" align="center">
+                                <v-card  class="pa-5" justify="center" align="center" elevation="5" shaped>
+                                    <v-row justify="center" align="center">
+                                        <v-col justify="center" align="center">
+                                            <p>SI SU GRUPO FAMILAR ES DISTINTO AL MENCIONADO EN ESTE PLAN <strong>EMCOOFUN LOS OLIVOS</strong> TAMBIEN TIENE EL PLAN PARA SU FAMI</p>
+                                            <a target="_blank" href="https://api.whatsapp.com/send?phone=573176595142&text=Hola%20%F0%9F%96%90%EF%B8%8F%2C%20necesito%20un%20asesor%20de%20Emcoofun%20Los%20Olivos%20por%20favor%20%F0%9F%99%8F%F0%9F%98%80">
+                                                <img class=" d-none d-xl-block d-lg-block" src="../../../static/botonContacto.png" width="300">
+                                                <img class="  d-none d-md-block d-lg-none" src="../../../static/botonContacto.png" width="50%">
+                                                <img class=" d-block d-sm-none" src="../../../static/botonContacto.png" width="60%">
+                                            </a>
+                                        </v-col>
+                                    </v-row>
+                                </v-card>
+                            </v-col>
+                        </v-row>
                             <!-- captcha -->
                             <v-row>
                                 <v-col cols="12" sm="12" md="12" lg="12">
