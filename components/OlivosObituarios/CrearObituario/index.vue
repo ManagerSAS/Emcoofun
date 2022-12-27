@@ -18,7 +18,6 @@
                                     <v-select
                                         v-model="ciudad"
                                         :items="ciudades"
-                                        item-text="text"
                                         :rules="nameRules"
                                         item-color="teal darken-4"
                                         color="teal darken-4"
@@ -97,21 +96,21 @@
                                     ></v-text-field>
                                 </v-col>
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
-                                <v-text-field
+                                    <v-text-field
                                         v-model="LugarFallecimiento"
                                         :rules="nameRules"
                                         color="teal darken-4"
                                         label="(Recinto donde fallecio y ciudad ej. Clinica medilaser - Neica)"
-                                >
-                                </v-text-field>
+                                    >
+                                    </v-text-field>
                                 </v-col>
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
-                                <v-text-field
-                                    v-model="Notaria"
-                                    color="teal darken-4"
-                                    label="Notaria"
-                                >
-                                </v-text-field>
+                                    <v-text-field
+                                        v-model="Notaria"
+                                        color="teal darken-4"
+                                        label="Notaria"
+                                    >
+                                    </v-text-field>
                                 </v-col>
                             </v-row>
                             <v-row justify="center" align="center">
@@ -123,13 +122,13 @@
                             </v-row>
                             <v-row align="center">
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
-                                <v-text-field
-                                    v-model="NombreSala"
-                                    :rules="nameRules"
-                                    color="teal darken-4"
-                                    label="Nombre de la Sala"
-                                >
-                                </v-text-field>
+                                    <v-text-field
+                                        v-model="NombreSala"
+                                        :rules="nameRules"
+                                        color="teal darken-4"
+                                        label="Nombre de la Sala"
+                                    >
+                                    </v-text-field>
                                 </v-col>
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
                                     <v-text-field
