@@ -22,7 +22,7 @@
                                         item-color="teal darken-4"
                                         color="teal darken-4"
                                         label="Ciudades"
-                                        clearable
+                                        @change="showdestinos()"
                                     ></v-select>
                                 </v-col>
                             </v-row>
@@ -156,7 +156,7 @@
                                         label="Lugar Exequias (iglesia)"
                                     ></v-text-field>
                                 </v-col>
-                                <v-col justify="center" align="center" cols="12" sm="10" md="2" lg="2">
+                                <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
                                     <v-text-field
                                         v-model="FechaSalidaSala"
                                         type="date"
@@ -165,7 +165,7 @@
                                         label="Fecha salida de exequias"
                                     ></v-text-field> 
                                 </v-col>
-                                <v-col justify="center" align="center" cols="12" sm="10" md="2" lg="2">
+                                <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
                                     <v-text-field
                                         v-model="HoraSalidaSala"
                                         type="time"
@@ -185,19 +185,38 @@
                             <v-row align="center">
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
                                     <v-select
+                                        v-if="selecDestino"
                                         :items="destinos"
                                         v-model="DestinoFinal"
-                                        name="area"
                                         item-text="text"
                                         label="Destino Final"
-                                        @change="prueba"
                                     >
                                     </v-select>
+                                    <v-text-field
+                                        v-else-if="SelctOtroDestino"
+                                        v-model="OtroDestino"
+                                        :rules="nameRules"
+                                        color="teal darken-4"
+                                        label="Destino Final"
+                                    >
+                                    </v-text-field>
+                                </v-col>
+                                <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
+                                    <v-select
+                                        v-if="selecDestino"
+                                        :items="destinoscampoSanto"
+                                        v-model="campoSanto"
+                                        item-text="text"
+                                        label="Campo Santo"
+                                        @change="showcampoSantoother"
+                                    >
+                                    </v-select>
+                                   
                                 </v-col>
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
                                     <v-text-field
-                                        v-if="ciudad='Neiva'"
-                                        v-model="campoSanto"
+                                        v-show="campoSantoother"
+                                        v-model="OtrocampoSanto"
                                         :rules="nameRules"
                                         color="teal darken-4"
                                         label="Nombre del campo santo / Cementerio"
@@ -208,14 +227,13 @@
                                     <v-text-field
                                         v-model="HoraInhumacion"
                                         type="time"
-                                        :rules="nameRules"
                                         color="teal darken-4"
-                                        label="Hora Inhumacion"
+                                        label="Hora de Inhumación"
                                     ></v-text-field>
                                 </v-col>
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
                                     <v-text-field
-                                        v-model="Ciudad"
+                                        v-model="CiudadFinal"
                                         :rules="nameRules"
                                         color="teal darken-4"
                                         label="Ciudad de destino final"
@@ -232,20 +250,18 @@
                             <v-row align="center">
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
                                     <v-text-field
-                                            v-model="NRegistro"
-                                            :rules="nameRules"
-                                            color="teal darken-4"
-                                            label="Numero registro de defuncion"
+                                        v-model="NRegistro"
+                                        color="teal darken-4"
+                                        label="Numero registro de defuncion"
                                     >
                                     </v-text-field>
                                 </v-col>
                                 <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
                                 <v-text-field
-                                        v-model="FechaExhumacion"
-                                        :rules="nameRules"
-                                        type="date"
-                                        color="teal darken-4"
-                                        label="Fecha Exhumacion"
+                                    v-model="FechaExhumacion"
+                                    type="date"
+                                    color="teal darken-4"
+                                    label="Fecha Exhumación"
                                 >
                                 </v-text-field>
                                 </v-col>
@@ -360,7 +376,14 @@ import Post from '../../post/Obituarios'
                     { text: 'Columbario al redor del lago', disabled: false },
                     { text: 'Columbario multiple', disabled: false },
                 ],
-                
+                campoSanto:'',
+                destinoscampoSanto:[
+                    { text: 'Parque cementerio Jardín de los Olivos', disabled: false },
+                    { text: 'Parque cementerio Jardines el paraíso', disabled: false },
+                    { text: 'Otro', disabled: false },
+                ],
+                OtrocampoSanto:'',
+                OtroDestino:'',
                 // Datos Generales
                 NDocumento:'',
                 nombre1:'',
@@ -382,8 +405,7 @@ import Post from '../../post/Obituarios'
                 
                 // Inhumacion
                 HoraInhumacion:'',
-                Ciudad:'',
-                campoSanto:'',
+                CiudadFinal:'',
                 // Otros
                 NRegistro:'',
                 FechaExhumacion:'',
@@ -398,10 +420,31 @@ import Post from '../../post/Obituarios'
                 url:'',
                 src:'',
                 fotoSerquerido: null,
-
+                selecDestino: false,
+                SelctOtroDestino:false,
+                campoSantoother:false
             }
         },
         methods:{
+            showcampoSantoother(){
+                if(this.ciudad === 'Neiva' && this.campoSanto === 'Otro'){
+                    this.campoSantoother= true
+                }
+                else{
+                    this.campoSantoother= false
+                }
+            },
+            showdestinos(){
+                if(this.ciudad === 'Neiva'){
+                    this.selecDestino= true
+                    this.SelctOtroDestino=false
+                }
+                else{
+                    this.SelctOtroDestino=true
+                    this.selecDestino= false
+                    this.campoSantoother= true
+                }
+            },
             async onSelectedFiles(file){
                 const formdata = new FormData();
                 formdata.append("upload_preset", "fotosObituarios");
@@ -441,10 +484,11 @@ import Post from '../../post/Obituarios'
                 })
             },
             async EnviarInfor(){
+
                 if(this.fotoSerquerido === null){
                     this.fotoSerquerido = ''
                 }
-                if(this.ciudad !=='' && this.NDocumento !== '' && this.nombre1 !== '' && this.apellido1 !== '' && this.fechaNacimiento !== ''&& this.fechaFallecimiento !== '' && this.LugarFallecimiento !== '' && this.Notaria !== '' && this.NombreSala !== ''&& this.fechaExequias !== '' && this.HoraExequias !== '' && this.Departamento !== '' && this.LugarExequias !== '' && this.DestinoFinal !== '' && this.HoraInhumacion !== '' && this.Ciudad !== '' && this.Sector !== '' && this.Ubicacion !== '' && this.NRegistro !== '' && this.FechaExhumacion !== '' ){
+                if(this.ciudad !=='' && this.NDocumento !== '' && this.nombre1 !== '' && this.apellido1 !== '' && this.fechaNacimiento !== '' && this.fechaFallecimiento !== '' && this.LugarFallecimiento !== '' && this.NombreSala !== ''&& this.fechaExequias !== '' && this.HoraExequias !== '' && this.LugarExequias !== '' && this.CiudadFinal !== ''  ){
 
                     this.snackbar= true
                     this.loading= true
@@ -467,14 +511,14 @@ import Post from '../../post/Obituarios'
                         HoraExequias: this.HoraExequias, 
                         HoraSalidaSala:this.HoraSalidaSala,
                         FechaSalidaSala:this.FechaSalidaSala,
-                        Departamento: this.Departamento, 
                         LugarExequias: this.LugarExequias, 
                         foto: this.fotoSerquerido,
                         DestinoFinal: this.DestinoFinal, 
+                        OtroDestino: this.OtroDestino,
+                        campoSanto: this.campoSanto,
+                        OtrocampoSanto: this.OtrocampoSanto,
                         HoraInhumacion: this.HoraInhumacion, 
-                        Ciudad: this.Ciudad, 
-                        Sector: this.Sector, 
-                        Ubicacion: this.Ubicacion, 
+                        CiudadFinal: this.CiudadFinal,  
                         NRegistro: this.NRegistro, 
                         FechaExhumacion: this.FechaExhumacion,
                         fechaRegistro: hoy.getFullYear() + '-' + ( hoy.getMonth() + 1 )  + '-' +  hoy.getDate()

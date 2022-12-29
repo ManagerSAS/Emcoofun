@@ -127,9 +127,9 @@ export default {
                         }, 3000);
                         localStorage.setItem( 'token', token )
                         localStorage.setItem( 'authenticated-olivos-neiva', true )
-                        this.$store.dispatch('doLogin', token )
-                        this.$store.commit('doLogin', token)
                         this.$router.push({ path: '/dashboard/dashboardNeiva'})
+                        this.$store.commit('doLogin', token)
+                        this.$store.dispatch('doLogin', token )
                     }
                 }
                 else{

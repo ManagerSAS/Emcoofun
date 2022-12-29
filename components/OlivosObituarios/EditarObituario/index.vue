@@ -234,15 +234,7 @@
                                                 prepend-icon="mdi-account-heart-outline"
                                             ></v-text-field>
                                         </v-col>
-                                        <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
-                                            <v-text-field
-                                                v-model="editedItem.Departamento" 
-                                                color="teal accent-4"
-                                                label="Departamento"
-                                                hint="Ingresa la ciudad de visualizacion ."
-                                                prepend-icon="mdi-account-heart-outline"
-                                            ></v-text-field>
-                                        </v-col>
+
                                         <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
                                         <v-text-field
                                             v-model="editedItem.fechaExequias"
@@ -271,7 +263,7 @@
                                     <v-row justify="center" align="center">
                                         <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
                                             <h1 class="mb-6 mt-5 text-raleway" style="color:#003B4C; font-size: 25px; font-weight: 800;">
-                                                Datos Inhumacion
+                                                Destino Final
                                             </h1>
                                         </v-col>
                                     </v-row>
@@ -279,6 +271,36 @@
                                         <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
                                             <v-text-field
                                                 v-model="editedItem.DestinoFinal"
+                                                type="date"
+                                                color="teal accent-4"
+                                                label="Destino Final"
+                                                hint="Ingresa la ciudad de visualizacion ."
+                                                prepend-icon="mdi-account-heart-outline"
+                                            ></v-text-field>
+                                        </v-col>
+                                        <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
+                                            <v-text-field
+                                                v-model="editedItem.OtroDestino"
+                                                type="date"
+                                                color="teal accent-4"
+                                                label="Destino Final"
+                                                hint="Ingresa la ciudad de visualizacion ."
+                                                prepend-icon="mdi-account-heart-outline"
+                                            ></v-text-field>
+                                        </v-col>
+                                        <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
+                                            <v-text-field
+                                                v-model="editedItem.campoSanto"
+                                                type="date"
+                                                color="teal accent-4"
+                                                label="Destino Final"
+                                                hint="Ingresa la ciudad de visualizacion ."
+                                                prepend-icon="mdi-account-heart-outline"
+                                            ></v-text-field>
+                                        </v-col>
+                                        <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
+                                            <v-text-field
+                                                v-model="editedItem.OtrocampoSanto"
                                                 type="date"
                                                 color="teal accent-4"
                                                 label="Destino Final"
@@ -297,34 +319,14 @@
                                         </v-col>
                                         <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
                                             <v-text-field
-                                                v-model="editedItem.Ciudad"
+                                                v-model="editedItem.CiudadFinal"
                                                 color="teal accent-4"
                                                 label="Ciudad"
                                                 prepend-icon="mdi-account-heart-outline"
                                             ></v-text-field>
                                         </v-col>
                                     </v-row>
-                                    <v-row justify="center" align="center">
-                                        <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
-                                            <v-text-field
-                                                v-model="editedItem.Sector"
-                                                type="date"
-                                                color="teal accent-4"
-                                                label="Sector"
-                                                hint="Ingresa la ciudad de visualizacion ."
-                                                prepend-icon="mdi-account-heart-outline"
-                                            ></v-text-field>
-                                        </v-col>
-                                        <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
-                                            <v-text-field
-                                                v-model="editedItem.Ubicacion" 
-                                                color="teal accent-4"
-                                                label="Ubicacion"
-                                                hint="Ingresa la ciudad de visualizacion ."
-                                                prepend-icon="mdi-account-heart-outline"
-                                            ></v-text-field>
-                                        </v-col>
-                                    </v-row>
+                                    
                                 </v-card>
                                 <v-card class="mb-5 rounded-lg" >
                                     <v-row justify="center" align="center">
@@ -365,6 +367,29 @@
                                     </v-row>
                                     <v-row class="ml-2 mr-2" justify="center" align="center">
                                         <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
+                                            <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
+                                                <v-file-input
+                                                    v-model="file"
+                                                    multiple
+                                                    type="file"
+                                                    accept="image/*"
+                                                    color="teal darken-3"
+                                                    label="Adjuntar archivo(s)"
+                                                    @change="onSelectedFiles(file)"
+                                                ></v-file-input>
+                                                <cropper
+                                                    v-model="foto"
+                                                    :stencil-props="{
+                                                        aspectRatio: 1/1,
+                                                    }"
+                                                    :canvas="{
+                                                        height: 330,
+                                                        width: 330
+                                                    }"
+                                                    :src="url"
+                                                    @change="change"
+                                                />
+                                             </v-col>
                                             <v-img
                                                 v-model="editedItem.foto"
                                                 color="teal accent-4"
@@ -457,13 +482,13 @@ import Post from '../../post/Obituarios'
             HoraExequias: '', 
             HoraSalidaSala:'',
             FechaSalidaSala:'',
-            Departamento: '', 
             LugarExequias: '', 
             DestinoFinal: '', 
+            OtroDestino: '',
+            campoSanto: '',
+            OtrocampoSanto: '',
             HoraInhumacion: '', 
-            Ciudad: '', 
-            Sector: '', 
-            Ubicacion: '', 
+            CiudadFinal: '',  
             NRegistro: '', 
             FechaExhumacion: '',
             foto:'',
@@ -515,6 +540,44 @@ import Post from '../../post/Obituarios'
                 location.reload()
             }
         },
+        // async onSelectedFiles(file){
+        //         const formdata = new FormData();
+        //         formdata.append("upload_preset", "fotosObituarios");
+        //         formdata.append("file", file[0]);
+
+        //         const requestOptions = {
+        //             method: 'POST',
+        //             body: formdata,
+        //             redirect: 'follow'
+        //         };
+        //         await fetch("https://api.cloudinary.com/v1_1/dazyyib7u/image/upload", requestOptions)
+        //         .then(response => response.json())
+        //         .then(data => {
+        //             this.url = data.url
+        //         })
+        //     },
+        //     change({ coordinates, canvas }) {
+		// 	    this.coordinates = coordinates
+        //         this.foto = canvas.toDataURL()
+        //         this.src = this.foto
+        //         this.enviarImg()
+		//     },
+        //     async enviarImg(){
+        //         const formdata = new FormData();
+        //         formdata.append("upload_preset", "fotosCortadas");
+        //         formdata.append("file", this.src);
+
+        //         const requestOptions = {
+        //             method: 'POST',
+        //             body: formdata,
+        //             redirect: 'follow'
+        //         };
+        //         await fetch("https://api.cloudinary.com/v1_1/dazyyib7u/image/upload", requestOptions)
+        //         .then(response => response.json())
+        //         .then(data => {
+        //             this.fotoSerquerido = data.url
+        //         })
+        //     },
         async Enviar(){
             this.Obituario=[]
             this.loading= true
@@ -548,14 +611,14 @@ import Post from '../../post/Obituarios'
                             fechaExequias: element.fechaExequias, 
                             HoraExequias: element.HoraExequias, 
                             HoraSalidaSala:element.HoraSalidaSala,
-                            FechaSalidaSala:element.FechaSalidaSala,
-                            Departamento: element.Departamento, 
+                            FechaSalidaSala:element.FechaSalidaSala, 
                             LugarExequias: element.LugarExequias, 
                             DestinoFinal: element.DestinoFinal, 
+                            OtroDestino: element.OtroDestino,
+                            campoSanto: element.campoSanto,
+                            OtrocampoSanto: element.OtrocampoSanto,
                             HoraInhumacion: element.HoraInhumacion, 
-                            Ciudad: element.Ciudad, 
-                            Sector: element.Sector, 
-                            Ubicacion: element.Ubicacion, 
+                            Ciudad: element.Ciudad,
                             NRegistro: element.NRegistro, 
                             FechaExhumacion: element.FechaExhumacion, 
                             foto: element.foto,
