@@ -497,6 +497,11 @@ import Post from '../../post/Obituarios'
         botton:true,
         dialogEditItem: false,
         datos:'',
+        file:null,
+        foto:null,
+        url:'',
+        src:'',
+        fotoSerquerido: null,
         Obituario:[],
         snackbar:false,
         message:'',
@@ -522,6 +527,44 @@ import Post from '../../post/Obituarios'
             this.editedItem = await Object.assign({},item);
             this.dialogEditItem = true
         },
+        async onSelectedFiles(file){
+            const formdata = new FormData();
+            formdata.append("upload_preset", "fotosObituarios");
+            formdata.append("file", file[0]);
+
+            const requestOptions = {
+                method: 'POST',
+                body: formdata,
+                redirect: 'follow'
+            };
+            await fetch("https://api.cloudinary.com/v1_1/dazyyib7u/image/upload", requestOptions)
+            .then(response => response.json())
+            .then(data => {
+                this.url = data.url
+            })
+        },
+        change({ coordinates, canvas }) {
+            this.coordinates = coordinates
+            this.foto = canvas.toDataURL()
+            this.src = this.foto
+            this.enviarImg()
+        },
+        async enviarImg(){
+            const formdata = new FormData();
+            formdata.append("upload_preset", "fotosCortadas");
+            formdata.append("file", this.src);
+
+            const requestOptions = {
+                method: 'POST',
+                body: formdata,
+                redirect: 'follow'
+            };
+            await fetch("https://api.cloudinary.com/v1_1/dazyyib7u/image/upload", requestOptions)
+            .then(response => response.json())
+            .then(data => {
+                this.fotoSerquerido = data.url
+            })
+        },
         async editObituario(){
             this.loading= true
             this.snackbar= true
@@ -540,45 +583,9 @@ import Post from '../../post/Obituarios'
                 location.reload()
             }
         },
-        // async onSelectedFiles(file){
-        //         const formdata = new FormData();
-        //         formdata.append("upload_preset", "fotosObituarios");
-        //         formdata.append("file", file[0]);
-
-        //         const requestOptions = {
-        //             method: 'POST',
-        //             body: formdata,
-        //             redirect: 'follow'
-        //         };
-        //         await fetch("https://api.cloudinary.com/v1_1/dazyyib7u/image/upload", requestOptions)
-        //         .then(response => response.json())
-        //         .then(data => {
-        //             this.url = data.url
-        //         })
-        //     },
-        //     change({ coordinates, canvas }) {
-		// 	    this.coordinates = coordinates
-        //         this.foto = canvas.toDataURL()
-        //         this.src = this.foto
-        //         this.enviarImg()
-		//     },
-        //     async enviarImg(){
-        //         const formdata = new FormData();
-        //         formdata.append("upload_preset", "fotosCortadas");
-        //         formdata.append("file", this.src);
-
-        //         const requestOptions = {
-        //             method: 'POST',
-        //             body: formdata,
-        //             redirect: 'follow'
-        //         };
-        //         await fetch("https://api.cloudinary.com/v1_1/dazyyib7u/image/upload", requestOptions)
-        //         .then(response => response.json())
-        //         .then(data => {
-        //             this.fotoSerquerido = data.url
-        //         })
-        //     },
+       
         async Enviar(){
+            
             this.Obituario=[]
             this.loading= true
             this.snackbar= true
