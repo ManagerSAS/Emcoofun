@@ -2,7 +2,7 @@
 	<div >
 		<Header/>
         <RedesSociales/>
-		<Formulario/>
+		<Formulario class="text-raleway"/>
 		<Footer style="background: linear-gradient(270deg, #8fddaa 0%, #59ab9b 100%);"/>
     </div>
 </template>

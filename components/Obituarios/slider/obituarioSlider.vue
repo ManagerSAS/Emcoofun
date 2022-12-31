@@ -11,7 +11,7 @@
             </v-col>
         </v-row>
         <!-- obituarios extra pc -->
-        <div class="pc " justify="center" align="center">
+        <div class="pc" justify="center" align="center">
             <v-row v-if="obituarios.length">
                 <v-col cols="7" align="center">
                     <v-row justify="center" align="center">
@@ -55,7 +55,7 @@
                                                 <v-col cols="12" lg="5" class="justify-end" >
                                                     <div  class="circulogrande">
                                                         <div >
-                                                            <img class="fotohomenajegrande" :src="obituarios.foto" v-if="obituarios.visualizarFoto === 0" >
+                                                            <img class="fotohomenajegrande" :src="obituarios.foto" v-if="obituarios.visualizarFoto === '0' && obituarios.foto === ''" >
                                                             <img class="fotohomenajegrande" v-else src="../../../static/CintaLuto.jpg" >
                                                         </div>
                                                     </div>
@@ -79,9 +79,9 @@
                         </v-col>
                     </v-row>
                 </v-col>
-                <v-col cols="4" class="ml-1 rounded-lg mb-15" style="background-color: #ECECEC; height: 850px;">
-                    <VueSlickCarousel v-bind="settings" v-if="obituarios.length" :style="{height: '750px'}">
-                        <div v-for="(Contenido ,index) in obituarios" :key="index" class="ml-5 fondoSlider">
+                <v-col cols="4" class="ml-1 rounded-lg mb-5" style="background-color: #ECECEC; height: 750px;">
+                    <VueSlickCarousel v-bind="settings" v-if="obituarios.length" :style="{height: '700px'}">
+                        <div v-for="(Contenido ,index) in obituarios" :key="index" class=" fondoSlider">
                             <div>
                                 <v-row justify="center" align="center">
                                     <v-col cols="12" lg="11" >
@@ -92,7 +92,7 @@
                                 <v-row justify="center" align="center"> 
                                     <v-col cols="12" lg="4" class="justify-end" align="center">
                                         <div  class="circuloPequeño ml-5">
-                                            <img class="fotohomenaje" v-if="Contenido.visualizarFoto === 0" :src="Contenido.foto" >
+                                            <img class="fotohomenaje" v-if="obituarios.visualizarFoto === '0' && obituarios.foto === ''" :src="Contenido.foto" >
                                             <img class="fotohomenaje" v-else src="../../../static/CintaLuto.jpg" >
                                         </div>
                                     </v-col>
@@ -125,7 +125,7 @@
                     ilumine nuestro camino y fortalezca nuestro corazón”</p>
                 </v-col>
             </v-row>
-            <v-row >
+            <v-row justify="center" align="center">
                 <v-col cols="7" align="center">
                     <v-row justify="center" align="center">
                         <v-col cols="12" md="12">
@@ -151,7 +151,7 @@
                                             <v-col cols="5" class="justify-end" align="center">
                                                 <div  class="circulogrande ml-3">
                                                     <div align="center">
-                                                        <img class="fotohomenajegrande" :src="obituarios.foto" v-if="obituarios.visualizarFoto === 0" >
+                                                        <img class="fotohomenajegrande" :src="obituarios.foto" v-if="obituarios.visualizarFoto === '0' && obituarios.foto === ''" >
                                                         <img class="fotohomenajegrande" v-else src="../../../static/CintaLuto.jpg" >
                                                     </div>
                                                 </div>
@@ -174,8 +174,8 @@
                         </v-col>
                     </v-row>
                 </v-col>
-                <v-col cols="5" class="rounded-lg mt-10 mb-10" style="background-color: #ECECEC; height: 400px; ">
-                    <VueSlickCarousel v-bind="settings" v-if="obituarios.length" >
+                <v-col cols="4" class="rounded-lg mt-3 mb-2" style="background-color: #ECECEC; height: 550px; ">
+                    <VueSlickCarousel v-bind="settings" v-if="obituarios.length" :style="{height: '550px'}">
                         <div v-for="(Contenido ,index) in obituarios" :key="index" class="fondoSlider">
                             <v-row>
                                 <v-col cols="12" lg="11" >
@@ -186,7 +186,7 @@
                             <v-row class="mb-5 mr-1">
                                 <v-col cols="6" class="justify-end" align="center">
                                     <div  class="circuloPequeño ml-5">
-                                        <img class="fotohomenaje" v-if="Contenido.visualizarFoto === 0" :src="Contenido.foto" >
+                                        <img class="fotohomenaje" v-if="obituarios.visualizarFoto === '0' && obituarios.foto === ''" :src="Contenido.foto" >
                                         <img class="fotohomenaje" v-else src="../../../static/CintaLuto.jpg" >
                                     </div>
                                 </v-col>
@@ -242,7 +242,7 @@
                                         <v-row justify="center" align="center">
                                             <v-col cols="12" >
                                                 <div  class="circulogrande ml-3">
-                                                    <img class="fotohomenajegrande" :src="obituarios.foto" v-if="obituarios.visualizarFoto === 0" >
+                                                    <img class="fotohomenajegrande" :src="obituarios.foto" v-if="obituarios.visualizarFoto === '0' && obituarios.foto === ''" >
                                                     <img class="fotohomenajegrande" v-else src="../../../static/CintaLuto.jpg" >
                                                 </div>
                                             </v-col>
@@ -281,7 +281,7 @@
                             <v-row>
                                 <v-col cols="5" class="justify-end" align="center">
                                     <div  class="circuloPequeño  mt-1">
-                                        <img class="fotohomenaje" v-if="Contenido.visualizarFoto === 0" :src="Contenido.foto" >
+                                        <img class="fotohomenaje" v-if="obituarios.visualizarFoto === '0' && obituarios.foto === ''" :src="Contenido.foto" >
                                         <img class="fotohomenaje" v-else src="../../../static/CintaLuto.jpg" >
                                     </div>
                                 </v-col>
@@ -375,7 +375,7 @@ export default {
             },
             settings2  :{
                 "centerMode": true,
-                "centerPadding": "5px",
+                "centerPadding": "2px",
                 "autoplay": true,
                 "focusOnSelect": true,
                 "infinite": true,

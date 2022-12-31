@@ -271,40 +271,32 @@
                                         <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
                                             <v-text-field
                                                 v-model="editedItem.DestinoFinal"
-                                                type="date"
                                                 color="teal accent-4"
                                                 label="Destino Final"
-                                                hint="Ingresa la ciudad de visualizacion ."
                                                 prepend-icon="mdi-account-heart-outline"
                                             ></v-text-field>
                                         </v-col>
                                         <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
                                             <v-text-field
                                                 v-model="editedItem.OtroDestino"
-                                                type="date"
                                                 color="teal accent-4"
-                                                label="Destino Final"
-                                                hint="Ingresa la ciudad de visualizacion ."
+                                                label="Otro destino Final"
                                                 prepend-icon="mdi-account-heart-outline"
                                             ></v-text-field>
                                         </v-col>
                                         <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
                                             <v-text-field
                                                 v-model="editedItem.campoSanto"
-                                                type="date"
                                                 color="teal accent-4"
-                                                label="Destino Final"
-                                                hint="Ingresa la ciudad de visualizacion ."
+                                                label="Campo santo o cementerio"
                                                 prepend-icon="mdi-account-heart-outline"
                                             ></v-text-field>
                                         </v-col>
                                         <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
                                             <v-text-field
                                                 v-model="editedItem.OtrocampoSanto"
-                                                type="date"
                                                 color="teal accent-4"
-                                                label="Destino Final"
-                                                hint="Ingresa la ciudad de visualizacion ."
+                                                label="Otro Campo santo o cementerio"
                                                 prepend-icon="mdi-account-heart-outline"
                                             ></v-text-field>
                                         </v-col>
@@ -366,7 +358,7 @@
                                         </v-col>
                                     </v-row>
                                     <v-row class="ml-2 mr-2" justify="center" align="center">
-                                        <v-col justify="center" align="center" cols="12" sm="12" md="4" lg="4">
+                                        <!-- <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="4"> -->
                                             <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
                                                 <v-file-input
                                                     v-model="file"
@@ -389,7 +381,6 @@
                                                     :src="url"
                                                     @change="change"
                                                 />
-                                             </v-col>
                                             <v-img
                                                 v-model="editedItem.foto"
                                                 color="teal accent-4"
@@ -492,7 +483,7 @@ import Post from '../../post/Obituarios'
             NRegistro: '', 
             FechaExhumacion: '',
             foto:'',
-            visualizarFoto: false
+            visualizarFoto: ''
 		},
         botton:true,
         dialogEditItem: false,
@@ -516,7 +507,6 @@ import Post from '../../post/Obituarios'
             }else{
                 this.editedItem.visualizarObituario = 0
             }
-
             if(this.editedItem.visualizarFoto){
                 this.editedItem.visualizarFoto = 1
             }else{
@@ -562,7 +552,7 @@ import Post from '../../post/Obituarios'
             await fetch("https://api.cloudinary.com/v1_1/dazyyib7u/image/upload", requestOptions)
             .then(response => response.json())
             .then(data => {
-                this.fotoSerquerido = data.url
+                this.editedItem.foto= data.url
             })
         },
         async editObituario(){
@@ -580,7 +570,6 @@ import Post from '../../post/Obituarios'
                 this.message = 'Se actualzaron los datos correctamente...'
                 this.dialogEditItem = false
                 setTimeout(()=>{ this.snackbar = false },4000)
-                location.reload()
             }
         },
        

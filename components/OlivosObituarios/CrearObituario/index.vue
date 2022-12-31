@@ -488,8 +488,7 @@ import Post from '../../post/Obituarios'
                 if(this.fotoSerquerido === null){
                     this.fotoSerquerido = ''
                 }
-                if(this.ciudad !=='' && this.NDocumento !== '' && this.nombre1 !== '' && this.apellido1 !== '' && this.fechaNacimiento !== '' && this.fechaFallecimiento !== '' && this.LugarFallecimiento !== '' && this.NombreSala !== ''&& this.fechaExequias !== '' && this.HoraExequias !== '' && this.LugarExequias !== '' && this.CiudadFinal !== ''  ){
-
+                if(this.ciudad !=='' && this.NDocumento !== '' && this.nombre1 !== '' && this.apellido1 !== '' && this.fechaNacimiento !== '' && this.fechaFallecimiento !== '' && this.LugarFallecimiento !== '' && this.NombreSala !== ''&& this.fechaExequias !== '' && this.HoraExequias !== '' && this.LugarExequias !== '' && this.CiudadFinal !== ''){
                     this.snackbar= true
                     this.loading= true
                     this.message='Enviando Datos... Por favor Espere'
@@ -523,8 +522,8 @@ import Post from '../../post/Obituarios'
                         FechaExhumacion: this.FechaExhumacion,
                         fechaRegistro: hoy.getFullYear() + '-' + ( hoy.getMonth() + 1 )  + '-' +  hoy.getDate()
                     }
+                    console.log(datos)
                     const data = await Post.postObituario( datos )
-                    console.log(data.data)
                     if(data.data.error === false){
                         this.snackbar = true
                         this.loading= false
@@ -533,6 +532,7 @@ import Post from '../../post/Obituarios'
                         setTimeout(()=>{ this.snackbar = false },3000)
                         this.$refs.formObtuario.reset()
                         this.src = ''
+                        this.url=''
                     }
                     else{
                         this.snackbar = true

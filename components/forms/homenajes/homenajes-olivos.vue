@@ -51,27 +51,28 @@
                             </v-row>
                             <v-row>
                                 <v-col cols="12" sm="12" md="12" lg="6">
-                                    <v-select
-                                        v-model="typeId"
-                                        :items="TypesId"
+                                    <v-text-field
+                                        v-model="afiliaty"
                                         :rules="nameRules"
                                         color="teal darken-4"
                                         item-color="teal darken-4"
-                                        label="Afiliado a olivos"
-                                        hide-details
-                                    ></v-select>
-                                </v-col>
-                                <v-col cols="12" sm="12" md="12" lg="6">
-                                    <v-text-field
-                                        v-model="Barrio"
-                                        :rules="nameRules"
-                                        color="teal darken-4"
-                                        label="Barrio"
+                                        label="Afiliado a:"
                                         hide-details
                                     ></v-text-field>
                                 </v-col>
+                                <v-col cols="12" sm="12" md="12" lg="6">
+                                    <v-select
+                                        v-model="typeId"
+                                        :items="TypesIdHomenaje"
+                                        :rules="nameRules"
+                                        color="teal darken-4"
+                                        item-color="teal darken-4"
+                                        label="Tipo de documento"
+                                        hide-details
+                                    ></v-select>
+                                </v-col>
                             </v-row>
-                            <v-row class="mb-6">
+                            <v-row>
                                 <v-col cols="12" sm="12" md="12" lg="6">
                                     <v-text-field
                                         v-model="numeroId"
@@ -126,7 +127,7 @@
                                 <h3 class="color-blue-dark font-weight-bold mb-3">
                                     Datos del “Ser Querido”
                                 </h3>
-                                <p class="secondary--text"> Por favor comparta con nosotros los siguientes datos del afiliado fallecido.</p>
+                                <p class="secondary--text"> Por favor comparta con nosotros los siguientes datos del ser querido fallecido.</p>
                             </div>
                             <v-row>
                                 <v-col cols="12" sm="12" md="12" lg="6">
@@ -140,44 +141,32 @@
                                 </v-col>
                                 <v-col cols="12" sm="12" md="12" lg="6">
                                     <v-select
-                                        v-model="afiliaty"
-                                        :items="afiliatys"
-                                        :rules="nameRules"
-                                        color="teal darken-4"
-                                        item-color="teal darken-4"
-                                        label="Afiliado a olivos"
-                                        hide-details
-                                    ></v-select>
-                                
-                                </v-col>
-                            </v-row>
-                            <v-row class="mb-6">
-                                <v-col cols="12" sm="12" md="12" lg="6">
-                                    <v-select
                                         v-model="typeIdHomenaje"
                                         :items="TypesIdHomenaje"
                                         :rules="nameRules"
                                         color="teal darken-4"
                                         item-color="teal darken-4"
-                                        label="Afiliado a olivos"
+                                        label="Tipo de documento"
                                         hide-details
                                     ></v-select>
                                 </v-col>
-                                <v-col cols="12" sm="12" md="3" lg="3">
-                                    <v-text-field
-                                        v-model="DepartamentoFallecimiento"
-                                        :rules="nameRules"
-                                        color="teal darken-4"
-                                        label="Departamento Fallecimiento"
-                                        hide-details
-                                    ></v-text-field>
-                                </v-col>
-                                <v-col cols="12" sm="12" md="3" lg="3">
+                            </v-row>
+                            <v-row class="mb-6">
+                                <v-col cols="12"  sm="12" md="12" lg="6">
                                     <v-text-field
                                         v-model="cityFallecimiento"
                                         :rules="nameRules"
                                         color="teal darken-4"
                                         label="Ciudad Fallecimiento"
+                                        hide-details
+                                    ></v-text-field>
+                                </v-col>
+                                <v-col cols="12"  sm="12" md="12" lg="6">
+                                    <v-text-field
+                                        v-model="DepartamentoFallecimiento"
+                                        :rules="nameRules"
+                                        color="teal darken-4"
+                                        label="Departamento Fallecimiento"
                                         hide-details
                                     ></v-text-field>
                                 </v-col>
@@ -226,19 +215,10 @@
                                 <v-select
                                     v-model="exequias"
                                     :items="religiones"
-                                    :rules="nameRules"
                                     item-color="teal darken-4"
                                     color="teal darken-4"
                                     label="Ceremonia religiosa"
-                                    @change="selectedReligion"
                                 ></v-select>
-                                <div v-show="showOther">
-                                    <v-text-field
-                                        v-model="other"
-                                        color="teal darken-4"
-                                        label="¿Cuál?"
-                                    ></v-text-field>
-                                </div>
                             </div>             
                             <div>
                                 <h3 class="color-blue-dark font-weivght-bold mb-3">
@@ -271,29 +251,9 @@
                                         ></v-text-field>
                                     </v-col>
                                 </v-row>
+                                
                                 <v-row>
-                                    <v-col cols="12" sm="12" md="12" lg="6">
-                                        <v-text-field
-                                            v-model="Templo2"
-                                            :rules="nameRules"
-                                            class="mb-2"
-                                            color="teal darken-4"
-                                            label="Nombre templo #2:"
-                                            hint="Ejemplo: Iglesia 1, Iglesia 2"
-                                        ></v-text-field>
-                                    </v-col>
-                                    <v-col cols="12" sm="12" md="12" lg="6">
-                                        <v-text-field
-                                            v-model="DireccionTemplo2"
-                                            :rules="nameRules"
-                                            type="text"
-                                            color="teal darken-4"
-                                            label="Dirección templo #2:"
-                                        ></v-text-field>
-                                    </v-col>
-                                </v-row>
-                                <v-row>
-                                    <v-col cols="12" sm="12" md="12" lg="6">
+                                    <v-col cols="12" sm="12" md="6" lg="6">
                                         <v-text-field
                                             v-model="Fecha"
                                             :rules="nameRules"
@@ -304,22 +264,13 @@
                                             hint="Ejemplo: Iglesia 1, Iglesia 2"
                                         ></v-text-field>
                                     </v-col>
-                                    <v-col cols="12" sm="12" md="3" lg="3">
+                                    <v-col cols="12" sm="12" md="6" lg="6">
                                         <v-text-field
                                             v-model="Hora1"
                                             :rules="nameRules"
                                             type="time"
                                             color="teal darken-4"
                                             label="Hora 1:"
-                                        ></v-text-field>
-                                    </v-col>
-                                    <v-col cols="12" sm="12" md="3" lg="3">
-                                        <v-text-field
-                                            v-model="Hora2"
-                                            :rules="nameRules"
-                                            type="time"
-                                            color="teal darken-4"
-                                            label="Hora 2:"
                                         ></v-text-field>
                                     </v-col>
                                 </v-row>
@@ -330,60 +281,17 @@
                                     Homenaje virtual
                                 </h3>
                                 <p class="secondary--text"> 
-                                    Como parte de nuestros protocolos, le entregaremos un video de 30 segundos a su Whatsapp; el cual podrà compartir con sus familiares y amigos, por ello requerimos que cuanto antes nos comparta una foto al 316 874 7177. También la puedes subir directamente por este medio.
-                                </p>
-                                <v-row justify="center" align="center">
-                                    <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
-                                        <v-file-input
-                                            v-model="file"
-                                            multiple
-                                            name="file"
-                                            type="file"
-                                            accept="image/*"
-                                            color="teal darken-3"
-                                            label="Adjuntar archivo(s)"
-                                            @change="onSelectedFiles(file)"
-                                        ></v-file-input>
-                                        <cropper
-                                            v-model="foto"
-                                            :stencil-props="{
-                                                aspectRatio: 1/1,
-                                            }"
-                                            :canvas="{
-                                                height: 330,
-                                                width: 330
-                                            }"
-                                            :src="url"
-                                            @change="change"
-                                        />
-                                    </v-col>
-                                    <v-col justify="center" align="center" cols="12" sm="10" md="4" lg="4">
-                                        <img :src="src" width="300">
-                                    </v-col>
-                                </v-row>
-                                <v-row>
-                                    <v-col cols="12" sm="10" md="12" lg="10">
-                                        <div class="mb-6">
-                                            <p class="secondary--text">
-                                                Aquí pueden dejar unas palabras de amor a su “Ser Querido”.
-                                                (Tengan en cuenta Legado, Eneñanzas, Hobbies y Aspectos destacados en vida)  
-                                            </p>
-                                            <v-text-field
-                                                v-model="palabras"
-                                                :rules="nameRules"
-                                                color="teal darken-4"
-                                                label="Palabras"
-                                            ></v-text-field>
-                                        </div>
-                                    </v-col>
-                                </v-row>
-            
+                                    Como parte de nuestros protocolos, le entregamos un video de 30 segundos a su Whatsapp; el cual podrá compartir con sus familiares y amigos, por ello requerimos que cuanto antes nos compata una foto la cual puede subir directamente por este medio. O si desea comunicarse a las lineas respectivamente:
+                                    <ul>
+                                        <li>Florencia: 3168747213</li>
+                                        <li>Pitalito: 3168747226</li>
+                                        <li>Garzon: 3168747185</li>
+                                        <li>Neiva: 3168747157</li>
+                                    </ul>
+                                </p>            
                             </div>
                             <v-row>
                                 <v-col cols="12" sm="10" md="10" lg="10">
-                                    <p class="secondary--text">
-                                        Elije uno o varios artículos si deseas añadirlos o si quieres mas información. Asì podras consultar con nuestros Coordinadores en cualquier momento para concretar su adquisición adicionál.  
-                                    </p>
                                     <v-card class="rounded-xl mb-8">
                                         <v-slide-group active-class="success" show-arrows>
                                             <v-slide-item
@@ -408,8 +316,9 @@
                             
                             <div class="secondary--text mb-8">
                                 <h3 class="color-blue-dark font-weivght-bold mb-3">
-                                    Cofres de lujo (Adicionales)
+                                    Cofres Funebres
                                 </h3>
+                                <p class="text-raleway">Dentro del homenaje se disponen de los siguientes modelos de cofre funebre, puede elegir un modelo para su ser querido (se deben tener en cuenta variables como disponibilidad, color y medidas, por lo tanto esta selección esta sujeta a su respectiva confirmacion)”</p>
                                 <v-row>
                                     <v-slide-group active-class="success" show-arrows>
                                         <v-slide-item
@@ -419,34 +328,6 @@
                                             <v-card                                    
                                                 color="white"
                                                 class="ma-2 rounded-xl"
-                                                width="150"                                    
-                                            >
-                                                <v-img
-                                                    :src="src"
-                                                    height="250"
-                                                ></v-img>
-            
-                                                <v-card-text>
-                                                    {{ text }}
-                                                </v-card-text>
-                                            </v-card>
-                                        </v-slide-item>
-                                    </v-slide-group>
-                                </v-row>
-                            </div>
-                            <div class="secondary--text mb-8">
-                                <h3 class="color-blue-dark font-weivght-bold mb-3">
-                                    Cenizarios 
-                                </h3>
-                                <v-row>
-                                    <v-slide-group active-class="success" show-arrows>
-                                        <v-slide-item
-                                            v-for="({src, text}, index) in cenizariosAdd" 
-                                            :key="index"
-                                        >
-                                            <v-card                                    
-                                                color="white"
-                                                class="ma-5 rounded-xl"
                                                 width="150"                                    
                                             >
                                                 <v-img
@@ -473,8 +354,8 @@
                                     Recomendamos lo siguiente:
                                 </p>
                                 <ul class="secondary--text mb-3">
-                                    <li>Hombre: Camisa y camisilla de algodón, pantalón, correa, chaqueta o saco y ropa interior</li>
-                                    <li>Mujer: Blusa, falda, vestido, ropa interior y brasier (pueden traer el labial de su preferencia).</li>
+                                    <li>Hombre: Camisa y camisilla de algodón, pantalón, correa, chaqueta o saco y ropa interior (Nota: en caso de cremación no usar correa ni zapatos.)</li>
+                                    <li>Mujer: Blusa, falda, vestido, ropa interior y brasier  </li>
                                     <li>Si el fallecimiento es muerte violenta, recomendamos camisas manga largas, blusas no escotadas y prendas oscuras para una adecuada presentación</li>  
                                 </ul>
                             </div>
@@ -571,59 +452,36 @@ export default {
             typeIdHomenaje:'',
             TypesId: [ 'C.C', 'C.E', 'T.I'],
             TypesIdHomenaje: [ 'C.C', 'C.E', 'T.I'],
-            afiliaty:'',
-            afiliatys: [ 'Si', 'No'],
             DepartamentoFallecimiento:'',
             cityFallecimiento:'',
-  
+            afiliaty: '',
             // documentos
             documents: '',
             documentos: [ 'Si','No' ],
             
             // exequias
             exequias: '',
-            religiones: ['Católico', 'Cristiano', 'Islámica', 'Budista', 'Otro'],
-            showOther: false,
+            religiones: ['Católico', 'Cristiano'],
             other: '',
             
             // articulos
             articlesAdd: [
-                { text: 'Homenaje fotográfico', src: 'https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg' },
-                { text: 'Baúl del duelo', src: 'https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg' },
-                { text: 'Arreglo floral', src: 'https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg' },
-                { text: 'Bono savime', src: 'https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg' },
+                { text: 'Cofre', src: 'https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg' },
+                { text: 'Cofre', src: 'https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg' },
+                { text: 'Cofre', src: 'https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg' },
+                { text: 'Cofre', src: 'https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg' },
             ],
             articlesAdd2: [
                 { text: 'Homenaje fotográfico', src: 'https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg' },
                 { text: 'Areglo floral', src: 'https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg' },
                 { text: 'Arreglo floral más foto', src: 'https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg' },
             ],
-            cenizariosAdd:[
-                { text: 'Urnas', src: 'https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg' },
-                { text: 'Urnas', src:'https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg'},
-                { text: 'Urnas', src: 'https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg' },
-                { text: 'Urnas', src: 'https://res.cloudinary.com/dhl17zanz/image/upload/v1645899921/Sede_Neiva9_uiq1qw.jpg' },
-            ],
 
             // templo religioso
             Templo1:'',
             DireccionTemplo1:'',
-            Templo2:'',
-            DireccionTemplo2:'',
             Fecha:'',
             Hora1:'',
-            Hora2:'',
-            // foto
-            file:null,
-            foto:null,
-            url:'',
-            src:'',
-            fotoSerquerido: null,
-            // palabras de amor
-            palabras: '',
-            // cenizarios
-            cenizarios: [ 'Cenizario Sencillo', 'Cenizario Doble','Cenizario Octagonal'],
-
             // terminos
             terminos: false,
             
@@ -642,44 +500,6 @@ export default {
         }
     },
     methods:{
-        async onSelectedFiles(file){ 
-                const formdata = new FormData();
-                formdata.append("upload_preset", "fotosObituarios");
-                formdata.append("file", file[0]);
-
-                const requestOptions = {
-                    method: 'POST',
-                    body: formdata,
-                    redirect: 'follow'
-                };
-                await fetch("https://api.cloudinary.com/v1_1/dazyyib7u/image/upload", requestOptions)
-                .then(response => response.json())
-                .then(data => {
-                    this.url = data.url
-                })
-            },
-            change({ coordinates, canvas }) {
-			    this.coordinates = coordinates
-                this.foto = canvas.toDataURL()
-                this.src = this.foto
-                this.enviarImg()
-		    },
-            async enviarImg(){
-                const formdata = new FormData();
-                formdata.append("upload_preset", "fotosCortadas");
-                formdata.append("file", this.src);
-
-                const requestOptions = {
-                    method: 'POST',
-                    body: formdata,
-                    redirect: 'follow'
-                };
-                await fetch("https://api.cloudinary.com/v1_1/dazyyib7u/image/upload", requestOptions)
-                .then(response => response.json())
-                .then(data => {
-                    this.fotoSerquerido = data.url
-                })
-            },
         async sendFormHomenajes(){
             this.botton = false
             this.loading = true
@@ -711,16 +531,10 @@ export default {
                     other:this.other,
                     Templo1:this.Templo1,
                     DireccionTemplo1:this.DireccionTemplo1,
-                    Templo2:this.Templo2,
-                    DireccionTemplo2:this.DireccionTemplo2,
                     Fecha:this.Fecha,
                     Hora1:this.Hora1,
-                    Hora2:this.Hora2,
-                    palabras:this.palabras,
-                    file:this.fotoSerquerido,
                     fecha_registro: this.$moment().format('YYYY-MM-DD HH:mm:ss')
                 }
-                console.log(datas)
                 const data  = await Post.postFormHomenajes( datas )
                 if(data.error === false){
                     this.botton = true
@@ -765,15 +579,6 @@ export default {
         verifyCaptcha(response){
             if(response){
                 this.resCaptcha = response
-            }
-        },
-
-        selectedReligion(param){
-            if(param === 'Otro'){
-                this.showOther = true
-            }else{
-                this.showOther = false
-                this.other = ''
             }
         },
     },
