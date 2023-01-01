@@ -17,12 +17,11 @@
                 <v-form ref="login" lazy-validation>
                     <v-text-field
                         v-model="email"
-                        type="email"
-                        :rules="[rules.required, rules.email]"
+                        :rules="[rules.required]"
                         rounded
                         filled
                         color="teal darken-3"
-                        label="Correo"
+                        label="Usuario"
                     ></v-text-field>
                     <v-text-field
                         v-model="password"
