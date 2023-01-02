@@ -13,7 +13,7 @@
                     <VueSlickCarousel :arrows="false" v-bind="settings">
                         <div v-for="({src} ,index) in Eventos" :key="index">
                             <v-img
-                                class="rounded-xl img-principal"  width="70%" 
+                                class="rounded-xl img-principal"  width="300px" 
                                 :lazy-src="src"
                                 :src="src"
                             ></v-img><br>

@@ -14,7 +14,7 @@
                 <v-row justify="center" align="center">
                     <v-col justify="center" align="center" cols="12" sm="4" md="4" lg="4">
                         <div class="mb-5">
-                            <img src="https://res.cloudinary.com/dazyyib7u/image/upload/v1664396343/Productos/FlorLoto/t3m8npjqlsh8eu9l4d4a.png" width="80%">
+                            <img src="https://res.cloudinary.com/dazyyib7u/image/upload/v1664396343/Productos/FlorLoto/t3m8npjqlsh8eu9l4d4a.png" width="300px">
                         </div>
                         <div class="mt-5">
                             <v-btn @click="showFlorLoto" justify="center" align="center"  style="background: linear-gradient(to right, #A780B8, #442158); color: white;" class="text-comfortaa font-weight-black" >
@@ -24,7 +24,7 @@
                     </v-col>
                     <v-col justify="center" align="center" cols="12" sm="4" md="4" lg="4">
                         <div class="mb-5">
-                            <img src="https://res.cloudinary.com/dazyyib7u/image/upload/v1663349641/Productos/AlrededorLago/rxmjynzqijfqffirvfcv.png" width="80%">
+                            <img src="https://res.cloudinary.com/dazyyib7u/image/upload/v1663349641/Productos/AlrededorLago/rxmjynzqijfqffirvfcv.png" width="300px">
                         </div>
                         <div class="bt-5">
                             <v-btn @click="ShowAlrededor" justify="center" align="center"  style="background: linear-gradient(to right, #A780B8, #442158); color: white;" class="text-comfortaa font-weight-black" >
@@ -53,7 +53,7 @@
                         <div justify="center" align="center" v-for="({src,nombre},index) in fotosFlores"
                         :key="index" class="ma-lg-2 mt-5 mb-5">
                             <div>
-                                <img :lazy-src="src" :src="src" width="80%">
+                                <img :lazy-src="src" :src="src" width="300px">
                             </div>
                             <div>
                                 <p class="mb-6 text-raleway text">{{nombre}}</p>
@@ -76,7 +76,7 @@
                         <div justify="center" align="center" v-for="({src,nombre},index) in FotosAlrededor"
                         :key="index" class="ma-lg-2 mt-5 mb-5">
                             <div>
-                                <img :lazy-src="src" :src="src" width="80%">
+                                <img :lazy-src="src" :src="src" width="300px">
                             </div>
                             <div>
                                 <p class="mb-6 text-raleway text">{{nombre}}</p>
@@ -99,7 +99,7 @@
                         <div justify="center" align="center" v-for="({src,nombre},index) in Fotosmultiples"
                         :key="index" class="ma-lg-2 mt-5 mb-5">
                             <div>
-                                <img :lazy-src="src" :src="src" width="80%">
+                                <img :lazy-src="src" :src="src" width="300px">
                             </div>
                             <div>
                                 <p class="mb-6 text-raleway text">{{nombre}}</p>
@@ -129,7 +129,7 @@
                     <div justify="center" align="center" v-for="({src},index) in UrnasColumbarios"
                     :key="index" class="ma-lg-2 mt-5 mb-5">
                         <div>
-                            <img :lazy-src="src" :src="src" width="80%">
+                            <img :lazy-src="src" :src="src" width="300px">
                         </div>
                     </div>
                 </VueSlickCarousel>

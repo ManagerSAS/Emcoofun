@@ -15,7 +15,7 @@
                             <div justify="center" align="center" v-for="({src},index) in Osarios"
                             :key="index" class=" mt-5 mb-5">
                                 <div>
-                                    <img :lazy-src="src" :src="src" width="80%">
+                                    <img :lazy-src="src" :src="src" width="300px">
                                 </div>
                             </div>
                         </VueSlickCarousel>

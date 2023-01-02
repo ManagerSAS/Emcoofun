@@ -14,7 +14,7 @@
                         <div class="mb-6">
                             <div class="text-raleway" style="color:#003B4C; font-size: 50px; font-weight: 800;">45 años</div>
                             <div class="text-raleway mb-6" style="color:#003B4C; font-size: 25px">de historia</div>
-                            <p class="text-comfortaa" style="font-size: 20px">Brindando un homenaje al amor, lo que nos convierte en la Red Funeraria más importante de Colombia. Con la mayor cobertura geográfica nacional.</p>
+                            <p class="text-comfortaa" style="font-size: 20px">Brindando un homenaje al amor. lo que nos convierte en la Red Funeraria más importante de Colombia con la mayor cobertura geográfica nacional.</p>
                         </div>
                     </v-col>
                 </v-row>

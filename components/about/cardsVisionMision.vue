@@ -15,7 +15,7 @@
                 <v-row >
                     <v-col cols="12" sm="2" md="2" lg="2" justify="center" align="center">
                         <img src="../../static/iconos/vision.png" height="100"><br>
-                        <h2  justify="center" align="center" class="text-raleway">Vision</h2>
+                        <h2  justify="center" align="center" class="text-raleway">Visión</h2>
                     </v-col>
                     <v-col cols="12" sm="10" md="10" lg="8" class="mt-10 text-raleway" style="color:#003B4C; font-size: 15px; font-weight: 600;">
                         EMCOOFUN será reconocida como la cooperativa funeraria pionera en la prestación de servicios y oferta de productos integrales, enfocada al servicio de calidad;  

@@ -24,7 +24,7 @@
                             </v-btn>
                         </div>
                     </v-col>
-                    <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="6">
+                    <!-- <v-col justify="center" align="center" cols="12" sm="12" md="6" lg="6">
                         <div class="mb-5">
                             <img class="d-none d-xl-block d-lg-block" src="../../static/OtrosServicios/forma1-2_Mesa de trabajo 1.jpg" width="350">
                             <img class="d-none d-md-block d-lg-none" src="../../static/OtrosServicios/forma1-2_Mesa de trabajo 1.jpg" width="300">
@@ -35,7 +35,7 @@
                               Bono de Condolencia
                             </v-btn>
                         </div>
-                    </v-col>
+                    </v-col> -->
                 </v-row>
             </v-col>
         </v-row>
@@ -47,8 +47,8 @@
                         <div justify="center" align="center" v-for="({src,nombre},index) in fotosFlores"
                         :key="index" class="ma-lg-2 mt-5 mb-5">
                             <div>
-                                <img class="d-none d-xl-block d-lg-block" :lazy-src="src" :src="src" width="80%">
-                                <img class="d-none d-md-block d-lg-none" :lazy-src="src" :src="src" width="80%">
+                                <img class="d-none d-xl-block d-lg-block" :lazy-src="src" :src="src" width="300px">
+                                <img class="d-none d-md-block d-lg-none" :lazy-src="src" :src="src" width="300px">
                                 <img class="d-block d-sm-none"  :lazy-src="src" :src="src" width="200">
                             </div>
                             <div>
@@ -72,8 +72,8 @@
                         <div justify="center" align="center" v-for="({src,nombre},index) in Condolencias"
                         :key="index" class="ma-lg-2 mt-5 mb-5">
                             <div>
-                                <img class="d-none d-xl-block d-lg-block" :lazy-src="src" :src="src" width="80%">
-                                <img class="d-none d-md-block d-lg-none" :lazy-src="src" :src="src" width="80%">
+                                <img class="d-none d-xl-block d-lg-block" :lazy-src="src" :src="src" width="300px">
+                                <img class="d-none d-md-block d-lg-none" :lazy-src="src" :src="src" width="300px">
                                 <img class="d-block d-sm-none"  :lazy-src="src" :src="src" width="200">
                             </div>
                             <div>

@@ -16,10 +16,11 @@
                         <div>
                             <v-btn 
                                 rounded
-                                class="card-shadow"
+                                class="card-shadow mb-1"
                                 dark
                                 color="#EEC06E" 
                                 style="color:black;"
+                                href="https://orfeo.radicacionemcoofun.com/orfeo/formularioWeb/"
                                 >
                                 <v-icon left> mdi-file-document-edit-outline </v-icon>
                                 Ingresa Aquí
@@ -110,7 +111,7 @@
                                             height="40"
                                             v-model="nombre"
                                             :rules="nameRules"
-                                            label="Nombre Completo*"
+                                            label="Nombre completo*"
                                             placeholder="Jose Alejandro"
                                             color="#EEC06E"
                                             style="background-color: white "
@@ -138,7 +139,7 @@
                                         <v-text-field
                                             v-model="documento"
                                             type="number"
-                                            label="Numero Documento*"
+                                            label="Número de documento*"
                                             placeholder="487975474547"
                                             color="#EEC06E"
                                             style="background-color: white "
@@ -165,7 +166,7 @@
                                        <v-text-field
                                            v-model="email"
                                            :rules="emailRules"
-                                           label="Email*"
+                                           label="Correo electrónico*"
                                            placeholder="email@example.com"
                                            color="#EEC06E"
                                            style="background-color: white "
@@ -214,7 +215,7 @@
                                         </v-col>
                                         <v-col cols="10">
                                             <div class="mt-5">
-                                                <Nuxt-link to="terminosycondiciones/privacidad-de-datos"> Acepto terminos y Condiciones </Nuxt-link>
+                                                <Nuxt-link to="terminosycondiciones/privacidad-de-datos"> Acepto Términos y Condiciones* </Nuxt-link>
                                             </div>
                                         </v-col>
                                     </v-row >

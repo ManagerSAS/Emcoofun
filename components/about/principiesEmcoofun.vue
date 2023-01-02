@@ -46,7 +46,7 @@ export default {
                 {
                     icon: '/iconos/trabajoEquipo.png',
                     title: 'Trabajo en equipo',
-                    description: 'Las bases de nuestras acciones son: El diseño y oferta integral deplanes y servicios, las sinergias entre las áreas de la organización, el alineamiento con las políticas y objetivos de la organización, para garantizar el crecimiento y desarrollo',
+                    description: 'Las bases de nuestras acciones son: el diseño y oferta integral de planes y servicios, las sinergias entre las áreas de la organización, el alineamiento con las políticas y objetivos de la organización, para garantizar el crecimiento y desarrollo',
                 },
                 {
                     icon: '/iconos/responsabilidad.png',
@@ -56,7 +56,7 @@ export default {
                 {
                     icon: '/iconos/liderazgo.png',
                     title: 'Liderazgo',
-                    description: 'Estamos atentos en la búsqueda de oportunidades de desarrollo en los planes y servicios, en la canalizaciónde las necesidades de nuestros clientes y en aunar esfuerzos en las diferentes áreas para lograr los ideales de la organización.',
+                    description: 'Estamos atentos en la búsqueda de oportunidades de desarrollo en los planes y servicios, en la canalización de las necesidades de nuestros clientes y en aunar esfuerzos en las diferentes áreas para lograr los ideales de la organización.',
                 },
                 {
                     icon: '/iconos/transparenca.png',

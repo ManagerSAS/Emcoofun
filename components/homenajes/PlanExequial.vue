@@ -8,7 +8,7 @@
                         Plan de previsión exequial
                         </h2>
                         <p class="mb-5 ma-2 text-raleway" style="font-weight: 700; font-size: 15px; color: #003B4C;">
-                        La cobertura exequial Integral de Los Olivos  es sin preexistencias, sin costos adicionales, cubre los servicios por el fallecimiento del titular o beneficiario registrado, desde el momento en que se notifica el fallecimiento, con traslado inicial del sitio de velación hasta la funeraria de la Red nacional de los Olivos, también la preservación del fallecido, las salas de velación. El servicio es dentro del Territorio nacional, incluye pago de impuestos sobre inhumación, destino final. Incluyendo la inhumación en tierra o bóveda o cremación. 
+                            La cobertura exequial integral de Los Olivos es sin preexistencias, sin costos adicionales, cubre los servicios por el fallecimiento del titular o beneficiario registrado, desde el momento en que se notifica el fallecimiento, con traslado inicial del sitio de velación hasta la funeraria de la Red Nacional de Los Olivos, también la preservación del fallecido, las salas de velación. El servicio es dentro del Territorio nacional, incluye pago de impuestos sobre inhumación, destino final. Incluyendo la inhumación en tierra o bóveda o cremación. 
                         </p>
                         <div justify="center" align="center">
                             <v-btn
